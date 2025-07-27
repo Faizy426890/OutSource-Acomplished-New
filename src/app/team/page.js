@@ -174,7 +174,17 @@ const TeamPage = () => {
               <div className="teams-card">
                 <div className="card-img-wrap">
                   <div className="card-img">
-                    <img src="/assets/img/home4/home4-teams-img4.png" alt="" />
+                    <img     style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+          width: 'auto',
+          height: 'auto', 
+            objectFit: 'cover', 
+                aspectRatio: '1 / 1',
+
+          display: 'block'
+        }}
+                   src="https://res.cloudinary.com/diml90c1y/image/upload/v1753625714/PHOTO-2025-07-27-13-17-56_won1go.jpg" alt="" />
                   </div>
                   <div className="overlay">
                     <div className="social-area">

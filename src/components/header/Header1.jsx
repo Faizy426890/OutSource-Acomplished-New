@@ -129,11 +129,7 @@ const Header1 = () => {
             <div className="col-lg-8">
               <div className="sidebar-menu-wrap">
                 <ul className="main-menu">
-                  <li>
-                    <Link href="/">Agency </Link>
-                   
-                   
-                  </li>
+                 
                   <li>
                     <Link href="/service">Services</Link>
                    
