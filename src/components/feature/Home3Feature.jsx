@@ -53,7 +53,7 @@ const Home3Feature = () => {
                   </span>
                   <h2>Innovate with Confidence</h2>
                   <p>
-                    Welcome to Zenfy, where digital innovation meets strategic
+                    Welcome to BlazeTech, where digital innovation meets strategic
                     excellence. As a dynamic force in the realm of digital
                     marketing, we are dedicated to propelling businesses into
                     the spotlight of online success.
@@ -125,7 +125,7 @@ const Home3Feature = () => {
                 <div className="slider-item">
                   <div className="feature-img">
                     <img
-                      src="assets/img/home3/home3-feature-slider-img1.png"
+                      src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt=""
                     />
                   </div>
@@ -133,7 +133,7 @@ const Home3Feature = () => {
                 <div className="slider-item">
                   <div className="feature-img">
                     <img
-                      src="assets/img/home3/home3-feature-slider-img2.png"
+                      src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt=""
                     />
                   </div>
@@ -141,7 +141,7 @@ const Home3Feature = () => {
                 <div className="slider-item">
                   <div className="feature-img">
                     <img
-                      src="assets/img/home3/home3-feature-slider-img3.png"
+                      src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt=""
                     />
                   </div>

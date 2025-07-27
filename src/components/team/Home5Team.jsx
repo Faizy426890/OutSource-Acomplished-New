@@ -44,7 +44,16 @@ const Home5Team = () => {
           <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
             <div className="team-card2">
               <div className="team-img">
-                <img src="assets/img/home5/team-01.jpg" alt="" />
+                <img             style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+          width: 'auto',
+          height: 'auto', 
+            objectFit: 'cover', 
+                aspectRatio: '1 / 1',
+
+          display: 'block'
+        }} src="https://res.cloudinary.com/diml90c1y/image/upload/v1753582292/PHOTO-2025-06-23-05-35-44_v6f6pn.jpg" alt="" />
                 <ul className="social-area">
                   <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
                   <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
@@ -53,7 +62,7 @@ const Home5Team = () => {
                 </ul>
               </div>
               <div className="team-content text-center">
-                <h4>Cassian Coleson</h4>
+                <h4>Mike James</h4>
                 <span>Founder at, BlazeTech</span>
               </div>
             </div>
@@ -61,7 +70,16 @@ const Home5Team = () => {
           <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
             <div className="team-card2">
               <div className="team-img">
-                <img src="assets/img/home5/team-02.jpg" alt="" />
+                <img             style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+          width: 'auto',
+          height: 'auto', 
+            objectFit: 'cover', 
+                aspectRatio: '1 / 1',
+
+          display: 'block'
+        }} src="https://res.cloudinary.com/diml90c1y/image/upload/v1753582281/IMG_7492_kst02x.jpg" alt="" />
                 <ul className="social-area">
                   <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
                   <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
@@ -70,15 +88,24 @@ const Home5Team = () => {
                 </ul>
               </div>
               <div className="team-content text-center">
-                <h4>Jacob Logan</h4>
-                <span>Web Designer</span>
+                <h4>Hamza Adam</h4>
+                <span>Senior Project Manager</span>
               </div>
             </div>
           </div>
           <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="600ms" data-wow-duration="1500ms">
             <div className="team-card2">
               <div className="team-img">
-                <img src="assets/img/home5/team-03.jpg" alt="" />
+                <img             style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+          width: 'auto',
+          height: 'auto', 
+            objectFit: 'cover', 
+                aspectRatio: '1 / 1',
+
+          display: 'block'
+        }} src="https://res.cloudinary.com/diml90c1y/image/upload/v1753584090/IMG_1832_wrs2kl.jpg" alt="" />
                 <ul className="social-area">
                   <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
                   <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
@@ -87,62 +114,12 @@ const Home5Team = () => {
                 </ul>
               </div>
               <div className="team-content text-center">
-                <h4>Charlotte Amelia</h4>
-                <span>Software Developer</span>
+                <h4>Bryan Jackson</h4>
+                <span>Business Development Executive</span>
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="800ms" data-wow-duration="1500ms">
-            <div className="team-card2">
-              <div className="team-img">
-                <img src="assets/img/home5/team-04.jpg" alt="" />
-                <ul className="social-area">
-                  <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
-                  <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                  <li><a href="https://www.pinterest.com/"><i className="bx bxl-pinterest-alt" /></a></li>
-                  <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
-                </ul>
-              </div>
-              <div className="team-content text-center">
-                <h4>Sofia Scarlett</h4>
-                <span>Graphic designer</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="600ms" data-wow-duration="1500ms">
-            <div className="team-card2">
-              <div className="team-img">
-                <img src="assets/img/home5/team-05.jpg" alt="" />
-                <ul className="social-area">
-                  <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
-                  <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                  <li><a href="https://www.pinterest.com/"><i className="bx bxl-pinterest-alt" /></a></li>
-                  <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
-                </ul>
-              </div>
-              <div className="team-content text-center">
-                <h4>Maverick Dylan</h4>
-                <span>Digital Marketer</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
-            <div className="team-card2">
-              <div className="team-img">
-                <img src="assets/img/home5/team-06.jpg" alt="" />
-                <ul className="social-area">
-                  <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
-                  <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                  <li><a href="https://www.pinterest.com/"><i className="bx bxl-pinterest-alt" /></a></li>
-                  <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
-                </ul>
-              </div>
-              <div className="team-content text-center">
-                <h4>Violet Penelope</h4>
-                <span>HR, Manager</span>
-              </div>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>

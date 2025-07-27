@@ -1,68 +1,134 @@
 import Link from "next/link";
 import React from "react";
 
-const Footer2 = () => {
+const Footer = () => {
   return (
     <>
-      <footer className="footer-section style-2">
+      <footer className="footer-section">
         <div className="container">
           <div className="footer-top">
-            <div className="row g-lg-4 gy-5 justify-content-center">
-              <div className="col-lg-4 col-md-8 col-sm-6">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-lg-4 col-md-6">
                 <div className="footer-widget">
-                  <div className="footer-logo">
-                    <Link href="/index2" className="logo-dark">
-                      <img src="/assets/img/footer-logo2.svg" alt="" />
-                    </Link>
-                    <Link href="/index2" className="logo-light">
-                      <img src="/assets/img/footer-logo2-light.svg" alt="" />
-                    </Link>
+                  <div className="widget-title">
+                    <h4>Our Solutions</h4>
+                  </div>
+                  <div className="menu-container">
+                    <ul className="widget-list">
+                      <li>
+                        <Link href="/service/service-details">
+                          Managed Services
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/service/service-details">
+                          IT Consulting &amp; Advisory
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/service/service-details">
+                          Cyber Security
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/service/service-details">
+                          Web Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/service/service-details">
+                          Mobile Development
+                        </Link>
+                      </li>
+                    </ul>
+                    <ul className="widget-list">
+                      <li>
+                        <Link href="/service/service-details">
+                          Cloud Services
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/service/service-details">
+                          Network Connectivity
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/service/service-details">
+                          ERP Solutions
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 d-flex justify-content-lg-center justify-content-md-end justify-content-sm-start">
+                <div className="footer-logo-area">
+                  <div className="logo-bg">
+                    <img
+                      src="/assets/img/home1/footer-logo-bg.png"
+                      alt=""
+                      className="light"
+                    />
+                    <img
+                      src="/assets/img/home1/footer-logo-bg-dark.png"
+                      alt=""
+                      className="dark"
+                    />
+                  </div>
+                  <div className="logo">
+                    <img
+                      src="/assets/img/footer-logo.svg"
+                      alt=""
+                      className="light"
+                    />
+                    <img
+                      src="/assets/img/footer-logo-dark.svg"
+                      alt=""
+                      className="dark"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-4 col-md-8
+                  d-flex justify-content-lg-end justify-content-sm-end"
+              >
+                <div className="footer-widget">
+                  <div className="widget-title two">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={14}
+                        height={14}
+                        viewBox="0 0 14 14"
+                      >
+                        <g>
+                          <path d="M6.6304 0.338424C6.67018 -0.112811 7.32982 -0.112807 7.3696 0.338428L7.72654 4.38625C7.75291 4.68505 8.10454 4.83069 8.33443 4.63804L11.4491 2.02821C11.7963 1.73728 12.2627 2.20368 11.9718 2.55089L9.36197 5.66556C9.1693 5.89546 9.31496 6.24709 9.61374 6.27346L13.6615 6.6304C14.1128 6.67018 14.1128 7.32982 13.6615 7.3696L9.61374 7.72654C9.31496 7.75291 9.1693 8.10454 9.36197 8.33443L11.9718 11.4491C12.2627 11.7963 11.7963 12.2627 11.4491 11.9718L8.33443 9.36197C8.10454 9.1693 7.75291 9.31496 7.72654 9.61374L7.3696 13.6615C7.32982 14.1128 6.67018 14.1128 6.6304 13.6615L6.27346 9.61374C6.24709 9.31496 5.89546 9.1693 5.66556 9.36197L2.55089 11.9718C2.20368 12.2627 1.73729 11.7963 2.02822 11.4491L4.63804 8.33443C4.83069 8.10454 4.68504 7.75291 4.38625 7.72654L0.338424 7.3696C-0.112811 7.32982 -0.112807 6.67018 0.338428 6.6304L4.38625 6.27346C4.68505 6.24709 4.83069 5.89546 4.63804 5.66556L2.02821 2.55089C1.73728 2.20368 2.20368 1.73729 2.55089 2.02822L5.66556 4.63804C5.89546 4.83069 6.24709 4.68504 6.27346 4.38625L6.6304 0.338424Z" />
+                        </g>
+                      </svg>
+                      They told about
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={14}
+                        height={14}
+                        viewBox="0 0 14 14"
+                      >
+                        <g>
+                          <path d="M6.6304 0.338424C6.67018 -0.112811 7.32982 -0.112807 7.3696 0.338428L7.72654 4.38625C7.75291 4.68505 8.10454 4.83069 8.33443 4.63804L11.4491 2.02821C11.7963 1.73728 12.2627 2.20368 11.9718 2.55089L9.36197 5.66556C9.1693 5.89546 9.31496 6.24709 9.61374 6.27346L13.6615 6.6304C14.1128 6.67018 14.1128 7.32982 13.6615 7.3696L9.61374 7.72654C9.31496 7.75291 9.1693 8.10454 9.36197 8.33443L11.9718 11.4491C12.2627 11.7963 11.7963 12.2627 11.4491 11.9718L8.33443 9.36197C8.10454 9.1693 7.75291 9.31496 7.72654 9.61374L7.3696 13.6615C7.32982 14.1128 6.67018 14.1128 6.6304 13.6615L6.27346 9.61374C6.24709 9.31496 5.89546 9.1693 5.66556 9.36197L2.55089 11.9718C2.20368 12.2627 1.73729 11.7963 2.02822 11.4491L4.63804 8.33443C4.83069 8.10454 4.68504 7.75291 4.38625 7.72654L0.338424 7.3696C-0.112811 7.32982 -0.112807 6.67018 0.338428 6.6304L4.38625 6.27346C4.68505 6.24709 4.83069 5.89546 4.63804 5.66556L2.02821 2.55089C1.73728 2.20368 2.20368 1.73729 2.55089 2.02822L5.66556 4.63804C5.89546 4.83069 6.24709 4.68504 6.27346 4.38625L6.6304 0.338424Z" />
+                        </g>
+                      </svg>
+                    </span>
+                    <h3>What Sets Us Apart?</h3>
                   </div>
                   <div className="content">
                     <p>
-                      Welcome to Zenfy, where innovation meets our passion in a
+                      Welcome to BlazeTech, where innovation meets our passion in a
                       journey that started with a simple idea and a shared
                       dream.
                     </p>
                   </div>
                   <ul className="rating-area">
-                    <li>
-                      <a href="https://clutch.co" className="single-rating">
-                        <div className="review">
-                          <span>Review On</span>
-                          <img
-                            src="/assets/img/home1/icon/clutch-logo.svg"
-                            alt=""
-                            className="logo-dark"
-                          />
-                          <img
-                            src="/assets/img/home1/icon/clutch-logo-white.svg"
-                            alt=""
-                            className="logo-light"
-                          />
-                        </div>
-                        <div className="rating">
-                          <ul className="star">
-                            <li>
-                              <i className="bi bi-star-fill" />
-                            </li>
-                            <li>
-                              <i className="bi bi-star-fill" />
-                            </li>
-                            <li>
-                              <i className="bi bi-star-fill" />
-                            </li>
-                            <li>
-                              <i className="bi bi-star-fill" />
-                            </li>
-                            <li>
-                              <i className="bi bi-star-half" />
-                            </li>
-                          </ul>
-                          <span>(50 reviews)</span>
-                        </div>
-                      </a>
-                    </li>
+                 
                     <li>
                       <a
                         href="https://www.google.com/"
@@ -100,118 +166,6 @@ const Footer2 = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-lg-center justify-content-sm-end">
-                <div className="footer-widget">
-                  <div className="widget-title">
-                    <h4>Our Solutions</h4>
-                  </div>
-                  <div className="menu-container">
-                    <ul className="widget-list">
-                      <li>
-                        <Link href="/service-details">Search Engine</Link>
-                      </li>
-                      <li>
-                        <Link href="/service-details">Paid Search</Link>
-                      </li>
-                      <li>
-                        <Link href="/service-details">Social Media</Link>
-                      </li>
-                      <li>
-                        <Link href="/service-details">Email Marketing</Link>
-                      </li>
-                      <li>
-                        <Link href="/service-details">Content Marketing</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-2 col-sm-6 d-flex justify-content-lg-center justify-content-sm-start">
-                <div className="footer-widget">
-                  <div className="widget-title">
-                    <h4>Company</h4>
-                  </div>
-                  <div className="menu-container">
-                    <ul className="widget-list">
-                      <li>
-                        <Link href="/about">About us</Link>
-                      </li>
-                      <li>
-                        <Link href="/case-study">Case Study</Link>
-                      </li>
-                      <li>
-                        <Link href="/blog">Blogs</Link>
-                      </li>
-                      <li>
-                        <Link href="/pricing-plan">Pricing</Link>
-                      </li>
-                      <li>
-                        <Link href="/contact">Contact Us</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-sm-6 d-flex justify-content-lg-end justify-content-sm-end">
-                <div className="footer-widget">
-                  <div className="subscribe-area mb-50">
-                    <h4>Don’t Missed Subscribe</h4>
-                    <form className="subscribe-form-wrap">
-                      <div className="subscribe-form">
-                        <input type="text" placeholder="Enter Email" />
-                        <button type="submit">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={16}
-                            height={16}
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M15.9647 0.685806C16.0011 0.594942 16.01 0.495402 15.9904 0.399526C15.9707 0.303649 15.9233 0.215653 15.8541 0.146447C15.7849 0.0772403 15.6969 0.0298668 15.601 0.0101994C15.5052 -0.0094681 15.4056 -0.000564594 15.3147 0.0358061L0.76775 5.85481H0.76675L0.31475 6.03481C0.22914 6.06895 0.154635 6.1261 0.0994654 6.19994C0.0442956 6.27377 0.0106078 6.36142 0.00212322 6.4532C-0.00636132 6.54497 0.0106876 6.63731 0.0513867 6.72001C0.0920859 6.8027 0.154851 6.87254 0.23275 6.92181L0.64275 7.18181L0.64375 7.18381L5.63875 10.3618L8.81675 15.3568L8.81875 15.3588L9.07875 15.7688C9.12817 15.8464 9.19805 15.9089 9.28068 15.9493C9.36332 15.9897 9.45551 16.0066 9.54711 15.998C9.63871 15.9894 9.72617 15.9558 9.79985 15.9007C9.87354 15.8456 9.9306 15.7712 9.96475 15.6858L15.9647 0.685806ZM14.1317 2.57581L6.63775 10.0698L6.42275 9.73181C6.38336 9.66978 6.33078 9.6172 6.26875 9.57781L5.93075 9.36281L13.4247 1.86881L14.6027 1.39781L14.1327 2.57581H14.1317Z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                  <div className="social-area">
-                    <h6>Social Just You Connected Us!</h6>
-                    <ul className="social-list">
-                      <li>
-                        <a href="https://www.linkedin.com/">
-                          <i className="bi bi-linkedin" />
-                          <span>LinkedIn</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.facebook.com/">
-                          <i className="bi bi-facebook" />
-                          <span>Facebook</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://twitter.com/">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={18}
-                            height={18}
-                            fill="currentColor"
-                            className="bi bi-twitter-x"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-                          </svg>
-                          <span>Twitter</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bi bi-instagram" />
-                          <span>Instagram</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div className="contact-area">
@@ -233,7 +187,7 @@ const Footer2 = () => {
               <div className="content">
                 <span>Call Any Time</span>
                 <h6>
-                  <a href="tel:2-965-871-8617">2-965-871-8617</a>
+                  <a href="tel:2-965-871-8617">+92 318-044-6784</a>
                 </h6>
               </div>
             </div>
@@ -255,7 +209,7 @@ const Footer2 = () => {
                 <span>Address</span>
                 <h6>
                   <a href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
-                    Dhaka, Bangladesh
+                    Lahore, Pakistan
                   </a>
                 </h6>
               </div>
@@ -280,7 +234,7 @@ const Footer2 = () => {
               <div className="content">
                 <span>Say Hello</span>
                 <h6>
-                  <a href="mailto:info@example.com">info@example.com</a>
+                  <a href="mailto:info@example.com">BlazeTech@gmail.com</a>
                 </h6>
               </div>
             </div>
@@ -288,8 +242,8 @@ const Footer2 = () => {
           <div className="footer-bottom">
             <div className="copyright-area">
               <p>
-                Copyright 2024 <a href="#">Zenfy</a> | Design By{" "}
-                <a href="https://www.egenslab.com/">Egens Lab</a>
+                Copyright 2025 <a href="#">BlazeTech</a> 
+                {/* <a href="https://www.egenslab.com/">BlazeTech Solutions</a> */}
               </p>
             </div>
             <div className="footer-bottom-right">
@@ -312,4 +266,4 @@ const Footer2 = () => {
   );
 };
 
-export default Footer2;
+export default Footer;

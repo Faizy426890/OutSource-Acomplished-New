@@ -14,8 +14,20 @@ const TeamPage = () => {
               <div className="teams-card">
                 <div className="card-img-wrap">
                   <div className="card-img">
-                    <img src="/assets/img/home4/home4-teams-img1.png" alt="" />
-                  </div>
+                    <img 
+                  style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+          width: 'auto',
+          height: 'auto', 
+            objectFit: 'cover', 
+                aspectRatio: '1 / 1',
+
+          display: 'block'
+        }}
+                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1753582292/PHOTO-2025-06-23-05-35-44_v6f6pn.jpg" alt="" />
+                  </div> 
+                  
                   <div className="overlay">
                     <div className="social-area">
                       <div className="social-list">
@@ -46,8 +58,8 @@ const TeamPage = () => {
                   </div>
                 </div>
                 <div className="card-content">
-                  <h4>Cassian Coleson</h4>
-                  <span>Founder at, Zenfy</span>
+                  <h4>Mike James</h4>
+                  <span>Founder at, BlazeTech</span>
                 </div>
               </div>
             </div>
@@ -55,7 +67,20 @@ const TeamPage = () => {
               <div className="teams-card">
                 <div className="card-img-wrap">
                   <div className="card-img">
-                    <img src="/assets/img/home4/home4-teams-img2.png" alt="" />
+                    <img  
+                          
+                  style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+          width: 'auto',
+          height: 'auto', 
+            objectFit: 'cover', 
+                aspectRatio: '1 / 1',
+
+          display: 'block'
+        }}
+                    
+                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1753582281/IMG_7492_kst02x.jpg" alt="" />
                   </div>
                   <div className="overlay">
                     <div className="social-area">
@@ -87,8 +112,8 @@ const TeamPage = () => {
                   </div>
                 </div>
                 <div className="card-content">
-                  <h4>Maverick Dylan</h4>
-                  <span>Web Designer</span>
+                  <h4>Hamza Adam</h4>
+                  <span>Senior Project Manager</span>
                 </div>
               </div>
             </div>
@@ -96,7 +121,19 @@ const TeamPage = () => {
               <div className="teams-card">
                 <div className="card-img-wrap">
                   <div className="card-img">
-                    <img src="/assets/img/home4/home4-teams-img3.png" alt="" />
+                    <img 
+                          style={{
+          maxWidth: '100%',
+          maxHeight: '100%',
+          width: 'auto',
+          height: 'auto', 
+            objectFit: 'cover', 
+                aspectRatio: '1 / 1',
+
+          display: 'block'
+        }}
+                    
+                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1753584090/IMG_1832_wrs2kl.jpg" alt="" />
                   </div>
                   <div className="overlay">
                     <div className="social-area">
@@ -128,8 +165,8 @@ const TeamPage = () => {
                   </div>
                 </div>
                 <div className="card-content">
-                  <h4>Anthony Thomas</h4>
-                  <span>Software Developer</span>
+                  <h4>Bryan Jackson</h4>
+                  <span>Business Development Executive </span>
                 </div>
               </div>
             </div>
@@ -169,12 +206,12 @@ const TeamPage = () => {
                   </div>
                 </div>
                 <div className="card-content">
-                  <h4>Christopher Nathan</h4>
-                  <span>Graphic designer</span>
+                  <h4>Jack Kendrick</h4>
+                  <span>Chartered Accountant</span>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6">
+            {/* <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="teams-card">
                 <div className="card-img-wrap">
                   <div className="card-img">
@@ -214,8 +251,8 @@ const TeamPage = () => {
                   <span>Web Designer</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6">
+            </div> */}
+            {/* <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="teams-card">
                 <div className="card-img-wrap">
                   <div className="card-img">
@@ -460,7 +497,7 @@ const TeamPage = () => {
                   <span>Web Designer</span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-xl-3 col-lg-4 col-sm-6 d-flex align-items-center justify-content-center">
               <div className="star-btn">
                 <a href="#">

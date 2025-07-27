@@ -2,7 +2,7 @@ import MainLayout from "@/components/layout/MainLayout";
 import Home5Workprocess from "@/components/workProcess/Home5Workprocess";
 
 export const metadata = {
-  title: "Zenfy - Software, SaaS & Digital Agency Template",
+  title: "BlazeTech Solutions",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
@@ -112,176 +112,160 @@ const ServiceDetailsPage = () => {
               >
                 <div className="service-details-img">
                   <img
-                    src="/assets/img/innerpage/service-details-feature-img.jpg"
+                    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
                     alt=""
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div
-            className="service-details-faq-area wow animate fadeInDown"
-            data-wow-delay="400ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="row g-lg-4 gy-5 align-items-xl-center">
-              <div className="col-lg-6">
-                <div className="service-details-faq-img">
-                  <img
-                    src="/assets/img/innerpage/service-details-faq-img.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="faq-content">
-                  <div className="accordion" id="accordionTravel">
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="faqheadingOne">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faqcollapseOne"
-                          aria-expanded="true"
-                          aria-controls="faqcollapseOne"
-                        >
-                          01. What is Task Management and how does it work?
-                        </button>
-                      </h2>
-                      <div
-                        id="faqcollapseOne"
-                        className="accordion-collapse collapse show"
-                        aria-labelledby="faqheadingOne"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inci only Integer purus onthis felis non
-                          aliquam.Mauris nec just vitae ann auctor tol euismod
-                          sit amet non ipsul growing this
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="faqheadingTwo">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faqcollapseTwo"
-                          aria-expanded="false"
-                          aria-controls="faqcollapseTwo"
-                        >
-                          02. Is Zenfy suitable for my business?
-                        </button>
-                      </h2>
-                      <div
-                        id="faqcollapseTwo"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="faqheadingTwo"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="faqheadingThree">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faqcollapseThree"
-                          aria-expanded="false"
-                          aria-controls="faqcollapseThree"
-                        >
-                          03. The system requirements using Task Management?
-                        </button>
-                      </h2>
-                      <div
-                        id="faqcollapseThree"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="faqheadingThree"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="faqheadingFour">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faqcollapseFour"
-                          aria-expanded="false"
-                          aria-controls="faqcollapseFour"
-                        >
-                          04. How can I upgrade my subscription?
-                        </button>
-                      </h2>
-                      <div
-                        id="faqcollapseFour"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="faqheadingFour"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="faqheadingFive">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#faqcollapseFive"
-                          aria-expanded="true"
-                          aria-controls="faqcollapseFive"
-                        >
-                          05. How can I upgrade my subscription?
-                        </button>
-                      </h2>
-                      <div
-                        id="faqcollapseFive"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="faqheadingFive"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inci only Integer purus onthis felis non
-                          aliquam.Mauris nec just vitae ann auctor tol euismod
-                          sit amet non ipsul growing this
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div
+  className="service-details-faq-area wow animate fadeInDown"
+  data-wow-delay="400ms"
+  data-wow-duration="1500ms"
+>
+  <div className="row g-lg-4 gy-5 align-items-xl-center">
+    <div className="col-lg-6">
+      <div className="service-details-faq-img">
+        <img
+          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587218/freepik__the-style-is-candid-image-photography-with-natural__86155_v1zytg.png"
+          alt="FAQ"
+        />
+      </div>
+    </div>
+    <div className="col-lg-6">
+      <div className="faq-content">
+        <div className="accordion" id="accordionTravel">
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="faqheadingOne">
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqcollapseOne"
+                aria-expanded="true"
+                aria-controls="faqcollapseOne"
+              >
+                01. What is Task Management and how does it work?
+              </button>
+            </h2>
+            <div
+              id="faqcollapseOne"
+              className="accordion-collapse collapse show"
+              aria-labelledby="faqheadingOne"
+              data-bs-parent="#accordionTravel"
+            >
+              <div className="accordion-body">
+                Task Management involves planning, organizing, assigning, and tracking tasks to ensure efficient workflow. It usually works through a software platform that helps teams collaborate, set deadlines, monitor progress, and improve productivity.
               </div>
             </div>
           </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="faqheadingTwo">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqcollapseTwo"
+                aria-expanded="false"
+                aria-controls="faqcollapseTwo"
+              >
+                02. Is BlazeTech suitable for my business?
+              </button>
+            </h2>
+            <div
+              id="faqcollapseTwo"
+              className="accordion-collapse collapse"
+              aria-labelledby="faqheadingTwo"
+              data-bs-parent="#accordionTravel"
+            >
+              <div className="accordion-body">
+                Yes, BlazeTech is designed to support businesses of all sizes. Whether you're a startup or a large enterprise, it offers flexible tools that help improve operations, communication, and team performance.
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="faqheadingThree">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqcollapseThree"
+                aria-expanded="false"
+                aria-controls="faqcollapseThree"
+              >
+                03. The system requirements using Task Management?
+              </button>
+            </h2>
+            <div
+              id="faqcollapseThree"
+              className="accordion-collapse collapse"
+              aria-labelledby="faqheadingThree"
+              data-bs-parent="#accordionTravel"
+            >
+              <div className="accordion-body">
+                To use our Task Management system, you’ll need a device with internet access and a modern browser (Chrome, Edge, Firefox, or Safari). No advanced hardware is required, and mobile apps are also available for Android and iOS.
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="faqheadingFour">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqcollapseFour"
+                aria-expanded="false"
+                aria-controls="faqcollapseFour"
+              >
+                04. How can I upgrade my subscription?
+              </button>
+            </h2>
+            <div
+              id="faqcollapseFour"
+              className="accordion-collapse collapse"
+              aria-labelledby="faqheadingFour"
+              data-bs-parent="#accordionTravel"
+            >
+              <div className="accordion-body">
+                To upgrade your subscription, log in to your account, go to the Billing or Subscription section, select a new plan, and follow the on-screen steps. Your account will be updated immediately after payment.
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="faqheadingFive">
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqcollapseFive"
+                aria-expanded="true"
+                aria-controls="faqcollapseFive"
+              >
+                05. How can I upgrade my subscription?
+              </button>
+            </h2>
+            <div
+              id="faqcollapseFive"
+              className="accordion-collapse collapse"
+              aria-labelledby="faqheadingFive"
+              data-bs-parent="#accordionTravel"
+            >
+              <div className="accordion-body">
+                Simply visit your account dashboard, choose "Upgrade Plan," select your preferred package, and confirm payment. The upgrade is processed instantly, giving you access to new features right away.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
 

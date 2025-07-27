@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useReducer, useRef } from "react";
 import navData from "../../data/nav.json";
+import ScrollProgress from "../common/ScrollProgress";
 const initialState = {
   activeMenu: "",
   activeSubMenu: "",
@@ -54,7 +55,7 @@ function reducer(state, action) {
   }
 }
 
-const Header3 = () => {
+const Header1 = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
 
@@ -86,6 +87,7 @@ const Header3 = () => {
 
   return (
     <>
+      <ScrollProgress />
       <div className={`sidebar-menu ${state.isRightSidebar ? "active" : ""}`}>
         <div className="sidebar-menu-top-area">
           <div className="container d-flex align-items-center justify-content-between">
@@ -112,6 +114,7 @@ const Header3 = () => {
                 height={20}
                 viewBox="0 0 18 18"
               >
+                
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -128,272 +131,15 @@ const Header3 = () => {
                 <ul className="main-menu">
                   <li>
                     <Link href="/">Agency </Link>
-                    <span
-                      className={`dropdown-icon2 ${
-                        state.activeMenu === "home" ? "active" : ""
-                      }`}
-                      onClick={() => toggleMenu("home")}
-                    >
-                      <i className="bi bi-plus" />
-                    </span>
-                    <ul
-                      className={`submenu-list active ${
-                        state.activeMenu === "home" ? "d-block" : "d-none"
-                      }`}
-                    >
-                      <li>
-                        <a href="#">Light Version</a>
-                        <span
-                          className={`dropdown-icon2 two ${
-                            state.activeSubMenu === "light" ? "active" : ""
-                          }`}
-                          onClick={() => toggleSubMenu("light")}
-                        >
-                          <i className="bi bi-plus" />
-                        </span>
-                        <ul
-                          className={`submenu-list ${
-                            state.activeSubMenu === "light"
-                              ? "d-block"
-                              : "d-none"
-                          }`}
-                        >
-                          <li>
-                            <Link href="/">
-                              Startup Agency
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/digital-marketing">
-                              Digital Marketing Agency
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/saas">
-                              Saas Product
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/creative-agency">
-                              Creative Agency
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/it-solution">
-                              It Solution
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Dark Version</a>
-                        <span
-                          className={`dropdown-icon2 two ${
-                            state.activeSubMenu === "dark" ? "active" : ""
-                          }`}
-                          onClick={() => toggleSubMenu("dark")}
-                        >
-                          <i className="bi bi-plus" />
-                        </span>
-                        <ul
-                          className={`submenu-list ${
-                            state.activeSubMenu === "dark"
-                              ? "d-block"
-                              : "d-none"
-                          }`}
-                        >
-                          <li>
-                            <Link href="/">
-                              Startup Agency
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/digital-marketing">
-                              Digital Marketing Agency
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/saas">
-                              Saas Product
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/creative-agency">
-                              Creative Agency
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/it-solution">
-                              It Solution
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                   
+                   
                   </li>
                   <li>
                     <Link href="/service">Services</Link>
-                    <span
-                      className={`dropdown-icon2 ${
-                        state.activeMenu === "service" ? "active" : ""
-                      }`}
-                      onClick={() => toggleMenu("service")}
-                    >
-                      <i className="bi bi-plus" />
-                    </span>
-                    <ul
-                      className={`submenu-list ${
-                        state.activeMenu === "service" ? "d-block" : "d-none"
-                      }`}
-                    >
-                      <li>
-                        <Link href="/service">
-                          Service style 01
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/service/service2">
-                          Service style 02
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/service/service3">
-                          Service style 03
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/service/service4">
-                          Service style 04
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/service/service-details">
-                          Service Details
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                    </ul>
+                   
+                   
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/case-study">Case Study</Link>
                     <span
                       className={`dropdown-icon2 ${
@@ -448,119 +194,14 @@ const Header3 = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
+               
+               
                   <li>
-                    <Link href="/blog">Blog</Link>
-                    <span
-                      className={`dropdown-icon2 ${
-                        state.activeMenu === "blog" ? "active" : ""
-                      }`}
-                      onClick={() => toggleMenu("blog")}
-                    >
-                      <i className="bi bi-plus" />
-                    </span>
-                    <ul
-                      className={`submenu-list ${
-                        state.activeMenu === "blog" ? "d-block" : "d-none"
-                      }`}
-                    >
-                      <li>
-                        <Link href="/blog">
-                          Blog Grid
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/blog/blog-sidebar">
-                          Blog Grid Sidebar
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/blog/blog-list">
-                          Blog List
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/blog/blog-standard">
-                          Blog Standard
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/blog/blog-details">
-                          Blog Details Style 01
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/blog/blog-details2">
-                          Blog Details Style 02
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Pages</a>
-                    <span
-                      className={`dropdown-icon2 ${
-                        state.activeMenu === "pages" ? "active" : ""
-                      }`}
-                      onClick={() => toggleMenu("pages")}
-                    >
-                      <i className="bi bi-plus" />
-                    </span>
-                    <ul
-                      className={`submenu-list ${
-                        state.activeMenu === "pages" ? "d-block" : "d-none"
-                      }`}
-                    >
-                      <li>
-                        <Link href="/blog">
+                    <Link href="/contact">Contact</Link>
+                  </li> 
+                    <li>
+                        <Link href="/about">
                           About
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -574,14 +215,7 @@ const Header3 = () => {
                       </li>
                       <li>
                         <Link href="/portfolio">Portfolio </Link>
-                        <span
-                          className={`dropdown-icon2 two ${
-                            state.activeSubMenu === "portfolio" ? "active" : ""
-                          }`}
-                          onClick={() => toggleSubMenu("portfolio")}
-                        >
-                          <i className="bi bi-plus" />
-                        </span>
+                        
                         <ul
                           className={`submenu-list ${
                             state.activeSubMenu === "portfolio"
@@ -658,14 +292,7 @@ const Header3 = () => {
                       </li>
                       <li>
                         <Link href="/team">Our Team</Link>
-                        <span
-                          className={`dropdown-icon2 two ${
-                            state.activeSubMenu === "team" ? "active" : ""
-                          }`}
-                          onClick={() => toggleSubMenu("team")}
-                        >
-                          <i className="bi bi-plus" />
-                        </span>
+                        
                         <ul
                           className={`submenu-list ${
                             state.activeSubMenu === "team"
@@ -687,17 +314,7 @@ const Header3 = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/team2">
-                              Team Style 2
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
+                            
                           </li>
                         </ul>
                       </li>
@@ -714,108 +331,7 @@ const Header3 = () => {
                           </svg>
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/shop">Shop</Link>
-                        <span
-                          className={`dropdown-icon2 two ${
-                            state.activeSubMenu === "shop" ? "active" : ""
-                          }`}
-                          onClick={() => toggleSubMenu("shop")}
-                        >
-                          <i className="bi bi-plus" />
-                        </span>
-                        <ul
-                          className={`submenu-list ${
-                            state.activeSubMenu === "shop"
-                              ? "d-block"
-                              : "d-none"
-                          }`}
-                        >
-                          <li>
-                            <Link href="/shop">
-                              Shop
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/product-details">
-                              Product Details
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/cart">
-                              Cart
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="/checkout">
-                              CheckOut
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={10}
-                                height={10}
-                                viewBox="0 0 10 10"
-                              >
-                                <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                              </svg>
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <Link href="/pricing-plan">
-                          Pricing Plan
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/faq">
-                          Faq
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={10}
-                            height={10}
-                            viewBox="0 0 10 10"
-                          >
-                            <path d="M8.33624 2.84003L1.17627 10L0 8.82373L7.15914 1.66376H0.849347V0H10V9.15065H8.33624V2.84003Z" />
-                          </svg>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact</Link>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -848,7 +364,7 @@ const Header3 = () => {
                       <div className="contact">
                         <span>Phone</span>
                         <h6>
-                          <a href="#">+991 - 763 684 4563</a>
+                          <a href="#">+92 318-044-6784</a>
                         </h6>
                       </div>
                     </li>
@@ -866,7 +382,7 @@ const Header3 = () => {
                       <div className="contact">
                         <span>Email Now</span>
                         <h6>
-                          <a href="#">info@examplegmail.com</a>
+                          <a href="#">BlazeTech@gmail.com</a>
                         </h6>
                       </div>
                     </li>
@@ -884,7 +400,7 @@ const Header3 = () => {
                       </div>
                       <div className="contact">
                         <h6>
-                          Canada City, Office-02, Road-11, House-3B/B, Section-H
+                          Lahore , Pakistan
                         </h6>
                       </div>
                     </li>
@@ -930,11 +446,12 @@ const Header3 = () => {
           </div>
         </div>
       </div>
+
       <header
         ref={headerRef}
-        className={`header-area style-3 ${state.scrollY > 10 ? "sticky" : ""}`}
+        className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}
       >
-        <div className="container-fluid   d-flex flex-nowrap align-items-center justify-content-between">
+        <div className="container d-flex flex-nowrap align-items-center justify-content-between">
           <div className="company-logo">
             <Link href="/" className="logo-dark">
               <img
@@ -1027,7 +544,7 @@ const Header3 = () => {
             </ul>
           </div>
           <div className="nav-right d-flex jsutify-content-end align-items-center">
-            <div className="sidebar-and-btn">
+            <div className="right-sidebar-and-hotline-area">
               <div className="hotline-area d-xl-flex d-none">
                 <div className="icon">
                   <svg
@@ -1044,7 +561,7 @@ const Header3 = () => {
                 <div className="content">
                   <span>Any Question</span>
                   <h6>
-                    <a href="tel:+990737621432">+990-737 621 432</a>
+                    <Link href="tel:+923180446784">+92 318-044-6784</Link>
                   </h6>
                 </div>
               </div>
@@ -1061,6 +578,9 @@ const Header3 = () => {
                   </g>
                 </svg>
               </div>
+              <div className="sidebar-button mobile-menu-btn d-none">
+                <span />
+              </div>
             </div>
           </div>
         </div>
@@ -1069,4 +589,4 @@ const Header3 = () => {
   );
 };
 
-export default Header3;
+export default Header1;
