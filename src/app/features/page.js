@@ -116,12 +116,10 @@ const FeaturesPage = () => {
                           data-wow-duration="1500ms"
                         >
                           <h3>Marketing Teams</h3>
-                          <p>
-                            Aliquam erat volutpat pelentequ habitant morb
-                            tristique senec et netus et malesuada fames ac
-                            turpis egestas vestibulum annvotet ipsum primis in
-                            faucibus orci luctus et ultrices.
-                          </p>
+                      <p>
+  BlazeTech empowers marketing teams to plan, execute, and optimize campaigns with greater efficiency. From content creation to performance tracking, our tools streamline collaboration and ensure your team stays aligned, agile, and focused on measurable results.
+</p>
+
                           <ul>
                             <li>
                               <svg
@@ -225,12 +223,10 @@ const FeaturesPage = () => {
                       <div className="project-management-tab-content">
                         <div className="tab-content-top">
                           <h3>IT Teams</h3>
-                          <p>
-                            Aliquam erat volutpat pelentequ habitant morb
-                            tristique senec et netus et malesuada fames ac
-                            turpis egestas vestibulum annvotet ipsum primis in
-                            faucibus orci luctus et ultrices.
-                          </p>
+                      <p>
+  Empower your IT teams with the tools and structure they need to deliver fast, secure, and scalable solutions. BlazeTech supports seamless collaboration, efficient workflows, and centralized management—helping your tech teams stay aligned and productive at every stage of development.
+</p>
+
                           <ul>
                             <li>
                               <svg
@@ -330,12 +326,10 @@ const FeaturesPage = () => {
                       <div className="project-management-tab-content">
                         <div className="tab-content-top">
                           <h3>Strategic Planning</h3>
-                          <p>
-                            Aliquam erat volutpat pelentequ habitant morb
-                            tristique senec et netus et malesuada fames ac
-                            turpis egestas vestibulum annvotet ipsum primis in
-                            faucibus orci luctus et ultrices.
-                          </p>
+                       <p>
+  Strategic planning is essential for long-term success. At BlazeTech, we help you define clear goals, identify opportunities, and build a roadmap that aligns your vision with measurable results. Our process ensures that every decision supports sustainable growth and competitive advantage.
+</p>
+
                           <ul>
                             <li>
                               <svg

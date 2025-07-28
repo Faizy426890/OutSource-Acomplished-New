@@ -91,7 +91,7 @@ const PortfolioPage = () => {
                 <div className="card-content">
                   <span>Client: Blac Ruby</span>
                   <h5>
-                    <Link href="/portfolio/portfolio-details">
+                    <Link href="/portfolio">
                       Artist Portfolio
                     </Link>
                   </h5>
@@ -137,7 +137,7 @@ const PortfolioPage = () => {
                 <div className="card-content">
                   <span>Client: AI Scribers</span>
                   <h5>
-                    <Link href="/portfolio/portfolio-details">
+                    <Link href="/portfolio">
                       AI Powered App
                     </Link>
                   </h5>

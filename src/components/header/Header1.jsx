@@ -93,18 +93,48 @@ const Header1 = () => {
           <div className="container d-flex align-items-center justify-content-between">
             <div className="sidebar-menu-logo">
               <Link href="/" className="logo-dark">
-                <img
-                  alt="image"
-                  className="img-fluid"
-                  src="assets/img/logo.svg"
-                />
+                     <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
+  <img
+    alt="BTS Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    style={{
+      width: '60px',         // Adjust size as needed
+      height: 'auto',
+      objectFit: 'contain',
+      marginRight: '8px',
+    }}
+  />
+  <div style={{ lineHeight: '1.1' }}>
+    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
+      BlazeTech
+    </span>
+    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
+      Solutions
+    </span>
+  </div>
+</div>
               </Link>
               <Link href="/" className="logo-light">
-                <img
-                  alt="image"
-                  className="img-fluid"
-                  src="assets/img/logo-light.svg"
-                />
+                     <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
+  <img
+    alt="BTS Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    style={{
+      width: '60px',         // Adjust size as needed
+      height: 'auto',
+      objectFit: 'contain',
+      marginRight: '8px',
+    }}
+  />
+  <div style={{ lineHeight: '1.1' }}>
+    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
+      BlazeTech
+    </span>
+    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
+      Solutions
+    </span>
+  </div>
+</div>
               </Link>
             </div>
             <div className="sidebar-menu-close" onClick={toggleRightSidebar}>
@@ -378,7 +408,7 @@ const Header1 = () => {
                       <div className="contact">
                         <span>Email Now</span>
                         <h6>
-                          <a href="#">BlazeTech@gmail.com</a>
+                          <a href="#">blaze.tsolutions@gmail.com</a>
                         </h6>
                       </div>
                     </li>
@@ -450,21 +480,55 @@ const Header1 = () => {
         <div className="container d-flex flex-nowrap align-items-center justify-content-between">
           <div className="company-logo">
             <Link href="/" className="logo-dark">
-              <img
-                alt="image"
-                className="img-fluid"
-                src="assets/img/logo.svg"
-              />
+            <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
+  <img
+    alt="BTS Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    style={{
+      width: '60px',         // Adjust size as needed
+      height: 'auto',
+      objectFit: 'contain',
+      marginRight: '8px',
+    }}
+  />
+  <div style={{ lineHeight: '1.1' }}>
+    <span style={{ display: 'block', fontSize: '14px', color: '#095a64ff', fontWeight: 'bold' }}>
+      BlazeTech
+    </span>
+    <span style={{ display: 'block', fontSize: '13px', color: '#104349ff' }}>
+      Solutions
+    </span>
+  </div>
+</div>
+
             </Link>
             <Link href="/" className="logo-light">
-              <img
-                alt="image"
-                className="img-fluid"
-                src="assets/img/logo-light.svg"
-              />
+          <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
+  <img
+    alt="BTS Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    style={{
+      width: '60px',         // Adjust size as needed
+      height: 'auto',
+      objectFit: 'contain',
+      marginRight: '8px',
+    }}
+  />
+  <div style={{ lineHeight: '1.1' }}>
+    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
+      BlazeTech
+    </span>
+    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
+      Solutions
+    </span>
+  </div>
+</div>
+
+
             </Link>
           </div>
-          <div className="main-menu d-lg-flex d-none">
+          <div   style={{ marginLeft: '30px' }}
+ className="main-menu d-lg-flex d-none">
             <ul className="menu-list">
               {navData.map((data) => {
                 const { id, label, link, icon, subMenu } = data;

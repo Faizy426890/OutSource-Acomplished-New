@@ -2,6 +2,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 const Home3Feature = () => {
   const settings = {
     infinite: true,
@@ -14,8 +15,8 @@ const Home3Feature = () => {
     vertical: true,
     verticalSwiping: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
   };
+
   return (
     <>
       <div className="home3-feature-section mb-110">
@@ -53,12 +54,14 @@ const Home3Feature = () => {
                   </span>
                   <h2>Innovate with Confidence</h2>
                   <p>
-                    Welcome to BlazeTech, where digital innovation meets strategic
-                    excellence. As a dynamic force in the realm of digital
-                    marketing, we are dedicated to propelling businesses into
-                    the spotlight of online success.
+                    At BlazeTech, we combine cutting-edge technology with strategic
+                    insight to help brands thrive in the digital world. Our mission is
+                    to elevate your business through innovative digital solutions,
+                    including web development, automation, design, and marketing —
+                    all tailored to accelerate your growth and success online.
                   </p>
                 </div>
+
                 <div className="feature-list-wrap">
                   <div className="progressBarContainer">
                     <div
@@ -70,14 +73,16 @@ const Home3Feature = () => {
                         <div className="content">
                           <h6>List &amp; Board View</h6>
                           <p>
-                            Sed accumsan sem cursus luctus porta. amem Phasellu
-                            du enim, efficitur quis velit ac, fringilla posuere
-                            leo fusci onion of the most important to this work.
+                            BlazeTech offers flexible project management views, allowing
+                            teams to toggle between list and board formats with ease.
+                            Stay organized, focused, and efficient with visual workflows
+                            that adapt to your working style.
                           </p>
                         </div>
                       </div>
                       <span data-slick-index={0} className="progressBar" />
                     </div>
+
                     <div
                       className="feature-and-progress wow animate fadeInDown"
                       data-wow-delay="600ms"
@@ -87,14 +92,16 @@ const Home3Feature = () => {
                         <div className="content">
                           <h6>Multiple Teams</h6>
                           <p>
-                            Sed accumsan sem cursus luctus porta. amem Phasellu
-                            du enim, efficitur quis velit ac, fringilla posuere
-                            leo fusci onion of the most important to this work.
+                            Collaborate across departments effortlessly. Our platform is
+                            built to support multiple teams with shared or segmented
+                            access, enabling seamless cooperation while maintaining
+                            structure and control.
                           </p>
                         </div>
                       </div>
                       <span data-slick-index={1} className="progressBar" />
                     </div>
+
                     <div
                       className="feature-and-progress wow animate fadeInDown"
                       data-wow-delay="800ms"
@@ -104,9 +111,10 @@ const Home3Feature = () => {
                         <div className="content">
                           <h6>No Page Load</h6>
                           <p>
-                            Sed accumsan sem cursus luctus porta. amem Phasellu
-                            du enim, efficitur quis velit ac, fringilla posuere
-                            leo fusci onion of the most important to this work.
+                            BlazeTech’s platform is built with performance in mind. Enjoy
+                            a smooth, single-page experience where everything updates
+                            instantly — no page reloads, no waiting, just fast and fluid
+                            user interaction.
                           </p>
                         </div>
                       </div>
@@ -115,6 +123,7 @@ const Home3Feature = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-lg-6">
               <Slider
                 {...settings}

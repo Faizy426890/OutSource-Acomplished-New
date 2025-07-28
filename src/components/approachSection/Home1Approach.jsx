@@ -50,7 +50,7 @@ const Home1Approach = () => {
               >
                 <div className="single-approach">
                   <div className="img-area">
-                    <img className="object-contain" src="assets/images/img4.jpg " alt="" />
+                    <img className="object-contain" src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png" alt="" />
                   </div>
                   <div className="dot">
                     <span />
@@ -95,7 +95,7 @@ const Home1Approach = () => {
               >
                 <div className="single-approach">
                   <div className="img-area">
-                  <img className="object-contain" src="assets/images/img5.jpg " alt="" />
+                  <img className="object-contain" src="https://res.cloudinary.com/diml90c1y/image/upload/v1753411495/freepik__the-style-is-candid-image-photography-with-natural__43509_rs51d7.png " alt="" />
                   </div>
                   <div className="dot">
                     <span />

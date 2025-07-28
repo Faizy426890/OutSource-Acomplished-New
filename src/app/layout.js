@@ -37,12 +37,26 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${hankenGrotesk.variable}`}>
       <head>
-        <link
-          rel="icon"
-          href="/public/assets/img/sm-logo.svg"
-          type="image/x-icon"
-          sizes="16x16"
-        />
+             <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
+  <img
+    alt="BTS Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    style={{
+      width: '60px',         // Adjust size as needed
+      height: 'auto',
+      objectFit: 'contain',
+      marginRight: '8px',
+    }}
+  />
+  <div style={{ lineHeight: '1.1' }}>
+    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
+      BlazeTech
+    </span>
+    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
+      Solutions
+    </span>
+  </div>
+</div>
         <title>BlazeTech - Solutions &amp; IT Compnay</title>
       </head>
       <body>

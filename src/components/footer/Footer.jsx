@@ -76,16 +76,19 @@ const Footer = () => {
                     />
                   </div>
                   <div className="logo">
-                    <img
-                      src="/assets/img/footer-logo.svg"
-                      alt=""
-                      className="light"
-                    />
-                    <img
-                      src="/assets/img/footer-logo-dark.svg"
-                      alt=""
-                      className="dark"
-                    />
+                
+                       <div style={{ display: 'flex', alignItems: 'center',  }}>
+  <img
+    alt="BTS Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    style={{
+      width: '120px',         // Adjust size as needed
+      height: 'auto',
+      objectFit: 'contain',
+    }}
+  />
+
+</div>
                   </div>
                 </div>
               </div>
@@ -234,7 +237,7 @@ const Footer = () => {
               <div className="content">
                 <span>Say Hello</span>
                 <h6>
-                  <a href="mailto:info@example.com">BlazeTech@gmail.com</a>
+                  <a href="mailto:info@example.com">blaze.tsolutions@gmail.com</a>
                 </h6>
               </div>
             </div>
