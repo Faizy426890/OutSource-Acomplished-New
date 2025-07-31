@@ -187,7 +187,7 @@ const Footer = () => {
               <div className="content">
                 <span>Call Any Time</span>
                 <h6>
-                  <a href="tel:2-965-871-8617">+92 318-044-6784</a>
+                  <a href="tel:2-965-871-8617">+1 469 247 9697</a>
                 </h6>
               </div>
             </div>
@@ -209,7 +209,7 @@ const Footer = () => {
                 <span>Address</span>
                 <h6>
                   <a href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
-                    Lahore, Pakistan
+                    Irving , Texas
                   </a>
                 </h6>
               </div>

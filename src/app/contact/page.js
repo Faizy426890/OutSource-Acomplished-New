@@ -54,9 +54,9 @@ const ContactPage = () => {
             >
               <div className="contact-area">
                 <div className="address">
-                  <h4 className="title">Lahore , Pakistan</h4>
+                  <h4 className="title">Irving , Texas</h4>
                   <span>East</span>
-                  <p>689-L Block Khayaban e Amin, Lahore</p>
+                  <p>57 Commerce Drive, Suite 210 Irving, Texas</p>
                 </div>
                 <div className="working-hour">
                   <div className="icon">
@@ -87,12 +87,7 @@ const ContactPage = () => {
               data-wow-duration="1500ms"
             >
               <div className="company-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54427.14732826804!2d74.30205815902661!3d31.505019381201308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a28ff1d39%3A0xf71e739b84b3c3c!2sGulberg%20III%2C%20Lahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1753589738295!5m2!1sen!2s"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214486.88675769878!2d-97.25720960446961!3d32.86225658000354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e825c1d09f58f%3A0x3c306f568687f309!2sIrving%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1753931131239!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>

@@ -233,7 +233,7 @@ const Header2 = () => {
                       <div className="contact">
                         <span>Phone</span>
                         <h6>
-                          <a href="#">+92 318-044-6784</a>
+                          <a href="#">+1 469 247 9697</a>
                         </h6>
                       </div>
                     </li>
@@ -269,7 +269,7 @@ const Header2 = () => {
                       </div>
                       <div className="contact">
                         <h6>
-                           Lahore, Pakistan
+                           57 Commerce Drive, Suite 210 Irving, Texas
                         </h6>
                       </div>
                     </li>

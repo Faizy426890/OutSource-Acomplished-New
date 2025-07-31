@@ -390,7 +390,7 @@ const Header1 = () => {
                       <div className="contact">
                         <span>Phone</span>
                         <h6>
-                          <a href="#">+92 318-044-6784</a>
+                          <a href="#">+1 469 247 9697</a>
                         </h6>
                       </div>
                     </li>
@@ -426,7 +426,7 @@ const Header1 = () => {
                       </div>
                       <div className="contact">
                         <h6>
-                          Lahore , Pakistan
+                          57 Commerce Drive, Suite 210 Irving, Texas
                         </h6>
                       </div>
                     </li>
@@ -621,7 +621,7 @@ const Header1 = () => {
                 <div className="content">
                   <span>Any Question</span>
                   <h6>
-                    <Link href="tel:+923180446784">+92 318-044-6784</Link>
+                    <Link href="tel:+14692479697">+1 469 247 9697</Link>
                   </h6>
                 </div>
               </div>

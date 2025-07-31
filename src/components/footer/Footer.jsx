@@ -212,7 +212,7 @@ const Footer = () => {
                 <span>Address</span>
                 <h6>
                   <a href="https://maps.app.goo.gl/PhWwfH4y3BmB7RqD7">
-                    Lahore, Pakistan
+                    57 Commerce Drive, Suite 210 Irving, Texas
                   </a>
                 </h6>
               </div>
