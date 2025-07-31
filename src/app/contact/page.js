@@ -87,7 +87,12 @@ const ContactPage = () => {
               data-wow-duration="1500ms"
             >
               <div className="company-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214486.88675769878!2d-97.25720960446961!3d32.86225658000354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e825c1d09f58f%3A0x3c306f568687f309!2sIrving%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1753931131239!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214486.88675769878!2d-97.25720960446961!3d32.86225658000354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e825c1d09f58f%3A0x3c306f568687f309!2sIrving%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1753931131239!5m2!1sen!2s"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>
