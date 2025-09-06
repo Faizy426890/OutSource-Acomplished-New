@@ -106,10 +106,10 @@ const Header1 = () => {
   />
   <div style={{ lineHeight: '1.1' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      BlazeTech
+      OutSource
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Solutions
+      Accomplished
     </span>
   </div>
 </div>
@@ -128,10 +128,10 @@ const Header1 = () => {
   />
   <div style={{ lineHeight: '1.1' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      BlazeTech
+      OutSource
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Solutions
+      Accomplished
     </span>
   </div>
 </div>
@@ -408,7 +408,7 @@ const Header1 = () => {
                       <div className="contact">
                         <span>Email Now</span>
                         <h6>
-                          <a href="#">blaze.tsolutions@gmail.com</a>
+                          <a href="#">OutSourceAccomplished@gmail.com</a>
                         </h6>
                       </div>
                     </li>
@@ -493,10 +493,10 @@ const Header1 = () => {
   />
   <div style={{ lineHeight: '1.1' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#095a64ff', fontWeight: 'bold' }}>
-      BlazeTech
+      OutSource
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#104349ff' }}>
-      Solutions
+      Accomplished
     </span>
   </div>
 </div>
@@ -516,10 +516,10 @@ const Header1 = () => {
   />
   <div style={{ lineHeight: '1.1' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      BlazeTech
+      OutSource
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Solutions
+      Accomplished
     </span>
   </div>
 </div>

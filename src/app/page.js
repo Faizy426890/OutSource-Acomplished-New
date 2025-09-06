@@ -24,13 +24,13 @@ export default function Home() {
       <Header1 />
       <Home1Banner />
       <Home1BannerMarquee />
-      <Home1About />
+      {/* <Home1About /> */}
       <Home1Solution />
       <Home1WorkProcess />
-      <BannerWithCaseStudySlider />
+      {/* <BannerWithCaseStudySlider /> */}
       <Home1Approach />
       {/* <LogoMarquee /> */}
-      <Home1Testimonial />
+      {/* <Home1Testimonial /> */}
       {/* <Home1Blog /> */}
       <Home2Contact />
       <Footer />

@@ -109,7 +109,9 @@ Version: 1.0
   --primary-color2: #0B0C0C;
   --dark-primary-color2: #0B0C0C;
   --primary-color2-opc: 11, 12, 12;
-  --border-color: #eee;
+  --border-color: #eee; 
+   --light-gray-color: #e6e4e8;   /* Tailwind gray-200 */
+  --light-purple-color: #e9d5ff; 
   --border-color2: #eee;
 }
 
@@ -117,7 +119,9 @@ body.dark {
   --white-color: #fff;
   --dark-white-color: #0B0C0C;
   --black-color: #000;
-  --black-color2: #1E1F1F;
+  --black-color2: #1E1F1F; 
+   --light-gray-color: #c3c3c3;   /* Tailwind gray-200 */
+  --light-purple-color: #e9d5ff; 
   --title-color: #fff;
   --title-color-opc: 255, 255, 255;
   --text-color: #B5B5B5;

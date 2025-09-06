@@ -70,21 +70,25 @@ const Home1Banner = () => {
                     </g>
                   </svg>
                 </span>
-                <h1>Empowering your brand in the digital universe </h1>
+                <h1>Outsource Your Success with Smart Business Solutions</h1>
                 <p>
-                  Join us as we carve a path to success, driven by passion,
-                  powered by innovation, and fueled by the collective spirit of
-                  our team. we believe in the power of bold ideas, and we're
-                  here to turn them into reality.{" "}
+                  Partner with us to achieve higher productivity, improved customer experiences, and faster business expansion through cutting-edge solutions.{" "}
                 </p>
                 <div className="banner-content-bottom">
-                  <Link
-                    href="/contact"
-                    className="primary-btn1"
-                    data-text="Free Consultation"
-                  >
-                    <span>Free Consultation</span>
-                  </Link>
+              <Link
+  href="/contact"
+  className="primary-btn1"
+  data-text="Schedule a meeting"
+  style={{
+    borderRadius: "50px",
+    transition: "all 0.3s ease-in-out",
+  }}
+  onMouseEnter={(e) => (e.currentTarget.style.filter = "brightness(1.1)")}
+  onMouseLeave={(e) => (e.currentTarget.style.filter = "brightness(1)")}
+>
+  <span>Schedule a meeting</span>
+</Link>
+
                   {/* <a href="https://clutch.co" className="rating-area">
                     <div className="review">
                       <span>Review On</span>
@@ -144,17 +148,19 @@ const Home1Banner = () => {
         </div>
         <div className="video-area">
           <div className="badge">
-            <span className="badge__char">B</span>
-            <span className="badge__char">L</span>
-            <span className="badge__char">A</span>
-            <span className="badge__char">Z</span>
-            <span className="badge__char">E</span>
+            <span className="badge__char">O</span>
+            <span className="badge__char">U</span>
+            <span className="badge__char">T</span>
+       
            
             <span className="badge__char">.</span>
-            <span className="badge__char">T</span>
-            <span className="badge__char">E</span>
+            <span className="badge__char">S</span>
+            <span className="badge__char">O</span>
+            <span className="badge__char">U</span>
+            <span className="badge__char">R</span> 
             <span className="badge__char">C</span>
-            <span className="badge__char">H</span>
+            <span className="badge__char">E</span>
+
       
             <div className="play">
               <a

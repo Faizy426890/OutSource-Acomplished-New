@@ -50,18 +50,18 @@ export default function RootLayout({ children }) {
   />
   <div style={{ lineHeight: '1.1' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      BlazeTech
+      OutSource
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Solutions
+      Accomplished
     </span>
   </div>
 </div>
-        <title>BlazeTech - Solutions &amp; IT Compnay</title>
+        <title>OutSource - Accomplished &amp; BPO Compnay</title>
       </head>
       <body>
         <ScrollProgress />
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         {children}
       </body>
     </html>

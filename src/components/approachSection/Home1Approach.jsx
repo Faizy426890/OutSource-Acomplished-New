@@ -1,9 +1,10 @@
 import React from "react";
+import { Users, Globe, BarChart3, HeartPulse, ChevronRight } from "lucide-react";
 
 const Home1Approach = () => {
   return (
     <>
-      <div className="home1-approach-section mb-110">
+      <div className="home1-approach-section mb-110" style={{ padding: '40px 0', background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)' }}>
         <div className="container">
           <div className="row mb-60">
             <div
@@ -11,76 +12,92 @@ const Home1Approach = () => {
               data-wow-delay="200ms"
               data-wow-duration="1500ms"
             >
-              <div className="section-title">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={14}
-                    height={14}
-                    viewBox="0 0 14 14"
-                  >
-                    <g>
-                      <path d="M6.6304 0.338424C6.67018 -0.112811 7.32982 -0.112807 7.3696 0.338428L7.72654 4.38625C7.75291 4.68505 8.10454 4.83069 8.33443 4.63804L11.4491 2.02821C11.7963 1.73728 12.2627 2.20368 11.9718 2.55089L9.36197 5.66556C9.1693 5.89546 9.31496 6.24709 9.61374 6.27346L13.6615 6.6304C14.1128 6.67018 14.1128 7.32982 13.6615 7.3696L9.61374 7.72654C9.31496 7.75291 9.1693 8.10454 9.36197 8.33443L11.9718 11.4491C12.2627 11.7963 11.7963 12.2627 11.4491 11.9718L8.33443 9.36197C8.10454 9.1693 7.75291 9.31496 7.72654 9.61374L7.3696 13.6615C7.32982 14.1128 6.67018 14.1128 6.6304 13.6615L6.27346 9.61374C6.24709 9.31496 5.89546 9.1693 5.66556 9.36197L2.55089 11.9718C2.20368 12.2627 1.73729 11.7963 2.02822 11.4491L4.63804 8.33443C4.83069 8.10454 4.68504 7.75291 4.38625 7.72654L0.338424 7.3696C-0.112811 7.32982 -0.112807 6.67018 0.338428 6.6304L4.38625 6.27346C4.68505 6.24709 4.83069 5.89546 4.63804 5.66556L2.02821 2.55089C1.73728 2.20368 2.20368 1.73729 2.55089 2.02822L5.66556 4.63804C5.89546 4.83069 6.24709 4.68504 6.27346 4.38625L6.6304 0.338424Z" />
-                    </g>
-                  </svg>
-                  Workflow Insights
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={14}
-                    height={14}
-                    viewBox="0 0 14 14"
-                  >
-                    <g>
-                      <path d="M6.6304 0.338424C6.67018 -0.112811 7.32982 -0.112807 7.3696 0.338428L7.72654 4.38625C7.75291 4.68505 8.10454 4.83069 8.33443 4.63804L11.4491 2.02821C11.7963 1.73728 12.2627 2.20368 11.9718 2.55089L9.36197 5.66556C9.1693 5.89546 9.31496 6.24709 9.61374 6.27346L13.6615 6.6304C14.1128 6.67018 14.1128 7.32982 13.6615 7.3696L9.61374 7.72654C9.31496 7.75291 9.1693 8.10454 9.36197 8.33443L11.9718 11.4491C12.2627 11.7963 11.7963 12.2627 11.4491 11.9718L8.33443 9.36197C8.10454 9.1693 7.75291 9.31496 7.72654 9.61374L7.3696 13.6615C7.32982 14.1128 6.67018 14.1128 6.6304 13.6615L6.27346 9.61374C6.24709 9.31496 5.89546 9.1693 5.66556 9.36197L2.55089 11.9718C2.20368 12.2627 1.73729 11.7963 2.02822 11.4491L4.63804 8.33443C4.83069 8.10454 4.68504 7.75291 4.38625 7.72654L0.338424 7.3696C-0.112811 7.32982 -0.112807 6.67018 0.338428 6.6304L4.38625 6.27346C4.68505 6.24709 4.83069 5.89546 4.63804 5.66556L2.02821 2.55089C1.73728 2.20368 2.20368 1.73729 2.55089 2.02822L5.66556 4.63804C5.89546 4.83069 6.24709 4.68504 6.27346 4.38625L6.6304 0.338424Z" />
-                    </g>
-                  </svg>
+              <div className="section-title" style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                <span style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center', 
+                  gap: '10px', 
+                  color: '#4f46e5', 
+                  fontWeight: '600', 
+                  fontSize: '1.1rem', 
+                  marginBottom: '0.5rem', 
+                  background: '#f1f5f9', 
+                  padding: '8px 20px', 
+                  borderRadius: '30px' 
+                }}>
+                  <Users size={16} />
+                  BPO Excellence
+                  <Users size={16} />
                 </span>
-                <h2>The BlazeTech Approach</h2>
+                <h2 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1e293b', marginBottom: '1rem' }}>
+                  The OutSource Accomplished Approach
+                </h2>
               </div>
             </div>
           </div>
         </div>
         <div className="approach-area">
           <div className="container-fluid">
-            <div className="row g-xl-4 gy-5 divider">
+            <div className="row g-xl-4 gy-5 divider" style={{ position: 'relative' }}>
+              {/* Care Coordination Card */}
               <div
                 className="col-xl-3 col-lg-4 col-sm-6 wow animate fadeInUp"
                 data-wow-delay="200ms"
                 data-wow-duration="1500ms"
               >
-                <div className="single-approach">
-                  <div className="img-area">
-                    <img className="object-contain" src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png" alt="" />
+                <div className="single-approach" style={{
+                  position: 'relative',
+                  padding: '2rem',
+                  background: 'white',
+                  borderRadius: '16px',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)',
+                  transition: 'all 0.3s ease',
+                  height: '100%',
+                  borderTop: '4px solid transparent',
+                  backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, #4f46e5, #7c3aed)',
+                  backgroundOrigin: 'border-box',
+                  backgroundClip: 'padding-box, border-box',
+                  overflow: 'hidden'
+                }}>
+                  <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/5995/5995245.png" 
+                      alt="Care Coordination" 
+                      style={{ 
+                        width: '80px', 
+                        height: '80px', 
+                        objectFit: 'contain', 
+                        borderRadius: '16px', 
+                        padding: '12px', 
+                        background: '#f1f5f9', 
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.05)',
+                        transition: 'all 0.3s ease'
+                      }} 
+                    />
                   </div>
-                  <div className="dot">
-                    <span />
+                  <div className="dot" style={{ position: 'absolute', top: '30px', right: '30px', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ display: 'block', width: '10px', height: '10px', borderRadius: '50%', background: '#4f46e5', transition: 'all 0.3s ease' }} />
                   </div>
-                  <div className="approach-content-wrap">
+                  <div className="approach-content-wrap" style={{ position: 'relative' }}>
                     <div className="scroll-content-area">
                       <div className="content scrollTextAni">
-                        <span>Step 01</span>
-                        <h5>Discovery &amp; Consultation</h5>
-                        <p>
-                          Foren your case studies issoni crucial touris then
-                          attention of your audience.
+                        <span style={{ display: 'inline-block', color: '#4f46e5', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#f1f5f9', padding: '4px 12px', borderRadius: '20px' }}>Service 01</span>
+                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Care Coordination</h5>
+                        <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
+                          Comprehensive patient care management with dedicated coordination teams.
                         </p>
-                        <ul>
-                          <li>
-                            <strong>Brainstorming: </strong>Collaborate to
-                            generate and refine innovative ideas.
+                        <ul style={{ listStyleType: 'none', padding: 0 }}>
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#4f46e5' }}>Patient Advocacy: </strong>Dedicated professionals ensuring patient needs are met.
                           </li>
-                          <li>
-                            <strong>Problem Identification: </strong>Identify
-                            market gaps and challenges your startup.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#4f46e5' }}>Appointment Management: </strong>Efficient scheduling and follow-up system.
                           </li>
-                          <li>
-                            <strong>Strategic Planning: </strong>Develop a
-                            roadmap by strategically aligning innovative ideas.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#4f46e5' }}>Care Plan Coordination: </strong>Seamless implementation of treatment plans.
                           </li>
-                          <li>
-                            <strong>Solution Proposals: </strong>Offer
-                            specialised remedies based on identified market
-                            gaps.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#4f46e5' }}>Provider Communication: </strong>Bridge between patients and healthcare providers.
                           </li>
                         </ul>
                       </div>
@@ -88,45 +105,66 @@ const Home1Approach = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Virtual Care Coordination Card */}
               <div
                 className="col-xl-3 col-lg-4 col-sm-6 wow animate fadeInUp"
                 data-wow-delay="400ms"
                 data-wow-duration="1500ms"
               >
-                <div className="single-approach">
-                  <div className="img-area">
-                  <img className="object-contain" src="https://res.cloudinary.com/diml90c1y/image/upload/v1753411495/freepik__the-style-is-candid-image-photography-with-natural__43509_rs51d7.png " alt="" />
+                <div className="single-approach" style={{
+                  position: 'relative',
+                  padding: '2rem',
+                  background: 'white',
+                  borderRadius: '16px',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)',
+                  transition: 'all 0.3s ease',
+                  height: '100%',
+                  borderTop: '4px solid transparent',
+                  backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, #10b981, #34d399)',
+                  backgroundOrigin: 'border-box',
+                  backgroundClip: 'padding-box, border-box',
+                  overflow: 'hidden'
+                }}>
+                  <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/2965/2965938.png" 
+                      alt="Virtual Care Coordination" 
+                      style={{ 
+                        width: '80px', 
+                        height: '80px', 
+                        objectFit: 'contain', 
+                        borderRadius: '16px', 
+                        padding: '12px', 
+                        background: '#f0fdf4', 
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.05)',
+                        transition: 'all 0.3s ease'
+                      }} 
+                    />
                   </div>
-                  <div className="dot">
-                    <span />
+                  <div className="dot" style={{ position: 'absolute', top: '30px', right: '30px', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ display: 'block', width: '10px', height: '10px', borderRadius: '50%', background: '#10b981', transition: 'all 0.3s ease' }} />
                   </div>
-                  <div className="approach-content-wrap">
+                  <div className="approach-content-wrap" style={{ position: 'relative' }}>
                     <div className="scroll-content-area">
                       <div className="content scrollTextAni">
-                        <span>Step 02</span>
-                        <h5>Planning and Strategy </h5>
-                        <p>
-                          Strategic planning for optimal results in a concise,
-                          effective approach.
+                        <span style={{ display: 'inline-block', color: '#10b981', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#f0fdf4', padding: '4px 12px', borderRadius: '20px' }}>Service 02</span>
+                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Virtual Care Coordination</h5>
+                        <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
+                          Remote care management solutions for modern healthcare needs.
                         </p>
-                        <ul>
-                          <li>
-                            <strong>Collaborating: </strong>Work together to
-                            produce and improve creative concepts.
+                        <ul style={{ listStyleType: 'none', padding: 0 }}>
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#10b981' }}>Telehealth Support: </strong>Remote patient monitoring and virtual consultations.
                           </li>
-                          <li>
-                            <strong>Resource Allocation: </strong>Optimize
-                            planning by efficiently allocating resources and
-                            ensuring a streamlined approach.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#10b981' }}>Digital Health Records: </strong>Secure management of electronic health information.
                           </li>
-                          <li>
-                            <strong>Problem Identification: </strong>Determine
-                            your startup's obstacles and market gaps.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#10b981' }}>Remote Patient Monitoring: </strong>Continuous health tracking with technology.
                           </li>
-                          <li>
-                            <strong>Solution Development: </strong>Translate
-                            identified challenges into strategic solutions and
-                            business growth.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#10b981' }}>Virtual Assistance: </strong>24/7 support for patients and providers.
                           </li>
                         </ul>
                       </div>
@@ -134,45 +172,66 @@ const Home1Approach = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Website Development Card */}
               <div
                 className="col-xl-3 col-lg-4 col-sm-6 wow animate fadeInUp"
                 data-wow-delay="600ms"
                 data-wow-duration="1500ms"
               >
-                <div className="single-approach">
-                  <div className="img-area">
-                  <img className="object-contain" src="assets/images/img6.png " alt="" />
+                <div className="single-approach" style={{
+                  position: 'relative',
+                  padding: '2rem',
+                  background: 'white',
+                  borderRadius: '16px',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)',
+                  transition: 'all 0.3s ease',
+                  height: '100%',
+                  borderTop: '4px solid transparent',
+                  backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, #8b5cf6, #a78bfa)',
+                  backgroundOrigin: 'border-box',
+                  backgroundClip: 'padding-box, border-box',
+                  overflow: 'hidden'
+                }}>
+                  <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" 
+                      alt="Website Development" 
+                      style={{ 
+                        width: '80px', 
+                        height: '80px', 
+                        objectFit: 'contain', 
+                        borderRadius: '16px', 
+                        padding: '12px', 
+                        background: '#faf5ff', 
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.05)',
+                        transition: 'all 0.3s ease'
+                      }} 
+                    />
                   </div>
-                  <div className="dot">
-                    <span />
+                  <div className="dot" style={{ position: 'absolute', top: '30px', right: '30px', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ display: 'block', width: '10px', height: '10px', borderRadius: '50%', background: '#8b5cf6', transition: 'all 0.3s ease' }} />
                   </div>
-                  <div className="approach-content-wrap">
+                  <div className="approach-content-wrap" style={{ position: 'relative' }}>
                     <div className="scroll-content-area">
                       <div className="content scrollTextAni">
-                        <span>Step 03</span>
-                        <h5>Design &amp; Development</h5>
-                        <p>
-                          Crafting seamless experiences through innovative
-                          design and development.
+                        <span style={{ display: 'inline-block', color: '#8b5cf6', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#faf5ff', padding: '4px 12px', borderRadius: '20px' }}>Service 03</span>
+                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Website Development</h5>
+                        <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
+                          Professional web solutions tailored to healthcare and business needs.
                         </p>
-                        <ul>
-                          <li>
-                            <strong>Generating ideas: </strong>Come up with and
-                            work through creative ideas together.
+                        <ul style={{ listStyleType: 'none', padding: 0 }}>
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#8b5cf6' }}>Responsive Design: </strong>Websites that work seamlessly across all devices.
                           </li>
-                          <li>
-                            <strong>Prototyping Excellence: </strong>Transform
-                            ideas into tangible prototypes and user-centric
-                            design.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#8b5cf6' }}>Healthcare Portals: </strong>Secure patient portals and information systems.
                           </li>
-                          <li>
-                            <strong>Iterative Development: </strong>Continuously
-                            refine and enhance solutions based on identified
-                            problems.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#8b5cf6' }}>E-Commerce Solutions: </strong>Online platforms for healthcare products and services.
                           </li>
-                          <li>
-                            <strong>Problem Identification: </strong>Identify
-                            market gaps and challenges your startup.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#8b5cf6' }}>Maintenance & Support: </strong>Ongoing technical support and updates.
                           </li>
                         </ul>
                       </div>
@@ -180,45 +239,66 @@ const Home1Approach = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Digital Marketing Card */}
               <div
                 className="col-xl-3 col-lg-4 col-sm-6 wow animate fadeInUp"
                 data-wow-delay="800ms"
                 data-wow-duration="1500ms"
               >
-                <div className="single-approach">
-                  <div className="img-area">
-                  <img className="object-contain" src="assets/images/img7.jpg " alt="" />
+                <div className="single-approach" style={{
+                  position: 'relative',
+                  padding: '2rem',
+                  background: 'white',
+                  borderRadius: '16px',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.06)',
+                  transition: 'all 0.3s ease',
+                  height: '100%',
+                  borderTop: '4px solid transparent',
+                  backgroundImage: 'linear-gradient(white, white), linear-gradient(135deg, #f59e0b, #fbbf24)',
+                  backgroundOrigin: 'border-box',
+                  backgroundClip: 'padding-box, border-box',
+                  overflow: 'hidden'
+                }}>
+                  <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
+                    <img 
+                      src="https://cdn-icons-png.flaticon.com/512/5036/5036951.png" 
+                      alt="Digital Marketing" 
+                      style={{ 
+                        width: '80px', 
+                        height: '80px', 
+                        objectFit: 'contain', 
+                        borderRadius: '16px', 
+                        padding: '12px', 
+                        background: '#fffbeb', 
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.05)',
+                        transition: 'all 0.3s ease'
+                      }} 
+                    />
                   </div>
-                  <div className="dot">
-                    <span />
+                  <div className="dot" style={{ position: 'absolute', top: '30px', right: '30px', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ display: 'block', width: '10px', height: '10px', borderRadius: '50%', background: '#f59e0b', transition: 'all 0.3s ease' }} />
                   </div>
-                  <div className="approach-content-wrap">
+                  <div className="approach-content-wrap" style={{ position: 'relative' }}>
                     <div className="scroll-content-area">
                       <div className="content scrollTextAni">
-                        <span>Step 04</span>
-                        <h5>Quality Assurance</h5>
-                        <p>
-                          Ensuring excellence through meticulous testing and
-                          validation processes.
+                        <span style={{ display: 'inline-block', color: '#f59e0b', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#fffbeb', padding: '4px 12px', borderRadius: '20px' }}>Service 04</span>
+                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Digital Marketing</h5>
+                        <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
+                          Strategic online marketing to grow your healthcare practice or business.
                         </p>
-                        <ul>
-                          <li>
-                            <strong>Idea generation: </strong>Collaborate
-                            together to generate and develop creative ideas.
+                        <ul style={{ listStyleType: 'none', padding: 0 }}>
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#f59e0b' }}>SEO Optimization: </strong>Improve visibility in search engine results.
                           </li>
-                          <li>
-                            <strong>Continuous Testing:: </strong>Rigorous
-                            quality assurance through ongoing testing ensures
-                            robust solutions.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#f59e0b' }}>Content Marketing: </strong>Educational content that engages your audience.
                           </li>
-                          <li>
-                            <strong>Performance Testing: </strong>Rigorously
-                            evaluate the functionality and efficiency of your
-                            startup's systems.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#f59e0b' }}>Social Media Management: </strong>Build your online presence and community.
                           </li>
-                          <li>
-                            <strong>Problem Identification: </strong>Identify
-                            market gaps and challenges your startup.
+                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
+                            <strong style={{ color: '#f59e0b' }}>Performance Analytics: </strong>Data-driven insights to optimize your strategy.
                           </li>
                         </ul>
                       </div>

@@ -1,7 +1,9 @@
 {
-  "/about/page": "app/about/page.js",
-  "/page": "app/page.js",
-  "/team/page": "app/team/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
-  "/features/page": "app/features/page.js"
+  "/contact/page": "app/contact/page.js",
+  "/service/page": "app/service/page.js",
+  "/service/service-details/page": "app/service/service-details/page.js",
+  "/case-study/case-study-details/page": "app/case-study/case-study-details/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js"
 }
