@@ -187,7 +187,7 @@ const Footer = () => {
               <div className="content">
                 <span>Call Any Time</span>
                 <h6>
-                  <a href="tel:2-965-871-8617">+1 469 247 9697</a>
+                  <a href="tel:+14699435482">+1 469 247 9697</a>
                 </h6>
               </div>
             </div>
@@ -207,9 +207,8 @@ const Footer = () => {
               </div>
               <div className="content">
                 <span>Address</span>
-                <h6>
-                  <a href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
-                   57 Commerce Drive, Suite 210 Irving, Texas
+                 <a href="https://maps.app.goo.gl/MCwVFprKByVUzzK18">
+                    400 Chisholm Place Suite 219-B, Plano TX 75075
                   </a>
                 </h6>
               </div>

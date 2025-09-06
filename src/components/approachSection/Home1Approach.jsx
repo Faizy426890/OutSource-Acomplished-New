@@ -149,7 +149,7 @@ const Home1Approach = () => {
                     <div className="scroll-content-area">
                       <div className="content scrollTextAni">
                         <span style={{ display: 'inline-block', color: '#10b981', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#f0fdf4', padding: '4px 12px', borderRadius: '20px' }}>Service 02</span>
-                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Virtual Care Coordination</h5>
+                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Virtual Coordinator</h5>
                         <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
                           Remote care management solutions for modern healthcare needs.
                         </p>

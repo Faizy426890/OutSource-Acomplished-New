@@ -16,25 +16,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/contact/page": [
+    "/service/service-details/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/service/service-details/page.js"
     ],
     "/service/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/service/page.js"
     ],
-    "/service/service-details/page": [
+    "/industry/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/service/service-details/page.js"
+      "static/chunks/app/industry/page.js"
     ],
-    "/case-study/case-study-details/page": [
+    "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/case-study/case-study-details/page.js"
+      "static/chunks/app/contact/page.js"
     ]
   }
 }

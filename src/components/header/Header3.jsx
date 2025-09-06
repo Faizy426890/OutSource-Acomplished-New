@@ -400,7 +400,7 @@ const Header1 = () => {
                       </div>
                       <div className="contact">
                         <h6>
-                          57 Commerce Drive, Suite 210 Irving, Texas
+                          400 Chisholm Place Suite 219-B, Plano TX 75075
                         </h6>
                       </div>
                     </li>

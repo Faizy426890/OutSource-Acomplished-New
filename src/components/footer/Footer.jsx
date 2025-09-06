@@ -190,7 +190,7 @@ const Footer = () => {
               <div className="content">
                 <span>Call Any Time</span>
                 <h6>
-                  <a href="tel:2-965-871-8617">+1 469 247 9697</a>
+                  <a href="tel:+14699435482">+1 469 943 5482</a>
                 </h6>
               </div>
             </div>
@@ -211,8 +211,8 @@ const Footer = () => {
               <div className="content">
                 <span>Address</span>
                 <h6>
-                  <a href="https://maps.app.goo.gl/PhWwfH4y3BmB7RqD7">
-                    57 Commerce Drive, Suite 210 Irving, Texas
+                  <a href="https://maps.app.goo.gl/MCwVFprKByVUzzK18">
+                    400 Chisholm Place Suite 219-B, Plano TX 75075
                   </a>
                 </h6>
               </div>

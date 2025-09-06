@@ -187,7 +187,7 @@ const Footer = () => {
               <div className="content">
                 <span>Call Any Time</span>
                 <h6>
-                  <a href="tel:+14692479697">+1 469 247 9697</a>
+                  <a href="tel:+14699435482">+1 469 943 5482</a>
                 </h6>
               </div>
             </div>

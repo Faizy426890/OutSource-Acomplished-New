@@ -52,7 +52,13 @@ const ServicePage3 = () => {
               data-wow-duration="1500ms"
             >
               <div className="sevices-wrap">
-                <div className="single-services mb-20">
+<div
+  className="single-services mb-20"
+  style={{
+    backgroundColor: "#E5E7EB",
+  }}
+>
+
                   <div className="icon">
                     <Users size={40} />
                     <div className="number">
@@ -94,7 +100,9 @@ const ServicePage3 = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="single-services mb-20">
+                <div style={{
+    backgroundColor: "#E5E7EB",
+  }} className="single-services mb-20">
                   <div className="icon">
                     <Heart size={40} />
                     <div className="number">
@@ -138,7 +146,9 @@ const ServicePage3 = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="single-services mb-20">
+                <div style={{
+    backgroundColor: "#E5E7EB",
+  }} className="single-services mb-20">
                   <div className="icon">
                     <FileText size={40} />
                     <div className="number">
@@ -182,7 +192,9 @@ const ServicePage3 = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="single-services mb-20">
+                <div style={{
+    backgroundColor: "#E5E7EB",
+  }} className="single-services mb-20">
                   <div className="icon">
                     <Code size={40} />
                     <div className="number">
@@ -225,7 +237,9 @@ const ServicePage3 = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="single-services mb-20">
+                <div style={{
+    backgroundColor: "#E5E7EB",
+  }} className="single-services mb-20">
                   <div className="icon">
                     <Calculator size={40} />
                     <div className="number">
@@ -269,7 +283,9 @@ const ServicePage3 = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="single-services">
+                <div style={{
+    backgroundColor: "#E5E7EB",
+  }} className="single-services">
                   <div className="icon">
                     <Megaphone size={40} />
                     <div className="number">

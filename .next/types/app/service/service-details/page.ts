@@ -1,4 +1,4 @@
-// File: C:\OutSource Accomplished\Zenfy Template\BlazeTech-Solutions\src\app\service\service-details\page.js
+// File: C:\OutSource Accomplished New\OutSource-Acomplished-New\src\app\service\service-details\page.js
 import * as entry from '../../../../../src/app/service/service-details/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
