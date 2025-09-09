@@ -95,7 +95,7 @@ const Header1 = () => {
               <Link href="/" className="logo-dark">
                      <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
   <img
-    alt="OutSourcing Accomplished Logo"
+    alt="OutSource Accomplished Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
     style={{
       width: '85px',         // Adjust size as needed

@@ -122,7 +122,7 @@ const Footer = () => {
                   </div>
                   <div className="content">
                     <p>
-                      Welcome to OutSourcing Accomplished, where innovation meets our passion in a
+                      Welcome to OutSource Accomplished, where innovation meets our passion in a
                       journey that started with a simple idea and a shared
                       dream.
                     </p>
@@ -242,7 +242,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="copyright-area">
               <p>
-                Copyright 2025 <a href="#">OutSourcing Accomplished</a> 
+                Copyright 2025 <a href="#">OutSource Accomplished</a> 
                 {/* <a href="https://www.egenslab.com/">BlazeTech Solutions</a> */}
               </p>
             </div>
