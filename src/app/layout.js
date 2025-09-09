@@ -48,14 +48,7 @@ export default function RootLayout({ children }) {
       marginRight: '8px',
     }}
   />
-  <div style={{ lineHeight: '1.1' }}>
-    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      OutSource
-    </span>
-    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Accomplished
-    </span>
-  </div>
+  
 </div>
         <title>OutSource - Accomplished &amp; BPO Compnay</title>
       </head>
