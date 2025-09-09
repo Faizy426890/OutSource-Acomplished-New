@@ -39,8 +39,8 @@ export default function RootLayout({ children }) {
       <head>
              <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
   <img
-    alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    alt="OutSource Accomplished Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
     style={{
       width: '60px',         // Adjust size as needed
       height: 'auto',
