@@ -54,7 +54,7 @@ const Home3Feature = () => {
                   </span>
                   <h2>Innovate with Confidence</h2>
                   <p>
-                    At BlazeTech, we combine cutting-edge technology with strategic
+                    At OutSource Accomplished, we combine cutting-edge technology with strategic
                     insight to help brands thrive in the digital world. Our mission is
                     to elevate your business through innovative digital solutions,
                     including web development, automation, design, and marketing —
@@ -73,7 +73,7 @@ const Home3Feature = () => {
                         <div className="content">
                           <h6>List &amp; Board View</h6>
                           <p>
-                            BlazeTech offers flexible project management views, allowing
+                            OutSource Accomplished offers flexible project management views, allowing
                             teams to toggle between list and board formats with ease.
                             Stay organized, focused, and efficient with visual workflows
                             that adapt to your working style.
@@ -111,7 +111,7 @@ const Home3Feature = () => {
                         <div className="content">
                           <h6>No Page Load</h6>
                           <p>
-                            BlazeTech’s platform is built with performance in mind. Enjoy
+                            OutSource Accomplished’s platform is built with performance in mind. Enjoy
                             a smooth, single-page experience where everything updates
                             instantly — no page reloads, no waiting, just fast and fluid
                             user interaction.
