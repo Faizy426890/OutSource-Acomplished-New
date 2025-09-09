@@ -12,13 +12,7 @@
         "link": "/service",
         "icon": false
     },
-    {
-        "id": "3",
-        "label": "Industry",
-        "link": "/industry",
-        "icon": false
-    }, 
-      
+  
      {
         "id": "4",
         "label": "About us",
@@ -26,18 +20,12 @@
         "icon": false
     },
   {
-        "id": "10",
-        "label": "Portfolio",
-        "link": "/portfolio",
-        "icon": false
-    }, 
-     {
         "id": "6",
-        "label": "Our Team",
-        "link": "/team",
+        "label": "Features",
+        "link": "/features",
         "icon": false
     },
- 
+     
 
     {
         "id": "8",

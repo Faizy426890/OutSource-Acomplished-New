@@ -30,7 +30,7 @@ const Home1Approach = () => {
                   <Users size={16} />
                 </span>
                 <h2 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1e293b', marginBottom: '1rem' }}>
-                  The OutSource Accomplished Approach
+                  The OutSourcing Accomplished Approach
                 </h2>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Home1Approach = () => {
                     <div className="scroll-content-area">
                       <div className="content scrollTextAni">
                         <span style={{ display: 'inline-block', color: '#4f46e5', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#f1f5f9', padding: '4px 12px', borderRadius: '20px' }}>Service 01</span>
-                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Care Coordination</h5>
+                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Staffing Services</h5>
                         <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
                           Comprehensive patient care management with dedicated coordination teams.
                         </p>
@@ -149,7 +149,7 @@ const Home1Approach = () => {
                     <div className="scroll-content-area">
                       <div className="content scrollTextAni">
                         <span style={{ display: 'inline-block', color: '#10b981', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#f0fdf4', padding: '4px 12px', borderRadius: '20px' }}>Service 02</span>
-                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Virtual Coordinator</h5>
+                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Virtual Care Coordinator</h5>
                         <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
                           Remote care management solutions for modern healthcare needs.
                         </p>

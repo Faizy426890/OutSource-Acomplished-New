@@ -1,19 +1,15 @@
-import Home3countdown from "@/components/countdown/Home3countdown";
-import Home3Feature from "@/components/feature/Home3Feature";
-import MainLayout from "@/components/layout/MainLayout";
-import LogoMarquee from "@/components/marquee/LogoMarquee";
-import Home3Tools from "@/components/tools/Home3Tools";
-import Home3WorkProcess from "@/components/workProcess/Home3WorkProcess";
-import Link from "next/link";
-import React from "react";
+import Home3countdown from "@/components/countdown/Home3countdown"
+import Home3Feature from "@/components/feature/Home3Feature"
+import MainLayout from "@/components/layout/MainLayout"
+import Home3Tools from "@/components/tools/Home3Tools"
+import Home3WorkProcess from "@/components/workProcess/Home3WorkProcess"
+import Link from "next/link"
+import { Check, Settings } from "lucide-react"
 
 const FeaturesPage = () => {
   return (
     <MainLayout>
-      <div
-        className="home3-project-management-section scroll-margin pt-120 mb-120"
-        id="project-section"
-      >
+      <div className="home3-project-management-section scroll-margin pt-120 mb-120" id="project-section">
         <div className="container">
           <div className="row justify-content-center mb-60">
             <div className="col-lg-8">
@@ -23,34 +19,15 @@ const FeaturesPage = () => {
                 data-wow-duration="1500ms"
               >
                 <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={10}
-                    height={10}
-                    viewBox="0 0 10 10"
-                  >
-                    <g>
-                      <circle cx={5} cy={5} r={5} />
-                    </g>
-                  </svg>
-                  Project Management
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={10}
-                    height={10}
-                    viewBox="0 0 10 10"
-                  >
-                    <g>
-                      <circle cx={5} cy={5} r={5} />
-                    </g>
-                  </svg>
+                  <Settings className="inline w-2.5 h-2.5" />
+                  BPO Services
+                  <Settings className="inline w-2.5 h-2.5" />
                 </span>
-                <h2>Master Your Project Success</h2>
+                <h2>Excellence in Business Process Outsourcing</h2>
                 <p>
-                  Welcome to BlazeTech, where digital innovation meets strategic
-                  excellence. As a dynamic force in the realm of digital
-                  marketing, we are dedicated to propelling businesses into the
-                  spotlight of online success.
+                  Welcome to OutSource Accomplished, where business process outsourcing meets strategic excellence. As a
+                  dynamic force in the realm of BPO services, we are dedicated to propelling businesses into the
+                  spotlight of operational success across the United States.
                 </p>
               </div>
             </div>
@@ -60,30 +37,53 @@ const FeaturesPage = () => {
               <nav>
                 <div className="nav nav-tabs" id="nav-tab" role="tablist">
                   <button
-                    className="nav-link active"
+                    className="nav-link"
                     id="marketing-teams-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#marketing-teams"
                     type="button"
                     role="tab"
                     aria-controls="marketing-teams"
-                    aria-selected="true"
+                    aria-selected="false"
                   >
-                    Marketing teams
+                    Digital Marketing
                   </button>
                   <button
-                    className="nav-link"
+                    className="nav-link active"
                     id="it-teams-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#it-teams"
                     type="button"
                     role="tab"
                     aria-controls="it-teams"
+                    aria-selected="true"
+                  >
+                    IT & Web Development
+                  </button>
+                  <button
+                    className="nav-link"
+                    id="patient-care-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#patient-care"
+                    type="button"
+                    role="tab"
+                    aria-controls="patient-care"
                     aria-selected="false"
                   >
-                    IT teams
+                    Patient Care Coordination
                   </button>
-                 
+                  <button
+                    className="nav-link"
+                    id="customer-support-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#customer-support"
+                    type="button"
+                    role="tab"
+                    aria-controls="customer-support"
+                    aria-selected="false"
+                  >
+                    Customer Support
+                  </button>
                   <button
                     className="nav-link"
                     id="planning-tab"
@@ -94,7 +94,7 @@ const FeaturesPage = () => {
                     aria-controls="planning"
                     aria-selected="false"
                   >
-                    Strategic planning{" "}
+                    Staffing Services
                   </button>
                 </div>
               </nav>
@@ -102,7 +102,7 @@ const FeaturesPage = () => {
             <div className="project-management-tab">
               <div className="tab-content" id="nav-tabContent">
                 <div
-                  className="tab-pane fade show active"
+                  className="tab-pane fade"
                   id="marketing-teams"
                   role="tabpanel"
                   aria-labelledby="marketing-teams-tab"
@@ -115,76 +115,37 @@ const FeaturesPage = () => {
                           data-wow-delay="400ms"
                           data-wow-duration="1500ms"
                         >
-                          <h3>Marketing Teams</h3>
-                      <p>
-  BlazeTech empowers marketing teams to plan, execute, and optimize campaigns with greater efficiency. From content creation to performance tracking, our tools streamline collaboration and ensure your team stays aligned, agile, and focused on measurable results.
-</p>
-
+                          <h3>Digital Marketing Services</h3>
+                          <p>
+                            OutSource Accomplished empowers your business with comprehensive digital marketing
+                            solutions. From social media management to targeted advertising campaigns, our expert team
+                            delivers measurable results that drive growth and enhance your online presence across all
+                            digital channels.
+                          </p>
                           <ul>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Social Media Design
-                            </li>
-                            <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Custom ad strategy
-                            </li>
-                            <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Advanced demographic
-                            </li>
-                            <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
+                              <Check className="inline w-4 h-4 mr-2" />
                               Social Media Management
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Unique ads campaigns
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Custom Ad Strategy Development
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Advanced Demographic Targeting
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Content Creation & Design
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Performance Analytics & Reporting
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Multi-Platform Campaign Management
                             </li>
                           </ul>
                         </div>
@@ -212,94 +173,46 @@ const FeaturesPage = () => {
                     </div>
                   </div>
                 </div>
-                <div
-                  className="tab-pane fade"
-                  id="it-teams"
-                  role="tabpanel"
-                  aria-labelledby="it-teams-tab"
-                >
+                <div className="tab-pane fade show active" id="it-teams" role="tabpanel" aria-labelledby="it-teams-tab">
                   <div className="row g-0">
                     <div className="col-lg-6">
                       <div className="project-management-tab-content">
                         <div className="tab-content-top">
-                          <h3>IT Teams</h3>
-                      <p>
-  Empower your IT teams with the tools and structure they need to deliver fast, secure, and scalable solutions. BlazeTech supports seamless collaboration, efficient workflows, and centralized management—helping your tech teams stay aligned and productive at every stage of development.
-</p>
-
+                          <h3>IT & Web Development Services</h3>
+                          <p>
+                            Empower your business with cutting-edge IT solutions and web development services. OutSource
+                            Accomplished delivers scalable, secure, and innovative technology solutions that streamline
+                            operations, enhance user experience, and drive digital transformation for businesses across
+                            the United States.
+                          </p>
                           <ul>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Social Media Design
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Custom Web Development
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Custom ad strategy
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Mobile App Development
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Advanced demographic
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Cloud Infrastructure Management
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Social Media Management
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Database Design & Optimization
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Unique ads campaigns
+                              <Check className="inline w-4 h-4 mr-2" />
+                              IT Support & Maintenance
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Cybersecurity Solutions
                             </li>
                           </ul>
                         </div>
-                        <Link
-                          href="/service"
-                          className="primary-btn2"
-                          data-text="Get Started Now"
-                        >
+                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
                           <span>Get Started Now</span>
                         </Link>
                       </div>
@@ -314,95 +227,159 @@ const FeaturesPage = () => {
                     </div>
                   </div>
                 </div>
-               
+                <div className="tab-pane fade" id="patient-care" role="tabpanel" aria-labelledby="patient-care-tab">
+                  <div className="row g-0">
+                    <div className="col-lg-6">
+                      <div className="project-management-tab-content">
+                        <div className="tab-content-top">
+                          <h3>Patient Care Coordination</h3>
+                          <p>
+                            OutSource Accomplished provides comprehensive patient care coordination services that bridge
+                            the gap between healthcare providers and patients. Our dedicated team ensures seamless
+                            communication, appointment scheduling, and care management to improve patient outcomes and
+                            healthcare efficiency.
+                          </p>
+                          <ul>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Appointment Scheduling & Management
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Patient Follow-up Services
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Insurance Verification & Authorization
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Medical Records Management
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Care Plan Coordination
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Patient Education & Support
+                            </li>
+                          </ul>
+                        </div>
+                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
+                          <span>Get Started Now</span>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="col-lg-6">
+                      <div className="project-management-tab-img-wrap">
+                        <img
+                          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588515/freepik__the-style-is-candid-image-photography-with-natural__86156_lkssyv.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div
                   className="tab-pane fade"
-                  id="planning"
+                  id="customer-support"
                   role="tabpanel"
-                  aria-labelledby="planning-tab"
+                  aria-labelledby="customer-support-tab"
                 >
                   <div className="row g-0">
                     <div className="col-lg-6">
                       <div className="project-management-tab-content">
                         <div className="tab-content-top">
-                          <h3>Strategic Planning</h3>
-                       <p>
-  Strategic planning is essential for long-term success. At BlazeTech, we help you define clear goals, identify opportunities, and build a roadmap that aligns your vision with measurable results. Our process ensures that every decision supports sustainable growth and competitive advantage.
-</p>
-
+                          <h3>Customer Support Services</h3>
+                          <p>
+                            Deliver exceptional customer experiences with OutSource Accomplished's comprehensive
+                            customer support services. Our trained professionals provide 24/7 multi-channel support,
+                            ensuring your customers receive prompt, professional assistance that builds loyalty and
+                            drives satisfaction.
+                          </p>
                           <ul>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Social Media Design
+                              <Check className="inline w-4 h-4 mr-2" />
+                              24/7 Multi-Channel Support
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Custom ad strategy
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Live Chat & Email Support
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Advanced demographic
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Technical Troubleshooting
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Social Media Management
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Order Processing & Tracking
                             </li>
                             <li>
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width={15}
-                                height={15}
-                                viewBox="0 0 15 15"
-                              >
-                                <g>
-                                  <path d="M6.84173 14.1071C6.79635 14.1071 6.75147 14.0977 6.7099 14.0795C6.66833 14.0613 6.63098 14.0348 6.60018 14.0014L0.0873947 6.95647C0.0439788 6.9095 0.0151968 6.85089 0.00457124 6.78782C-0.00605429 6.72475 0.00193752 6.65995 0.0275687 6.60135C0.0531998 6.54275 0.0953585 6.4929 0.148885 6.45789C0.202411 6.42287 0.264983 6.40423 0.328943 6.40422H3.46384C3.51091 6.40423 3.55743 6.41433 3.60026 6.43385C3.64309 6.45336 3.68124 6.48184 3.71213 6.51735L5.88873 9.02145C6.12396 8.51862 6.57933 7.68137 7.37841 6.66117C8.55974 5.15293 10.7571 2.93479 14.5164 0.932401C14.5891 0.893707 14.6736 0.883665 14.7533 0.904256C14.833 0.924848 14.9021 0.974577 14.947 1.04362C14.9918 1.11267 15.0091 1.19602 14.9955 1.2772C14.9818 1.35839 14.9383 1.43152 14.8733 1.48214C14.859 1.49336 13.4095 2.63482 11.7413 4.72559C10.2061 6.64962 8.16519 9.7957 7.16094 13.8572C7.1433 13.9286 7.10227 13.992 7.04439 14.0373C6.98652 14.0826 6.91513 14.1072 6.84163 14.1073L6.84173 14.1071Z" />
-                                </g>
-                              </svg>
-                              Unique ads campaigns
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Customer Retention Programs
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Quality Assurance & Reporting
                             </li>
                           </ul>
                         </div>
-                        <Link
-                          href="/service"
-                          className="primary-btn2"
-                          data-text="Get Started Now"
-                        >
+                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
+                          <span>Get Started Now</span>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="col-lg-6">
+                      <div className="project-management-tab-img-wrap">
+                        <img
+                          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="tab-pane fade" id="planning" role="tabpanel" aria-labelledby="planning-tab">
+                  <div className="row g-0">
+                    <div className="col-lg-6">
+                      <div className="project-management-tab-content">
+                        <div className="tab-content-top">
+                          <h3>Staffing Services</h3>
+                          <p>
+                            OutSource Accomplished provides comprehensive staffing solutions to meet your workforce
+                            needs. From temporary placements to permanent hires, our extensive network of qualified
+                            professionals ensures you have the right talent at the right time to drive your business
+                            forward.
+                          </p>
+                          <ul>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Temporary & Contract Staffing
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Permanent Placement Services
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Executive Search & Recruitment
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Skills Assessment & Screening
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Workforce Management Solutions
+                            </li>
+                            <li>
+                              <Check className="inline w-4 h-4 mr-2" />
+                              Payroll & Benefits Administration
+                            </li>
+                          </ul>
+                        </div>
+                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
                           <span>Get Started Now</span>
                         </Link>
                       </div>
@@ -423,16 +400,12 @@ const FeaturesPage = () => {
         </div>
       </div>
 
-
       <Home3WorkProcess />
-
       <Home3countdown />
-
       <Home3Feature />
-
       <Home3Tools />
     </MainLayout>
-  );
-};
+  )
+}
 
-export default FeaturesPage;
+export default FeaturesPage

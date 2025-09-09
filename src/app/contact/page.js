@@ -39,9 +39,7 @@ const ContactPage = () => {
                   Our Office <span>Locations.</span>
                 </h2>
                 <p>
-                  Feel free adapt this based on the specific managed services,
-                  features, and unique selling points your IT service company
-                  provides.
+                  Feel free to reach out to our Plano, Texas office — your local gateway to global BPO solutions.
                 </p>
               </div>
             </div>
@@ -54,9 +52,9 @@ const ContactPage = () => {
             >
               <div className="contact-area">
                 <div className="address">
-                  <h4 className="title">Irving , Texas</h4>
-                  <span>East</span>
-                  <p>57 Commerce Drive, Suite 210 Irving, Texas</p>
+                  <h4 className="title">Plano , Texas</h4>
+                  <p>400 Chisholm Place Suite 219-B,
+Plano TX 75075</p>
                 </div>
                 <div className="working-hour">
                   <div className="icon">
@@ -88,7 +86,7 @@ const ContactPage = () => {
             >
               <div className="company-map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214486.88675769878!2d-97.25720960446961!3d32.86225658000354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e825c1d09f58f%3A0x3c306f568687f309!2sIrving%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1753931131239!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.1200335335984!2d-96.71534002451796!3d33.02696797356001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c18fbeeff1fa7%3A0x14a8baeb1d4c0c5d!2s400%20Chisholm%20Pl%20219%20b%2C%20Plano%2C%20TX%2075075!5e0!3m2!1sen!2s!4v1757373534602!5m2!1sen!2s" 
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

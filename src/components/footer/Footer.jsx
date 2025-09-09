@@ -17,17 +17,17 @@ const Footer = () => {
                     <ul className="widget-list">
                       <li>
                         <Link href="/service/service-details">
-                          Managed Services
+                          Staffing Services
                         </Link>
                       </li>
                       <li>
                         <Link href="/service/service-details">
-                          IT Consulting &amp; Advisory
+                          Virtual Patient Care Coordinators
                         </Link>
                       </li>
                       <li>
                         <Link href="/service/service-details">
-                          Cyber Security
+                          Accounting and Payroll
                         </Link>
                       </li>
                       <li>
@@ -37,19 +37,19 @@ const Footer = () => {
                       </li>
                       <li>
                         <Link href="/service/service-details">
-                          Mobile Development
+                          Administrative Tasks
                         </Link>
                       </li>
                     </ul>
                     <ul className="widget-list">
                       <li>
                         <Link href="/service/service-details">
-                          Cloud Services
+                          Digital Marketing
                         </Link>
                       </li>
                       <li>
                         <Link href="/service/service-details">
-                          Network Connectivity
+                          Customer Support Service
                         </Link>
                       </li>
                       <li>
@@ -80,7 +80,7 @@ const Footer = () => {
                        <div style={{ display: 'flex', alignItems: 'center',  }}>
   <img
     alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
     style={{
       width: '120px',         // Adjust size as needed
       height: 'auto',
@@ -125,7 +125,7 @@ const Footer = () => {
                   </div>
                   <div className="content">
                     <p>
-                      Welcome to BlazeTech, where innovation meets our passion in a
+                      Welcome to OutSource Accomplished, where innovation meets our passion in a
                       journey that started with a simple idea and a shared
                       dream.
                     </p>
@@ -237,7 +237,7 @@ const Footer = () => {
               <div className="content">
                 <span>Say Hello</span>
                 <h6>
-                  <a href="mailto:info@example.com">blaze.tsolutions@gmail.com</a>
+                  <a href="mailto:info@example.com">outsource.accomplished@gmail.com</a>
                 </h6>
               </div>
             </div>
@@ -245,7 +245,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="copyright-area">
               <p>
-                Copyright 2025 <a href="#">BlazeTech</a> 
+                Copyright 2025 <a href="#">OutSourcing Accomplished</a> 
                 {/* <a href="https://www.egenslab.com/">BlazeTech Solutions</a> */}
               </p>
             </div>

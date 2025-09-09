@@ -17,8 +17,8 @@ const Home5Team = () => {
               <path d="M3.7081 12.9544C3.41861 13.1128 3.09011 12.8352 3.14861 12.4808L3.7711 8.69694L1.12886 6.01223C0.882112 5.76104 1.01036 5.30186 1.34111 5.25226L5.0146 4.69548L6.6526 1.23399C6.80035 0.922003 7.2001 0.922003 7.34785 1.23399L8.98584 4.69548L12.6593 5.25226C12.9901 5.30186 13.1183 5.76104 12.8708 6.01223L10.2293 8.69694L10.8518 12.4808C10.9103 12.8352 10.5818 13.1128 10.2923 12.9544L6.9991 11.1497L3.7081 12.9544Z" />
             </svg>
           </span>
-          <h2>Get to Know Creative <span> Minds At BlazeTech.</span></h2>
-          <p>Feel free adapt this based on the specific managed services, features, and unique selling points your IT service company provides.</p>
+          <h2>Get to Know Creative <span> Minds At OutSource Accomplished.</span></h2>
+          <p>Feel free adapt this based on the specific managed services, features, and unique selling points your company provides.</p>
         </div>
         <div className="star-btn mb-50">
           <div className="btn_wrapper">
@@ -40,87 +40,59 @@ const Home5Team = () => {
         </div>
       </div>
       <div className="col-xxl-7 col-xl-8">
-        <div className="row g-4">
-          <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
-            <div className="team-card2">
-              <div className="team-img">
-                <img             style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          width: 'auto',
-          height: 'auto', 
-            objectFit: 'cover', 
-                aspectRatio: '1 / 1',
+       <div className="row g-4">
+  <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+    <div className="team-card2">
+      <div className="team-img" style={{ width: "100%", height: "350px", overflow: "hidden" }}>
+        <img
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            display: "block",
+          }}
+          src="https://res.cloudinary.com/diml90c1y/image/upload/v1757381432/Ceo-removebg-preview_ydws1q.png"
+          alt=""
+        />
+        <ul className="social-area">
+          <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
+          <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
+        </ul>
+      </div>
+      <div className="team-content text-center">
+        <h4>Ahmed Azhar</h4>
+        <span>Founder</span>
+      </div>
+    </div>
+  </div>
 
-          display: 'block'
-        }} src="https://res.cloudinary.com/diml90c1y/image/upload/v1753582292/PHOTO-2025-06-23-05-35-44_v6f6pn.jpg" alt="" />
-                <ul className="social-area">
-                  <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
-                  <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                  <li><a href="https://www.pinterest.com/"><i className="bx bxl-pinterest-alt" /></a></li>
-                  <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
-                </ul>
-              </div>
-              <div className="team-content text-center">
-                <h4>Mike James</h4>
-                <span>Founder at, BlazeTech</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
-            <div className="team-card2">
-              <div className="team-img">
-                <img             style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          width: 'auto',
-          height: 'auto', 
-            objectFit: 'cover', 
-                aspectRatio: '1 / 1',
+  <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="400ms" data-wow-duration="1500ms">
+    <div className="team-card2">
+      <div className="team-img" style={{ width: "100%", height: "350px", overflow: "hidden" }}>
+        <img
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            display: "block",
+          }}
+          src="https://res.cloudinary.com/diml90c1y/image/upload/v1757381630/WhatsApp_Image_2025-09-08_at_19.33.58_d9070219_kxxvv0.jpg"
+          alt=""
+        />
+        <ul className="social-area">
+          <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
+      
+          <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
+        </ul>
+      </div>
+      <div className="team-content text-center">
+        <h4>Max Parker</h4>
+        <span>Director</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-          display: 'block'
-        }} src="https://res.cloudinary.com/diml90c1y/image/upload/v1753582281/IMG_7492_kst02x.jpg" alt="" />
-                <ul className="social-area">
-                  <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
-                  <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                  <li><a href="https://www.pinterest.com/"><i className="bx bxl-pinterest-alt" /></a></li>
-                  <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
-                </ul>
-              </div>
-              <div className="team-content text-center">
-                <h4>Hamza Adam</h4>
-                <span>Senior Project Manager</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6 wow animate fadeInDown" data-wow-delay="600ms" data-wow-duration="1500ms">
-            <div className="team-card2">
-              <div className="team-img">
-                <img             style={{
-          maxWidth: '100%',
-          maxHeight: '100%',
-          width: 'auto',
-          height: 'auto', 
-            objectFit: 'cover', 
-                aspectRatio: '1 / 1',
-
-          display: 'block'
-        }} src="https://res.cloudinary.com/diml90c1y/image/upload/v1753584090/IMG_1832_wrs2kl.jpg" alt="" />
-                <ul className="social-area">
-                  <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
-                  <li><a href="https://twitter.com/"><i className="bx bxl-twitter" /></a></li>
-                  <li><a href="https://www.pinterest.com/"><i className="bx bxl-pinterest-alt" /></a></li>
-                  <li><a href="https://www.instagram.com/"><i className="bx bxl-instagram-alt" /></a></li>
-                </ul>
-              </div>
-              <div className="team-content text-center">
-                <h4>Bryan Jackson</h4>
-                <span>Business Development Executive</span>
-              </div>
-            </div>
-          </div>
-        
-        </div>
       </div>
     </div>
   </div>

@@ -95,30 +95,23 @@ const Header1 = () => {
               <Link href="/" className="logo-dark">
                      <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
   <img
-    alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    alt="OutSourcing Accomplished Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
     style={{
-      width: '60px',         // Adjust size as needed
+      width: '85px',         // Adjust size as needed
       height: 'auto',
       objectFit: 'contain',
       marginRight: '8px',
     }}
   />
-  <div style={{ lineHeight: '1.1' }}>
-    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      OutSource
-    </span>
-    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Accomplished
-    </span>
-  </div>
+ 
 </div>
               </Link>
               <Link href="/" className="logo-light">
                      <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
   <img
     alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
     style={{
       width: '60px',         // Adjust size as needed
       height: 'auto',
@@ -239,7 +232,7 @@ const Header1 = () => {
                           </svg>
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="/portfolio">Portfolio </Link>
                         
                         <ul
@@ -315,8 +308,8 @@ const Header1 = () => {
                             </Link>
                           </li>
                         </ul>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <Link href="/team">Our Team</Link>
                         
                         <ul
@@ -343,7 +336,7 @@ const Header1 = () => {
                             
                           </li>
                         </ul>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href="/features">
                           Features
@@ -447,19 +440,15 @@ const Header1 = () => {
                   <ul className="social-area">
                     <li>
                       <a href="#">
-                        <i className="bi bi-dribbble" /> Dribbble
+                        <i className="bi bi-dribbble" /> LinkedIn
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="bi bi-behance" /> Behance
+                        <i className="bi bi-behance" /> Instagram
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
-                        <i className="bi bi-pinterest" /> Pinterest
-                      </a>
-                    </li>
+                 
                     <li>
                       <a href="#">
                         <i className="bi bi-facebook" /> Facebook
@@ -483,22 +472,22 @@ const Header1 = () => {
             <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
   <img
     alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
     style={{
-      width: '60px',         // Adjust size as needed
+      width: '80px',         // Adjust size as needed
       height: 'auto',
       objectFit: 'contain',
       marginRight: '8px',
     }}
   />
-  <div style={{ lineHeight: '1.1' }}>
+  {/* <div style={{ lineHeight: '1.1' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#095a64ff', fontWeight: 'bold' }}>
       OutSource
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#104349ff' }}>
       Accomplished
     </span>
-  </div>
+  </div> */}
 </div>
 
             </Link>
@@ -506,7 +495,7 @@ const Header1 = () => {
           <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
   <img
     alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
     style={{
       width: '60px',         // Adjust size as needed
       height: 'auto',

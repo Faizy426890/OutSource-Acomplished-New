@@ -31,7 +31,7 @@
         "id": "5",
         "name": "SERVICE DETAILS",
         "slug": "/service/service-details",
-        "pageTitle": "We are a IT service Company working with talents on delivering unique ideas.",
+        "pageTitle": "Outsource Smarter with Our Expert-Driven BPO Solutions",
         "section_down_scroll": "#service-section"
     },
     {
@@ -101,7 +101,7 @@
         "id": "12",
         "name": "ABOUT US",
         "slug": "/about",
-        "pageTitle": "We are a IT service Company working with talents on delivering unique ideas.",
+        "pageTitle": "Delivering World-Class Outsourcing Services for Global Business Success",
         "section_down_scroll": "#about-section"
     },
     {
@@ -213,14 +213,14 @@
         "id": "27",
         "name": "CONTACT US",
         "slug": "/contact",
-        "pageTitle": "Let’s Connecting With BlazeTech.",
+        "pageTitle": "Let’s Connecting With OutSourcing Accomplished.",
         "section_down_scroll": "#shop"
     },
     {
         "id": "28",
         "name": "ABOUT US",
         "slug": "/about",
-        "pageTitle": "We are a IT service Company working with talents on delivering unique ideas.",
+        "pageTitle": "Delivering World-Class Outsourcing Services for Global Business Success.",
         "section_down_scroll": "#about-section"
     }
 ]

@@ -421,19 +421,15 @@ const Header1 = () => {
                   <ul className="social-area">
                     <li>
                       <a href="#">
-                        <i className="bi bi-dribbble" /> Dribbble
+                        <i className="bi bi-dribbble" /> LinkedIn
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i className="bi bi-behance" /> Behance
+                        <i className="bi bi-behance" /> Instagram
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
-                        <i className="bi bi-pinterest" /> Pinterest
-                      </a>
-                    </li>
+                   
                     <li>
                       <a href="#">
                         <i className="bi bi-facebook" /> Facebook

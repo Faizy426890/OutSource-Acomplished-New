@@ -17,7 +17,7 @@ const Footer = () => {
                     <ul className="widget-list">
                       <li>
                         <Link href="/service/service-details">
-                          Managed Services
+                          Staffing Services
                         </Link>
                       </li>
                       <li>
@@ -122,7 +122,7 @@ const Footer = () => {
                   </div>
                   <div className="content">
                     <p>
-                      Welcome to BlazeTech, where innovation meets our passion in a
+                      Welcome to OutSourcing Accomplished, where innovation meets our passion in a
                       journey that started with a simple idea and a shared
                       dream.
                     </p>
@@ -234,7 +234,7 @@ const Footer = () => {
               <div className="content">
                 <span>Say Hello</span>
                 <h6>
-                  <a href="mailto:info@example.com">blaze.tsolutions@gmail.com</a>
+                  <a href="mailto:info@example.com">outsource.accomplished@gmail.com</a>
                 </h6>
               </div>
             </div>
@@ -242,7 +242,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="copyright-area">
               <p>
-                Copyright 2025 <a href="#">BlazeTech</a> 
+                Copyright 2025 <a href="#">OutSourcing Accomplished</a> 
                 {/* <a href="https://www.egenslab.com/">BlazeTech Solutions</a> */}
               </p>
             </div>

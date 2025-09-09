@@ -33,15 +33,19 @@ const Home5whyChoose = () => {
                   </svg>
                 </span>
                 <h2>
-                  We are a IT service Company working with talents{" "}
-                  <span>on delivering unique ideas.</span>
+                  Growing <span>BPO Company in the United States</span>{" "}
+                  delivering excellence in Outsourcing.
                 </h2>
                 <p>
-                  Where innovation meets passion in a journey that started with
-                  a simple idea and a shared dora Founded in recent year we
-                  embarked on a mission told bring the new innovation and
-                  introduct the technology. From humble beginnings to our
-                  current aspirations.
+                  We are a fast-growing BPO company in the United States,
+                  committed to helping businesses scale with smart outsourcing
+                  solutions. From <strong>24/7 Customer Support</strong> to{" "}
+                  <strong>Digital Marketing, Web Development, and IT
+                  Services</strong>, our dedicated team blends expertise,
+                  innovation, and passion to deliver measurable results. By
+                  partnering with us, you gain a reliable extension of your
+                  business that drives efficiency, boosts performance, and
+                  ensures customer satisfaction.
                 </p>
               </div>
             </div>
@@ -53,17 +57,23 @@ const Home5whyChoose = () => {
               data-wow-duration="1500ms"
             >
               <div className="why-choose-img">
-                <img src="https://res.cloudinary.com/diml90c1y/image/upload/v1753410759/freepik__the-style-is-candid-image-photography-with-natural__43503_e74651.jpg" alt="" />
+                <img
+                  src="https://res.cloudinary.com/diml90c1y/image/upload/v1753410759/freepik__the-style-is-candid-image-photography-with-natural__43503_e74651.jpg"
+                  alt="BPO Services"
+                />
               </div>
             </div>
             <div className="col-lg-7">
               <div className="why-choose-content">
                 <p>
-                  Where innovation meets passion in a journey that started with
-                  a simple idea and a shared dora Founded in recent year we
-                  embarked on a mission told bring the new innovation and
-                  introduct the technology. From humble beginnings to our
-                  current aspirations.
+                  Our mission is to empower businesses of all sizes with
+                  world-class outsourcing solutions. Whether it’s providing
+                  seamless <strong>customer service</strong>, building strong{" "}
+                  <strong>digital marketing campaigns</strong>, crafting{" "}
+                  <strong>custom websites</strong>, or managing{" "}
+                  <strong>IT infrastructure</strong>, we bring global talent and
+                  technology together for your success. Our growing network of
+                  clients trusts us to deliver consistent value and results.
                 </p>
                 <div className="about-coundown-area">
                   <div className="row g-0">
@@ -75,11 +85,11 @@ const Home5whyChoose = () => {
                       <div className="single-countdown">
                         <div className="number">
                           <h2 className="counter">
-                            <CountUp end={30} delay={2} />
+                            <CountUp end={120} delay={2} />
                           </h2>
                         </div>
                         <div className="content">
-                          <p>Project Completed</p>
+                          <p>Projects Completed</p>
                         </div>
                       </div>
                     </div>
@@ -91,12 +101,12 @@ const Home5whyChoose = () => {
                       <div className="single-countdown two">
                         <div className="number">
                           <h2 className="counter">
-                            <CountUp end={1} delay={2} />
+                            <CountUp end={2} delay={2} />
                           </h2>
-                          <span>K</span>
+                          <span>K+</span>
                         </div>
                         <div className="content">
-                          <p>Awesome clients</p>
+                          <p>Satisfied Clients</p>
                         </div>
                       </div>
                     </div>
@@ -108,7 +118,7 @@ const Home5whyChoose = () => {
                       <div className="single-countdown three">
                         <div className="number">
                           <h2 className="counter">
-                            <CountUp end={6} delay={1} />
+                            <CountUp end={5} delay={1} />
                           </h2>
                         </div>
                         <div className="content">
@@ -124,11 +134,11 @@ const Home5whyChoose = () => {
                       <div className="single-countdown four">
                         <div className="number">
                           <h2 className="counter">
-                            <CountUp end={19} delay={3} />
+                            <CountUp end={25} delay={3} />
                           </h2>
                         </div>
                         <div className="content">
-                          <p>Awards Winning</p>
+                          <p>Awards & Recognition</p>
                         </div>
                       </div>
                     </div>
