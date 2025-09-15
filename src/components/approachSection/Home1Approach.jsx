@@ -80,27 +80,94 @@ const Home1Approach = () => {
                   </div>
                   <div className="approach-content-wrap" style={{ position: 'relative' }}>
                     <div className="scroll-content-area">
-                      <div className="content scrollTextAni">
-                        <span style={{ display: 'inline-block', color: '#4f46e5', fontWeight: '600', fontSize: '0.9rem', marginBottom: '0.5rem', background: '#f1f5f9', padding: '4px 12px', borderRadius: '20px' }}>Service 01</span>
-                        <h5 style={{ fontSize: '1.4rem', fontWeight: '600', color: '#1e293b', marginBottom: '1rem' }}>Staffing Services</h5>
-                        <p style={{ color: '#64748b', marginBottom: '1.5rem', lineHeight: '1.6' }}>
-                          Comprehensive patient care management with dedicated coordination teams.
-                        </p>
-                        <ul style={{ listStyleType: 'none', padding: 0 }}>
-                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
-                            <strong style={{ color: '#4f46e5' }}>Patient Advocacy: </strong>Dedicated professionals ensuring patient needs are met.
-                          </li>
-                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
-                            <strong style={{ color: '#4f46e5' }}>Appointment Management: </strong>Efficient scheduling and follow-up system.
-                          </li>
-                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
-                            <strong style={{ color: '#4f46e5' }}>Care Plan Coordination: </strong>Seamless implementation of treatment plans.
-                          </li>
-                          <li style={{ marginBottom: '0.8rem', paddingLeft: '24px', position: 'relative', color: '#475569', lineHeight: '1.5' }}>
-                            <strong style={{ color: '#4f46e5' }}>Provider Communication: </strong>Bridge between patients and healthcare providers.
-                          </li>
-                        </ul>
-                      </div>
+                    <div className="content scrollTextAni">
+  <span
+    style={{
+      display: 'inline-block',
+      color: '#4f46e5',
+      fontWeight: '600',
+      fontSize: '0.9rem',
+      marginBottom: '0.5rem',
+      background: '#f1f5f9',
+      padding: '4px 12px',
+      borderRadius: '20px'
+    }}
+  >
+    Service 01
+  </span>
+  <h5
+    style={{
+      fontSize: '1.4rem',
+      fontWeight: '600',
+      color: '#1e293b',
+      marginBottom: '1rem'
+    }}
+  >
+    Call Center Services
+  </h5>
+  <p
+    style={{
+      color: '#64748b',
+      marginBottom: '1.5rem',
+      lineHeight: '1.6'
+    }}
+  >
+    Comprehensive global call center solutions with 24/7 dedicated support,
+    ensuring seamless communication and exceptional customer experiences.
+  </p>
+
+  <ul style={{ listStyleType: 'none', padding: 0 }}>
+    <li
+      style={{
+        marginBottom: '0.8rem',
+        paddingLeft: '24px',
+        position: 'relative',
+        color: '#475569',
+        lineHeight: '1.5'
+      }}
+    >
+      <strong style={{ color: '#4f46e5' }}>Customer Support: </strong>
+      Trained agents providing professional assistance for inquiries and concerns.
+    </li>
+    <li
+      style={{
+        marginBottom: '0.8rem',
+        paddingLeft: '24px',
+        position: 'relative',
+        color: '#475569',
+        lineHeight: '1.5'
+      }}
+    >
+      <strong style={{ color: '#4f46e5' }}>Technical Helpdesk: </strong>
+      Reliable troubleshooting and guidance for products and services.
+    </li>
+    <li
+      style={{
+        marginBottom: '0.8rem',
+        paddingLeft: '24px',
+        position: 'relative',
+        color: '#475569',
+        lineHeight: '1.5'
+      }}
+    >
+      <strong style={{ color: '#4f46e5' }}>Inbound & Outbound Calls: </strong>
+      Efficient handling of sales, follow-ups, and customer retention campaigns.
+    </li>
+    <li
+      style={{
+        marginBottom: '0.8rem',
+        paddingLeft: '24px',
+        position: 'relative',
+        color: '#475569',
+        lineHeight: '1.5'
+      }}
+    >
+      <strong style={{ color: '#4f46e5' }}>Multilingual Support: </strong>
+      Global coverage with agents fluent in multiple languages.
+    </li>
+  </ul>
+</div>
+
                     </div>
                   </div>
                 </div>

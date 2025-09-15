@@ -14,14 +14,14 @@ import {
 
 const ServicesSection = () => {
   const services = [
-    {
-      id: 1,
-      title: "Staffing Services for Therapy",
-      subtitle: "Dallas & Houston",
-      description: "Connect with qualified therapy professionals in Dallas and Houston. We provide comprehensive staffing solutions for healthcare facilities seeking experienced therapists.",
-      icon: Users,
-      delay: "200ms"
-    },
+   {
+  id: 1,
+  title: "Global Call Center Services",
+  subtitle: "Worldwide",
+  description: "Deliver exceptional customer support across the globe with our professional call center solutions. We provide 24/7 reliable, efficient, and scalable services tailored to businesses of all sizes.",
+  icon: Users,
+  delay: "200ms"
+},
     {
       id: 2,
       title: "Virtual Patient Care Coordinator",

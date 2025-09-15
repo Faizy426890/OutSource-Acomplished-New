@@ -401,7 +401,7 @@ const Header1 = () => {
                       <div className="contact">
                         <span>Email Now</span>
                         <h6>
-                          <a href="#">OutSourceAccomplished@gmail.com</a>
+                          <a href="#">admin@outsourceaccomplished.com</a>
                         </h6>
                       </div>
                     </li>
