@@ -17,7 +17,7 @@ const Footer = () => {
                     <ul className="widget-list">
                       <li>
                         <Link href="/service/service-details">
-                          Staffing Services
+                           Call Center Services
                         </Link>
                       </li>
                       <li>

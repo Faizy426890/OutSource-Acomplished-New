@@ -58,48 +58,51 @@ const ServicePage3 = () => {
     backgroundColor: "#E5E7EB",
   }}
 >
+  <div className="icon">
+    <Users size={40} />
+    <div className="number">
+      <span>01</span>
+    </div>
+  </div>
+  <h5>Global Call Center Services</h5>
+  <div className="services-img">
+    <img
+      src="https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg"
+      alt="Call Center Services"
+    />
+  </div>
+  <div className="content">
+    <p>
+      Deliver exceptional customer support across the globe with our
+      professional call center solutions. We provide 24/7 reliable, efficient,
+      and scalable services tailored to meet the needs of businesses worldwide.
+    </p>
+    <ul className="tag-list">
+      <li>Customer Support</li>
+      <li>Technical Helpdesk</li>
+      <li>Inbound & Outbound Calls</li>
+      <li>Multilingual Assistance</li>
+    </ul>
+  </div>
+  <div className="button-area">
+    <Link className="explore-btn" href="/service/service-details">
+      Learn More
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={12}
+        height={12}
+        viewBox="0 0 12 12"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
+        />
+      </svg>
+    </Link>
+  </div>
+</div>
 
-                  <div className="icon">
-                    <Users size={40} />
-                    <div className="number">
-                      <span>01</span>
-                    </div>
-                  </div>
-                  <h5>Staffing Services for Therapy in Dallas and Houston</h5>
-                  <div className="services-img">
-                    <img src="https://images.pexels.com/photos/7551659/pexels-photo-7551659.jpeg" alt="" />
-                  </div>
-                  <div className="content">
-                    <p>
-                      Professional staffing solutions for therapy services in Dallas and Houston, connecting qualified therapists with healthcare facilities that need their expertise.
-                    </p>
-                    <ul className="tag-list">
-                      <li>Physical Therapy</li>
-                      <li>Occupational Therapy</li>
-                      <li>Speech Therapy</li>
-                    </ul>
-                  </div>
-                  <div className="button-area">
-                    <Link
-                      className="explore-btn"
-                      href="/service/service-details"
-                    >
-                      Learn More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={12}
-                        height={12}
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                        />
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
                 <div style={{
     backgroundColor: "#E5E7EB",
   }} className="single-services mb-20">
