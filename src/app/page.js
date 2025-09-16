@@ -4,8 +4,9 @@ import Home1Banner from "@/components/banner/Home1Banner";
 import Home1Blog from "@/components/blog/Home1Blog";
 import BannerWithCaseStudySlider from "@/components/caseStudy/BannerWithCaseStudySlider";
 // import Home1Contact from "@/components/contact/Home1Contact"; 
-import Home2Contact from "@/components/contact/Home2Contact";
-import Footer from "@/components/footer/Footer";
+import Home2Contact from "@/components/contact/Home2Contact"; 
+import Footer from "@/components/footer/Footer"; 
+import Industries from "@/components/industries/Industries";
 import Header1 from "@/components/header/Header1";
 import Home1BannerMarquee from "@/components/marquee/Home1BannerMarquee";
 import LogoMarquee from "@/components/marquee/LogoMarquee";
@@ -25,7 +26,8 @@ export default function Home() {
       <Home1Banner />
       <Home1BannerMarquee />
       {/* <Home1About /> */}
-      <Home1Solution />
+      <Home1Solution /> 
+      <Industries/>
       <Home1WorkProcess />
       {/* <BannerWithCaseStudySlider /> */}
       <Home1Approach />
