@@ -1,7 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import CountUp from 'react-countup';
+import CountUp from 'react-countup'; 
+import { useEffect } from 'react'; 
+import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const industriesData = [
@@ -76,7 +78,9 @@ const statsData = [
     icon: "👨‍💼",
     gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"
   }
-];
+];  
+
+ 
 
 const IndustryCard = ({ industry, index }) => {
   return (
@@ -301,11 +305,9 @@ const IndustryCard = ({ industry, index }) => {
 };
 
 const StatCard = ({ stat, index }) => {
-  const [ref, inView] = useInView({
-    threshold: 0.3,
-    triggerOnce: true
-  });
-
+ 
+ 
+  
   return (
     <motion.div
       ref={ref}
@@ -340,7 +342,6 @@ const StatCard = ({ stat, index }) => {
 
         <h3 className="stat-label">{stat.label}</h3>
 
-        <div className="stat-decoration"></div>
       </div>
 
       <style jsx>{`
@@ -443,13 +444,36 @@ export default function Industries() {
   const [industriesRef, industriesInView] = useInView({
     threshold: 0.1,
     triggerOnce: true
-  });
+  }); 
+  
 
   const [statsRef, statsInView] = useInView({
     threshold: 0.1,
     triggerOnce: true
   });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });  
+    const [counts, setCounts] = useState(statsData.map(() => 0));
 
+  useEffect(() => {
+    if (inView) {
+      statsData.forEach((stat, index) => {
+        let start = 0;
+        const end = stat.number;
+        const duration = 2000; // 2s
+        const stepTime = Math.abs(Math.floor(duration / end));
+
+        const timer = setInterval(() => {
+          start += 1;
+          setCounts((prev) => {
+            const updated = [...prev];
+            updated[index] = start;
+            return updated;
+          });
+          if (start === end) clearInterval(timer);
+        }, stepTime);
+      });
+    }
+  }, [inView]);
   return (
     <div className="container">
       {/* Industries Section */}
@@ -497,7 +521,64 @@ export default function Industries() {
           {statsData.map((stat, index) => (
             <StatCard key={index} stat={stat} index={index} />
           ))}
-        </div> */}
+        </div> */} 
+     <div
+  ref={ref}
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+    gap: "24px",
+    width: "100%",
+  }}
+>
+  {statsData.map((stat, index) => (
+    <div
+      key={index}
+      style={{
+        background: "transparent",
+        borderRadius: "0",
+        padding: "40px 24px",
+        color: "#111",
+        textAlign: "center",
+        transition: "transform 0.3s ease",
+        cursor: "default",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-6px)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0)";
+      }}
+    >
+      <div style={{ fontSize: "36px", marginBottom: "12px" }}>{stat.icon}</div>
+      <h2
+        style={{
+          fontSize: "34px",
+          fontWeight: "700",
+          margin: "10px 0",
+          color: "#000",
+          borderBottom: "3px solid #000",
+          display: "inline-block",
+          paddingBottom: "6px",
+        }}
+      >
+        {counts[index]}
+        {stat.suffix}
+      </h2>
+      <p
+        style={{
+          fontSize: "15px",
+          fontWeight: "500",
+          color: "#111",
+          marginTop: "8px",
+        }}
+      >
+        {stat.label}
+      </p>
+    </div>
+  ))}
+</div>
+
       </section>
 
       <style jsx>{`
