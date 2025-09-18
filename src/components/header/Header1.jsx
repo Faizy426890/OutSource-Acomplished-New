@@ -383,7 +383,7 @@ const Header1 = () => {
                       <div className="contact">
                         <span>Phone</span>
                         <h6>
-                          <a href="#">+1 469 943 5482</a>
+                          <a href="#">+1 469 472  2311</a>
                         </h6>
                       </div>
                     </li>
@@ -610,7 +610,7 @@ const Header1 = () => {
                 <div className="content">
                   <span>Any Question</span>
                   <h6>
-                    <Link href="tel:+146994354827">+1 469 943 5482</Link>
+                    <Link href="tel:+14694722311">+1 469 472 2311</Link>
                   </h6>
                 </div>
               </div>
