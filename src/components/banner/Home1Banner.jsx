@@ -72,7 +72,7 @@ const Home1Banner = () => {
                 </span>
                <h1>Empower Your Success with Smart In-House Solutions</h1>
 
-<p>Experience seamless, high-quality services delivered directly by our expert team — no outsourcing, just dedicated professionals committed to your growth and efficiency.</p>
+<p>Experience seamless, high-quality services delivered directly by our expert team , just dedicated professionals committed to your growth and efficiency.</p>
                 <div className="banner-content-bottom">
               <Link
   href="/contact"
