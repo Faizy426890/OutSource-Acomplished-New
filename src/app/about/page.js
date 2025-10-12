@@ -285,7 +285,7 @@ const Aboutpage = () => {
                         <div className="content">
                           <h4>Team Deployment</h4>
                           <p>
-                            We deploy skilled professionals and establish dedicated teams to handle your outsourced
+                            We deploy skilled professionals and establish dedicated teams to handle your
                             processes with precision and efficiency.
                           </p>
                         </div>

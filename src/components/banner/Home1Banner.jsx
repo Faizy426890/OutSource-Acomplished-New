@@ -70,10 +70,9 @@ const Home1Banner = () => {
                     </g>
                   </svg>
                 </span>
-                <h1>Outsource Your Success with Smart Business Solutions</h1>
-                <p>
-                  Partner with us to achieve higher productivity, improved customer experiences, and faster business expansion through cutting-edge solutions.{" "}
-                </p>
+               <h1>Empower Your Success with Smart In-House Solutions</h1>
+
+<p>Experience seamless, high-quality services delivered directly by our expert team — no outsourcing, just dedicated professionals committed to your growth and efficiency.</p>
                 <div className="banner-content-bottom">
               <Link
   href="/contact"

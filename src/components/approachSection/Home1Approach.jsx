@@ -30,7 +30,7 @@ const Home1Approach = () => {
                   <Users size={16} />
                 </span>
                 <h2 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1e293b', marginBottom: '1rem' }}>
-                  The OutSource Accomplished Approach
+                  The GrowEdge Approach
                 </h2>
               </div>
             </div>

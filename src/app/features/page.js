@@ -18,17 +18,15 @@ const FeaturesPage = () => {
                 data-wow-delay="200ms"
                 data-wow-duration="1500ms"
               >
-                <span>
-                  <Settings className="inline w-2.5 h-2.5" />
-                  BPO Services
-                  <Settings className="inline w-2.5 h-2.5" />
-                </span>
-                <h2>Excellence in Business Process Outsourcing</h2>
-                <p>
-                  Welcome to OutSource Accomplished, where business process outsourcing meets strategic excellence. As a
-                  dynamic force in the realm of BPO services, we are dedicated to propelling businesses into the
-                  spotlight of operational success across the United States.
-                </p>
+              <span>
+  <Settings className="inline w-2.5 h-2.5" />
+  Business Process Solutions
+  <Settings className="inline w-2.5 h-2.5" />
+</span>
+<h2>Excellence in Business Process Solutions</h2>
+<p>
+  Welcome to GrowEdge, where innovation meets reliability. We deliver comprehensive business process solutions — all managed by our dedicated in-house experts, ensuring consistency, quality, and unmatched accountability across every operation in the United States.
+</p>
               </div>
             </div>
           </div>
@@ -117,7 +115,7 @@ const FeaturesPage = () => {
                         >
                           <h3>Digital Marketing Services</h3>
                           <p>
-                            OutSource Accomplished empowers your business with comprehensive digital marketing
+                            GrowEdge empowers your business with comprehensive digital marketing
                             solutions. From social media management to targeted advertising campaigns, our expert team
                             delivers measurable results that drive growth and enhance your online presence across all
                             digital channels.
@@ -180,8 +178,7 @@ const FeaturesPage = () => {
                         <div className="tab-content-top">
                           <h3>IT & Web Development Services</h3>
                           <p>
-                            Empower your business with cutting-edge IT solutions and web development services. OutSource
-                            Accomplished delivers scalable, secure, and innovative technology solutions that streamline
+                            Empower your business with cutting-edge IT solutions and web development services. GrowEdge delivers scalable, secure, and innovative technology solutions that streamline
                             operations, enhance user experience, and drive digital transformation for businesses across
                             the United States.
                           </p>
@@ -234,7 +231,7 @@ const FeaturesPage = () => {
                         <div className="tab-content-top">
                           <h3>Patient Care Coordination</h3>
                           <p>
-                            OutSource Accomplished provides comprehensive patient care coordination services that bridge
+                            GrowEdge provides comprehensive patient care coordination services that bridge
                             the gap between healthcare providers and patients. Our dedicated team ensures seamless
                             communication, appointment scheduling, and care management to improve patient outcomes and
                             healthcare efficiency.
@@ -293,7 +290,7 @@ const FeaturesPage = () => {
                         <div className="tab-content-top">
                           <h3>Customer Support Services</h3>
                           <p>
-                            Deliver exceptional customer experiences with OutSource Accomplished's comprehensive
+                            Deliver exceptional customer experiences with GrowEdge's comprehensive
                             customer support services. Our trained professionals provide 24/7 multi-channel support,
                             ensuring your customers receive prompt, professional assistance that builds loyalty and
                             drives satisfaction.
@@ -347,7 +344,7 @@ const FeaturesPage = () => {
                         <div className="tab-content-top">
                           <h3>Staffing Services</h3>
                           <p>
-                            OutSource Accomplished provides comprehensive staffing solutions to meet your workforce
+                            GrowEdge provides comprehensive staffing solutions to meet your workforce
                             needs. From temporary placements to permanent hires, our extensive network of qualified
                             professionals ensures you have the right talent at the right time to drive your business
                             forward.

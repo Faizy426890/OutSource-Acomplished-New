@@ -93,41 +93,70 @@ const Header1 = () => {
           <div className="container d-flex align-items-center justify-content-between">
             <div className="sidebar-menu-logo">
               <Link href="/" className="logo-dark">
-                     <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
+  {/* Logo */}
   <img
-    alt="OutSource Accomplished Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
+    alt="GrowEdge Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{
-      width: '85px',         // Adjust size as needed
+      position: 'absolute',
+      top: '50%',
+      left: '10px',
+      transform: 'translateY(-50%)',
+      width: '130px',
       height: 'auto',
       objectFit: 'contain',
-      marginRight: '8px',
+      zIndex: 10,
+      pointerEvents: 'none',
     }}
   />
- 
-</div>
-              </Link>
-              <Link href="/" className="logo-light">
-                     <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
-  <img
-    alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
-    style={{
-      width: '60px',         // Adjust size as needed
-      height: 'auto',
-      objectFit: 'contain',
-      marginRight: '8px',
-    }}
-  />
-  <div style={{ lineHeight: '1.1' }}>
+
+  {/* Text is invisible but exists in DOM */}
+  <div style={{ visibility: 'hidden', lineHeight: '1.1', marginLeft: '110px' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      OutSource
+      GrowEdge
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Accomplished
+      X
     </span>
   </div>
 </div>
+
+
+
+
+              </Link>
+              <Link href="/" className="logo-light">
+       <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
+  {/* Logo */}
+  <img
+    alt="GrowEdge Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
+    style={{
+      position: 'absolute',
+      top: '50%',
+      left: '10px',
+      transform: 'translateY(-50%)',
+      width: '130px',
+      height: 'auto',
+      objectFit: 'contain',
+      zIndex: 10,
+      pointerEvents: 'none',
+    }}
+  />
+
+  {/* Text is invisible but exists in DOM */}
+  <div style={{ visibility: 'hidden', lineHeight: '1.1', marginLeft: '110px' }}>
+    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
+      GrowEdge
+    </span>
+    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
+      X
+    </span>
+  </div>
+</div>
+
+
               </Link>
             </div>
             <div className="sidebar-menu-close" onClick={toggleRightSidebar}>
@@ -469,49 +498,73 @@ const Header1 = () => {
         <div className="container d-flex flex-nowrap align-items-center justify-content-between">
           <div className="company-logo">
             <Link href="/" className="logo-dark">
-            <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
+           <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
+  {/* Logo */}
   <img
-    alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
+    alt="GrowEdge Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{
-      width: '80px',         // Adjust size as needed
+      position: 'absolute',
+      top: '50%',
+      left: '10px',
+      transform: 'translateY(-50%)',
+      width: '130px',
       height: 'auto',
       objectFit: 'contain',
-      marginRight: '8px',
+      zIndex: 10,
+      pointerEvents: 'none',
     }}
   />
-  {/* <div style={{ lineHeight: '1.1' }}>
-    <span style={{ display: 'block', fontSize: '14px', color: '#095a64ff', fontWeight: 'bold' }}>
-      OutSource
-    </span>
-    <span style={{ display: 'block', fontSize: '13px', color: '#104349ff' }}>
-      Accomplished
-    </span>
-  </div> */}
-</div>
 
-            </Link>
-            <Link href="/" className="logo-light">
-          <div style={{ display: 'flex', alignItems: 'center', paddingLeft: '1px' }}>
-  <img
-    alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
-    style={{
-      width: '60px',         // Adjust size as needed
-      height: 'auto',
-      objectFit: 'contain',
-      marginRight: '8px',
-    }}
-  />
-  <div style={{ lineHeight: '1.1' }}>
+  {/* Text is invisible but exists in DOM */}
+  <div style={{ visibility: 'hidden', lineHeight: '1.1', marginLeft: '110px' }}>
     <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
-      OutSource
+      GrowEdge
     </span>
     <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
-      Accomplished
+      X
     </span>
   </div>
 </div>
+
+
+
+
+
+            </Link>
+            <Link href="/" className="logo-light">
+       <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
+  {/* Logo */}
+  <img
+    alt="GrowEdge Logo"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
+    style={{
+      position: 'absolute',
+      top: '50%',
+      left: '10px',
+      transform: 'translateY(-50%)',
+      width: '130px',
+      height: 'auto',
+      objectFit: 'contain',
+      zIndex: 10,
+      pointerEvents: 'none',
+    }}
+  />
+
+  {/* Text is invisible but exists in DOM */}
+  <div style={{ visibility: 'hidden', lineHeight: '1.1', marginLeft: '110px' }}>
+    <span style={{ display: 'block', fontSize: '14px', color: '#00e0ff', fontWeight: 'bold' }}>
+      GrowEdge
+    </span>
+    <span style={{ display: 'block', fontSize: '13px', color: '#00e0ff' }}>
+      X
+    </span>
+  </div>
+</div>
+
+
+
+
 
 
             </Link>

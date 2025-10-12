@@ -80,9 +80,9 @@ const Footer = () => {
                        <div style={{ display: 'flex', alignItems: 'center',  }}>
   <img
     alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1757380396/ChatGPT_Image_Sep_8__2025__08_12_31_PM-removebg-preview_qeqawt.png"
+    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{
-      width: '120px',         // Adjust size as needed
+      width: '165px',         // Adjust size as needed
       height: 'auto',
       objectFit: 'contain',
     }}
@@ -125,7 +125,7 @@ const Footer = () => {
                   </div>
                   <div className="content">
                     <p>
-                      Welcome to OutSource Accomplished, where innovation meets our passion in a
+                      Welcome to GrowEdge, where innovation meets our passion in a
                       journey that started with a simple idea and a shared
                       dream.
                     </p>
@@ -245,7 +245,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="copyright-area">
               <p>
-                Copyright 2025 <a href="#">OutSource Accomplished</a> 
+                Copyright 2025 <a href="#">GrowEdge</a> 
                 {/* <a href="https://www.egenslab.com/">BlazeTech Solutions</a> */}
               </p>
             </div>

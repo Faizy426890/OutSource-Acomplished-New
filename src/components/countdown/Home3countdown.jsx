@@ -23,7 +23,7 @@ const Home3countdown = () => {
             </span>
             <h2>Elevate Your Business Operations</h2>
             <p>
-              Welcome to OutSource Accomplished, where business process outsourcing meets strategic excellence. As a
+              Welcome to GrowEdge, where business process outsourcing meets strategic excellence. As a
               dynamic force in BPO services across the United States, we are dedicated to propelling businesses into the
               spotlight of operational success since 2021.
             </p>
