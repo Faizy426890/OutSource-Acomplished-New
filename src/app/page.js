@@ -16,7 +16,7 @@ import Home1WorkProcess from "@/components/workProcess/Home1WorkProcess";
 
 export const metadata = {
   icons: {
-    icon: "https://res.cloudinary.com/diml90c1y/image/upload/v1753659664/ChatGPT_Image_Jul_14_2025_12_34_01_AM_1_m2n3ci.png",
+    icon: "https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png",
   },
 }
 export default function Home() {
