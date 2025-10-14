@@ -4,9 +4,9 @@ import Marquee from "react-fast-marquee";
 const Home1BannerMarquee = () => {
   return (
     <>
-      <div className="home1-banner-bottom mb-110">
+      <div  style={{ marginTop: '2.5rem' }} className="home1-banner-bottom mt-10">
         <Marquee>
-          <div className="marquee_text">
+          <div className="marquee_text mt-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={17}

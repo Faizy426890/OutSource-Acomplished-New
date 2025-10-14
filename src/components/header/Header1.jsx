@@ -429,9 +429,18 @@ const Header1 = () => {
                       </div>
                       <div className="contact">
                         <span>Email Now</span>
-                        <h6>
-                          <a href="#">admin@growedgex.com</a>
-                        </h6>
+                       <h6>
+  <a 
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@growedgex.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Email admin at GrowEdge"
+  >
+    admin@growedgex.com
+  </a>
+</h6>
+
+
                       </div>
                     </li>
                     <li className="single-contact">

@@ -33,6 +33,13 @@
     "slug": "/service/service-details",
     "pageTitle": "Empower Growth with Our Expert-Driven In-House Business Solutions",
     "section_down_scroll": "#service-section"
+  }, 
+  {
+    "id": "13",
+    "name": "ACCOUNTING AND PAYROLL",
+    "slug": "/service/accounting",
+"pageTitle": "Empower Financial Growth with Our Expert Accounting and Payroll Solutions",
+    "section_down_scroll": "#service-section"
   },
   {
     "id": "6",

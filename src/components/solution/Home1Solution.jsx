@@ -97,7 +97,7 @@ const ServicesSection = () => {
                 alignItems: 'center',
                 gap: '10px',
                 marginBottom: '20px',
-                color: 'var(--primary-color1)',
+                color: '#1c234f',
                 fontSize: '16px',
                 fontWeight: '500',
                 fontFamily: 'var(--font-inter)'
@@ -176,7 +176,7 @@ const ServicesSection = () => {
                     style={{
                       width: '80px',
                       height: '80px',
-                      backgroundColor: 'var(--primary-color1)',
+                      backgroundColor: '#1c234f',
                       borderRadius: '20px',
                       display: 'flex',
                       alignItems: 'center',
@@ -211,7 +211,7 @@ const ServicesSection = () => {
                     style={{
                       fontSize: '14px',
                       fontWeight: '600',
-                      color: 'var(--primary-color1)',
+                      color: '#1c234f',
                       marginBottom: '20px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.5px',
@@ -241,7 +241,7 @@ const ServicesSection = () => {
                       alignItems: 'center',
                       gap: '12px',
                       padding: '16px 32px',
-                      backgroundColor: 'var(--primary-color1)',
+                      backgroundColor: '#1c234f',
                       color: 'white',
                       border: 'none',
                       borderRadius: '50px',
@@ -258,11 +258,11 @@ const ServicesSection = () => {
                       e.currentTarget.style.color = 'var(--dark-white-color)';
                       e.currentTarget.style.transform = 'translateX(5px)';
                     }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'var(--primary-color1)';
-                      e.currentTarget.style.color = 'white';
-                      e.currentTarget.style.transform = 'translateX(0)';
-                    }}
+                   onMouseLeave={(e) => {
+  e.currentTarget.style.backgroundColor = '#1c234f';
+  e.currentTarget.style.color = 'white';
+  e.currentTarget.style.transform = 'translateX(0)';
+}}
                     onClick={() => {
                       // Handle click - you can add navigation logic here
                       console.log(`Exploring ${service.title}`);

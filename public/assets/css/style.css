@@ -104,7 +104,7 @@ Version: 1.0
   --title-color-opc: 11, 12, 12;
   --text-color: #3F444B;
   --text-color-opc: 63, 68, 75;
-  --primary-color1: #3067FF;
+  --primary-color1: #1c234f;
   --primary-color1-opc: 48, 103, 255;
   --primary-color2: #0B0C0C;
   --dark-primary-color2: #0B0C0C;
@@ -669,7 +669,7 @@ ul {
 
 .primary-btn1 {
   border-radius: 5px;
-  background-color: var(--primary-color1);
+  background-color: #1c234f;
   font-family: var(--font-inter);
   font-weight: 600;
   font-size: 16px;

@@ -33,365 +33,218 @@ const FeaturesPage = () => {
           <div className="project-management-tab-wrapper">
             <div className="project-management-nav mb-50">
               <nav>
-                <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button
-                    className="nav-link"
-                    id="marketing-teams-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#marketing-teams"
-                    type="button"
-                    role="tab"
-                    aria-controls="marketing-teams"
-                    aria-selected="false"
-                  >
-                    Digital Marketing
-                  </button>
-                  <button
-                    className="nav-link active"
-                    id="it-teams-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#it-teams"
-                    type="button"
-                    role="tab"
-                    aria-controls="it-teams"
-                    aria-selected="true"
-                  >
-                    IT & Web Development
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="patient-care-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#patient-care"
-                    type="button"
-                    role="tab"
-                    aria-controls="patient-care"
-                    aria-selected="false"
-                  >
-                    Patient Care Coordination
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="customer-support-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#customer-support"
-                    type="button"
-                    role="tab"
-                    aria-controls="customer-support"
-                    aria-selected="false"
-                  >
-                    Customer Support
-                  </button>
-                  <button
-                    className="nav-link"
-                    id="planning-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#planning"
-                    type="button"
-                    role="tab"
-                    aria-controls="planning"
-                    aria-selected="false"
-                  >
-                    Staffing Services
-                  </button>
-                </div>
+               <div className="nav nav-tabs" id="nav-tab" role="tablist">
+    <button
+        className="nav-link"
+        id="customer-support-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#customer-support"
+        type="button"
+        role="tab"
+        aria-controls="customer-support"
+        aria-selected="false"
+    >
+        Call Centre / Customer Support
+    </button>
+
+    <button
+        className="nav-link"
+        id="accounting-payroll-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#accounting-payroll"
+        type="button"
+        role="tab"
+        aria-controls="accounting-payroll"
+        aria-selected="false"
+    >
+        Accounting and Payroll 
+    </button>
+
+    <button
+        className="nav-link active"
+        id="it-teams-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#it-teams"
+        type="button"
+        role="tab"
+        aria-controls="it-teams"
+        aria-selected="true"
+    >
+        Website Development and IT 
+    </button>
+</div>
               </nav>
             </div>
             <div className="project-management-tab">
               <div className="tab-content" id="nav-tabContent">
-                <div
-                  className="tab-pane fade"
-                  id="marketing-teams"
-                  role="tabpanel"
-                  aria-labelledby="marketing-teams-tab"
-                >
-                  <div className="row g-0">
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-content">
-                        <div
-                          className="tab-content-top wow animate fadeInDown"
-                          data-wow-delay="400ms"
-                          data-wow-duration="1500ms"
-                        >
-                          <h3>Digital Marketing Services</h3>
-                          <p>
-                            GrowEdge empowers your business with comprehensive digital marketing
-                            solutions. From social media management to targeted advertising campaigns, our expert team
-                            delivers measurable results that drive growth and enhance your online presence across all
-                            digital channels.
-                          </p>
-                          <ul>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Social Media Management
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Custom Ad Strategy Development
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Advanced Demographic Targeting
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Content Creation & Design
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Performance Analytics & Reporting
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Multi-Platform Campaign Management
-                            </li>
-                          </ul>
-                        </div>
-                        <Link
-                          href="/service"
-                          className="primary-btn2 wow animate fadeInUp"
-                          data-wow-delay="400ms"
-                          data-wow-duration="1500ms"
-                          data-text="Get Started Now"
-                        >
-                          <span>Get Started Now</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-img-wrap">
-                        <img
-                          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png"
-                          alt=""
-                          className="wow animate zoomIn"
-                          data-wow-delay="400ms"
-                          data-wow-duration="1500ms"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="tab-pane fade show active" id="it-teams" role="tabpanel" aria-labelledby="it-teams-tab">
-                  <div className="row g-0">
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-content">
-                        <div className="tab-content-top">
-                          <h3>IT & Web Development Services</h3>
-                          <p>
-                            Empower your business with cutting-edge IT solutions and web development services. GrowEdge delivers scalable, secure, and innovative technology solutions that streamline
-                            operations, enhance user experience, and drive digital transformation for businesses across
-                            the United States.
-                          </p>
-                          <ul>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Custom Web Development
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Mobile App Development
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Cloud Infrastructure Management
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Database Design & Optimization
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              IT Support & Maintenance
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Cybersecurity Solutions
-                            </li>
-                          </ul>
-                        </div>
-                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
-                          <span>Get Started Now</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-img-wrap">
-                        <img
-                          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="tab-pane fade" id="patient-care" role="tabpanel" aria-labelledby="patient-care-tab">
-                  <div className="row g-0">
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-content">
-                        <div className="tab-content-top">
-                          <h3>Patient Care Coordination</h3>
-                          <p>
-                            GrowEdge provides comprehensive patient care coordination services that bridge
-                            the gap between healthcare providers and patients. Our dedicated team ensures seamless
-                            communication, appointment scheduling, and care management to improve patient outcomes and
-                            healthcare efficiency.
-                          </p>
-                          <ul>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Appointment Scheduling & Management
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Patient Follow-up Services
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Insurance Verification & Authorization
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Medical Records Management
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Care Plan Coordination
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Patient Education & Support
-                            </li>
-                          </ul>
-                        </div>
-                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
-                          <span>Get Started Now</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-img-wrap">
-                        <img
-                          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588515/freepik__the-style-is-candid-image-photography-with-natural__86156_lkssyv.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="tab-pane fade"
-                  id="customer-support"
-                  role="tabpanel"
-                  aria-labelledby="customer-support-tab"
-                >
-                  <div className="row g-0">
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-content">
-                        <div className="tab-content-top">
-                          <h3>Customer Support Services</h3>
-                          <p>
+    <div
+        className="tab-pane fade"
+        id="customer-support"
+        role="tabpanel"
+        aria-labelledby="customer-support-tab"
+    >
+        <div className="row g-0">
+            <div className="col-lg-6">
+                <div className="project-management-tab-content">
+                    <div className="tab-content-top">
+                        <h3>Call Centre / Customer Support</h3>
+                        <p>
                             Deliver exceptional customer experiences with GrowEdge's comprehensive
                             customer support services. Our trained professionals provide 24/7 multi-channel support,
                             ensuring your customers receive prompt, professional assistance that builds loyalty and
                             drives satisfaction.
-                          </p>
-                          <ul>
+                        </p>
+                        <ul>
                             <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              24/7 Multi-Channel Support
+                                <Check className="inline w-4 h-4 mr-2" />
+                                24/7 Multi-Channel Support
                             </li>
                             <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Live Chat & Email Support
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Live Chat & Email Support
                             </li>
                             <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Technical Troubleshooting
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Technical Troubleshooting
                             </li>
                             <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Order Processing & Tracking
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Order Processing & Tracking
                             </li>
                             <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Customer Retention Programs
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Customer Retention Programs
                             </li>
                             <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Quality Assurance & Reporting
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Quality Assurance & Reporting
                             </li>
-                          </ul>
-                        </div>
-                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
-                          <span>Get Started Now</span>
-                        </Link>
-                      </div>
+                        </ul>
                     </div>
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-img-wrap">
-                        <img
-                          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
+                    <Link href="/service" className="primary-btn2" data-text="Get Started Now">
+                        <span>Get Started Now</span>
+                    </Link>
                 </div>
-                <div className="tab-pane fade" id="planning" role="tabpanel" aria-labelledby="planning-tab">
-                  <div className="row g-0">
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-content">
-                        <div className="tab-content-top">
-                          <h3>Staffing Services</h3>
-                          <p>
-                            GrowEdge provides comprehensive staffing solutions to meet your workforce
-                            needs. From temporary placements to permanent hires, our extensive network of qualified
-                            professionals ensures you have the right talent at the right time to drive your business
-                            forward.
-                          </p>
-                          <ul>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Temporary & Contract Staffing
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Permanent Placement Services
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Executive Search & Recruitment
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Skills Assessment & Screening
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Workforce Management Solutions
-                            </li>
-                            <li>
-                              <Check className="inline w-4 h-4 mr-2" />
-                              Payroll & Benefits Administration
-                            </li>
-                          </ul>
-                        </div>
-                        <Link href="/service" className="primary-btn2" data-text="Get Started Now">
-                          <span>Get Started Now</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="project-management-tab-img-wrap">
-                        <img
-                          src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588515/freepik__the-style-is-candid-image-photography-with-natural__86156_lkssyv.png"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
+            </div>
+            <div className="col-lg-6">
+                <div className="project-management-tab-img-wrap">
+                    <img
+                        src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png"
+                        alt=""
+                    />
                 </div>
-              </div>
+            </div>
+        </div>
+    </div>
+
+    <div className="tab-pane fade" id="accounting-payroll" role="tabpanel" aria-labelledby="accounting-payroll-tab">
+        <div className="row g-0">
+            <div className="col-lg-6">
+                <div className="project-management-tab-content">
+                    <div className="tab-content-top">
+                        <h3>Accounting and Payroll</h3>
+                        <p>
+                            Streamline your financial operations with GrowEdge's reliable accounting and payroll solutions. 
+                            Our services ensure accuracy, compliance, and efficiency in managing your finances, allowing you to 
+                            focus on core business growth.
+                        </p>
+                        <ul>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Payroll Processing & Administration
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                General Ledger Management
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Accounts Payable & Receivable
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Financial Reporting & Analysis
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Tax Compliance Support
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Benefits Administration Support
+                            </li>
+                        </ul>
+                    </div>
+                    <Link href="/service" className="primary-btn2" data-text="Get Started Now">
+                        <span>Get Started Now</span>
+                    </Link>
+                </div>
+            </div>
+            <div className="col-lg-6">
+                <div className="project-management-tab-img-wrap">
+                    <img
+                        src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588515/freepik__the-style-is-candid-image-photography-with-natural__86156_lkssyv.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div className="tab-pane fade show active" id="it-teams" role="tabpanel" aria-labelledby="it-teams-tab">
+        <div className="row g-0">
+            <div className="col-lg-6">
+                <div className="project-management-tab-content">
+                    <div className="tab-content-top">
+                        <h3>Website Development and IT Services</h3>
+                        <p>
+                            Empower your business with cutting-edge IT solutions and web development services. GrowEdge delivers scalable, secure, and innovative technology solutions that streamline
+                            operations, enhance user experience, and drive digital transformation for businesses across
+                            the United States.
+                        </p>
+                        <ul>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Custom Web Development
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Mobile App Development
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Cloud Infrastructure Management
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Database Design & Optimization
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                IT Support & Maintenance
+                            </li>
+                            <li>
+                                <Check className="inline w-4 h-4 mr-2" />
+                                Cybersecurity Solutions
+                            </li>
+                        </ul>
+                    </div>
+                    <Link href="/service" className="primary-btn2" data-text="Get Started Now">
+                        <span>Get Started Now</span>
+                    </Link>
+                </div>
+            </div>
+            <div className="col-lg-6">
+                <div className="project-management-tab-img-wrap">
+                    <img
+                        src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
           </div>
         </div>

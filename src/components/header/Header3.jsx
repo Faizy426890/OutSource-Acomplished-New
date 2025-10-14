@@ -381,9 +381,9 @@ const Header1 = () => {
                       </div>
                       <div className="contact">
                         <span>Email Now</span>
-                        <h6>
-                          <a href="#">blaze.tsolutions@gmail.com</a>
-                        </h6>
+                       <h6>
+  <a href="mailto:admin@growedgex.com" aria-label="Email admin at GrowEdge">admin@growedgex.com</a>
+</h6>
                       </div>
                     </li>
                     <li className="single-contact">
@@ -426,7 +426,7 @@ const Header1 = () => {
                     </li>
                     <li>
                       <a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr">
-                        <i className="bi bi-behance" /> Instagram
+                        <i className="bi bi-behance"/> Instagram
                       </a>
                     </li>
                    

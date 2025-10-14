@@ -31,6 +31,7 @@
     "yet-another-react-lightbox": "^3.16.0"
   },
   "devDependencies": {
+    "@types/node": "24.7.2",
     "eslint": "^8",
     "eslint-config-next": "14.1.0"
   }

@@ -149,52 +149,7 @@ const ServicePage3 = () => {
                     </Link>
                   </div>
                 </div>
-                <div style={{
-    backgroundColor: "#E5E7EB",
-  }} className="single-services mb-20">
-                  <div className="icon">
-                    <FileText size={40} />
-                    <div className="number">
-                      <span>03</span>
-                    </div>
-                  </div>
-                  <h5>Virtual Administration Tasks</h5>
-                  <div className="services-img">
-                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="" />
-                  </div>
-                <div className="content">
-  <p>
-    Professional virtual administration services for any industry including Healthcare, Mortgage companies, Telecom, and more.
-  </p>
-  <ul className="tag-list">
-    <li>Data Entry</li>
-    <li>Document Processing</li>
-    <li>Administrative Support</li>
-    <li>Customer Service</li>
-  </ul>
-</div>
-
-                  <div className="button-area">
-                    <Link
-                      className="explore-btn"
-                      href="/service/service-details"
-                    >
-                      Learn More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={12}
-                        height={12}
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                        />
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
+                
                 <div style={{
     backgroundColor: "#E5E7EB",
   }} className="single-services mb-20">
@@ -251,7 +206,7 @@ const ServicePage3 = () => {
                   </div>
                   <h5>Accounting and Payroll services</h5>
                   <div className="services-img">
-                    <img src="https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg" alt="" />
+                  
                   </div>
                <div className="content">
   <p>
@@ -268,7 +223,7 @@ const ServicePage3 = () => {
                   <div className="button-area">
                     <Link
                       className="explore-btn"
-                      href="/service/service-details"
+                      href="/service/accounting"
                     >
                       Learn More
                       <svg
@@ -286,52 +241,7 @@ const ServicePage3 = () => {
                     </Link>
                   </div>
                 </div>
-                <div style={{
-    backgroundColor: "#E5E7EB",
-  }} className="single-services">
-                  <div className="icon">
-                    <Megaphone size={40} />
-                    <div className="number">
-                      <span>06</span>
-                    </div>
-                  </div>
-                  <h5>Digital Marketing</h5>
-                  <div className="services-img">
-                    <img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg" alt="" />
-                  </div>
-                 <div className="content">
-  <p>
-    Strategic digital marketing solutions to boost your online presence, drive engagement, and increase revenue through targeted campaigns.
-  </p>
-  <ul className="tag-list">
-    <li>Social Media</li>
-    <li>SEO</li>
-    <li>PPC Advertising</li>
-    <li>Content Marketing</li>
-  </ul>
-</div>
-
-                  <div className="button-area">
-                    <Link
-                      className="explore-btn"
-                      href="/service/service-details"
-                    >
-                      Learn More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={12}
-                        height={12}
-                        viewBox="0 0 12 12"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-                        />
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>

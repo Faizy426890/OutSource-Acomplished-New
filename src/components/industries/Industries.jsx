@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const industriesData = [
- 
   {
     icon: "📞",
     title: "Call Centre / Customer Support",
@@ -22,23 +21,23 @@ const industriesData = [
     ],
     gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
     shadowColor: "rgba(240, 147, 251, 0.3)",
-  }, 
-   {
-    icon: "🏥",
-    title: "Healthcare Sector",
-    description:
-      "We help healthcare providers, insurers, and administrators streamline operations with secure, accurate, and compliant support solutions designed to improve patient care and efficiency.",
-    services: [
-      "Medical Billing & Coding",
-      "Patient Data Management",
-      "Appointment Scheduling & Follow-ups",
-      "Insurance Verification & Claims Processing",
-      "24/7 Patient Support",
-    ],
-    gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-    shadowColor: "rgba(102, 126, 234, 0.3)",
   },
-  { 
+  // {
+  //   icon: "🏥",
+  //   title: "Healthcare Sector",
+  //   description:
+  //     "We help healthcare providers, insurers, and administrators streamline operations with secure, accurate, and compliant support solutions designed to improve patient care and efficiency.",
+  //   services: [
+  //     "Medical Billing & Coding",
+  //     "Patient Data Management",
+  //     "Appointment Scheduling & Follow-ups",
+  //     "Insurance Verification & Claims Processing",
+  //     "24/7 Patient Support",
+  //   ],
+  //   gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+  //   shadowColor: "rgba(102, 126, 234, 0.3)",
+  // },
+  {
     icon: "💻",
     title: "IT Industry",
     description:
@@ -53,7 +52,23 @@ const industriesData = [
     gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
     shadowColor: "rgba(79, 172, 254, 0.3)",
   },
+  {
+    icon: "💼",
+    title: "Accounting / Payroll Services",
+    description:
+      "We provide accurate, secure, and efficient accounting and payroll outsourcing solutions to help businesses manage finances, ensure compliance, and streamline HR operations.",
+    services: [
+      "Bookkeeping & Financial Reporting",
+      "Payroll Processing",
+      "Accounts Payable & Receivable Management",
+      "Expense Tracking & Budget Analysis",
+      "Regulatory Compliance & Audit Support",
+    ],
+    gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+    shadowColor: "rgba(67, 233, 123, 0.3)",
+  },
 ];
+
 
 
 const statsData = [
