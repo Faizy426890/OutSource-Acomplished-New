@@ -1,6 +1,6 @@
 "use client"
-import MainLayout from "@/components/layout/MainLayout";
-import useWow from "@/hooks/useWow";
+import MainLayout from "../../components/layout/MainLayout";
+import useWow from "../../hooks/useWow";
 import React from "react";
 
 const ContactPage = () => {

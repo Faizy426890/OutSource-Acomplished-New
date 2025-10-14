@@ -1,8 +1,8 @@
-import Home3countdown from "@/components/countdown/Home3countdown"
-import Home3Feature from "@/components/feature/Home3Feature"
-import MainLayout from "@/components/layout/MainLayout"
-import Home3Tools from "@/components/tools/Home3Tools"
-import Home3WorkProcess from "@/components/workProcess/Home3WorkProcess"
+import Home3countdown from "../../components/countdown/Home3countdown"
+import Home3Feature from "../../components/feature/Home3Feature"
+import MainLayout from "../../components/layout/MainLayout"
+import Home3Tools from "../../components/tools/Home3Tools"
+import Home3WorkProcess from "../../components/workProcess/Home3WorkProcess"
 import Link from "next/link"
 import { Check, Settings } from "lucide-react"
 

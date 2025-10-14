@@ -1,5 +1,5 @@
-import MainLayout from "@/components/layout/MainLayout"
-import Home5Workprocess from "@/components/workProcess/Home5Workprocess"
+import MainLayout from "../../../components/layout/MainLayout"
+import Home5Workprocess from "../../../components/workProcess/Home5Workprocess"
 import { CheckCircle, Users, Globe, Headphones, Settings } from "lucide-react"
 
 export const metadata = {

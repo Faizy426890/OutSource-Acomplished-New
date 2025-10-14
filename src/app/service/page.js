@@ -1,5 +1,5 @@
 "use client"
-import useWow from "@/hooks/useWow"; 
+import useWow from "../../hooks/useWow"; 
 import ServicePage3 from "./service3/page";
 import React from "react";
 

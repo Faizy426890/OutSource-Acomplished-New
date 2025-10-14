@@ -2,9 +2,9 @@
 import React, { useMemo } from "react";
 import { Star, Award, Clock, Users, Headphones, Globe, Target } from "lucide-react"
 import CountUp from "react-countup";
-import MainLayout from "@/components/layout/MainLayout";
-import Home5Team from "@/components/team/Home5Team";
-import Home5whyChoose from "@/components/why-choose/Home5whyChoose";
+import MainLayout from "../../components/layout/MainLayout";
+import Home5Team from "../../components/team/Home5Team";
+import Home5whyChoose from "../../components/why-choose/Home5whyChoose";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
@@ -13,7 +13,7 @@ import SwiperCore, {
   Navigation,
   Pagination,
 } from "swiper";
-import useWow from "@/hooks/useWow";
+import useWow from "../../hooks/useWow";
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
 const page = () => {

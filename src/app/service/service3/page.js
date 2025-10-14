@@ -1,7 +1,7 @@
 "use client";
-import MainLayout from "@/components/layout/MainLayout";
-import useFollowCursor from "@/hooks/useFollowCursor";
-import useWow from "@/hooks/useWow";
+import MainLayout from "../../../components/layout/MainLayout";
+import useFollowCursor from "../../../hooks/useFollowCursor";
+import useWow from "../../../hooks/useWow";
 import Link from "next/link";
 import React from "react";
 import { Users, Heart, FileText, Code, Calculator, Megaphone } from 'lucide-react';
