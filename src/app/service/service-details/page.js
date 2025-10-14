@@ -3,7 +3,7 @@ import Home5Workprocess from "../../../components/workProcess/Home5Workprocess"
 import { CheckCircle, Users, Globe, Headphones, Settings } from "lucide-react"
 
 export const metadata = {
-  title: "OutSourcing Accomplished",
+  title: "GrowEdgeX",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
