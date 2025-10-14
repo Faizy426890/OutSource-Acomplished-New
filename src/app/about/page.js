@@ -1,6 +1,5 @@
 "use client";
 import React, { useMemo } from "react";
-import Home4award from "@/components/award/Home4award";
 import { Star, Award, Clock, Users, Headphones, Globe, Target } from "lucide-react"
 import CountUp from "react-countup";
 import MainLayout from "@/components/layout/MainLayout";
@@ -14,11 +13,10 @@ import SwiperCore, {
   Navigation,
   Pagination,
 } from "swiper";
-import Link from "next/link";
 import useWow from "@/hooks/useWow";
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-const Aboutpage = () => {
+const page = () => {
   useWow();
   const settings = useMemo(() => {
     return {
@@ -360,4 +358,4 @@ const Aboutpage = () => {
   );
 };
 
-export default Aboutpage;
+export default page;
