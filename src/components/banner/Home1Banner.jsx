@@ -70,9 +70,9 @@ const Home1Banner = () => {
                     </g>
                   </svg>
                 </span>
-               <h1>Empower Your Success with Smart In-House Solutions</h1>
+              <h1>Boost Your Achievement with Insightful Internal Solutions </h1>
 
-<p>Experience seamless, high-quality services delivered directly by our expert team , just dedicated professionals committed to your growth and efficiency.</p>
+ <p> Business Process Outsourcing (BPO) firm GrowEdgex provides customised team plans.  Employing subject matter experts in the fields of healthcare, law, mortgage, information technology, accounting, call centre, and scheduling, we set up a specialised offshore or nearshore office with your name and logo.  We manage your day-to-day activities and provide training on your particular policies, allowing for smooth, scalable, and economical growth.  GrowEdgex can help you scale more intelligently. </p>
                 <div className="banner-content-bottom">
               <Link
   href="/contact"

@@ -101,7 +101,7 @@ const Header2 = () => {
       top: '50%',
       left: '10px',
       transform: 'translateY(-50%)',
-      width: '130px',
+      width: '170px',
       height: 'auto',
       objectFit: 'contain',
       zIndex: 10,
@@ -131,7 +131,7 @@ const Header2 = () => {
       top: '50%',
       left: '10px',
       transform: 'translateY(-50%)',
-      width: '130px',
+      width: '170px',
       height: 'auto',
       objectFit: 'contain',
       zIndex: 10,
@@ -302,18 +302,18 @@ const Header2 = () => {
                   </h6>
                   <ul className="social-area">
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/company/outsource-accomplished/">
                         <i className="bi bi-dribbble" /> LinkedIn
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr">
                         <i className="bi bi-behance" /> Instagram
                       </a>
                     </li>
                   
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/share/1CnVgP2V9X/?mibextid=wwXIfr">
                         <i className="bi bi-facebook" /> Facebook
                       </a>
                     </li>
@@ -342,7 +342,7 @@ const Header2 = () => {
       top: '50%',
       left: '10px',
       transform: 'translateY(-50%)',
-      width: '130px',
+      width: '170px',
       height: 'auto',
       objectFit: 'contain',
       zIndex: 10,
@@ -372,7 +372,7 @@ const Header2 = () => {
       top: '50%',
       left: '10px',
       transform: 'translateY(-50%)',
-      width: '130px',
+      width: '170px',
       height: 'auto',
       objectFit: 'contain',
       zIndex: 10,

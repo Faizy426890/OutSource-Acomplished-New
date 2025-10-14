@@ -420,18 +420,18 @@ const Header1 = () => {
                   </h6>
                   <ul className="social-area">
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/company/outsource-accomplished/">
                         <i className="bi bi-dribbble" /> LinkedIn
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr">
                         <i className="bi bi-behance" /> Instagram
                       </a>
                     </li>
                    
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/company/outsource-accomplished/">
                         <i className="bi bi-facebook" /> Facebook
                       </a>
                     </li>

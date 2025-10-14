@@ -132,9 +132,7 @@ const Home1WorkProcess = () => {
                         <div className="content">
                           <h4>Understanding Your Vision</h4>
                           <p>
-                            Unlocking insights, shaping solutions — comprehend
-                            complex ideas effortlessly with our vision for
-                            clarity and innovation.
+                          With our vision for clarity and innovation, we can easily understand complex ideas while unlocking insights and shaping solutions.
                           </p>
                           <ul>
                             <li>
@@ -205,9 +203,7 @@ const Home1WorkProcess = () => {
                         <div className="content">
                           <h4>Collaborative Planning</h4>
                           <p>
-                            Streamline teamwork with Collaborative Planning,
-                            fostering efficiency and synergy in achieving shared
-                            goals seamlessly.
+                          Our vision for clarity and innovation allows us to easily understand complex ideas, unlock insights, and shape solutions.fostering efficiency and synergy in achieving shared goals seamlessly.
                           </p>
                           <ul>
                             <li>
@@ -278,9 +274,7 @@ const Home1WorkProcess = () => {
                         <div className="content">
                           <h4>Customized Solutions</h4>
                           <p>
-                            Tailored solutions for your unique needs, delivering
-                            personalized results that elevate your experience
-                            and surpass expectations.
+                           solutions that are especially made to satisfy your requirements and offer customized results that enhance your experience and surpass expectations.
                           </p>
                           <ul>
                             <li>
