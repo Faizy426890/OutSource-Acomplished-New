@@ -32,7 +32,7 @@ export const metadata = {
   metadataBase: new URL("https://www.growedgex.com"), // 👈 Fixes OG/Twitter warning
   title: "GrowEdgeX — BPO Firm",
   description:
-    "GrowEdgeX is a trusted BPO firm that helps companies streamline operations, strengthen customer engagement, and focus on growth through reliable outsourcing solutions.",
+    "GrowEdgeX is a trusted BPO firm that helps companies in operations, strengthen customer engagement, and focus on growth through reliable solutions.",
   keywords:
     "GrowEdgeX, BPO firm, outsourcing services, customer support, call center solutions, business process outsourcing",
   icons: {
