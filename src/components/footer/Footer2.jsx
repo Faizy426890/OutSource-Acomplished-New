@@ -66,7 +66,7 @@ const Footer = () => {
                   <div className="logo-bg">
                     <img
                       src="/assets/img/home1/footer-logo-bg.png"
-                      alt=""
+                      alt="Footer Logo"
                       className="light"
                     />
                     <img

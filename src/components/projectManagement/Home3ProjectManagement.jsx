@@ -219,7 +219,7 @@ const Home3ProjectManagement = () => {
                       <div className="project-management-tab-img-wrap">
                         <img
                           src="assets/img/home3/project-management-tab-img1.jpg"
-                          alt=""
+                          alt="Image 1"
                           className="wow animate zoomIn"
                           data-wow-delay="400ms"
                           data-wow-duration="1500ms"

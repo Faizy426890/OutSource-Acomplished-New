@@ -29,7 +29,7 @@ const hankenGrotesk = Hanken_Grotesk({
 
 // ✅ Global metadata
 export const metadata = {
-  metadataBase: new URL("https://www.growedgex.com"), // 👈 Fixes OG/Twitter warning
+  metadataBase: new URL("https://www.growedgex.com"), 
   title: "GrowEdgeX — BPO Firm",
   description:
     "GrowEdgeX is a trusted BPO firm that helps companies in operations, strengthen customer engagement, and focus on growth through reliable solutions.",

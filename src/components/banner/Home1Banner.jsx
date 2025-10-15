@@ -131,13 +131,13 @@ const Home1Banner = () => {
                 <Swiper {...settings} className="swiper banner-img-slider">
                   <div className="swiper-wrapper">
                     <SwiperSlide className="swiper-slide">
-                      <img src="assets/images/img1.jpg" alt="" />
+                      <img src="assets/images/img1.jpg" alt="Image 1" />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <img src="assets/images/img2.jpg" alt="" />
+                      <img src="assets/images/img2.jpg" alt="Image 2" />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <img src="assets/images/img3.jpg" alt="" />
+                      <img src="assets/images/img3.jpg" alt="Image 3" />
                     </SwiperSlide>
                   </div>
                 </Swiper>

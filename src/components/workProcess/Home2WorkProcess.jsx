@@ -69,7 +69,7 @@ const Home2WorkProcess = () => {
                 </div>
                 <div className="col-lg-5">
                   <div className="feature-img">
-                    <img src="assets/img/home2/feature-img1.jpg" alt="" />
+                    <img src="assets/img/home2/feature-img1.jpg" alt="Image 1" />
                   </div>
                 </div>
               </div>

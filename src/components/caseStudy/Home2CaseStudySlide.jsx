@@ -114,7 +114,7 @@ const Home2CaseStudySlide = () => {
                       <div className="card-img">
                         <img
                           src="assets/img/home2/case-study-img1.jpg"
-                          alt=""
+                          alt="Image 1"
                         />
                       </div>
                       <div className="card-content">

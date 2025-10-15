@@ -67,7 +67,7 @@ const Home4experience = () => {
                   <div className="background-img">
                     <img
                       src="assets/img/home4/experience-card-bg-img1.jpg"
-                      alt=""
+                      alt="Image 1"
                     />
                   </div>
                   <div className="content">

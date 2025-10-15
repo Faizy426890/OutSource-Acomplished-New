@@ -67,7 +67,7 @@ const Home2Blog = () => {
                   <div className="blog-card style-2">
                     <div className="blog-card-img-wrap">
                       <Link href="/blog/blog-details" className="card-img">
-                        <img src="assets/img/home2/blog-img1.jpg" alt="" />
+                        <img src="assets/img/home2/blog-img1.jpg" alt="Blog" />
                       </Link>
                       <Link href="/blog" className="date">
                         <span>
