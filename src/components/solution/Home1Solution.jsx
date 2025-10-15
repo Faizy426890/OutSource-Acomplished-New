@@ -10,7 +10,8 @@ import {
   TrendingUp, 
   ArrowRight,
   Sparkles
-} from 'lucide-react';
+} from 'lucide-react'; 
+import Link from 'next/link';
 
 const ServicesSection = () => {
  const services = [
