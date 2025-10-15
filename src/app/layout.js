@@ -1,6 +1,4 @@
-"use client";
-import { useEffect } from "react";
-import { Inter, Roboto_Mono, Hanken_Grotesk } from "next/font/google";
+import { Inter, Hanken_Grotesk } from "next/font/google";
 import "../../public/assets/css/bootstrap-icons.css";
 import "../../public/assets/css/boxicons.min.css";
 import "../../public/assets/css/swiper-bundle.min.css";
@@ -13,9 +11,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import "../../public/assets/css/bootstrap.min.css";
 import "yet-another-react-lightbox/styles.css";
 import "../../public/assets/css/style.css";
-import ScrollProgress from "../components/common/ScrollProgress";
-import useWow from "../hooks/useWow";
 
+import ClientWrapper from "./ClientWrapper";
+
+// ✅ Fonts
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -27,22 +26,56 @@ const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-hankenGrotesk",
   display: "swap",
 });
-export default function RootLayout({ children }) {
-  useWow();
 
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
+// ✅ Global metadata
+export const metadata = {
+  metadataBase: new URL("https://www.growedgex.com"), // 👈 Fixes OG/Twitter warning
+  title: "GrowEdgeX — BPO Firm",
+  description:
+    "GrowEdgeX is a trusted BPO firm that helps companies streamline operations, strengthen customer engagement, and focus on growth through reliable outsourcing solutions.",
+  keywords:
+    "GrowEdgeX, BPO firm, outsourcing services, customer support, call center solutions, business process outsourcing",
+  icons: {
+    icon: "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+    shortcut:
+      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+    apple:
+      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+  },
+  openGraph: {
+    title: "GrowEdgeX — BPO Firm",
+    description:
+      "Partner with GrowEdgeX to simplify your business operations through expert outsourcing and customer service solutions.",
+    url: "https://www.growedgex.com",
+    siteName: "GrowEdgeX",
+    images: [
+      {
+        url: "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+        width: 800,
+        height: 600,
+        alt: "GrowEdgeX Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GrowEdgeX — BPO Firm",
+    description:
+      "GrowEdgeX delivers dependable BPO and outsourcing services to help businesses operate more efficiently and scale with confidence.",
+    images: [
+      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+    ],
+  },
+};
+
+// ✅ Root Layout
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${hankenGrotesk.variable}`}>
-      {/* <head>
-          
-        <title>OutSource - Accomplished &amp; BPO Compnay</title>
-      </head> */}
       <body>
-        <ScrollProgress />
-        {/* <ThemeSwitch /> */}
-        {children}
+        <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
   );

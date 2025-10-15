@@ -5,7 +5,12 @@ import Home3Tools from "../../components/tools/Home3Tools"
 import Home3WorkProcess from "../../components/workProcess/Home3WorkProcess"
 import Link from "next/link"
 import { Check, Settings } from "lucide-react"
-
+export const metadata = {
+  title: "GrowEdgeX",
+  icons: {
+    icon: "https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png",
+  },
+}
 const FeaturesPage = () => {
   return (
     <MainLayout>
