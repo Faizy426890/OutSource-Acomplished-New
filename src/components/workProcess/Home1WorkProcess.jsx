@@ -130,8 +130,7 @@ const Home1WorkProcess = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h4>Understanding Your Vision</h4>
-                         <p>Guided by a passion for fresh thinking and clear understanding, we simplify challenges, reveal new perspectives, and create impactful solutions.</p>
+                         <h4>Making Your Ideas Real</h4> <p>We take the time to understand what you want, simplify the tricky parts, and turn your ideas into practical solutions that really work.</p>
                           <ul>
                             <li>
                               <svg
@@ -199,10 +198,7 @@ const Home1WorkProcess = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h4>Collaborative Planning</h4>
-                          <p>
-                          Our vision for clarity and innovation allows us to easily understand complex ideas, unlock insights, and shape solutions.fostering efficiency and synergy in achieving shared goals seamlessly.
-                          </p>
+                         <h4>Teamwork Made Simple</h4> <p>We bring people together, break down complex ideas, uncover key insights, and create solutions that help everyone work smoothly toward common goals.</p>
                           <ul>
                             <li>
                               <svg
@@ -270,10 +266,7 @@ const Home1WorkProcess = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h4>Customized Solutions</h4>
-                          <p>
-                           solutions that are especially made to satisfy your requirements and offer customized results that enhance your experience and surpass expectations.
-                          </p>
+                        <h4>Tailored to You</h4> <p>Every solution is crafted with your unique needs in mind, ensuring outcomes that not only meet but go beyond what you expect.</p>
                           <ul>
                             <li>
                               <svg
