@@ -97,7 +97,7 @@ const Home5Testimonial = () => {
                   data-wow-delay="400ms"
                   data-wow-duration="1500ms"
                 >
-                  <img src="assets/img/home5/testimonial-left-img.jpg" alt="image" />
+                  <Image loading="lazy" src="assets/img/home5/testimonial-left-img.jpg" alt="image" />
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <img
+                              <Image loading="lazy"
                                 src="assets/img/home4/testi-author-01.png"
                                 alt="image"
                               />
@@ -147,7 +147,7 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <img
+                              <Image loading="lazy"
                                 src="assets/img/home4/testi-author-02.png"
                                 alt="image"
                               />
@@ -172,7 +172,7 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <img
+                              <Image loading="lazy"
                                 src="assets/img/home4/testi-author-03.png"
                                 alt="image"
                               />
@@ -198,7 +198,7 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <img
+                              <Image loading="lazy" loading="lazy"
                                 src="assets/img/home4/testi-author-04.png"
                                 alt="image"
                               />

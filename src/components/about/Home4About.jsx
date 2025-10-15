@@ -122,7 +122,7 @@ const Home4About = () => {
                   <div className="inner-circle"></div>
                 </div>
                 <div className="half-circle-img-area">
-                  <img
+                  <Image
                     src="assets/img/home4/about-half-circle-img.jpg"
                     alt="image"
                   />

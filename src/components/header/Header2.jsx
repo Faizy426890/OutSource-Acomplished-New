@@ -93,7 +93,7 @@ const Header2 = () => {
               <Link href="/" className="logo-dark">
                      <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{
@@ -123,7 +123,7 @@ const Header2 = () => {
               <Link href="/" className="logo-light">
               <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{
@@ -343,7 +343,7 @@ const Header2 = () => {
             <Link href="/" className="logo-dark">
                <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{
@@ -373,7 +373,7 @@ const Header2 = () => {
             <Link href="/" className="logo-light">
               <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{

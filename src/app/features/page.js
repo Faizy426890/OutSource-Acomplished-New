@@ -1,7 +1,8 @@
 import Home3countdown from "../../components/countdown/Home3countdown"
 import Home3Feature from "../../components/feature/Home3Feature"
 import MainLayout from "../../components/layout/MainLayout"
-import Home3Tools from "../../components/tools/Home3Tools"
+import Home3Tools from "../../components/tools/Home3Tools" 
+import Image from "next/image"
 import Home3WorkProcess from "../../components/workProcess/Home3WorkProcess"
 import Link from "next/link"
 import { Check, Settings } from "lucide-react"
@@ -128,7 +129,7 @@ const FeaturesPage = () => {
             </div>
             <div className="col-lg-6">
                 <div className="project-management-tab-img-wrap">
-                    <img
+                    <Image loading="lazy"
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png"
                         alt="image"
                     />
@@ -182,7 +183,7 @@ const FeaturesPage = () => {
             </div>
             <div className="col-lg-6">
                 <div className="project-management-tab-img-wrap">
-                    <img
+                    <Image loading="lazy"
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588515/freepik__the-style-is-candid-image-photography-with-natural__86156_lkssyv.png"
                         alt="image"
                     />
@@ -236,7 +237,7 @@ const FeaturesPage = () => {
             </div>
             <div className="col-lg-6">
                 <div className="project-management-tab-img-wrap">
-                    <img
+                    <Image loading="lazy"
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
                         alt="image"
                     />

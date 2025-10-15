@@ -158,7 +158,7 @@ const Home5About = () => {
                   data-wow-delay="400ms"
                   data-wow-duration="1500ms"
                 >
-                  <img src="assets/img/home5/about-img.jpg" alt="image" />
+                  <Image src="assets/img/home5/about-img.jpg" alt="image" />
                 </div>
                 <div className="banner-btn">
                   <Link href="/about">

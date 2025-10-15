@@ -91,12 +91,12 @@ const Home1Banner = () => {
                   {/* <a href="https://clutch.co" className="rating-area">
                     <div className="review">
                       <span>Review On</span>
-                      <img
+                      <Image loading="lazy"
                         className="logo-dark"
                         src="assets/img/home1/icon/clutch-logo.svg"
                         alt="image"
                       />
-                      <img
+                      <Image loading="lazy"
                         className="logo-light"
                         src="assets/img/home1/icon/clutch-logo-white.svg"
                         alt="image"
@@ -131,13 +131,13 @@ const Home1Banner = () => {
                 <Swiper {...settings} className="swiper banner-img-slider">
                   <div className="swiper-wrapper">
                     <SwiperSlide className="swiper-slide">
-                      <img src="assets/images/img1.jpg" alt="Image 1" />
+                      <Image loading="lazy" src="assets/images/img1.jpg" alt="Image 1" />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <img src="assets/images/img2.jpg" alt="Image 2" />
+                      <Image loading="lazy" src="assets/images/img2.jpg" alt="Image 2" />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <img src="assets/images/img3.jpg" alt="Image 3" />
+                      <Image loading="lazy" src="assets/images/img3.jpg" alt="Image 3" />
                     </SwiperSlide>
                   </div>
                 </Swiper>

@@ -57,12 +57,12 @@ const Home5Banner = () => {
                   <a href="https://clutch.co" className="rating-area">
                     <div className="review">
                       <span>Review On</span>
-                      <img
+                      <Image loading="lazy"
                         className="logo-dark"
                         src="assets/img/home1/icon/clutch-logo.svg"
                         alt="image"
                       />
-                      <img
+                      <Image loading="lazy"
                         className="logo-light"
                         src="assets/img/home1/icon/clutch-logo-white.svg"
                         alt="image"
@@ -117,7 +117,7 @@ const Home5Banner = () => {
               </div>
             </div>
             <div className="banner-img d-xl-flex d-none">
-              <img src="assets/img/home5/banner-img.jpg" alt="banner-img" />
+              <Image loading="lazy" src="assets/img/home5/banner-img.jpg" alt="banner-img" />
             </div>
           </div>
         </div>

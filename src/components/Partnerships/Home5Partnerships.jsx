@@ -98,12 +98,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Technology</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-11.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-01.png"
                           alt="image"
@@ -125,12 +125,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Design</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-22.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-02.png"
                           alt="image"
@@ -152,12 +152,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Consulting</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-33.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-03.png"
                           alt="image"
@@ -179,12 +179,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Technology</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-44.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-04.png"
                           alt="image"
@@ -206,12 +206,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Design</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-55.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-05.png"
                           alt="image"
@@ -233,12 +233,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Consulting</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-66.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-06.png"
                           alt="image"
@@ -260,12 +260,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Technology</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-77.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-07.png"
                           alt="image"
@@ -287,12 +287,12 @@ const Home5Partnerships = () => {
                       </svg>
                       <span>Consulting</span>
                       <div className="partner-logos">
-                        <img
+                        <Image
                           className="white"
                           src="/assets/img/home5/logo-88.png"
                           alt="image"
                         />
-                        <img
+                        <Image
                           className="black"
                           src="/assets/img/home5/logo-08.png"
                           alt="image"

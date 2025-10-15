@@ -152,7 +152,7 @@ const Home4award = () => {
                     </svg>
                   </Link>
                   <div className="services-img">
-                    <img src="https://res.cloudinary.com/diml90c1y/image/upload/v1752372108/view-futuristic-music-robot-droid_rb3tfd.jpg" alt="image" />
+                    <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1752372108/view-futuristic-music-robot-droid_rb3tfd.jpg" alt="image" />
                   </div>
                 </div>
                 <div
@@ -180,7 +180,7 @@ const Home4award = () => {
                     </svg>
                   </Link>
                   <div className="services-img">
-                    <img src="https://res.cloudinary.com/diml90c1y/image/upload/v1753410842/freepik__the-style-is-candid-image-photography-with-natural__43504_v1ufms.jpg" alt="image" />
+                    <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1753410842/freepik__the-style-is-candid-image-photography-with-natural__43504_v1ufms.jpg" alt="image" />
                   </div>
                 </div>
                 <div
@@ -208,7 +208,7 @@ const Home4award = () => {
                     </svg>
                   </Link>
                   <div className="services-img">
-                    <img src="https://res.cloudinary.com/diml90c1y/image/upload/v1753410842/freepik__the-style-is-candid-image-photography-with-natural__43504_v1ufms.jpg" alt="image" />
+                    <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1753410842/freepik__the-style-is-candid-image-photography-with-natural__43504_v1ufms.jpg" alt="image" />
                   </div>
                 </div>
                 <div
@@ -236,7 +236,7 @@ const Home4award = () => {
                     </svg>
                   </Link>
                   <div className="services-img">
-                    <img src="https://res.cloudinary.com/diml90c1y/image/upload/v1752372108/view-futuristic-music-robot-droid_rb3tfd.jpg" alt="image" />
+                    <Image src="https://res.cloudinary.com/diml90c1y/image/upload/v1752372108/view-futuristic-music-robot-droid_rb3tfd.jpg" alt="image" />
                   </div>
                 </div>
               </div>

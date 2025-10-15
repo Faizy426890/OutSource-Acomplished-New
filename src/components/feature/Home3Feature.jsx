@@ -133,7 +133,7 @@ const Home3Feature = () => {
               >
                 <div className="slider-item">
                   <div className="feature-img">
-                    <img
+                    <Image loading="lazy"
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt="image"
                     />
@@ -141,7 +141,7 @@ const Home3Feature = () => {
                 </div>
                 <div className="slider-item">
                   <div className="feature-img">
-                    <img
+                    <Image loading="lazy"
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt="image"
                     />
@@ -149,7 +149,7 @@ const Home3Feature = () => {
                 </div>
                 <div className="slider-item">
                   <div className="feature-img">
-                    <img
+                    <Image loading="lazy"
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt="image"
                     />

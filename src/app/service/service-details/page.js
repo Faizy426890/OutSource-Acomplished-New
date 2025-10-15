@@ -65,7 +65,7 @@ const ServiceDetailsPage = () => {
                 data-wow-duration="1500ms"
               >
                 <div className="service-details-img">
-                  <img
+                  <Image loading="lazy"
                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
                     alt="image"
                   />
@@ -81,7 +81,7 @@ const ServiceDetailsPage = () => {
             <div className="row g-lg-4 gy-5 align-items-xl-center">
               <div className="col-lg-6">
                 <div className="service-details-faq-img">
-                  <img
+                  <Image loading="lazy"
                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1757365305/freepik__the-style-is-candid-image-photography-with-natural__72294_usu7ui.jpg"
                     alt="FAQ"
                   />

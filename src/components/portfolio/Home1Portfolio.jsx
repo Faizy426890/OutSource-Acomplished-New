@@ -89,11 +89,11 @@ const Home1Portfolio = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="eg-card">
                       <div className="card-img">
-                        <img src="assets/img/home1/portfolio-img-01.jpg" alt="image" />
+                        <Image loading="lazy" src="assets/img/home1/portfolio-img-01.jpg" alt="image" />
                       </div>
                       <div className="card-content">
                         <Link className="view-btn" href="/portfolio/portfolio-details">
-                          <img src="assets/img/home1/right-arrow.png" alt="image" />
+                          <Image loading="lazy" src="assets/img/home1/right-arrow.png" alt="image" />
                         </Link>
                         <div className="catgory-and-title">
                           <Link href="/portfolio">Marketing</Link>
@@ -107,11 +107,11 @@ const Home1Portfolio = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="eg-card">
                       <div className="card-img">
-                        <img src="assets/img/home1/portfolio-img-02.jpg" alt="image" />
+                        <Image loading="lazy" src="assets/img/home1/portfolio-img-02.jpg" alt="image" />
                       </div>
                       <div className="card-content">
                         <Link className="view-btn" href="/portfolio/portfolio-details">
-                          <img src="assets/img/home1/right-arrow.png" alt="image" />
+                          <Image loading="lazy" src="assets/img/home1/right-arrow.png" alt="image" />
                         </Link>
                         <div className="catgory-and-title">
                           <Link href="/portfolio">Resources</Link>
@@ -125,11 +125,11 @@ const Home1Portfolio = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="eg-card">
                       <div className="card-img">
-                        <img src="assets/img/home1/portfolio-img-03.jpg" alt="image" />
+                        <Image loading="lazy" src="assets/img/home1/portfolio-img-03.jpg" alt="image" />
                       </div>
                       <div className="card-content">
                         <Link className="view-btn" href="/portfolio/portfolio-details">
-                          <img src="assets/img/home1/right-arrow.png" alt="image" />
+                          <Image loading="lazy" src="assets/img/home1/right-arrow.png" alt="image" />
                         </Link>
                         <div className="catgory-and-title">
                           <Link href="/portfolio">Technology</Link>
@@ -143,11 +143,11 @@ const Home1Portfolio = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="eg-card">
                       <div className="card-img">
-                        <img src="assets/img/home1/portfolio-img-04.jpg" alt="image" />
+                        <Image loading="lazy" src="assets/img/home1/portfolio-img-04.jpg" alt="image" />
                       </div>
                       <div className="card-content">
                         <Link className="view-btn" href="/portfolio/portfolio-details">
-                          <img src="assets/img/home1/right-arrow.png" alt="image" />
+                          <Image loading="lazy" src="assets/img/home1/right-arrow.png" alt="image" />
                         </Link>
                         <div className="catgory-and-title">
                           <Link href="/portfolio">Finance</Link>
@@ -161,11 +161,11 @@ const Home1Portfolio = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="eg-card">
                       <div className="card-img">
-                        <img src="assets/images/img4.jpg" alt="image" />
+                        <Image loading="lazy" src="assets/images/img4.jpg" alt="image" />
                       </div>
                       <div className="card-content">
                         <Link className="view-btn" href="/portfolio/portfolio-details">
-                          <img src="assets/img/home1/right-arrow.png" alt="image" />
+                          <Image loading="lazy" src="assets/img/home1/right-arrow.png" alt="image" />
                         </Link>
                         <div className="catgory-and-title">
                           <Link href="/portfolio">Consulting</Link>
@@ -179,11 +179,11 @@ const Home1Portfolio = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="eg-card">
                       <div className="card-img">
-                        <img src="assets/img/home1/portfolio-img-06.jpg" alt="image" />
+                        <Image loading="lazy" src="assets/img/home1/portfolio-img-06.jpg" alt="image" />
                       </div>
                       <div className="card-content">
                         <Link className="view-btn" href="/portfolio/portfolio-details">
-                          <img src="assets/img/home1/right-arrow.png" alt="image" />
+                          <Image loading="lazy" src="assets/img/home1/right-arrow.png" alt="image" />
                         </Link>
                         <div className="catgory-and-title">
                           <Link href="/portfolio">Health Care</Link>

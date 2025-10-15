@@ -124,7 +124,7 @@ const Home4Team = () => {
                     <div className="teams-card">
                       <div className="card-img-wrap">
                         <div className="card-img">
-                          <img
+                          <Image
                             src="assets/img/home4/home4-teams-img1.png"
                             alt="image"
                           />
@@ -172,7 +172,7 @@ const Home4Team = () => {
                     <div className="teams-card">
                       <div className="card-img-wrap">
                         <div className="card-img">
-                          <img
+                          <Image
                             src="assets/img/home4/home4-teams-img2.png"
                             alt="image"
                           />
@@ -220,7 +220,7 @@ const Home4Team = () => {
                     <div className="teams-card">
                       <div className="card-img-wrap">
                         <div className="card-img">
-                          <img
+                          <Image
                             src="assets/img/home4/home4-teams-img3.png"
                             alt="image"
                           />
@@ -268,7 +268,7 @@ const Home4Team = () => {
                     <div className="teams-card">
                       <div className="card-img-wrap">
                         <div className="card-img">
-                          <img
+                          <Image
                             src="assets/img/home4/home4-teams-img4.png"
                             alt="image"
                           />
@@ -312,7 +312,7 @@ const Home4Team = () => {
                     <div className="teams-card">
                       <div className="card-img-wrap">
                         <div className="card-img">
-                          <img
+                          <Image
                             src="assets/img/home4/home4-teams-img5.png"
                             alt="image"
                           />
@@ -356,7 +356,7 @@ const Home4Team = () => {
                     <div className="teams-card">
                       <div className="card-img-wrap">
                         <div className="card-img">
-                          <img
+                          <Image
                             src="assets/img/home4/home4-teams-img6.png"
                             alt="image"
                           />
@@ -400,7 +400,7 @@ const Home4Team = () => {
                     <div className="teams-card">
                       <div className="card-img-wrap">
                         <div className="card-img">
-                          <img
+                          <Image
                             src="assets/img/home4/home4-teams-img7.png"
                             alt="image"
                           />

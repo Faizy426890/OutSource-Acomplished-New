@@ -95,7 +95,7 @@ const Header1 = () => {
               <Link href="/" className="logo-dark">
           <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{
@@ -129,7 +129,7 @@ const Header1 = () => {
               <Link href="/" className="logo-light">
        <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{
@@ -509,7 +509,7 @@ const Header1 = () => {
             <Link href="/" className="logo-dark">
            <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{
@@ -544,7 +544,7 @@ const Header1 = () => {
             <Link href="/" className="logo-light">
        <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <img
+  <Image loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{

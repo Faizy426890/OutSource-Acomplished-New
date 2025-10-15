@@ -57,12 +57,12 @@ const Home2Banner = () => {
             </div>
             <div className="col-lg-10">
               <div className="banner-img">
-                <img
+                <Image
                   src="assets/img/home2/home2-banner-img.png"
                   alt="image"
                   className="light-img"
                 />
-                <img
+                <Image
                   src="assets/img/home2/home2-banner-img-dark.png"
                   alt="image"
                   className="dark-img"

@@ -69,7 +69,7 @@ const Home2WorkProcess = () => {
                 </div>
                 <div className="col-lg-5">
                   <div className="feature-img">
-                    <img src="assets/img/home2/feature-img1.jpg" alt="Image 1" />
+                    <Image src="assets/img/home2/feature-img1.jpg" alt="Image 1" />
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const Home2WorkProcess = () => {
                 </div>
                 <div className="col-lg-5">
                   <div className="feature-img">
-                    <img src="assets/img/home2/feature-img2.jpg" alt="image" />
+                    <Image src="assets/img/home2/feature-img2.jpg" alt="image" />
                   </div>
                 </div>
               </div>
@@ -160,7 +160,7 @@ const Home2WorkProcess = () => {
                 </div>
                 <div className="col-lg-5">
                   <div className="feature-img">
-                    <img src="assets/img/home2/feature-img3.jpg" alt="image" />
+                    <Image src="assets/img/home2/feature-img3.jpg" alt="image" />
                   </div>
                 </div>
               </div>

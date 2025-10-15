@@ -145,19 +145,19 @@ const Home3Banner = () => {
             </div>
           </div>
         </div>
-        <img
+        <Image loading="lazy"
           src="assets/img/home3/banner-bottom-img1.png"
           alt="image"
           className="bottom-img1 wow animate fadeInUp"
           data-wow-delay="200ms"
           data-wow-duration="1500ms"
         />
-        <img
+        <Image loading="lazy"
           src="assets/img/home3/banner-bottom-img2.png"
           alt="image"
           className="bottom-img2"
         />
-        <img
+        <Image loading="lazy"
           src="assets/img/home3/banner-bottom-img3.png"
           alt="image"
           className="bottom-img3 wow animate fadeInUp"

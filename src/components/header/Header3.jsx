@@ -93,14 +93,14 @@ const Header1 = () => {
           <div className="container d-flex align-items-center justify-content-between">
             <div className="sidebar-menu-logo">
               <Link href="/" className="logo-dark">
-                <img
+                <Image
                   alt="image"
                   className="img-fluid"
                   src="assets/img/logo.svg"
                 />
               </Link>
               <Link href="/" className="logo-light">
-                <img
+                <Image
                   alt="image"
                   className="img-fluid"
                   src="assets/img/logo-light.svg"
@@ -450,14 +450,14 @@ const Header1 = () => {
         <div className="container d-flex flex-nowrap align-items-center justify-content-between">
           <div className="company-logo">
             <Link href="/" className="logo-dark">
-              <img
+              <Image
                 alt="image"
                 className="img-fluid"
                 src="assets/img/logo.svg"
               />
             </Link>
             <Link href="/" className="logo-light">
-              <img
+              <Image
                 alt="image"
                 className="img-fluid"
                 src="assets/img/logo-light.svg"

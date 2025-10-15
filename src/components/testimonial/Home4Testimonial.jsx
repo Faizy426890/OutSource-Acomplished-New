@@ -85,7 +85,7 @@ const Home4Testimonial = () => {
                     <SwiperSlide className="swiper-slide">
                       <div className="testimonial-card2">
                         <div className="author-img">
-                          <img
+                          <Image
                             src="assets/img/home4/testi-author-01.png"
                             alt="image"
                           />
@@ -110,7 +110,7 @@ const Home4Testimonial = () => {
                     <SwiperSlide className="swiper-slide">
                       <div className="testimonial-card2">
                         <div className="author-img">
-                          <img
+                          <Image
                             src="assets/img/home4/testi-author-02.png"
                             alt="image"
                           />
@@ -135,7 +135,7 @@ const Home4Testimonial = () => {
                     <SwiperSlide className="swiper-slide">
                       <div className="testimonial-card2">
                         <div className="author-img">
-                          <img
+                          <Image
                             src="assets/img/home4/testi-author-03.png"
                             alt="image"
                           />
@@ -160,7 +160,7 @@ const Home4Testimonial = () => {
                     <SwiperSlide className="swiper-slide">
                       <div className="testimonial-card2">
                         <div className="author-img">
-                          <img
+                          <Image
                             src="assets/img/home4/testi-author-04.png"
                             alt="image"
                           />

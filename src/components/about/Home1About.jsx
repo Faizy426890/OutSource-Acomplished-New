@@ -148,7 +148,7 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <img
+                    <Image loading="lazy"
                       src="assets/img/home1/icon/about-feature-card-icon1.svg"
                       alt="image"
                     />
@@ -170,7 +170,7 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <img
+                    <Image loading="lazy"
                       src="assets/img/home1/icon/about-feature-card-icon2.svg"
                       alt="image"
                     />
@@ -191,7 +191,7 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <img
+                    <Image loading="lazy"
                       src="assets/img/home1/icon/about-feature-card-icon3.svg"
                       alt="image"
                     />
@@ -213,7 +213,7 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <img
+                    <Image loading="lazy"
                       src="assets/img/home1/icon/about-feature-card-icon4.svg"
                       alt="image"
                     />

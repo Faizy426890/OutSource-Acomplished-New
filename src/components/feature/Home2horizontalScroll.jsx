@@ -339,12 +339,12 @@ const Home2horizontalScroll = () => {
               <div className="row">
                 <div className="col-lg-12 d-flex align-items-center justify-content-between">
                   <div className="graf-img">
-                    <img
+                    <Image
                       src="assets/img/home2/marketing-activity-graf-img.png"
                       alt="image"
                       className="light"
                     />
-                    <img
+                    <Image
                       src="assets/img/home2/marketing-activity-graf-img-dark.png"
                       alt="image"
                       className="dark"
@@ -499,7 +499,7 @@ const Home2horizontalScroll = () => {
                     </div>
                   </div>
                   <div className="graf-img">
-                    <img
+                    <Image
                       src="assets/img/home2/marketing-performance-graf-img.png"
                       alt="image"
                     />

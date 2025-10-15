@@ -66,7 +66,7 @@ const ServicePage3 = () => {
   </div>
   <h5>Global Call Center Services</h5>
   <div className="services-img">
-    <img
+    <Image loading="lazy"
       src="https://images.pexels.com/photos/8867434/pexels-photo-8867434.jpeg"
       alt="Call Center Services"
     />
@@ -114,7 +114,7 @@ const ServicePage3 = () => {
                   </div>
                   <h5>Virtual Patient Care coordinator</h5>
                   <div className="services-img">
-                    <img src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg" alt="image" />
+                    <Image loading="lazy" src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg" alt="image" />
                   </div>
                  <div className="content">
   <p>
@@ -161,7 +161,7 @@ const ServicePage3 = () => {
                   </div>
                   <h5>Website Development</h5>
                   <div className="services-img">
-                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="image" />
+                    <Image loading="lazy" src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
