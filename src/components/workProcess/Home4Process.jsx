@@ -40,7 +40,7 @@ const Home4Process = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home4/icon/feature-card-icon1.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="number">
@@ -103,7 +103,7 @@ const Home4Process = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home4/icon/feature-card-icon2.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="number">
@@ -166,7 +166,7 @@ const Home4Process = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home4/icon/feature-card-icon3.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="number">
@@ -229,7 +229,7 @@ const Home4Process = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home4/icon/feature-card-icon4.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="number">
@@ -313,7 +313,7 @@ const Home4Process = () => {
                     introduct the technology. From humble beginnings to our
                     current aspirations.
                   </p>
-                  <img src="assets/img/home4/process-bottom-img.jpg" alt="" />
+                  <img src="assets/img/home4/process-bottom-img.jpg" alt="image" />
                 </div>
               </div>
             </div>

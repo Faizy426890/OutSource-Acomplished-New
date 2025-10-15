@@ -341,12 +341,12 @@ const Home2horizontalScroll = () => {
                   <div className="graf-img">
                     <img
                       src="assets/img/home2/marketing-activity-graf-img.png"
-                      alt=""
+                      alt="image"
                       className="light"
                     />
                     <img
                       src="assets/img/home2/marketing-activity-graf-img-dark.png"
-                      alt=""
+                      alt="image"
                       className="dark"
                     />
                   </div>
@@ -501,7 +501,7 @@ const Home2horizontalScroll = () => {
                   <div className="graf-img">
                     <img
                       src="assets/img/home2/marketing-performance-graf-img.png"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                 </div>

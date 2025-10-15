@@ -101,12 +101,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-11.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-01.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>Volo Digital Agency</p>
@@ -128,12 +128,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-22.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-02.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>ZurMarke Studio</p>
@@ -155,12 +155,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-33.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-03.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>Pathpoint Consulting</p>
@@ -182,12 +182,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-44.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-04.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>Digiart Agency</p>
@@ -209,12 +209,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-55.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-05.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>ZurMarke Studio</p>
@@ -236,12 +236,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-66.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-06.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>Pathpoint Consulting</p>
@@ -263,12 +263,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-77.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-07.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>Digiart Agency</p>
@@ -290,12 +290,12 @@ const Home5Partnerships = () => {
                         <img
                           className="white"
                           src="/assets/img/home5/logo-88.png"
-                          alt=""
+                          alt="image"
                         />
                         <img
                           className="black"
                           src="/assets/img/home5/logo-08.png"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <p>ZurMarke Studio</p>

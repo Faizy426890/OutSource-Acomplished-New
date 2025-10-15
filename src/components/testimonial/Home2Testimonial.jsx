@@ -111,7 +111,7 @@ const Home2Testimonial = () => {
                         <div className="author-img">
                           <img
                             src="assets/img/home2/testi-author-01.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="content">
@@ -134,7 +134,7 @@ const Home2Testimonial = () => {
                         <div className="author-img">
                           <img
                             src="assets/img/home2/testi-author-02.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="content">
@@ -157,7 +157,7 @@ const Home2Testimonial = () => {
                         <div className="author-img">
                           <img
                             src="assets/img/home2/testi-author-03.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="content">
@@ -180,7 +180,7 @@ const Home2Testimonial = () => {
                         <div className="author-img">
                           <img
                             src="assets/img/home2/testi-author-04.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="content">
@@ -257,12 +257,12 @@ const Home2Testimonial = () => {
                       <img
                         className="logo-dark"
                         src="assets/img/home1/icon/clutch-logo.svg"
-                        alt=""
+                        alt="image"
                       />
                       <img
                         className="logo-light"
                         src="assets/img/home1/icon/clutch-logo-white.svg"
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="rating">
@@ -294,7 +294,7 @@ const Home2Testimonial = () => {
                   >
                     <div className="review">
                       <span>Review On</span>
-                      <img src="assets/img/home1/icon/google-logo.svg" alt="" />
+                      <img src="assets/img/home1/icon/google-logo.svg" alt="image" />
                     </div>
                     <div className="rating">
                       <ul className="star">

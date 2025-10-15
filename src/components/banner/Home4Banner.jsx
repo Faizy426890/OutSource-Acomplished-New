@@ -7,12 +7,12 @@ const Home4Banner = () => {
       <div className="home4-banner-section mb-130">
         <img
           src="assets/img/home4/home4-banner-img-light.png"
-          alt=""
+          alt="image"
           className="banner-img light"
         />
         <img
           src="assets/img/home4/home4-banner-img-dark.png"
-          alt=""
+          alt="image"
           className="banner-img dark"
         />
         <div className="container">

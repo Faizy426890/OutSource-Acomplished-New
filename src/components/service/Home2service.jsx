@@ -74,7 +74,7 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <img src="assets/img/home2/services-01.jpg" alt="" />
+                    <img src="assets/img/home2/services-01.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -144,7 +144,7 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <img src="assets/img/home2/services-02.jpg" alt="" />
+                    <img src="assets/img/home2/services-02.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -192,7 +192,7 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <img src="assets/img/home2/services-03.jpg" alt="" />
+                    <img src="assets/img/home2/services-03.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -242,7 +242,7 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <img src="assets/img/home2/services-04.jpg" alt="" />
+                    <img src="assets/img/home2/services-04.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -355,7 +355,7 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <img src="assets/img/home2/services-05.jpg" alt="" />
+                    <img src="assets/img/home2/services-05.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -405,7 +405,7 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <img src="assets/img/home2/services-06.jpg" alt="" />
+                    <img src="assets/img/home2/services-06.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>

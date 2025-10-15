@@ -126,7 +126,7 @@ const Home4Team = () => {
                         <div className="card-img">
                           <img
                             src="assets/img/home4/home4-teams-img1.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="overlay">
@@ -174,7 +174,7 @@ const Home4Team = () => {
                         <div className="card-img">
                           <img
                             src="assets/img/home4/home4-teams-img2.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="overlay">
@@ -222,7 +222,7 @@ const Home4Team = () => {
                         <div className="card-img">
                           <img
                             src="assets/img/home4/home4-teams-img3.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="overlay">
@@ -270,7 +270,7 @@ const Home4Team = () => {
                         <div className="card-img">
                           <img
                             src="assets/img/home4/home4-teams-img4.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="overlay">
@@ -314,7 +314,7 @@ const Home4Team = () => {
                         <div className="card-img">
                           <img
                             src="assets/img/home4/home4-teams-img5.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="overlay">
@@ -358,7 +358,7 @@ const Home4Team = () => {
                         <div className="card-img">
                           <img
                             src="assets/img/home4/home4-teams-img6.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="overlay">
@@ -402,7 +402,7 @@ const Home4Team = () => {
                         <div className="card-img">
                           <img
                             src="assets/img/home4/home4-teams-img7.png"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="overlay">

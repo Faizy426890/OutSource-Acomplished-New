@@ -105,7 +105,7 @@ const Home3Blog = () => {
               <div className="blog-card style-2">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog-details" className="card-img">
-                    <img src="assets/img/home3/blog-img2.jpg" alt="" />
+                    <img src="assets/img/home3/blog-img2.jpg" alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <span>
@@ -155,7 +155,7 @@ const Home3Blog = () => {
               <div className="blog-card style-2">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog-details" className="card-img">
-                    <img src="assets/img/home3/blog-img3.jpg" alt="" />
+                    <img src="assets/img/home3/blog-img3.jpg" alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <span>

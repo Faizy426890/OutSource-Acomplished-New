@@ -119,7 +119,7 @@ const Home3Testimonial = () => {
                           <div className="author-img">
                             <img
                               src="assets/img/home2/testi-author-05.png"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <div className="content">
@@ -137,7 +137,7 @@ const Home3Testimonial = () => {
                           <div className="logo">
                             <img
                               src="assets/img/home3/icon/google-logo.svg"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <ul className="rating">
@@ -166,7 +166,7 @@ const Home3Testimonial = () => {
                           <div className="author-img">
                             <img
                               src="assets/img/home2/testi-author-01.png"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <div className="content">
@@ -184,7 +184,7 @@ const Home3Testimonial = () => {
                           <div className="logo">
                             <img
                               src="assets/img/home3/icon/google-logo.svg"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <ul className="rating">
@@ -213,7 +213,7 @@ const Home3Testimonial = () => {
                           <div className="author-img">
                             <img
                               src="assets/img/home2/testi-author-02.png"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <div className="content">
@@ -231,7 +231,7 @@ const Home3Testimonial = () => {
                           <div className="logo">
                             <img
                               src="assets/img/home3/icon/google-logo.svg"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <ul className="rating">
@@ -260,7 +260,7 @@ const Home3Testimonial = () => {
                           <div className="author-img">
                             <img
                               src="assets/img/home2/testi-author-03.png"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <div className="content">
@@ -278,7 +278,7 @@ const Home3Testimonial = () => {
                           <div className="logo">
                             <img
                               src="assets/img/home3/icon/google-logo.svg"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <ul className="rating">
@@ -307,7 +307,7 @@ const Home3Testimonial = () => {
                           <div className="author-img">
                             <img
                               src="assets/img/home2/testi-author-04.png"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <div className="content">
@@ -325,7 +325,7 @@ const Home3Testimonial = () => {
                           <div className="logo">
                             <img
                               src="assets/img/home3/icon/google-logo.svg"
-                              alt=""
+                              alt="image"
                             />
                           </div>
                           <ul className="rating">

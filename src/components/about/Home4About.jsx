@@ -124,7 +124,7 @@ const Home4About = () => {
                 <div className="half-circle-img-area">
                   <img
                     src="assets/img/home4/about-half-circle-img.jpg"
-                    alt=""
+                    alt="image"
                   />
                 </div>
               </div>

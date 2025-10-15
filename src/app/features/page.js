@@ -130,7 +130,7 @@ const FeaturesPage = () => {
                 <div className="project-management-tab-img-wrap">
                     <img
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png"
-                        alt=""
+                        alt="image"
                     />
                 </div>
             </div>
@@ -184,7 +184,7 @@ const FeaturesPage = () => {
                 <div className="project-management-tab-img-wrap">
                     <img
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588515/freepik__the-style-is-candid-image-photography-with-natural__86156_lkssyv.png"
-                        alt=""
+                        alt="image"
                     />
                 </div>
             </div>
@@ -238,7 +238,7 @@ const FeaturesPage = () => {
                 <div className="project-management-tab-img-wrap">
                     <img
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
-                        alt=""
+                        alt="image"
                     />
                 </div>
             </div>

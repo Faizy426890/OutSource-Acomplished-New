@@ -326,7 +326,7 @@ const Home3ProjectManagement = () => {
                       <div className="project-management-tab-img-wrap">
                         <img
                           src="assets/img/home3/project-management-tab-img3.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                     </div>
@@ -430,7 +430,7 @@ const Home3ProjectManagement = () => {
                       <div className="project-management-tab-img-wrap">
                         <img
                           src="assets/img/home3/project-management-tab-img2.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                     </div>
@@ -534,7 +534,7 @@ const Home3ProjectManagement = () => {
                       <div className="project-management-tab-img-wrap">
                         <img
                           src="assets/img/home3/project-management-tab-img4.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                     </div>
@@ -638,7 +638,7 @@ const Home3ProjectManagement = () => {
                       <div className="project-management-tab-img-wrap">
                         <img
                           src="assets/img/home3/project-management-tab-img5.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                     </div>

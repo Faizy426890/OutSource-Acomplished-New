@@ -75,7 +75,7 @@ const Home5Blog = () => {
               <div className="blog-card style-2 two">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog/blog-details" className="card-img">
-                    <img src="assets/img/home5/blog-img-01.jpg" alt="" />
+                    <img src="assets/img/home5/blog-img-01.jpg" alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <span>
@@ -125,7 +125,7 @@ const Home5Blog = () => {
               <div className="blog-card style-2 two w-85">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog/blog-details" className="card-img">
-                    <img src="assets/img/home5/blog-img-02.jpg" alt="" />
+                    <img src="assets/img/home5/blog-img-02.jpg" alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <span>
@@ -175,7 +175,7 @@ const Home5Blog = () => {
               <div className="blog-card style-2 two">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog/blog-details" className="card-img">
-                    <img src="assets/img/home5/blog-img-03.jpg" alt="" />
+                    <img src="assets/img/home5/blog-img-03.jpg" alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <span>

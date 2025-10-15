@@ -32,7 +32,7 @@ export const metadata = {
   metadataBase: new URL("https://www.growedgex.com"),
   title: "GrowEdgeX — BPO Firm",
   description:
-    "GrowEdgeX is a professional BPO firm providing reliable business process solutions, customer support, and back-office services that help companies improve efficiency.",
+    "GrowEdgeX is a professional BPO firm providing reliable business process solution company.",
   keywords:
     "BPO firm, business process solutions, customer support, call center, GrowEdgeX",
   icons: {
@@ -45,7 +45,7 @@ export const metadata = {
   openGraph: {
     title: "GrowEdgeX — BPO Firm",
     description:
-      "GrowEdgeX is a trusted BPO firm delivering dependable business process services and customer support solutions for growing companies.",
+      "GrowEdgeX is a professional BPO firm providing reliable business process solution company",
     url: "https://www.growedgex.com",
     siteName: "GrowEdgeX",
     images: [
@@ -63,7 +63,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "GrowEdgeX — BPO Firm",
     description:
-      "GrowEdgeX offers trusted BPO services to help businesses manage operations, enhance customer experience, and drive growth.",
+      "GrowEdgeX is a professional BPO firm providing reliable business process solution company",
     images: [
       "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
     ],

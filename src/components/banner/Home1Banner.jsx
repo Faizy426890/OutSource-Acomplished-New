@@ -94,12 +94,12 @@ const Home1Banner = () => {
                       <img
                         className="logo-dark"
                         src="assets/img/home1/icon/clutch-logo.svg"
-                        alt=""
+                        alt="image"
                       />
                       <img
                         className="logo-light"
                         src="assets/img/home1/icon/clutch-logo-white.svg"
-                        alt=""
+                        alt="image"
                       />
                     </div>
                     <div className="rating">

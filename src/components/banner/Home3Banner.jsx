@@ -147,19 +147,19 @@ const Home3Banner = () => {
         </div>
         <img
           src="assets/img/home3/banner-bottom-img1.png"
-          alt=""
+          alt="image"
           className="bottom-img1 wow animate fadeInUp"
           data-wow-delay="200ms"
           data-wow-duration="1500ms"
         />
         <img
           src="assets/img/home3/banner-bottom-img2.png"
-          alt=""
+          alt="image"
           className="bottom-img2"
         />
         <img
           src="assets/img/home3/banner-bottom-img3.png"
-          alt=""
+          alt="image"
           className="bottom-img3 wow animate fadeInUp"
           data-wow-delay="600ms"
           data-wow-duration="1500ms"

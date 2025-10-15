@@ -71,7 +71,7 @@ const Footer = () => {
                     />
                     <img
                       src="/assets/img/home1/footer-logo-bg-dark.png"
-                      alt=""
+                      alt="Image"
                       className="dark"
                     />
                   </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                           <span>Review On</span>
                           <img
                             src="/assets/img/home1/icon/google-logo.svg"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="rating">

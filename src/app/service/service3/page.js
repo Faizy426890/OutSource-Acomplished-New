@@ -114,7 +114,7 @@ const ServicePage3 = () => {
                   </div>
                   <h5>Virtual Patient Care coordinator</h5>
                   <div className="services-img">
-                    <img src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg" alt="" />
+                    <img src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg" alt="image" />
                   </div>
                  <div className="content">
   <p>
@@ -161,7 +161,7 @@ const ServicePage3 = () => {
                   </div>
                   <h5>Website Development</h5>
                   <div className="services-img">
-                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="" />
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="image" />
                   </div>
                   <div className="content">
                     <p>

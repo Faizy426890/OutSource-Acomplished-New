@@ -67,7 +67,7 @@ const ServiceDetailsPage = () => {
                 <div className="service-details-img">
                   <img
                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
-                    alt=""
+                    alt="image"
                   />
                 </div>
               </div>

@@ -111,7 +111,7 @@ const Home1Testimonial = () => {
                         <span>Review On</span>
                         <img
                           src="assets/img/home1/icon/google-logo.svg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="rating">
@@ -161,7 +161,7 @@ const Home1Testimonial = () => {
                             <div className="author-img">
                               <img
                                 src="assets/images/rev1.png"
-                                alt=""
+                                alt="image"
                               />
                             </div>
                             <div className="content">
@@ -184,7 +184,7 @@ const Home1Testimonial = () => {
                             <div className="author-img">
                               <img
                                 src="assets/images/rev2.jpg"
-                                alt=""
+                                alt="image"
                               />
                             </div>
                             <div className="content">

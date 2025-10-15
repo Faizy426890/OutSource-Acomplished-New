@@ -71,19 +71,19 @@ const Footer = () => {
                     />
                     <img
                       src="/assets/img/home1/footer-logo-bg-dark.png"
-                      alt=""
+                      alt="image"
                       className="dark"
                     />
                   </div>
                   <div className="logo">
                     <img
                       src="/assets/img/footer-logo.svg"
-                      alt=""
+                      alt="image"
                       className="light"
                     />
                     <img
                       src="/assets/img/footer-logo-dark.svg"
-                      alt=""
+                      alt="image"
                       className="dark"
                     />
                   </div>
@@ -138,7 +138,7 @@ const Footer = () => {
                           <span>Review On</span>
                           <img
                             src="/assets/img/home1/icon/google-logo.svg"
-                            alt=""
+                            alt="image"
                           />
                         </div>
                         <div className="rating">

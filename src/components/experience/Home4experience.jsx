@@ -43,7 +43,7 @@ const Home4experience = () => {
                   <div className="background-img">
                     <img
                       src="assets/img/home4/experience-card-bg-img2.jpg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="content">
@@ -91,7 +91,7 @@ const Home4experience = () => {
                   <div className="background-img">
                     <img
                       src="assets/img/home4/experience-card-bg-img3.jpg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="content">

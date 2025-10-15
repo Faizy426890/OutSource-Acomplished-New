@@ -167,7 +167,7 @@ const Home2CaseStudySlide = () => {
                       <div className="card-img">
                         <img
                           src="assets/img/home2/case-study-img2.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="card-content">
@@ -220,7 +220,7 @@ const Home2CaseStudySlide = () => {
                       <div className="card-img">
                         <img
                           src="assets/img/home2/case-study-img3.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="card-content">
@@ -273,7 +273,7 @@ const Home2CaseStudySlide = () => {
                       <div className="card-img">
                         <img
                           src="assets/img/home2/case-study-img4.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="card-content">
@@ -326,7 +326,7 @@ const Home2CaseStudySlide = () => {
                       <div className="card-img">
                         <img
                           src="assets/img/home2/case-study-img5.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="card-content">
@@ -379,7 +379,7 @@ const Home2CaseStudySlide = () => {
                       <div className="card-img">
                         <img
                           src="assets/img/home2/case-study-img2.jpg"
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="card-content">

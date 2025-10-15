@@ -44,7 +44,7 @@ const Home4Portfolio = () => {
             >
               <div className="eg-card2">
                 <div className="card-img">
-                  <img src="assets/img/home4/portfolio-img-01.jpg" alt="" />
+                  <img src="assets/img/home4/portfolio-img-01.jpg" alt="image" />
                 </div>
                 <div className="card-content">
                   <span>Client: Egenslab</span>
@@ -71,7 +71,7 @@ const Home4Portfolio = () => {
             >
               <div className="eg-card2">
                 <div className="card-img">
-                  <img src="assets/img/home4/portfolio-img-02.jpg" alt="" />
+                  <img src="assets/img/home4/portfolio-img-02.jpg" alt="image" />
                 </div>
                 <div className="card-content">
                   <span>Client: Egenslab</span>
@@ -98,7 +98,7 @@ const Home4Portfolio = () => {
             >
               <div className="eg-card2">
                 <div className="card-img">
-                  <img src="assets/img/home4/portfolio-img-03.jpg" alt="" />
+                  <img src="assets/img/home4/portfolio-img-03.jpg" alt="image" />
                 </div>
                 <div className="card-content">
                   <span>Client: Egenslab</span>
@@ -127,7 +127,7 @@ const Home4Portfolio = () => {
             >
               <div className="eg-card2 two">
                 <div className="card-img">
-                  <img src="assets/img/home4/portfolio-img-04.jpg" alt="" />
+                  <img src="assets/img/home4/portfolio-img-04.jpg" alt="image" />
                 </div>
                 <div className="card-content">
                   <span>Client: Egenslab</span>
@@ -154,7 +154,7 @@ const Home4Portfolio = () => {
             >
               <div className="eg-card2 two">
                 <div className="card-img">
-                  <img src="assets/img/home4/portfolio-img-05.jpg" alt="" />
+                  <img src="assets/img/home4/portfolio-img-05.jpg" alt="image" />
                 </div>
                 <div className="card-content">
                   <span>Client: Egenslab</span>

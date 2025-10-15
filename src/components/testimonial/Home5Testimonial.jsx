@@ -97,7 +97,7 @@ const Home5Testimonial = () => {
                   data-wow-delay="400ms"
                   data-wow-duration="1500ms"
                 >
-                  <img src="assets/img/home5/testimonial-left-img.jpg" alt="" />
+                  <img src="assets/img/home5/testimonial-left-img.jpg" alt="image" />
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ const Home5Testimonial = () => {
                             <div className="author-img">
                               <img
                                 src="assets/img/home4/testi-author-01.png"
-                                alt=""
+                                alt="image"
                               />
                             </div>
                             <div className="content">
@@ -149,7 +149,7 @@ const Home5Testimonial = () => {
                             <div className="author-img">
                               <img
                                 src="assets/img/home4/testi-author-02.png"
-                                alt=""
+                                alt="image"
                               />
                             </div>
                             <div className="content">
@@ -174,7 +174,7 @@ const Home5Testimonial = () => {
                             <div className="author-img">
                               <img
                                 src="assets/img/home4/testi-author-03.png"
-                                alt=""
+                                alt="image"
                               />
                             </div>
                             <div className="content">
@@ -200,7 +200,7 @@ const Home5Testimonial = () => {
                             <div className="author-img">
                               <img
                                 src="assets/img/home4/testi-author-04.png"
-                                alt=""
+                                alt="image"
                               />
                             </div>
                             <div className="content">

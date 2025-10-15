@@ -52,7 +52,7 @@ const Home5Team = () => {
             display: "block",
           }}
           src="https://res.cloudinary.com/diml90c1y/image/upload/v1757381432/Ceo-removebg-preview_ydws1q.png"
-          alt=""
+          alt="image"
         />
         <ul className="social-area">
           <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>
@@ -77,7 +77,7 @@ const Home5Team = () => {
             display: "block",
           }}
           src="https://res.cloudinary.com/diml90c1y/image/upload/v1757381630/WhatsApp_Image_2025-09-08_at_19.33.58_d9070219_kxxvv0.jpg"
-          alt=""
+          alt="image"
         />
         <ul className="social-area">
           <li><a href="https://www.facebook.com/"><i className="bx bxl-facebook" /></a></li>

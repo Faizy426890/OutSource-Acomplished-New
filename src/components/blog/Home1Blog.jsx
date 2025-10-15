@@ -49,7 +49,7 @@ const Home1Blog = () => {
               <div className="blog-card">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog/blog-details" className="card-img">
-                  <img className="object-contain" src="assets/images/img11.jpg " alt="" />
+                  <img className="object-contain" src="assets/images/img11.jpg " alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <svg
@@ -108,7 +108,7 @@ const Home1Blog = () => {
               <div className="blog-card">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog/blog-details" className="card-img">
-                  <img className="object-contain" src="assets/images/img12.jpg " alt="" />
+                  <img className="object-contain" src="assets/images/img12.jpg " alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <svg
@@ -167,7 +167,7 @@ const Home1Blog = () => {
               <div className="blog-card">
                 <div className="blog-card-img-wrap">
                   <Link href="/blog/blog-details" className="card-img">
-                  <img className="object-contain" src="assets/images/img13.jpg " alt="" />
+                  <img className="object-contain" src="assets/images/img13.jpg " alt="image" />
                   </Link>
                   <Link href="/blog" className="date">
                     <svg

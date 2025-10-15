@@ -135,7 +135,7 @@ const Home3Feature = () => {
                   <div className="feature-img">
                     <img
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                 </div>
@@ -143,7 +143,7 @@ const Home3Feature = () => {
                   <div className="feature-img">
                     <img
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                 </div>
@@ -151,7 +151,7 @@ const Home3Feature = () => {
                   <div className="feature-img">
                     <img
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                 </div>

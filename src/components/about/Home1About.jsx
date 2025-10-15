@@ -150,7 +150,7 @@ const Home1About = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home1/icon/about-feature-card-icon1.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="content">
@@ -172,7 +172,7 @@ const Home1About = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home1/icon/about-feature-card-icon2.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="content">
@@ -193,7 +193,7 @@ const Home1About = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home1/icon/about-feature-card-icon3.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="content">
@@ -215,7 +215,7 @@ const Home1About = () => {
                   <div className="icon">
                     <img
                       src="assets/img/home1/icon/about-feature-card-icon4.svg"
-                      alt=""
+                      alt="image"
                     />
                   </div>
                   <div className="content">

@@ -61,7 +61,7 @@ const BannerWithCaseStudySlider = () => {
         <div className="row g-0">
           <div className="col-xl-4 col-lg-5">
             <div className="banner-area">
-            <img className="object-contain" src="assets/images/img8.jpg " alt="" />
+            <img className="object-contain" src="assets/images/img8.jpg " alt="image" />
             <div className="banner-content">
                 <div
                   className="section-title white wow animate fadeInLeft"
@@ -163,7 +163,7 @@ const BannerWithCaseStudySlider = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="case-study-card">
                       <div className="card-img">
-                      <img className="object-contain" src="assets/images/img9.jpg " alt="" />
+                      <img className="object-contain" src="assets/images/img9.jpg " alt="image" />
 
                       </div>
                       <div className="card-content">
@@ -199,7 +199,7 @@ const BannerWithCaseStudySlider = () => {
                   <SwiperSlide className="swiper-slide">
                     <div className="case-study-card">
                       <div className="card-img">
-                      <img className="object-contain" src="assets/images/img10.jpg " alt="" />
+                      <img className="object-contain" src="assets/images/img10.jpg " alt="image" />
 
                       </div>
                       <div className="card-content">
@@ -238,7 +238,7 @@ const BannerWithCaseStudySlider = () => {
                         <img
                           src="assets/images/business.avif" 
                            
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="card-content">
@@ -277,7 +277,7 @@ const BannerWithCaseStudySlider = () => {
                       <div className="card-img">
                         <img
                           src="assets/images/software.avif" 
-                          alt=""
+                          alt="image"
                         />
                       </div>
                       <div className="card-content">

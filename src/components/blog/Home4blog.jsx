@@ -121,7 +121,7 @@ const Home4Blog = () => {
                     >
                       <div className="blog-card-img-wrap">
                         <Link href="/blog/blog-details" className="card-img">
-                          <img src="assets/img/home4/blog-img2.jpg" alt="" />
+                          <img src="assets/img/home4/blog-img2.jpg" alt="image" />
                         </Link>
                         <Link href="/blog" className="date">
                           <span>
@@ -192,7 +192,7 @@ const Home4Blog = () => {
                     >
                       <div className="blog-card-img-wrap">
                         <Link href="/blog/blog-details" className="card-img">
-                          <img src="assets/img/home4/blog-img3.jpg" alt="" />
+                          <img src="assets/img/home4/blog-img3.jpg" alt="image" />
                         </Link>
                         <Link href="/blog" className="date">
                           <span>

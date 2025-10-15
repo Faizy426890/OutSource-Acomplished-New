@@ -59,12 +59,12 @@ const Home2Banner = () => {
               <div className="banner-img">
                 <img
                   src="assets/img/home2/home2-banner-img.png"
-                  alt=""
+                  alt="image"
                   className="light-img"
                 />
                 <img
                   src="assets/img/home2/home2-banner-img-dark.png"
-                  alt=""
+                  alt="image"
                   className="dark-img"
                 />
               </div>

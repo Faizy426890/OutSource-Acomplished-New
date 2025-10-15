@@ -53,7 +53,7 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <img src="assets/img/home3/icon/slack-icon.svg" alt="" />
+                  <img src="assets/img/home3/icon/slack-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Slack</h6>
@@ -71,7 +71,7 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <img src="assets/img/home3/icon/drive-icon.svg" alt="" />
+                  <img src="assets/img/home3/icon/drive-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Drive</h6>
@@ -89,7 +89,7 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <img src="assets/img/home3/icon/dropbox-icon.svg" alt="" />
+                  <img src="assets/img/home3/icon/dropbox-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Dropbox</h6>
@@ -107,7 +107,7 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <img src="assets/img/home3/icon/notion-icon.svg" alt="" />
+                  <img src="assets/img/home3/icon/notion-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Notion</h6>
@@ -125,7 +125,7 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <img src="assets/img/home3/icon/mailchimp-icon.svg" alt="" />
+                  <img src="assets/img/home3/icon/mailchimp-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Mailchimp</h6>
@@ -143,7 +143,7 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <img src="assets/img/home3/icon/discord.svg" alt="" />
+                  <img src="assets/img/home3/icon/discord.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Discord</h6>
