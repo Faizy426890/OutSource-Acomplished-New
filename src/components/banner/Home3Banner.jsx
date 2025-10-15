@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useState } from "react"; 
+import Image from "next/image";
 const Home3Banner = () => {
   const [isOpen, setOpen] = useState(false);
   return (
@@ -145,35 +145,30 @@ const Home3Banner = () => {
             </div>
           </div>
         </div>
-        <Image loading="lazy"
-          src="assets/img/home3/banner-bottom-img1.png"
+        <Image width={800}   
+  height={600}  loading="lazy"
+          src="/assets/img/home3/banner-bottom-img1.png"
           alt="image"
           className="bottom-img1 wow animate fadeInUp"
           data-wow-delay="200ms"
           data-wow-duration="1500ms"
         />
-        <Image loading="lazy"
-          src="assets/img/home3/banner-bottom-img2.png"
+        <Image width={800}   
+  height={600}  loading="lazy"
+          src="/assets/img/home3/banner-bottom-img2.png"
           alt="image"
           className="bottom-img2"
         />
-        <Image loading="lazy"
-          src="assets/img/home3/banner-bottom-img3.png"
+        <Image width={800}   
+  height={600}  loading="lazy"
+          src="/assets/img/home3/banner-bottom-img3.png"
           alt="image"
           className="bottom-img3 wow animate fadeInUp"
           data-wow-delay="600ms"
           data-wow-duration="1500ms"
         />
         <React.Fragment>
-          <ModalVideo
-            channel="youtube"
-            onClick={() => setOpen(true)}
-            isOpen={isOpen}
-            animationSpeed="350"
-            videoId="r4KpWiK08vM"
-            ratio="16:9"
-            onClose={() => setOpen(false)}
-          />
+       
         </React.Fragment>
       </div>
     </>

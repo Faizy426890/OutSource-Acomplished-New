@@ -74,7 +74,8 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <Image loading="lazy" src="assets/img/home2/services-01.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  loading="lazy" src="/assets/img/home2/services-01.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -144,7 +145,8 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <Image loading="lazy" src="assets/img/home2/services-02.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  loading="lazy" src="/assets/img/home2/services-02.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -192,7 +194,8 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <Image loading="lazy" src="assets/img/home2/services-03.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  loading="lazy" src="/assets/img/home2/services-03.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -242,7 +245,8 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <Image loading="lazy" src="assets/img/home2/services-04.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  loading="lazy" src="/assets/img/home2/services-04.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -355,7 +359,8 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <Image loading="lazy" src="assets/img/home2/services-05.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  loading="lazy" src="/assets/img/home2/services-05.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -405,7 +410,8 @@ const Home2service = () => {
                     </Link>
                   </h5>
                   <div className="services-img">
-                    <Image loading="lazy" src="assets/img/home2/services-06.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  loading="lazy" src="/assets/img/home2/services-06.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>

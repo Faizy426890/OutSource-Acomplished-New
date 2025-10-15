@@ -38,8 +38,9 @@ const Home4Process = () => {
               <div className="feature-card4 arrow1">
                 <div className="card-top-area">
                   <div className="icon">
-                    <Image
-                      src="assets/img/home4/icon/feature-card-icon1.svg"
+                    <Image width={800}   
+  height={600} 
+                      src="/assets/img/home4/icon/feature-card-icon1.svg"
                       alt="image"
                     />
                   </div>
@@ -101,8 +102,9 @@ const Home4Process = () => {
               <div className="feature-card4 arrow2">
                 <div className="card-top-area">
                   <div className="icon">
-                    <Image
-                      src="assets/img/home4/icon/feature-card-icon2.svg"
+                    <Image width={800}   
+  height={600} 
+                      src="/assets/img/home4/icon/feature-card-icon2.svg"
                       alt="image"
                     />
                   </div>
@@ -164,8 +166,9 @@ const Home4Process = () => {
               <div className="feature-card4 arrow3">
                 <div className="card-top-area">
                   <div className="icon">
-                    <Image
-                      src="assets/img/home4/icon/feature-card-icon3.svg"
+                    <Image width={800}   
+  height={600} 
+                      src="/assets/img/home4/icon/feature-card-icon3.svg"
                       alt="image"
                     />
                   </div>
@@ -227,8 +230,9 @@ const Home4Process = () => {
               <div className="feature-card4">
                 <div className="card-top-area">
                   <div className="icon">
-                    <Image
-                      src="assets/img/home4/icon/feature-card-icon4.svg"
+                    <Image width={800}   
+  height={600} 
+                      src="/assets/img/home4/icon/feature-card-icon4.svg"
                       alt="image"
                     />
                   </div>
@@ -313,7 +317,8 @@ const Home4Process = () => {
                     introduct the technology. From humble beginnings to our
                     current aspirations.
                   </p>
-                  <Image src="assets/img/home4/process-bottom-img.jpg" alt="image" />
+                  <Image width={800}   
+  height={600}  src="/assets/img/home4/process-bottom-img.jpg" alt="image" />
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 "use client";
-import CountUp from "react-countup";
+import CountUp from "react-countup"; 
+import Image from "next/image";
 
 const Home5whyChoose = () => {
   return (
@@ -57,7 +58,8 @@ const Home5whyChoose = () => {
               data-wow-duration="1500ms"
             >
               <div className="why-choose-img">
-                <Image
+                <Image width={800}   
+  height={600} 
                   src="https://res.cloudinary.com/diml90c1y/image/upload/v1753410759/freepik__the-style-is-candid-image-photography-with-natural__43503_e74651.jpg"
                   alt="BPO Services"
                 />

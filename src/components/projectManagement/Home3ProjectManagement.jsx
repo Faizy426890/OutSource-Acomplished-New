@@ -218,7 +218,7 @@ const Home3ProjectManagement = () => {
                     <div className="col-lg-6">
                       <div className="project-management-tab-img-wrap">
                         <img
-                          src="assets/img/home3/project-management-tab-img1.jpg"
+                          src="/assets/img/home3/project-management-tab-img1.jpg"
                           alt="Image 1"
                           className="wow animate zoomIn"
                           data-wow-delay="400ms"
@@ -325,7 +325,7 @@ const Home3ProjectManagement = () => {
                     <div className="col-lg-6">
                       <div className="project-management-tab-img-wrap">
                         <img
-                          src="assets/img/home3/project-management-tab-img3.jpg"
+                          src="/assets/img/home3/project-management-tab-img3.jpg"
                           alt="image"
                         />
                       </div>
@@ -429,7 +429,7 @@ const Home3ProjectManagement = () => {
                     <div className="col-lg-6">
                       <div className="project-management-tab-img-wrap">
                         <img
-                          src="assets/img/home3/project-management-tab-img2.jpg"
+                          src="/assets/img/home3/project-management-tab-img2.jpg"
                           alt="image"
                         />
                       </div>
@@ -533,7 +533,7 @@ const Home3ProjectManagement = () => {
                     <div className="col-lg-6">
                       <div className="project-management-tab-img-wrap">
                         <img
-                          src="assets/img/home3/project-management-tab-img4.jpg"
+                          src="/assets/img/home3/project-management-tab-img4.jpg"
                           alt="image"
                         />
                       </div>
@@ -637,7 +637,7 @@ const Home3ProjectManagement = () => {
                     <div className="col-lg-6">
                       <div className="project-management-tab-img-wrap">
                         <img
-                          src="assets/img/home3/project-management-tab-img5.jpg"
+                          src="/assets/img/home3/project-management-tab-img5.jpg"
                           alt="image"
                         />
                       </div>

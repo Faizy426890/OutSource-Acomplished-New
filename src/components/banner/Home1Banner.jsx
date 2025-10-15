@@ -1,5 +1,5 @@
 "use client";
-import ModalVideo from "react-modal-video";
+import Image from "next/image";
 import React, { useEffect, useMemo, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
@@ -9,7 +9,8 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import Link from "next/link";
-SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
+SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]); 
+
 
 const Home1Banner = () => {
   const [isOpen, setOpen] = useState(false);
@@ -91,14 +92,16 @@ const Home1Banner = () => {
                   {/* <a href="https://clutch.co" className="rating-area">
                     <div className="review">
                       <span>Review On</span>
-                      <Image loading="lazy"
+                      <Image width={800}   
+  height={600}  loading="lazy"
                         className="logo-dark"
-                        src="assets/img/home1/icon/clutch-logo.svg"
+                        src="////assets/img/home1/icon/clutch-logo.svg"
                         alt="image"
                       />
-                      <Image loading="lazy"
+                      <Image width={800}   
+  height={600}  loading="lazy"
                         className="logo-light"
-                        src="assets/img/home1/icon/clutch-logo-white.svg"
+                        src="///assets/img/home1/icon/clutch-logo-white.svg"
                         alt="image"
                       />
                     </div>
@@ -131,13 +134,16 @@ const Home1Banner = () => {
                 <Swiper {...settings} className="swiper banner-img-slider">
                   <div className="swiper-wrapper">
                     <SwiperSlide className="swiper-slide">
-                      <Image loading="lazy" src="assets/images/img1.jpg" alt="Image 1" />
+                      <Image width={800}   
+  height={600}  loading="lazy" src="/assets/images/img1.jpg" alt="Image 1" />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <Image loading="lazy" src="assets/images/img2.jpg" alt="Image 2" />
+                      <Image width={800}   
+  height={600}  loading="lazy" src="/assets/images/img2.jpg" alt="Image 2" />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <Image loading="lazy" src="assets/images/img3.jpg" alt="Image 3" />
+                      <Image width={800}   
+  height={600}  loading="lazy" src="/assets/images/img3.jpg" alt="Image 3" />
                     </SwiperSlide>
                   </div>
                 </Swiper>
@@ -173,15 +179,7 @@ const Home1Banner = () => {
           </div>
         </div>
         <React.Fragment>
-          <ModalVideo
-            channel="youtube"
-            onClick={() => setOpen(true)}
-            isOpen={isOpen}
-            animationSpeed="350"
-            videoId="r4KpWiK08vM"
-            ratio="16:9"
-            onClose={() => setOpen(false)}
-          />
+         
         </React.Fragment>
       </div>
     </>

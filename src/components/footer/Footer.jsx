@@ -1,5 +1,6 @@
 import Link from "next/link";
-import React from "react";
+import React from "react"; 
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -64,12 +65,14 @@ const Footer = () => {
               <div className="col-lg-4 col-md-6 d-flex justify-content-lg-center justify-content-md-end justify-content-sm-start">
                 <div className="footer-logo-area">
                   <div className="logo-bg">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="/assets/img/home1/footer-logo-bg.png"
                       alt="Footer Logo"
                       className="light"
                     />
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="/assets/img/home1/footer-logo-bg-dark.png"
                       alt="Image"
                       className="dark"
@@ -78,7 +81,8 @@ const Footer = () => {
                   <div className="logo">
                 
                        <div style={{ display: 'flex', alignItems: 'center',  }}>
-  <Image loading="lazy"
+  <Image width={800}   
+  height={600}  loading="lazy"
     alt="BTS Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
     style={{
@@ -139,7 +143,8 @@ const Footer = () => {
                       >
                         <div className="review">
                           <span>Review On</span>
-                          <Image loading="lazy"
+                          <Image width={800}   
+  height={600}  loading="lazy"
                             src="/assets/img/home1/icon/google-logo.svg"
                             alt="image"
                           />

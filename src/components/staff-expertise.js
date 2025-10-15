@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-
+import Image from "next/image"
 
 
 const SERVICES = [
@@ -94,7 +94,7 @@ export default function StaffExpertise() {
               onClick={() => setHovered(isActive ? null : idx)}
             >
               <div className="base">
-                <Image src={s.imgSrc || "/placeholder.svg"} alt={s.alt} className="icon" />
+                <img src={s.imgSrc || "/placeholder.svg"} alt={s.alt} className="icon" />
                 <h3 className="card-title">{s.title}</h3>
               </div>
 

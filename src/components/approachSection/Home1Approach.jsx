@@ -1,5 +1,6 @@
 import React from "react";
-import { Users, Globe, BarChart3, HeartPulse, ChevronRight } from "lucide-react";
+import { Users, Globe, BarChart3, HeartPulse, ChevronRight } from "lucide-react"; 
+import Image from "next/image";
 
 const Home1Approach = () => {
   return (
@@ -60,7 +61,8 @@ const Home1Approach = () => {
                   overflow: 'hidden'
                 }}>
                   <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
-                    <Image loading="lazy" 
+                    <Image width={800}   
+  height={600}  loading="lazy" 
                       src="https://cdn-icons-png.flaticon.com/512/5995/5995245.png" 
                       alt="Care Coordination" 
                       style={{ 
@@ -194,7 +196,8 @@ const Home1Approach = () => {
                   overflow: 'hidden'
                 }}>
                   <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
-                    <Image loading="lazy" 
+                    <Image width={800}   
+  height={600}  loading="lazy" 
                       src="https://cdn-icons-png.flaticon.com/512/2965/2965938.png" 
                       alt="Virtual Care Coordination" 
                       style={{ 
@@ -261,7 +264,8 @@ const Home1Approach = () => {
                   overflow: 'hidden'
                 }}>
                   <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
-                    <Image loading="lazy" 
+                    <Image width={800}   
+  height={600}  loading="lazy" 
                       src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" 
                       alt="Website Development" 
                       style={{ 
@@ -328,7 +332,8 @@ const Home1Approach = () => {
                   overflow: 'hidden'
                 }}>
                   <div className="img-area" style={{ textAlign: 'center', marginBottom: '1.5rem', position: 'relative' }}>
-                    <Image loading="lazy" 
+                    <Image width={800}   
+  height={600}  loading="lazy" 
                       src="https://cdn-icons-png.flaticon.com/512/5036/5036951.png" 
                       alt="Digital Marketing" 
                       style={{ 

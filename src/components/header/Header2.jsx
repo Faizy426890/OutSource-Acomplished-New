@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useMemo, useReducer, useRef } from "react";
-import navData from "../../data/nav.json";
+import navData from "../../data/nav.json"; 
+import Image from "next/image";
 const initialState = {
   activeMenu: "",
   activeSubMenu: "",
@@ -93,7 +94,8 @@ const Header2 = () => {
               <Link href="/" className="logo-dark">
                      <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <Image loading="lazy"
+  <Image width={800}   
+  height={600}  loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{
@@ -123,7 +125,8 @@ const Header2 = () => {
               <Link href="/" className="logo-light">
               <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <Image loading="lazy"
+  <Image width={800}   
+  height={600}  loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{
@@ -343,7 +346,8 @@ const Header2 = () => {
             <Link href="/" className="logo-dark">
                <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <Image loading="lazy"
+  <Image width={800}   
+  height={600}  loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{
@@ -373,7 +377,8 @@ const Header2 = () => {
             <Link href="/" className="logo-light">
               <div style={{ display: 'flex', alignItems: 'center', position: 'relative', paddingLeft: '1px', height: '60px' }}>
   {/* Logo */}
-  <Image loading="lazy"
+  <Image width={800}   
+  height={600}  loading="lazy"
     alt="GrowEdge Logo"
     src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227036/Growedge_black_background_logo-removebg-preview_rtfhdm.png"
     style={{

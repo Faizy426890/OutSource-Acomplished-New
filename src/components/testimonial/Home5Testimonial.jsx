@@ -97,7 +97,8 @@ const Home5Testimonial = () => {
                   data-wow-delay="400ms"
                   data-wow-duration="1500ms"
                 >
-                  <Image loading="lazy" src="assets/img/home5/testimonial-left-img.jpg" alt="image" />
+                  <Image width={800}   
+  height={600}  loading="lazy" src="/assets/img/home5/testimonial-left-img.jpg" alt="image" />
                 </div>
               </div>
             </div>
@@ -122,8 +123,9 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <Image loading="lazy"
-                                src="assets/img/home4/testi-author-01.png"
+                              <Image width={800}   
+  height={600}  loading="lazy"
+                                src="/assets/img/home4/testi-author-01.png"
                                 alt="image"
                               />
                             </div>
@@ -147,8 +149,9 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <Image loading="lazy"
-                                src="assets/img/home4/testi-author-02.png"
+                              <Image width={800}   
+  height={600}  loading="lazy"
+                                src="/assets/img/home4/testi-author-02.png"
                                 alt="image"
                               />
                             </div>
@@ -172,8 +175,9 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <Image loading="lazy"
-                                src="assets/img/home4/testi-author-03.png"
+                              <Image width={800}   
+  height={600}  loading="lazy"
+                                src="/assets/img/home4/testi-author-03.png"
                                 alt="image"
                               />
                             </div>
@@ -198,8 +202,9 @@ const Home5Testimonial = () => {
                           </p>
                           <div className="author-name-desig">
                             <div className="author-img">
-                              <Image loading="lazy" loading="lazy"
-                                src="assets/img/home4/testi-author-04.png"
+                              <Image width={800}   
+  height={600}  loading="lazy" 
+                                src="/assets/img/home4/testi-author-04.png"
                                 alt="image"
                               />
                             </div>

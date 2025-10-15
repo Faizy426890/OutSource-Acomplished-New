@@ -1,7 +1,8 @@
 "use client";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick-theme.css"; 
+import Image from "next/image";
 
 const Home3Feature = () => {
   const settings = {
@@ -133,7 +134,8 @@ const Home3Feature = () => {
               >
                 <div className="slider-item">
                   <div className="feature-img">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt="image"
                     />
@@ -141,7 +143,8 @@ const Home3Feature = () => {
                 </div>
                 <div className="slider-item">
                   <div className="feature-img">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt="image"
                     />
@@ -149,7 +152,8 @@ const Home3Feature = () => {
                 </div>
                 <div className="slider-item">
                   <div className="feature-img">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588978/freepik__the-style-is-candid-image-photography-with-natural__86159_aslgid.png"
                       alt="image"
                     />

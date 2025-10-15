@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Home3Tools = () => {
   return (
     <>
@@ -53,7 +53,8 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <Image src="assets/img/home3/icon/slack-icon.svg" alt="image" />
+                  <Image width={800}   
+  height={600}  src="/assets/img/home3/icon/slack-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Slack</h6>
@@ -71,7 +72,8 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <Image src="assets/img/home3/icon/drive-icon.svg" alt="image" />
+                  <Image width={800}   
+  height={600}  src="/assets/img/home3/icon/drive-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Drive</h6>
@@ -89,7 +91,8 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <Image src="assets/img/home3/icon/dropbox-icon.svg" alt="image" />
+                  <Image width={800}   
+  height={600}  src="/assets/img/home3/icon/dropbox-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Dropbox</h6>
@@ -107,7 +110,8 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <Image src="assets/img/home3/icon/notion-icon.svg" alt="image" />
+                  <Image width={800}   
+  height={600}  src="/assets/img/home3/icon/notion-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Notion</h6>
@@ -125,7 +129,8 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <Image src="assets/img/home3/icon/mailchimp-icon.svg" alt="image" />
+                  <Image width={800}   
+  height={600}  src="/assets/img/home3/icon/mailchimp-icon.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Mailchimp</h6>
@@ -143,7 +148,8 @@ const Home3Tools = () => {
             >
               <div className="tools-card">
                 <div className="icon">
-                  <Image src="assets/img/home3/icon/discord.svg" alt="image" />
+                  <Image width={800}   
+  height={600}  src="/assets/img/home3/icon/discord.svg" alt="image" />
                 </div>
                 <div className="content">
                   <h6>Discord</h6>

@@ -64,24 +64,28 @@ const Footer = () => {
               <div className="col-lg-4 col-md-6 d-flex justify-content-lg-center justify-content-md-end justify-content-sm-start">
                 <div className="footer-logo-area">
                   <div className="logo-bg">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="/assets/img/home1/footer-logo-bg.png"
                       alt="Footer Logo"
                       className="light"
                     />
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="/assets/img/home1/footer-logo-bg-dark.png"
                       alt="image"
                       className="dark"
                     />
                   </div>
                   <div className="logo">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="/assets/img/footer-logo.svg"
                       alt="image"
                       className="light"
                     />
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                       src="/assets/img/footer-logo-dark.svg"
                       alt="image"
                       className="dark"
@@ -136,7 +140,8 @@ const Footer = () => {
                       >
                         <div className="review">
                           <span>Review On</span>
-                          <Image loading="lazy"
+                          <Image width={800}   
+  height={600}  loading="lazy"
                             src="/assets/img/home1/icon/google-logo.svg"
                             alt="image"
                           />

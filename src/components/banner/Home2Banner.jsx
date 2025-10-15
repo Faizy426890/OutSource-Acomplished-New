@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
+import { TypeAnimation } from "react-type-animation"; 
+import Image from "next/image";
 
 const Home2Banner = () => {
   return (
@@ -57,13 +58,15 @@ const Home2Banner = () => {
             </div>
             <div className="col-lg-10">
               <div className="banner-img">
-                <Image
-                  src="assets/img/home2/home2-banner-img.png"
+                <Image width={800}   
+  height={600} 
+                  src="/assets/img/home2/home2-banner-img.png"
                   alt="image"
                   className="light-img"
                 />
-                <Image
-                  src="assets/img/home2/home2-banner-img-dark.png"
+                <Image width={800}   
+  height={600} 
+                  src="/assets/img/home2/home2-banner-img-dark.png"
                   alt="image"
                   className="dark-img"
                 />

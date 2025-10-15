@@ -6,12 +6,12 @@ const Home4Banner = () => {
     <>
       <div className="home4-banner-section mb-130">
         <Image loading="lazy"
-          src="assets/img/home4/home4-banner-img-light.png"
+          src="/assets/img/home4/home4-banner-img-light.png"
           alt="image"
           className="banner-img light"
         />
         <Image loading="lazy"
-          src="assets/img/home4/home4-banner-img-dark.png"
+          src="/assets/img/home4/home4-banner-img-dark.png"
           alt="image"
           className="banner-img dark"
         />

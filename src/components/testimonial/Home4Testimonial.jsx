@@ -86,7 +86,7 @@ const Home4Testimonial = () => {
                       <div className="testimonial-card2">
                         <div className="author-img">
                           <Image
-                            src="assets/img/home4/testi-author-01.png"
+                            src="/assets/img/home4/testi-author-01.png"
                             alt="image"
                           />
                         </div>
@@ -111,7 +111,7 @@ const Home4Testimonial = () => {
                       <div className="testimonial-card2">
                         <div className="author-img">
                           <Image
-                            src="assets/img/home4/testi-author-02.png"
+                            src="/assets/img/home4/testi-author-02.png"
                             alt="image"
                           />
                         </div>
@@ -136,7 +136,7 @@ const Home4Testimonial = () => {
                       <div className="testimonial-card2">
                         <div className="author-img">
                           <Image
-                            src="assets/img/home4/testi-author-03.png"
+                            src="/assets/img/home4/testi-author-03.png"
                             alt="image"
                           />
                         </div>
@@ -161,7 +161,7 @@ const Home4Testimonial = () => {
                       <div className="testimonial-card2">
                         <div className="author-img">
                           <Image
-                            src="assets/img/home4/testi-author-04.png"
+                            src="/assets/img/home4/testi-author-04.png"
                             alt="image"
                           />
                         </div>

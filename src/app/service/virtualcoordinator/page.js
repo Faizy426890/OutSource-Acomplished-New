@@ -55,7 +55,8 @@ const App = () => {
                 data-wow-duration="1500ms"
               >
                 <div className="service-details-img">
-                  <Image loading="lazy"
+                  <Image width={800}   
+  height={600}  loading="lazy"
                     src="https://www.cpasitesolutions.com/cpa-websites/wp-content/uploads/2022/08/why-hire-a-bookkeeper.png"
                     alt="Accounting Services"
                   />
@@ -71,7 +72,8 @@ const App = () => {
             <div className="row g-lg-4 gy-5 align-items-xl-center">
               <div className="col-lg-6">
                 <div className="service-details-faq-img">
-                  <Image loading="lazy"
+                  <Image width={800}   
+  height={600}  loading="lazy"
                     src="https://akaunting.com/blog/wp-content/uploads/2021/03/The-Difference-Between-Bookkeeping-and-Accounting.jpg"
                     alt="FAQ"
                   />

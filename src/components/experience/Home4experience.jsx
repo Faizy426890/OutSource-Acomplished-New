@@ -42,7 +42,7 @@ const Home4experience = () => {
                 <div className="single-experience">
                   <div className="background-img">
                     <img
-                      src="assets/img/home4/experience-card-bg-img2.jpg"
+                      src="/assets/img/home4/experience-card-bg-img2.jpg"
                       alt="image"
                     />
                   </div>
@@ -66,7 +66,7 @@ const Home4experience = () => {
                 <div className="single-experience">
                   <div className="background-img">
                     <img
-                      src="assets/img/home4/experience-card-bg-img1.jpg"
+                      src="/assets/img/home4/experience-card-bg-img1.jpg"
                       alt="Image 1"
                     />
                   </div>
@@ -90,7 +90,7 @@ const Home4experience = () => {
                 <div className="single-experience">
                   <div className="background-img">
                     <img
-                      src="assets/img/home4/experience-card-bg-img3.jpg"
+                      src="/assets/img/home4/experience-card-bg-img3.jpg"
                       alt="image"
                     />
                   </div>

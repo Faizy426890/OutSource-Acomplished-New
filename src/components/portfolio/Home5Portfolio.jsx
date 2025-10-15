@@ -86,7 +86,7 @@ const Home5Portfolio = () => {
                     </li>
                   </ul>
                   <div className="portfolio-img">
-                    <img src="assets/img/home5/portfolio-01.jpg" alt="image" />
+                    <img src="/assets/img/home5/portfolio-01.jpg" alt="image" />
                   </div>
                 </div>
                 <div className="portfolio-content">
@@ -130,7 +130,7 @@ const Home5Portfolio = () => {
                     </li>
                   </ul>
                   <div className="portfolio-img">
-                    <img src="assets/img/home5/portfolio-02.jpg" alt="image" />
+                    <img src="/assets/img/home5/portfolio-02.jpg" alt="image" />
                   </div>
                 </div>
                 <div className="portfolio-content">
@@ -174,7 +174,7 @@ const Home5Portfolio = () => {
                     </li>
                   </ul>
                   <div className="portfolio-img">
-                    <img src="assets/img/home5/portfolio-03.jpg" alt="image" />
+                    <img src="/assets/img/home5/portfolio-03.jpg" alt="image" />
                   </div>
                 </div>
                 <div className="portfolio-content">
@@ -218,7 +218,7 @@ const Home5Portfolio = () => {
                     </li>
                   </ul>
                   <div className="portfolio-img">
-                    <img src="assets/img/home5/portfolio-04.jpg" alt="image" />
+                    <img src="/assets/img/home5/portfolio-04.jpg" alt="image" />
                   </div>
                 </div>
                 <div className="portfolio-content">

@@ -129,7 +129,8 @@ const FeaturesPage = () => {
             </div>
             <div className="col-lg-6">
                 <div className="project-management-tab-img-wrap">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588534/freepik__the-style-is-candid-image-photography-with-natural__86158_huetwy.png"
                         alt="image"
                     />
@@ -183,7 +184,8 @@ const FeaturesPage = () => {
             </div>
             <div className="col-lg-6">
                 <div className="project-management-tab-img-wrap">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753588515/freepik__the-style-is-candid-image-photography-with-natural__86156_lkssyv.png"
                         alt="image"
                     />
@@ -237,7 +239,8 @@ const FeaturesPage = () => {
             </div>
             <div className="col-lg-6">
                 <div className="project-management-tab-img-wrap">
-                    <Image loading="lazy"
+                    <Image width={800}   
+  height={600}  loading="lazy"
                         src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
                         alt="image"
                     />

@@ -118,7 +118,7 @@ const Home3Testimonial = () => {
                         <div className="author-area">
                           <div className="author-img">
                             <img
-                              src="assets/img/home2/testi-author-05.png"
+                              src="/assets/img/home2/testi-author-05.png"
                               alt="image"
                             />
                           </div>
@@ -136,7 +136,7 @@ const Home3Testimonial = () => {
                         <div className="logo-and-rating">
                           <div className="logo">
                             <img
-                              src="assets/img/home3/icon/google-logo.svg"
+                              src="/assets/img/home3/icon/google-logo.svg"
                               alt="image"
                             />
                           </div>
@@ -165,7 +165,7 @@ const Home3Testimonial = () => {
                         <div className="author-area">
                           <div className="author-img">
                             <img
-                              src="assets/img/home2/testi-author-01.png"
+                              src="/assets/img/home2/testi-author-01.png"
                               alt="image"
                             />
                           </div>
@@ -183,7 +183,7 @@ const Home3Testimonial = () => {
                         <div className="logo-and-rating">
                           <div className="logo">
                             <img
-                              src="assets/img/home3/icon/google-logo.svg"
+                              src="/assets/img/home3/icon/google-logo.svg"
                               alt="image"
                             />
                           </div>
@@ -212,7 +212,7 @@ const Home3Testimonial = () => {
                         <div className="author-area">
                           <div className="author-img">
                             <img
-                              src="assets/img/home2/testi-author-02.png"
+                              src="/assets/img/home2/testi-author-02.png"
                               alt="image"
                             />
                           </div>
@@ -230,7 +230,7 @@ const Home3Testimonial = () => {
                         <div className="logo-and-rating">
                           <div className="logo">
                             <img
-                              src="assets/img/home3/icon/google-logo.svg"
+                              src="/assets/img/home3/icon/google-logo.svg"
                               alt="image"
                             />
                           </div>
@@ -259,7 +259,7 @@ const Home3Testimonial = () => {
                         <div className="author-area">
                           <div className="author-img">
                             <img
-                              src="assets/img/home2/testi-author-03.png"
+                              src="/assets/img/home2/testi-author-03.png"
                               alt="image"
                             />
                           </div>
@@ -277,7 +277,7 @@ const Home3Testimonial = () => {
                         <div className="logo-and-rating">
                           <div className="logo">
                             <img
-                              src="assets/img/home3/icon/google-logo.svg"
+                              src="/assets/img/home3/icon/google-logo.svg"
                               alt="image"
                             />
                           </div>
@@ -306,7 +306,7 @@ const Home3Testimonial = () => {
                         <div className="author-area">
                           <div className="author-img">
                             <img
-                              src="assets/img/home2/testi-author-04.png"
+                              src="/assets/img/home2/testi-author-04.png"
                               alt="image"
                             />
                           </div>
@@ -324,7 +324,7 @@ const Home3Testimonial = () => {
                         <div className="logo-and-rating">
                           <div className="logo">
                             <img
-                              src="assets/img/home3/icon/google-logo.svg"
+                              src="/assets/img/home3/icon/google-logo.svg"
                               alt="image"
                             />
                           </div>

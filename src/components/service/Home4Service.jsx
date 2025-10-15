@@ -79,7 +79,8 @@ const Home4Service = () => {
                   </div>
                   <h5>Brand Identity </h5>
                   <div className="services-img">
-                    <Image src="assets/img/home4/services-01.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  src="/assets/img/home4/services-01.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -141,7 +142,8 @@ const Home4Service = () => {
                   </div>
                   <h5>Graphic Design</h5>
                   <div className="services-img">
-                    <Image src="assets/img/home4/services-02.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  src="/assets/img/home4/services-02.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -194,7 +196,8 @@ const Home4Service = () => {
                   </div>
                   <h5>Web Design</h5>
                   <div className="services-img">
-                    <Image src="assets/img/home4/services-03.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  src="/assets/img/home4/services-03.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -247,7 +250,8 @@ const Home4Service = () => {
                   </div>
                   <h5>Digital Marketing</h5>
                   <div className="services-img">
-                    <Image src="assets/img/home4/services-04.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  src="/assets/img/home4/services-04.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -317,7 +321,8 @@ const Home4Service = () => {
                   </div>
                   <h5>Content Creation</h5>
                   <div className="services-img">
-                    <Image src="assets/img/home4/services-05.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  src="/assets/img/home4/services-05.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>
@@ -370,7 +375,8 @@ const Home4Service = () => {
                   </div>
                   <h5>Video Production</h5>
                   <div className="services-img">
-                    <Image src="assets/img/home4/services-06.jpg" alt="image" />
+                    <Image width={800}   
+  height={600}  src="/assets/img/home4/services-06.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <p>

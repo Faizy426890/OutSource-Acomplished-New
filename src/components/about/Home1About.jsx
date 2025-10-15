@@ -148,8 +148,9 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <Image loading="lazy"
-                      src="assets/img/home1/icon/about-feature-card-icon1.svg"
+                    <Image width={800}   
+  height={600}  loading="lazy"
+                      src="/assets/img/home1/icon/about-feature-card-icon1.svg"
                       alt="image"
                     />
                   </div>
@@ -170,8 +171,9 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <Image loading="lazy"
-                      src="assets/img/home1/icon/about-feature-card-icon2.svg"
+                    <Image width={800}   
+  height={600}  loading="lazy"
+                      src="/assets/img/home1/icon/about-feature-card-icon2.svg"
                       alt="image"
                     />
                   </div>
@@ -191,8 +193,9 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <Image loading="lazy"
-                      src="assets/img/home1/icon/about-feature-card-icon3.svg"
+                    <Image width={800}   
+  height={600}  loading="lazy"
+                      src="/assets/img/home1/icon/about-feature-card-icon3.svg"
                       alt="image"
                     />
                   </div>
@@ -213,8 +216,9 @@ const Home1About = () => {
               >
                 <div className="feature-card">
                   <div className="icon">
-                    <Image loading="lazy"
-                      src="assets/img/home1/icon/about-feature-card-icon4.svg"
+                    <Image width={800}   
+  height={600}  loading="lazy"
+                      src="/assets/img/home1/icon/about-feature-card-icon4.svg"
                       alt="image"
                     />
                   </div>

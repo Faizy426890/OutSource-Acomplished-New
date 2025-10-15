@@ -1,6 +1,7 @@
 import MainLayout from "../../../components/layout/MainLayout"
 import Home5Workprocess from "../../../components/workProcess/Home5Workprocess"
-import { CheckCircle, Users, Globe, Headphones, Settings } from "lucide-react"
+import { CheckCircle, Users, Globe, Headphones, Settings } from "lucide-react" 
+import Image from "next/image"
 
 export const metadata = {
   title: "GrowEdgeX",
@@ -65,7 +66,8 @@ const ServiceDetailsPage = () => {
                 data-wow-duration="1500ms"
               >
                 <div className="service-details-img">
-                  <Image loading="lazy"
+                  <Image width={800}   
+  height={600}  loading="lazy"
                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1753587088/freepik__the-style-is-candid-image-photography-with-natural__86154_xgdebj.png"
                     alt="image"
                   />
@@ -81,7 +83,8 @@ const ServiceDetailsPage = () => {
             <div className="row g-lg-4 gy-5 align-items-xl-center">
               <div className="col-lg-6">
                 <div className="service-details-faq-img">
-                  <Image loading="lazy"
+                  <Image width={800}   
+  height={600}  loading="lazy"
                     src="https://res.cloudinary.com/diml90c1y/image/upload/v1757365305/freepik__the-style-is-candid-image-photography-with-natural__72294_usu7ui.jpg"
                     alt="FAQ"
                   />
