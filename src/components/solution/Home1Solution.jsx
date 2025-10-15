@@ -13,56 +13,48 @@ import {
 } from 'lucide-react';
 
 const ServicesSection = () => {
-  const services = [
-   {
-  id: 1,
-  title: "Global Call Center Services",
-  subtitle: "Worldwide",
-  description: "Deliver exceptional customer support across the globe with our professional call center solutions. We provide 24/7 reliable, efficient, and scalable services tailored to businesses of all sizes.",
-  icon: Users,
-  delay: "200ms"
-},
-    {
-      id: 2,
-      title: "Virtual Patient Care Coordinator",
-      subtitle: "All 50 States",
-      description: "Professional virtual patient care coordination services for Home Health agencies and home care providers across all 50 states with certified coordinators.",
-      icon: Heart,
-      delay: "400ms"
-    },
-    {
-      id: 3,
-      title: "Virtual Administration Tasks",
-      subtitle: "Any Industry",
-      description: "Streamline your operations with our virtual administration services for Healthcare, Mortgage companies, Telecom, and other industries with skilled professionals.",
-      icon: Settings,
-      delay: "600ms"
-    },
-    {
-      id: 4,
-      title: "Website Development & IT",
-      subtitle: "Any Industry",
-      description: "Full-stack web development and IT solutions tailored for any industry. From responsive websites to complex web applications and IT infrastructure.",
-      icon: Globe,
-      delay: "800ms"
-    },
-    {
-      id: 5,
-      title: "Accounting & Payroll Services",
-      subtitle: "Any Industry",
-      description: "Professional accounting and payroll management services for businesses of all sizes. Accurate, timely, and compliant financial solutions across industries.",
-      icon: Calculator,
-      delay: "400ms"
-    },
-    {
-      id: 6,
-      title: "Digital Marketing",
-      subtitle: "Growth Solutions",
-      description: "Comprehensive digital marketing strategies to elevate your brand's online presence. SEO, content marketing, social media, and paid advertising solutions.",
-      icon: TrendingUp,
-      delay: "200ms"
-    }
-  ];
+ const services = [
+  {
+    id: 1,
+    title: "Global Call Center Services",
+    subtitle: "Worldwide",
+    description:
+      "Deliver exceptional customer support across the globe with our professional call center solutions. We provide 24/7 reliable, efficient, and scalable services tailored to businesses of all sizes.",
+    icon: Users,
+    delay: "200ms",
+    url: "/service/service3", // 👈 matches your Call Centre / Customer Support
+  },
+  {
+    id: 2,
+    title: "Virtual Patient Care Coordinator",
+    subtitle: "All 50 States",
+    description:
+      "Professional virtual patient care coordination services for Home Health agencies and home care providers across all 50 states with certified coordinators.",
+    icon: Heart,
+    delay: "400ms",
+    url: "/service/service4", // 👈 new page or service section (adjust as needed)
+  },
+  {
+    id: 4,
+    title: "Website Development & IT",
+    subtitle: "Any Industry",
+    description:
+      "Full-stack web development and IT solutions tailored for any industry. From responsive websites to complex web applications and IT infrastructure.",
+    icon: Globe,
+    delay: "800ms",
+    url: "/service/service2", // 👈 same route as your IT Industry card
+  },
+  {
+    id: 5,
+    title: "Accounting & Payroll Services",
+    subtitle: "Any Industry",
+    description:
+      "Professional accounting and payroll management services for businesses of all sizes. Accurate, timely, and compliant financial solutions across industries.",
+    icon: Calculator,
+    delay: "400ms",
+    url: "/service/accounting", // 👈 matches Accounting Industry card
+  },
+];
 
   return (
     <div 
@@ -132,7 +124,12 @@ const ServicesSection = () => {
         >
           {services.map((service) => {
             const IconComponent = service.icon;
-            return (
+            return ( 
+               <Link
+            href={service.url}
+            key={service.id}
+            style={{ textDecoration: "none" }}
+          >
               <div
                 key={service.id}
                 style={{
@@ -272,7 +269,8 @@ const ServicesSection = () => {
                     <ArrowRight size={16} strokeWidth={2} />
                   </button>
                 </div>
-              </div>
+              </div> 
+              </Link>
             );
           })}
         </div>
