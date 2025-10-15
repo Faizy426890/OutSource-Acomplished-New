@@ -36,11 +36,11 @@ export const metadata = {
   keywords:
     "BPO firm, business process solutions, customer support, call center, GrowEdgeX",
   icons: {
-    icon: "https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png",
+    icon: "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
     shortcut:
-      "https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png",
+      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
     apple:
-      "https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png",
+      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
   },
   openGraph: {
     title: "GrowEdgeX — BPO Firm",
@@ -50,7 +50,7 @@ export const metadata = {
     siteName: "GrowEdgeX",
     images: [
       {
-        url: "https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png",
+        url: "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
         width: 800,
         height: 600,
         alt: "GrowEdgeX Logo",
@@ -65,7 +65,7 @@ export const metadata = {
     description:
       "GrowEdgeX offers trusted BPO services to help businesses manage operations, enhance customer experience, and drive growth.",
     images: [
-      "https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png",
+      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
     ],
   },
 };
