@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "growedgex.com" }
+      ],
+      "destination": "https://www.growedgex.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        { "type": "scheme", "value": "http" }
+      ],
+      "destination": "https://www.growedgex.com/$1",
+      "permanent": true
+    }
+  ]
+}
