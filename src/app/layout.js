@@ -1,6 +1,4 @@
 import { Inter, Hanken_Grotesk } from "next/font/google";
-import Script from "next/script";
-
 import "../../public/assets/css/bootstrap-icons.css";
 import "../../public/assets/css/boxicons.min.css";
 import "../../public/assets/css/swiper-bundle.min.css";
@@ -29,7 +27,7 @@ const hankenGrotesk = Hanken_Grotesk({
   display: "swap",
 });
 
-// ✅ Global Metadata
+// ✅ Global metadata
 export const metadata = {
   metadataBase: new URL("https://www.growedgex.com"),
   title: "GrowEdgeX — Business Process Solutions & BPO Firm",
@@ -74,47 +72,36 @@ export const metadata = {
 
 // ✅ Root Layout
 export default function RootLayout({ children }) {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "GrowEdgeX",
+    url: "https://www.growedgex.com",
+    logo:
+      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+    description:
+      "GrowEdgeX is a trusted BPO firm offering business process outsourcing, customer support, and virtual coordination services for business growth.",
+    sameAs: [
+      "https://www.facebook.com/growedgex",
+      "https://www.linkedin.com/company/growedgex",
+      "https://twitter.com/growedgex",
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+1-000-000-0000",
+      contactType: "Customer Support",
+      areaServed: "US",
+      availableLanguage: "English",
+    },
+  };
+
   return (
     <html lang="en" className={`${inter.variable} ${hankenGrotesk.variable}`}>
       <head>
-        {/* ✅ Schema.org JSON-LD Structured Data */}
-        <Script
-          id="schema-organization"
+        {/* ✅ Schema.org JSON-LD structured data */}
+        <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "GrowEdgeX",
-              url: "https://www.growedgex.com",
-              logo:
-                "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
-              sameAs: [
-                "https://www.facebook.com/growedgex",
-                "https://www.linkedin.com/company/growedgex",
-                "https://www.instagram.com/growedgex",
-              ],
-              description:
-                "GrowEdgeX provides global business process outsourcing (BPO), call center, and virtual coordination solutions to help businesses scale efficiently.",
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+1-800-123-4567",
-                  contactType: "Customer Support",
-                  areaServed: "US",
-                  availableLanguage: ["English"],
-                },
-              ],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "123 Business Park",
-                addressLocality: "New York",
-                addressRegion: "NY",
-                postalCode: "10001",
-                addressCountry: "US",
-              },
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </head>
       <body>
