@@ -32,7 +32,7 @@ const ServicesSection = () => {
       "Professional virtual patient care coordination services for Home Health agencies and home care providers across all 50 states with certified coordinators.",
     icon: Heart,
     delay: "400ms",
-    url: "/service/service4", // 👈 new page or service section (adjust as needed)
+    url: "/service/virtualcoordinator", // 👈 new page or service section (adjust as needed)
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const ServicesSection = () => {
       "Full-stack web development and IT solutions tailored for any industry. From responsive websites to complex web applications and IT infrastructure.",
     icon: Globe,
     delay: "800ms",
-    url: "/service/service2", // 👈 same route as your IT Industry card
+    url: "/service/webdevelopment", // 👈 same route as your IT Industry card
   },
   {
     id: 5,
