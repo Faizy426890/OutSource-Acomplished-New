@@ -30,9 +30,9 @@ const hankenGrotesk = Hanken_Grotesk({
 // ✅ Global metadata
 export const metadata = {
   metadataBase: new URL("https://www.growedgex.com"),
-  title: "GrowEdgeX — BPO Firm",
+  title: "GrowEdgeX — Business Process Solutions & BPO Firm",
   description:
-    "GrowEdgeX is a professional BPO firm providing reliable business process solution company.",
+    "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
   keywords:
     "BPO firm, business process solutions, customer support, call center, GrowEdgeX",
   icons: {
@@ -43,9 +43,9 @@ export const metadata = {
       "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
   },
   openGraph: {
-    title: "GrowEdgeX — BPO Firm",
+    title: "GrowEdgeX — Business Process Solutions & BPO Firm",
     description:
-      "GrowEdgeX is a professional BPO firm providing reliable business process solution company",
+      "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
     url: "https://www.growedgex.com",
     siteName: "GrowEdgeX",
     images: [
@@ -61,14 +61,15 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GrowEdgeX — BPO Firm",
+    title: "GrowEdgeX — Business Process Solutions & BPO Firm",
     description:
-      "GrowEdgeX is a professional BPO firm providing reliable business process solution company",
+      "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
     images: [
       "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
     ],
   },
 };
+
 
 // ✅ Root Layout
 export default function RootLayout({ children }) {
