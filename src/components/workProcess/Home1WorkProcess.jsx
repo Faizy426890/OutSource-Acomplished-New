@@ -131,9 +131,7 @@ const Home1WorkProcess = () => {
                         </div>
                         <div className="content">
                           <h4>Understanding Your Vision</h4>
-                          <p>
-                          With our vision for clarity and innovation, we can easily understand complex ideas while unlocking insights and shaping solutions.
-                          </p>
+                         <p>Guided by a passion for fresh thinking and clear understanding, we simplify challenges, reveal new perspectives, and create impactful solutions.</p>
                           <ul>
                             <li>
                               <svg
@@ -343,12 +341,7 @@ const Home1WorkProcess = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h4>Understanding Your Vision</h4>
-                          <p>
-                            Unlocking insights, shaping solutions — comprehend
-                            complex ideas effortlessly with our vision for
-                            clarity and innovation.
-                          </p>
+                        <h4>Seeing Things Differently</h4> <p>We take the time to understand what really matters, break down the tough parts, and turn big ideas into simple, effective solutions.</p>
                           <ul>
                             <li>
                               <svg
@@ -416,12 +409,7 @@ const Home1WorkProcess = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h4>Collaborative Planning</h4>
-                          <p>
-                            Streamline teamwork with Collaborative Planning,
-                            fostering efficiency and synergy in achieving shared
-                            goals seamlessly.
-                          </p>
+                         <h4>Working Together Seamlessly</h4> <p>We bring teams on the same page, simplify coordination, and make achieving shared goals smoother and more efficient.</p>
                           <ul>
                             <li>
                               <svg
@@ -489,12 +477,7 @@ const Home1WorkProcess = () => {
                           </svg>
                         </div>
                         <div className="content">
-                          <h4>Customized Solutions</h4>
-                          <p>
-                            Tailored solutions for your unique needs, delivering
-                            personalized results that elevate your experience
-                            and surpass expectations.
-                          </p>
+                         <h4>Solutions Built Around You</h4> <p>We design every strategy to fit your specific goals, ensuring results that feel personal, effective, and beyond what you imagined.</p>
                           <ul>
                             <li>
                               <svg
