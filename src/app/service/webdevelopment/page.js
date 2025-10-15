@@ -1,7 +1,8 @@
 import { CheckCircle, Users, Globe, Headphones, Shield, Clock, Award, FileCheck } from "lucide-react"
 import MainLayout from "../../../components/layout/MainLayout"
 import AccountantsMatrix from "../../../components/accountingcheckbox"
-import StaffExpertise from "../../../components/staff-expertise"
+import StaffExpertise from "../../../components/staff-expertise" 
+import Image from "next/image"
 const App = () => {
   return (
     <> 
