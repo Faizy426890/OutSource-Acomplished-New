@@ -27,7 +27,7 @@ export default function Home() {
       {/* <Industries/> */} 
             <GlobalMapPartners/>
 
-      <Home1WorkProcess />
+      {/* <Home1WorkProcess /> */}
       {/* <BannerWithCaseStudySlider /> */}
       {/* <Home1Approach /> */}
       {/* <LogoMarquee /> */}
