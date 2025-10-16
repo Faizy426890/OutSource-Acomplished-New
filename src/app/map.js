@@ -374,7 +374,7 @@ export default function GlobalMapPartners() {
                 <Image 
                 width={1000}
                 height={1000} 
-                  src="https://res.cloudinary.com/diml90c1y/image/upload/v1760655820/ChatGPT_Image_Oct_16_2025_06_03_15_PM_f8izl7.png"
+                  src="https://res.cloudinary.com/diml90c1y/image/upload/v1760656467/ChatGPT_Image_Oct_16_2025_06_14_11_PM_yxjkgy.png"
                   alt="Global Footprint Map"
                   style={mapImageStyle}
                 />
