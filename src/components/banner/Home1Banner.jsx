@@ -194,7 +194,7 @@ const styles = {
     fontSize: 'clamp(1.75rem, 4vw, 3rem)',
     fontWeight: '700',
     lineHeight: '1.3',
-    color: '#71b1ff',
+    color: '#97c6ffff',
     marginBottom: '25px',
     maxWidth: '900px',
     letterSpacing: '-0.5px',
