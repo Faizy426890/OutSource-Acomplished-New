@@ -1,5 +1,6 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
+import Image from 'next/image';
 
 export default function GlobalMapPartners() {
   const [hoveredPartner, setHoveredPartner] = useState(null);
@@ -121,8 +122,6 @@ export default function GlobalMapPartners() {
     width: '256px',
     height: '256px',
     background: 'rgba(249, 115, 22, 0.1)',
-    borderRadius: '50%',
-    filter: 'blur(64px)',
     opacity: 0.3,
     marginRight: '-128px',
     marginTop: '-128px',
@@ -154,8 +153,6 @@ export default function GlobalMapPartners() {
     width: '100%',
     height: 'auto',
     maxWidth: '100%',
-    borderRadius: '12px',
-    filter: 'drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))',
   };
 
   const statsGridStyle = {
@@ -371,12 +368,13 @@ export default function GlobalMapPartners() {
             </div>
 
             <div className="map-wrapper" style={mapWrapperStyle}>
-              <div style={decorElement1Style}></div>
-              <div style={decorElement2Style}></div>
+             
               
               <div style={mapImageContainerStyle}>
-                <img
-                  src="https://res.cloudinary.com/diml90c1y/image/upload/v1760654175/Adobe_Express_-_file_kevcho.png"
+                <Image 
+                width={1000}
+                height={1000} 
+                  src="https://res.cloudinary.com/diml90c1y/image/upload/v1760655820/ChatGPT_Image_Oct_16_2025_06_03_15_PM_f8izl7.png"
                   alt="Global Footprint Map"
                   style={mapImageStyle}
                 />
