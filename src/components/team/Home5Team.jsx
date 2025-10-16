@@ -51,7 +51,7 @@ const Home5Team = () => {
             objectFit: "cover",
             display: "block",
           }}
-          src="https://res.cloudinary.com/diml90c1y/image/upload/v1757381432/Ceo-removebg-preview_ydws1q.png"
+          src="https://res.cloudinary.com/diml90c1y/image/upload/v1760651711/WhatsApp_Image_2025-10-16_at_4.32.09_PM_peojtw.jpg"
           alt="image"
         />
         <ul className="social-area">
