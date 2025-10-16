@@ -1,189 +1,279 @@
-"use client";
-import Image from "next/image";
-import React, { useEffect, useMemo, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, {
-  Autoplay,
-  EffectFade,
-  Navigation,
-  Pagination,
-} from "swiper";
-import Link from "next/link";
-SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]); 
+"use client"
+import { useState, useEffect } from 'react';
 
+export default function HeroSection() {
+  const [clients, setClients] = useState(0);
+  const [projects, setProjects] = useState(0);
+  const [employees, setEmployees] = useState(0);
 
-const Home1Banner = () => {
-  const [isOpen, setOpen] = useState(false);
-  const settings = useMemo(() => {
-    return {
-      slidesPerView: 1,
-      speed: 2500,
-      spaceBetween: 25,
-      effect: "fade", // Use the fade effect
-      fadeEffect: {
-        crossFade: true, // Enable cross-fade transition
-      },
-      autoplay: {
-        delay: 3000, // Autoplay duration in milliseconds
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".home1-banner-next",
-        prevEl: ".home1-banner-prev",
-      },
-    };
-  }, []);
   useEffect(() => {
-    const element = document.querySelectorAll(".badge__char");
-    const step = 360 / element.length;
+    const animateCounter = (setter, target, duration = 2000) => {
+      const steps = 60;
+      const increment = target / steps;
+      let current = 0;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          setter(target);
+          clearInterval(timer);
+        } else {
+          setter(Math.floor(current));
+        }
+      }, duration / steps);
+    };
 
-    element.forEach((elem, i) => {
-      elem.style.setProperty("--char-rotate", i * step + "deg");
-    });
+    animateCounter(setClients, 150);
+    animateCounter(setProjects, 500);
+    animateCounter(setEmployees, 1200);
   }, []);
+
   return (
-    <>
-      <div className="home1-banner-section">
-        <div className="container-fluid p-0">
-          <div className="row">
-            <div className="col-lg-6 d-flex align-items-xxl-start align-items-center">
-              <div className="banner-content">
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={14}
-                    height={14}
-                    viewBox="0 0 14 14"
-                  >
-                    <g>
-                      <path d="M6.6304 0.338424C6.67018 -0.112811 7.32982 -0.112807 7.3696 0.338428L7.72654 4.38625C7.75291 4.68505 8.10454 4.83069 8.33443 4.63804L11.4491 2.02821C11.7963 1.73728 12.2627 2.20368 11.9718 2.55089L9.36197 5.66556C9.1693 5.89546 9.31496 6.24709 9.61374 6.27346L13.6615 6.6304C14.1128 6.67018 14.1128 7.32982 13.6615 7.3696L9.61374 7.72654C9.31496 7.75291 9.1693 8.10454 9.36197 8.33443L11.9718 11.4491C12.2627 11.7963 11.7963 12.2627 11.4491 11.9718L8.33443 9.36197C8.10454 9.1693 7.75291 9.31496 7.72654 9.61374L7.3696 13.6615C7.32982 14.1128 6.67018 14.1128 6.6304 13.6615L6.27346 9.61374C6.24709 9.31496 5.89546 9.1693 5.66556 9.36197L2.55089 11.9718C2.20368 12.2627 1.73729 11.7963 2.02822 11.4491L4.63804 8.33443C4.83069 8.10454 4.68504 7.75291 4.38625 7.72654L0.338424 7.3696C-0.112811 7.32982 -0.112807 6.67018 0.338428 6.6304L4.38625 6.27346C4.68505 6.24709 4.83069 5.89546 4.63804 5.66556L2.02821 2.55089C1.73728 2.20368 2.20368 1.73729 2.55089 2.02822L5.66556 4.63804C5.89546 4.83069 6.24709 4.68504 6.27346 4.38625L6.6304 0.338424Z" />
-                    </g>
-                  </svg>
-                  Expertise You Can Trust
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={14}
-                    height={14}
-                    viewBox="0 0 14 14"
-                  >
-                    <g>
-                      <path d="M6.6304 0.338424C6.67018 -0.112811 7.32982 -0.112807 7.3696 0.338428L7.72654 4.38625C7.75291 4.68505 8.10454 4.83069 8.33443 4.63804L11.4491 2.02821C11.7963 1.73728 12.2627 2.20368 11.9718 2.55089L9.36197 5.66556C9.1693 5.89546 9.31496 6.24709 9.61374 6.27346L13.6615 6.6304C14.1128 6.67018 14.1128 7.32982 13.6615 7.3696L9.61374 7.72654C9.31496 7.75291 9.1693 8.10454 9.36197 8.33443L11.9718 11.4491C12.2627 11.7963 11.7963 12.2627 11.4491 11.9718L8.33443 9.36197C8.10454 9.1693 7.75291 9.31496 7.72654 9.61374L7.3696 13.6615C7.32982 14.1128 6.67018 14.1128 6.6304 13.6615L6.27346 9.61374C6.24709 9.31496 5.89546 9.1693 5.66556 9.36197L2.55089 11.9718C2.20368 12.2627 1.73729 11.7963 2.02822 11.4491L4.63804 8.33443C4.83069 8.10454 4.68504 7.75291 4.38625 7.72654L0.338424 7.3696C-0.112811 7.32982 -0.112807 6.67018 0.338428 6.6304L4.38625 6.27346C4.68505 6.24709 4.83069 5.89546 4.63804 5.66556L2.02821 2.55089C1.73728 2.20368 2.20368 1.73729 2.55089 2.02822L5.66556 4.63804C5.89546 4.83069 6.24709 4.68504 6.27346 4.38625L6.6304 0.338424Z" />
-                    </g>
-                  </svg>
-                </span>
-              <h1>Boost Your Achievement with Insightful Internal Solutions </h1>
-
- <p> Business Process Outsourcing (BPO) firm GrowEdgex provides customised team plans.  Employing subject matter experts in the fields of healthcare, law, mortgage, information technology, accounting, call centre, and scheduling, we set up a specialised offshore or nearshore office with your name and logo.  We manage your day-to-day activities and provide training on your particular policies, allowing for smooth, scalable, and economical growth.  GrowEdgex can help you scale more intelligently. </p>
-                <div className="banner-content-bottom">
-              <Link
-  href="/contact"
-  className="primary-btn1"
-  data-text="Schedule a meeting"
-  style={{
-    borderRadius: "50px",
-    transition: "all 0.3s ease-in-out",
-  }}
-  onMouseEnter={(e) => (e.currentTarget.style.filter = "brightness(1.1)")}
-  onMouseLeave={(e) => (e.currentTarget.style.filter = "brightness(1)")}
->
-  <span>Schedule a meeting</span>
-</Link>
-
-                  {/* <a href="https://clutch.co" className="rating-area">
-                    <div className="review">
-                      <span>Review On</span>
-                      <Image width={800}   
-  height={600}  loading="lazy"
-                        className="logo-dark"
-                        src="////assets/img/home1/icon/clutch-logo.svg"
-                        alt="image"
-                      />
-                      <Image width={800}   
-  height={600}  loading="lazy"
-                        className="logo-light"
-                        src="///assets/img/home1/icon/clutch-logo-white.svg"
-                        alt="image"
-                      />
-                    </div>
-                    <div className="rating">
-                      <ul className="star">
-                        <li>
-                          <i className="bi bi-star-fill" />
-                        </li>
-                        <li>
-                          <i className="bi bi-star-fill" />
-                        </li>
-                        <li>
-                          <i className="bi bi-star-fill" />
-                        </li>
-                        <li>
-                          <i className="bi bi-star-fill" />
-                        </li>
-                        <li>
-                          <i className="bi bi-star-half" />
-                        </li>
-                      </ul>
-                      <span>(50 reviews)</span>
-                    </div>
-                  </a> */}
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="banner-img-wrap">
-                <Swiper {...settings} className="swiper banner-img-slider">
-                  <div className="swiper-wrapper">
-                    <SwiperSlide className="swiper-slide">
-                      <Image width={800}   
-  height={600}  loading="lazy" src="/assets/images/img1.jpg" alt="Image 1" />
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
-                      <Image width={800}   
-  height={600}  loading="lazy" src="/assets/images/img2.jpg" alt="Image 2" />
-                    </SwiperSlide>
-                    <SwiperSlide className="swiper-slide">
-                      <Image width={800}   
-  height={600}  loading="lazy" src="/assets/images/img3.jpg" alt="Image 3" />
-                    </SwiperSlide>
-                  </div>
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="video-area">
-          <div className="badge">
-            <span className="badge__char">O</span>
-            <span className="badge__char">U</span>
-            <span className="badge__char">T</span>
-       
-           
-            <span className="badge__char">.</span>
-            <span className="badge__char">S</span>
-            <span className="badge__char">O</span>
-            <span className="badge__char">U</span>
-            <span className="badge__char">R</span> 
-            <span className="badge__char">C</span>
-            <span className="badge__char">E</span>
-
+    <div style={styles.container} id="hero-container">
+      <div style={styles.overlay}></div>
       
-            <div className="play">
-              <a
-                style={{ cursor: "pointer" }}
-                // onClick={() => setOpen(true)}
-                className="play-icon video1"
-              >
-                <i className="bi bi-play-fill" />
-              </a>
-            </div>
+      <div style={styles.content} id="hero-content">
+        <div style={styles.textSection}>
+          <h1 style={styles.mainHeading}>
+            Empowering Your Global Presence with Grow Edgex - Seamless Backend Support for Your Brand.
+          </h1>
+          
+          <p style={styles.description}>
+            We create and manage your branded offshore or onshore office - complete with your logo, your culture,
+            and a dedicated team that works only for you. From recruitment and training to daily supervision and
+            reporting, we handle everything so you can scale faster, stay in control, and focus on growth.
+          </p>
+          
+          <div style={styles.buttonContainer} id="button-container">
+            <button style={styles.primaryButton} className="hero-btn">
+              Get Started
+            </button>
+            <button style={styles.secondaryButton} className="hero-btn">
+              Contact Sales
+            </button>
           </div>
         </div>
-        <React.Fragment>
-         
-        </React.Fragment>
-      </div>
-    </>
-  );
-};
 
-export default Home1Banner;
+        <div style={styles.statsContainer} id="stats-container">
+          <div style={styles.statCard}>
+            <div style={styles.statNumber}>{clients}+</div>
+            <div style={styles.statLabel}>Happy Clients</div>
+          </div>
+          
+          <div style={styles.statCard}>
+            <div style={styles.statNumber}>{projects}+</div>
+            <div style={styles.statLabel}>Projects Completed</div>
+          </div>
+          
+          <div style={styles.statCard}>
+            <div style={styles.statNumber}>{employees}+</div>
+            <div style={styles.statLabel}>Employees Globally</div>
+          </div>
+        </div>
+      </div>
+
+      <style>{`
+        .hero-btn {
+          transition: all 0.3s ease;
+        }
+        
+        .hero-btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-btn:active {
+          transform: translateY(0);
+        }
+
+        @media (max-width: 1024px) {
+          #hero-container {
+            padding: 100px 40px 50px !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          #hero-container {
+            padding: 130px 30px 40px !important;
+            min-height: auto !important;
+          }
+          
+          #hero-content {
+            gap: 40px !important;
+          }
+          
+          .hero-btn {
+            width: 100%;
+            max-width: 200px;
+          }
+          
+          #stats-container {
+            gap: 20px !important;
+            padding: 0 10px !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          #hero-container {
+            padding: 140px 20px 30px !important;
+            background-attachment: scroll !important;
+          }
+          
+          #hero-content {
+            gap: 30px !important;
+          }
+          
+          .hero-btn {
+            max-width: 160px;
+            padding: 12px 24px !important;
+            font-size: 13px !important;
+          }
+          
+          #button-container {
+            flex-direction: column !important;
+            width: 100% !important;
+          }
+          
+          #stats-container {
+            grid-template-columns: 1fr !important;
+            gap: 16px !important;
+            max-width: 400px !important;
+          }
+        }
+      `}</style>
+    </div>
+  );
+}
+
+const styles = {
+  container: {
+    position: 'relative',
+    width: '100%',
+    minHeight: '100vh',
+    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(20, 25, 30, 0.5)), url("https://res.cloudinary.com/diml90c1y/image/upload/v1760644456/WhatsApp_Image_2025-10-16_at_2.43.55_PM_qdro2v.jpg")',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'scroll',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '120px 60px 60px',
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+  },
+  
+  overlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    background: 'linear-gradient(135deg, rgba(8, 20, 35, 0.8) 0%, rgba(12, 25, 40, 0.75) 100%)',
+    zIndex: 1,
+  },
+  
+  content: {
+    position: 'relative',
+    zIndex: 2,
+    maxWidth: '1200px',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '60px',
+  },
+  
+  textSection: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+  },
+  
+  mainHeading: {
+    fontSize: 'clamp(1.75rem, 4vw, 3rem)',
+    fontWeight: '700',
+    lineHeight: '1.3',
+    color: '#71b1ff',
+    marginBottom: '25px',
+    maxWidth: '900px',
+    letterSpacing: '-0.5px',
+  },
+  
+  description: {
+    fontSize: 'clamp(0.95rem, 1.8vw, 1.1rem)',
+    lineHeight: '1.7',
+    color: '#dfdfdf',
+    marginBottom: '36px',
+    maxWidth: '800px',
+    fontWeight: '300',
+  },
+  
+  buttonContainer: {
+    display: 'flex',
+    gap: '20px',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  
+  primaryButton: {
+    backgroundColor: '#66dbf5ff',
+    color: '#000000ff',
+    padding: '15px 40px',
+    fontSize: '14px',
+    fontWeight: '600',
+    border: 'none',
+    borderRadius: '50px',
+    cursor: 'pointer',
+    letterSpacing: '1px',
+    boxShadow: '0 4px 15px rgba(30, 58, 95, 0.4)',
+  },
+  
+  secondaryButton: {
+    backgroundColor: '#ffffff',
+    color: '#1e3a5f',
+    padding: '15px 40px',
+    fontSize: '14px',
+    fontWeight: '600',
+    border: 'none',
+    borderRadius: '50px',
+    cursor: 'pointer',
+    letterSpacing: '1px',
+    boxShadow: '0 4px 15px rgba(255, 255, 255, 0.2)',
+  },
+  
+  statsContainer: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+    gap: '30px',
+    width: '100%',
+    maxWidth: '900px',
+    padding: '0 20px',
+  },
+  
+   statCard: {
+    backgroundColor: 'transparent',
+    borderRadius: '16px',
+    padding: '32px 24px',
+    textAlign: 'center',
+    border: 'none',
+    transition: 'all 0.3s ease',
+    cursor: 'default',
+  },
+  
+  statNumber: {
+    fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
+    fontWeight: '700',
+    color: '#71b1ff',
+    marginBottom: '8px',
+    lineHeight: '1',
+  },
+  
+  statLabel: {
+    fontSize: 'clamp(0.9rem, 1.5vw, 1.1rem)',
+    color: '#dfdfdf',
+    fontWeight: '500',
+    letterSpacing: '0.5px',
+  },
+};

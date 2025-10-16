@@ -1,8 +1,9 @@
 import Home1Approach from "../components/approachSection/Home1Approach";
 import Home1Banner from "../components/banner/Home1Banner";
 import Home2Contact from "../components/contact/Home2Contact"; 
-import Footer from "../components/footer/Footer"; 
-import Industries from "../components/industries/Industries";
+import Footer from "../components/footer/Footer";  
+import ServicesGrid from "./Industries"
+import Industries from "../components/industries/Industries"; 
 import Header1 from "../components/header/Header1";
 import Home1BannerMarquee from "../components/marquee/Home1BannerMarquee";
 import Home1Solution from "../components/solution/Home1Solution";
@@ -18,13 +19,14 @@ export default function Home() {
     <>
       <Header1 />
       <Home1Banner />
-      <Home1BannerMarquee />
+      <Home1BannerMarquee /> 
+      <ServicesGrid /> 
       {/* <Home1About /> */}
       <Home1Solution /> 
-      <Industries/>
+      {/* <Industries/> */}
       <Home1WorkProcess />
       {/* <BannerWithCaseStudySlider /> */}
-      <Home1Approach />
+      {/* <Home1Approach /> */}
       {/* <LogoMarquee /> */}
       {/* <Home1Testimonial /> */}
       {/* <Home1Blog /> */}

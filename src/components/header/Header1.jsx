@@ -505,7 +505,7 @@ const Header1 = () => {
 
       <header
         ref={headerRef}
-        className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}
+        className={`header-area style-1 ${state.scrollY > 0 ? "sticky" : ""}`}
       >
         <div className="container d-flex flex-nowrap align-items-center justify-content-between">
           <div className="company-logo">
