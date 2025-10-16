@@ -376,7 +376,7 @@ export default function GlobalMapPartners() {
               
               <div style={mapImageContainerStyle}>
                 <img
-                  src="https://www.mci.world/wp-content/uploads/2023/06/mci_global_footprint_q3_2023-1536x720.png"
+                  src="https://res.cloudinary.com/diml90c1y/image/upload/v1760654175/Adobe_Express_-_file_kevcho.png"
                   alt="Global Footprint Map"
                   style={mapImageStyle}
                 />
