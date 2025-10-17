@@ -37,12 +37,10 @@ export const metadata = {
     "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
   keywords:
     "BPO firm, business process solutions, customer support, call center, GrowEdgeX",
-  icons: {
+   icons: {
     icon: "/favicon.ico",
-    shortcut:
-      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
-    apple:
-      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: "GrowEdgeX — Business Process Solutions & BPO Firm",
