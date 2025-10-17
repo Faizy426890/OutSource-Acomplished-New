@@ -359,7 +359,7 @@ export default function GlobalMapPartners() {
           <div style={mapContainerStyle} className="map-container">
             <div style={titleContainerStyle}>
               <h2 className="title" style={titleStyle}>
-                Global Presence
+                Clients All Around the Globe 
               </h2>
               <div style={titleUnderlineStyle}></div>
               <p className="subtitle" style={subtitleStyle}>

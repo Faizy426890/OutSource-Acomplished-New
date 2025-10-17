@@ -6,7 +6,8 @@ import ServicesGrid from "./Industries"
 import GlobalMapPartners from "./map"
 import Industries from "../components/industries/Industries"; 
 import Header1 from "../components/header/Header1";
-import Home1BannerMarquee from "../components/marquee/Home1BannerMarquee";
+import Home1BannerMarquee from "../components/marquee/Home1BannerMarquee"; 
+import GlobalLocationsMap from "./officelocations"
 import Home1Solution from "../components/solution/Home1Solution";
 import Home1WorkProcess from "..//components/workProcess/Home1WorkProcess";
 
@@ -32,7 +33,8 @@ export default function Home() {
       {/* <Home1Approach /> */}
       {/* <LogoMarquee /> */}
       {/* <Home1Testimonial /> */}
-      {/* <Home1Blog /> */} 
+      {/* <Home1Blog /> */}  
+      <GlobalLocationsMap/>
       <Home2Contact />
       <Footer />
     </>
