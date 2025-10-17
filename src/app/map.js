@@ -110,7 +110,7 @@ export default function GlobalMapPartners() {
     maxWidth: '900px',
     background: 'transparent',
     borderRadius: '24px',
-    padding: '50px', 
+    padding: '40px', 
     paddingLeft:'20px',
     overflow: 'hidden',
   };
@@ -200,8 +200,8 @@ export default function GlobalMapPartners() {
         font-size: 0.813rem !important; 
       }
       .map-wrapper { 
-        padding: 20px !important;
-        border-radius: 16px !important;
+        padding: 0px !important;
+        border-radius: 10px !important;
       }
       .partner-card { 
         width: 160px !important; 
