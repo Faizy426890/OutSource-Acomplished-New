@@ -38,7 +38,7 @@ export const metadata = {
   keywords:
     "BPO firm, business process solutions, customer support, call center, GrowEdgeX",
   icons: {
-    icon: "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+    icon: "/favicon.ico",
     shortcut:
       "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
     apple:
