@@ -1,8 +1,102 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home2Contact = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    // Validation
+    if (!formData.fullName || !formData.phone || !formData.email || !formData.message) {
+      toast.error('Please fill in all required fields!', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast.error('Please enter a valid email address!', {
+        position: "top-right",
+        autoClose: 3000,
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success('🎉 Message sent successfully! We\'ll get back to you soon.', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: "colored",
+        });
+        
+        // Reset form
+        setFormData({
+          fullName: '',
+          phone: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        toast.error(data.message || 'Failed to send message. Please try again.', {
+          position: "top-right",
+          autoClose: 4000,
+          theme: "colored",
+        });
+      }
+    } catch (error) {
+      toast.error('Network error. Please check your connection and try again.', {
+        position: "top-right",
+        autoClose: 4000,
+        theme: "colored",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
+      <ToastContainer />
       <div className="home2-contact-section mb-110">
         <div className="container">
           <div className="row g-lg-4 gy-5 align-items-center">
@@ -34,7 +128,7 @@ const Home2Contact = () => {
                   </span>
                   <h2>Explore Our Solutions</h2>
                   <p>
-                    We’re happy to answer any questions you may have and we help
+                    We're happy to answer any questions you may have and we help
                     you determine which of our services best fit your needs.
                   </p>
                 </div>
@@ -133,7 +227,6 @@ const Home2Contact = () => {
                         <span>Facebook</span>
                       </a>
                     </li>
-                  
                     <li>
                       <a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr">
                         <i className="bi bi-instagram" />
@@ -151,45 +244,67 @@ const Home2Contact = () => {
                 data-wow-duration="1500ms"
               >
                 <h3>Get in Touch with us </h3>
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
-                        <label>Full Name</label>
-                        <input type="text" />
+                        <label>Full Name *</label>
+                        <input 
+                          type="text" 
+                          name="fullName"
+                          value={formData.fullName}
+                          onChange={handleChange}
+                          disabled={isSubmitting}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
                         <label>Phone Number *</label>
-                        <input type="text" />
+                        <input 
+                          type="text" 
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          disabled={isSubmitting}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
                         <label>Your Email *</label>
-                        <input type="email" />
+                        <input 
+                          type="email" 
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          disabled={isSubmitting}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-12 mb-30">
                       <div className="form-inner">
                         <label>Message *</label>
-                        <input 
-                         style={{
-      width: '100%',
-      height: '150px',
-      padding: '12px 16px',
-      fontSize: '16px',
-      border: '1px solid #ccc',
-      borderRadius: '6px',
-      boxSizing: 'border-box',
-      resize: 'vertical',
-      fontFamily: 'inherit',
-      backgroundColor: '#fff',
-      color: '#333',
-      transition: 'border-color 0.3s ease'
-    }}
-                         type="text" />
+                        <textarea
+                          name="message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          disabled={isSubmitting}
+                          style={{
+                            width: '100%',
+                            height: '150px',
+                            padding: '12px 16px',
+                            fontSize: '16px',
+                            border: '1px solid #ccc',
+                            borderRadius: '6px',
+                            boxSizing: 'border-box',
+                            resize: 'vertical',
+                            fontFamily: 'inherit',
+                            backgroundColor: '#fff',
+                            color: '#333',
+                            transition: 'border-color 0.3s ease'
+                          }}
+                        />
                       </div>
                     </div>
                     <div className="col-lg-12">
@@ -197,9 +312,10 @@ const Home2Contact = () => {
                         <button
                           className="primary-btn2"
                           type="submit"
-                          data-text="Submit Now"
+                          disabled={isSubmitting}
+                          data-text={isSubmitting ? "Sending..." : "Submit Now"}
                         >
-                          <span>Submit Now</span>
+                          <span>{isSubmitting ? "Sending..." : "Submit Now"}</span>
                         </button>
                       </div>
                     </div>

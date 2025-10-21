@@ -1,25 +1,87 @@
 {
   "pages": {
-    "/layout": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/page": [
+    "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contact/page.css",
+      "static/chunks/app/contact/page.js"
+    ],
+    "/service/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/page.css",
+      "static/chunks/app/service/page.js"
+    ],
+    "/service/virtualcoordinator/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/virtualcoordinator/page.css",
+      "static/chunks/app/service/virtualcoordinator/page.js"
+    ],
+    "/service/webdevelopment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/webdevelopment/page.css",
+      "static/chunks/app/service/webdevelopment/page.js"
+    ],
+    "/service/customer-support/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/customer-support/page.css",
+      "static/chunks/app/service/customer-support/page.js"
+    ],
+    "/service/backend/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/backend/page.css",
+      "static/chunks/app/service/backend/page.js"
+    ],
+    "/service/service-details/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/service-details/page.css",
+      "static/chunks/app/service/service-details/page.js"
+    ],
+    "/service/dataentry/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/dataentry/page.css",
+      "static/chunks/app/service/dataentry/page.js"
+    ],
+    "/service/telemarketing/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/telemarketing/page.css",
+      "static/chunks/app/service/telemarketing/page.js"
     ],
     "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/about/page.css",
       "static/chunks/app/about/page.js"
+    ],
+    "/service/bpo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/service/bpo/page.css",
+      "static/chunks/app/service/bpo/page.js"
     ]
   }
 }

@@ -44,12 +44,13 @@ export default function HeroSection() {
           </p>
           
           <div style={styles.buttonContainer} id="button-container">
-            <button style={styles.primaryButton} className="hero-btn">
-              Get Started
-            </button>
-            <button style={styles.secondaryButton} className="hero-btn">
-              Contact Sales
-            </button>
+            <a href="/service" style={styles.primaryButton} className="hero-btn">
+  Get Started
+</a>
+
+<a href="/contact" style={styles.secondaryButton} className="hero-btn">
+  Contact Sales
+</a>
           </div>
         </div>
 

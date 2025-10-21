@@ -1,14 +1,17 @@
+"use client"
+
 import { CheckCircle, Users, Globe, Headphones, Shield, Clock, Award, FileCheck } from "lucide-react"
 import MainLayout from "../../../components/layout/MainLayout"
-import AccountantsMatrix from "../../../components/accountingcheckbox"
-import StaffExpertise from "../../../components/staff-expertise" 
+import PatientCareMatrix from "../../../components/patientcare-checkbox"
+import CareExpertise from "../../../components/care-expertise" 
 import Image from "next/image"
+
 const App = () => {
   return (
     <> 
     <MainLayout> 
-      <StaffExpertise/>  
-                        <AccountantsMatrix/> 
+      <CareExpertise/>  
+      <PatientCareMatrix/> 
 
       <div className="service-details-page pt-120 mb-120" id="service-details-section">
         <div className="container">
@@ -21,31 +24,31 @@ const App = () => {
               >
                 <div className="service-details-top-content">
                   <h2>
-                    Accounting <span>Services.</span>
+                    Virtual Patient Care <span>Coordination.</span>
                   </h2>
                   <p>
-                    We provide offshore and onshore accountants who seamlessly integrate with your team to handle bookkeeping, payroll, AR/AP management, financial statements compilation, tax prep, CFO services admin support and more. Our unique approach combines local time zone operations, rigorous training programs, practice manager oversight, and ISO 27001 certified security infrastructure to deliver exceptional results.
+                    We provide dedicated Virtual Patient Care Coordinators who seamlessly integrate with your healthcare team to manage appointment scheduling, patient communication, follow-up care, medical documentation, and care coordination. Our unique approach combines healthcare expertise, comprehensive training, quality assurance oversight, and HIPAA-compliant infrastructure to ensure exceptional patient experiences and smooth clinical operations.
                   </p>
                   <ul className="key-features">
                     <li>
                       <CheckCircle size={15} />
-                      Bookkeeping Services
+                      Appointment Scheduling & Management
                     </li>
                     <li>
                       <CheckCircle size={15} />
-                      Payroll Management
+                      Patient Communication & Education
                     </li>
                     <li>
                       <CheckCircle size={15} />
-                      AR/AP Management
+                      Care Follow-up & Reminder Systems
                     </li>
                     <li>
                       <CheckCircle size={15} />
-                      Financial Statements Compilation
+                      Medical Documentation Support
                     </li>
                     <li>
                       <CheckCircle size={15} />
-                      CFO Services & Admin Support
+                      Care Coordination & Referral Management
                     </li>
                   </ul>
                 </div>
@@ -58,8 +61,8 @@ const App = () => {
                 <div className="service-details-img">
                   <Image width={800}   
   height={600}  loading="lazy"
-                    src="https://www.cpasitesolutions.com/cpa-websites/wp-content/uploads/2022/08/why-hire-a-bookkeeper.png"
-                    alt="Accounting Services"
+                    src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/1059107342DevelopmentAssociate.jpg=ws1280x960"
+                    alt="Virtual Patient Care Coordination Services"
                   />
                 </div>
               </div>
@@ -75,8 +78,8 @@ const App = () => {
                 <div className="service-details-faq-img">
                   <Image width={800}   
   height={600}  loading="lazy"
-                    src="https://akaunting.com/blog/wp-content/uploads/2021/03/The-Difference-Between-Bookkeeping-and-Accounting.jpg"
-                    alt="FAQ"
+                    src="https://blog.searcha.net/wp-content/uploads/2024/12/formacion-como-setter-de-ventas-1.jpg"
+                    alt="Patient Care Coordination FAQ"
                   />
                 </div>
               </div>
@@ -93,7 +96,7 @@ const App = () => {
                           aria-expanded="true"
                           aria-controls="faqcollapseOne"
                         >
-                          01. What accounting services do you offer and how do they work?
+                          01. What patient care coordination services do you offer and how do they work?
                         </button>
                       </h2>
                       <div
@@ -103,7 +106,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          We provide comprehensive accounting services including bookkeeping, payroll management, AR/AP management, financial statements compilation, tax preparation, and CFO services. Our offshore and onshore accountants seamlessly integrate with your team, working in your local time zone to ensure smooth operations and timely deliverables.
+                          We provide comprehensive virtual patient care coordination including appointment scheduling, patient communication, follow-up care coordination, medical documentation support, and referral management. Our coordinators work as an extension of your healthcare team, ensuring seamless patient experiences and efficient clinical operations through secure, HIPAA-compliant platforms.
                         </div>
                       </div>
                     </div>
@@ -118,7 +121,7 @@ const App = () => {
                           aria-expanded="false"
                           aria-controls="faqcollapseTwo"
                         >
-                          02. How do you ensure quality in your accounting services?
+                          02. How do you ensure quality in your patient care coordination services?
                         </button>
                       </h2>
                       <div
@@ -128,7 +131,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          Every accountant undergoes a rigorous 3-month training program followed by 3 months of testing before deployment. Our practice managers provide continuous oversight to ensure high-quality, productive output. We also match staff based on your specific needs and industry requirements for optimal results.
+                          Every care coordinator undergoes a comprehensive 3-month training program covering healthcare protocols, patient communication, medical terminology, and EHR systems, followed by 1 month of supervised practice. Our healthcare quality assurance team continuously monitors interactions and provides ongoing training to maintain the highest standards of patient care and satisfaction.
                         </div>
                       </div>
                     </div>
@@ -143,7 +146,7 @@ const App = () => {
                           aria-expanded="false"
                           aria-controls="faqcollapseThree"
                         >
-                          03. How secure is my financial data with your service?
+                          03. How secure is patient health information with your service?
                         </button>
                       </h2>
                       <div
@@ -153,7 +156,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          We prioritize data security with ISO 27001 certified infrastructure. All work is conducted on secure local and cloud servers with no data leaving the country. Our robust security protocols ensure the highest level of protection for your sensitive financial information.
+                          We prioritize patient data security with HIPAA-compliant infrastructure and processes. All patient interactions and health information are handled through encrypted, secure systems with strict access controls. Our coordinals follow rigorous privacy protocols, and we maintain comprehensive compliance with healthcare data protection regulations.
                         </div>
                       </div>
                     </div>
@@ -168,7 +171,7 @@ const App = () => {
                           aria-expanded="false"
                           aria-controls="faqcollapseFour"
                         >
-                          04. What service plans do you offer?
+                          04. What service plans do you offer for patient care coordination?
                         </button>
                       </h2>
                       <div
@@ -178,7 +181,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          We offer flexible service plans to meet your needs: full-time virtual employee service for dedicated support, part-time hours for specific projects or seasonal needs, and practice manager-led plans for comprehensive oversight. Each plan is tailored to your specific accounting requirements and business size.
+                          We offer flexible care coordination plans: dedicated full-time coordinators for large practices, part-time support for smaller clinics, and specialized teams for specific medical specialties. Each plan includes quality monitoring, performance reporting, and regular service reviews to ensure optimal patient care and practice efficiency.
                         </div>
                       </div>
                     </div>
@@ -193,7 +196,7 @@ const App = () => {
                           aria-expanded="false"
                           aria-controls="faqcollapseFive"
                         >
-                          05. How do you match accountants to my business needs?
+                          05. How do you match care coordinators to our medical practice needs?
                         </button>
                       </h2>
                       <div
@@ -203,7 +206,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          We deploy staff based on your specific expertise requirements, industry, and business complexity. Our custom matching process ensures you receive accountants with the right skills and experience for your unique needs, whether you need bookkeeping specialists, tax experts, or CFO-level strategic support.
+                          We carefully match coordinators based on your medical specialty, practice size, patient demographics, and specific workflow requirements. Whether you need general care coordination, specialty-specific support, or complex chronic care management, we ensure the right expertise and personality fit for your practice culture and patient needs.
                         </div>
                       </div>
                     </div>
@@ -215,9 +218,6 @@ const App = () => {
         </div>
       </div> 
           
-
-
-
       <div className="service-details-feature-section mb-120">
         <div className="container">
           <div className="row">
@@ -237,10 +237,10 @@ const App = () => {
                   </svg>
                 </span>
                 <h2>
-                  What Makes Our Accounting Services <span>Different.</span>
+                  What Makes Our Care Coordination <span>Different.</span>
                 </h2>
                 <p>
-                  Experience the power of our unique approach combining local time zone operations, rigorous training, practice manager oversight, secure infrastructure, and custom expertise matching for superior accounting support.
+                  Experience the power of our unique approach combining healthcare expertise, comprehensive training, quality assurance oversight, HIPAA-compliant infrastructure, and custom specialty matching for superior patient care coordination.
                 </p>
               </div>
             </div>
@@ -251,9 +251,9 @@ const App = () => {
                     <Clock size={32} />
                   </div>
                   <div className="content">
-                    <h5>Local Time Zone Operations</h5>
+                    <h5>Extended Practice Hours</h5>
                     <p>
-                      Professionals working your business hours. Our team operates in your local time zone, ensuring real-time collaboration, immediate responses, and seamless integration with your existing workflows without communication delays.
+                      Care coordination support beyond regular office hours. Our teams provide coverage during evenings and weekends, ensuring patients can always reach someone for scheduling, questions, and support when your practice is closed.
                     </p>
                   </div>
                 </li>
@@ -262,9 +262,9 @@ const App = () => {
                     <Award size={32} />
                   </div>
                   <div className="content">
-                    <h5>Rigorous Training</h5>
+                    <h5>Healthcare-Specific Training</h5>
                     <p>
-                      Every accountant undergoes a 3-month training program and 3 months of testing before deployment. This comprehensive 6-month preparation ensures they possess the expertise and skills needed to deliver exceptional results from day one.
+                      Every care coordinator completes a 3-month intensive training program covering medical terminology, healthcare protocols, patient communication, and EHR systems, followed by supervised practice. This ensures they're fully prepared to support your clinical team effectively.
                     </p>
                   </div>
                 </li>
@@ -273,9 +273,9 @@ const App = () => {
                     <FileCheck size={32} />
                   </div>
                   <div className="content">
-                    <h5>Practice Manager Oversight</h5>
+                    <h5>Quality Assurance Monitoring</h5>
                     <p>
-                      Ensures high-quality, productive output. Our experienced practice managers continuously monitor work quality, provide guidance, implement best practices, and ensure consistent delivery of accurate, timely financial services.
+                      Continuous evaluation of patient interactions to maintain healthcare standards. Our dedicated healthcare QA team regularly reviews communications, documentation, and coordination activities, providing feedback to ensure consistent care quality.
                     </p>
                   </div>
                 </li>
@@ -284,9 +284,9 @@ const App = () => {
                     <Shield size={32} />
                   </div>
                   <div className="content">
-                    <h5>Secure Local Servers</h5>
+                    <h5>HIPAA-Compliant Security</h5>
                     <p>
-                      Work is conducted on local and cloud servers with no data leaving the country and through an ISO 27001 certified infrastructure to provide the highest level of data protection for your sensitive financial information.
+                      All patient interactions and health information are handled through secure, encrypted systems with HIPAA-compliant infrastructure. We maintain strict privacy protocols and access controls to protect sensitive patient data at all times.
                     </p>
                   </div>
                 </li>
@@ -295,9 +295,9 @@ const App = () => {
                     <Users size={32} />
                   </div>
                   <div className="content">
-                    <h5>Custom Expertise Matching</h5>
+                    <h5>Specialty-Specific Matching</h5>
                     <p>
-                      Staff deployed based on your specific needs. We carefully match accountants to your industry, software requirements, and business complexity, ensuring you get professionals with the exact expertise your business demands.
+                      Coordinators selected based on your medical specialty and practice needs. We match healthcare professionals to your specific requirements, whether you need primary care coordination, specialty practice support, or complex chronic care management.
                     </p>
                   </div>
                 </li>
@@ -306,10 +306,7 @@ const App = () => {
           </div>
         </div>
       </div> 
-
-     
     </MainLayout>
-
     </>
   )
 }

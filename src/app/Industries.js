@@ -5,7 +5,7 @@ export default function ServicesGrid({
   title = "Industries We Serve",
   ctaLabel = "Contact Us Today",
   onCtaClick,
-  ctaHref = "#contact",
+  ctaHref = "/contact",
 }) {
   const items = [
     { 

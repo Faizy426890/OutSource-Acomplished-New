@@ -41,6 +41,62 @@
 "pageTitle": "Empower Financial Growth with Our Expert Accounting and Payroll Solutions",
     "section_down_scroll": "#service-section"
   },
+    {
+    "id": "13",
+    "name": "Call-Centre / Customer Support",
+    "slug": "/service/customer-support",
+"pageTitle": "Enhance Customer Experience with Our Reliable Call Centre and Support Solutions",
+    "section_down_scroll": "#service-section"
+  },  
+   {
+    "id": "42",
+    "name": "IT Services",
+    "slug": "/service/webdevelopment",
+"pageTitle": "Build a Powerful Online Presence with Our Expert Web Development and IT Solutions",
+    "section_down_scroll": "#service-section"
+  }, 
+   {
+    "id": "44",
+    "name": "Virtual Patient Care Coordinator",
+    "slug": "/service/virtualcoordinator",
+"pageTitle": "Deliver Seamless Patient Support with Our Virtual Care Coordination Experts",
+    "section_down_scroll": "#service-section"
+  },   
+   {
+    "id": "44",
+    "name": "Data Entry",
+    "slug": "/service/dataentry",
+"pageTitle": "Deliver Seamless Patient Support with Our Virtual Care Coordination Experts",
+    "section_down_scroll": "#service-section"
+  },  
+   {
+    "id": "45",
+    "name": "Backend Office Management",
+    "slug": "/service/backend",
+"pageTitle": "Streamline Your Workflow with Our Comprehensive Back Office Management Services",
+    "section_down_scroll": "#service-section"
+  },  
+  {
+  "id": "49",
+  "name": "TeleMarketing",
+  "slug": "/service/telemarketing",
+  "pageTitle": "Boost Sales and Customer Engagement with Our Expert Telemarketing Services",
+  "section_down_scroll": "#service-section"
+}, 
+{
+  "id": "50",
+  "name": "Leading BPO Company",
+  "slug": "/service/bpo",
+  "pageTitle": "Comprehensive Business Process Outsourcing Solutions for Your Company",
+  "section_down_scroll": "#service-section"
+},
+{
+  "id": "51",
+  "name": "24/7 Chat Support",
+  "slug": "/service/chatsupport",
+  "pageTitle": "Always-On Support with Our 24/7 Chat Assistance Services",
+  "section_down_scroll": "#service-section"
+},
   {
     "id": "6",
     "name": "CASE STUDY",
