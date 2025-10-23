@@ -68,9 +68,9 @@ export default function Home() {
             url: "https://www.growedgex.com",
             logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
             sameAs: [
-              "https://www.facebook.com/growedgex",
-              "https://www.linkedin.com/company/growedgex",
-              "https://twitter.com/growedgex",
+              "https://www.facebook.com/share/1FcCUFRy7n/?mibextid=wwXIfr",
+              "https://www.linkedin.com/company/outsource-accomplished",
+              "https://www.instagram.com/growedge_x?igsh=ZTd4aWtldGNqYWtt&utm_source=qr",
             ],
           }),
         }}
