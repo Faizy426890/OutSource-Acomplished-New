@@ -1,6 +1,9 @@
 import nodemailer from "nodemailer";
 
-// Create transporter
+export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+
+// ✅ Create transporter
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -9,7 +12,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Email template for admin
+// ✅ Admin email template
 const getEmailTemplate = (fullName, phone, email, message) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -89,7 +92,7 @@ const getEmailTemplate = (fullName, phone, email, message) => `
 </html>
 `;
 
-// Auto-reply template for user
+// ✅ Auto-reply template
 const getAutoReplyTemplate = (fullName) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -133,17 +136,15 @@ const getAutoReplyTemplate = (fullName) => `
 </html>
 `;
 
-// ✅ Named export for POST (App Router compatible)
+// ✅ Main POST handler
 export async function POST(req) {
   try {
-    const body = await req.json();
-    const { fullName, phone, email, message } = body;
+    const { fullName, phone, email, message } = await req.json();
 
     if (!fullName || !phone || !email || !message) {
       return Response.json({ message: "All fields are required" }, { status: 400 });
     }
 
-    // Send to Admin
     const adminMailOptions = {
       from: '"Website Contact Form" <no-reply@growedgex.com>',
       to: "admin@growedgex.com",
