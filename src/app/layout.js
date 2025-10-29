@@ -52,7 +52,7 @@ export const metadata = {
     siteName: "GrowEdgeX",
     images: [
       {
-        url: "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+        url: "/favicon.ico",
         width: 800,
         height: 600,
         alt: "GrowEdgeX Logo",
