@@ -1,4 +1,3 @@
-// app/layout.tsx
 import { Inter, Hanken_Grotesk } from "next/font/google";
 import "../../public/assets/css/bootstrap-icons.css";
 import "../../public/assets/css/boxicons.min.css";
@@ -37,11 +36,14 @@ export const metadata = {
     "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
   keywords:
     "BPO firm, business process solutions, customer support, call center, GrowEdgeX",
-   icons: {
+
+  // ✅ Local favicon (no external URL)
+  icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
+
   openGraph: {
     title: "GrowEdgeX — Business Process Solutions & BPO Firm",
     description:
@@ -59,13 +61,14 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "GrowEdgeX — Business Process Solutions & BPO Firm",
     description:
       "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
     images: [
-      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+      "/favicon.ico",
     ],
   },
 };
@@ -78,7 +81,7 @@ export default function RootLayout({ children }) {
     name: "GrowEdgeX",
     url: "https://www.growedgex.com",
     logo:
-      "https://res.cloudinary.com/diml90c1y/image/upload/v1760232138/Screenshot_2025-10-11_202108_jtip2d.png",
+      "/favicon.ico",
     description:
       "GrowEdgeX is a trusted BPO firm offering business process outsourcing, customer support, and virtual coordination services for business growth.",
     sameAs: [
@@ -98,16 +101,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${hankenGrotesk.variable}`}>
       <head>
+        {/* ✅ Favicon (local file in /public) */}
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+
         {/* ✅ Schema.org JSON-LD structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
+
         {/* ✅ Canonical tag for SEO */}
         <link rel="canonical" href="https://www.growedgex.com" />
       </head>
       <body>
-        {/* ✅ Lazy-load Bootstrap JS to improve page speed */}
+        {/* ✅ Lazy-load Bootstrap JS */}
         <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
           strategy="lazyOnload"
