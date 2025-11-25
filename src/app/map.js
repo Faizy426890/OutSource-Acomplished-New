@@ -13,6 +13,14 @@ export default function GlobalMapPartners() {
     {
       name: "Partner 2",
       logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760649584/WhatsApp_Image_2025-10-16_at_4.18.44_PM-removebg-preview_nynzwo.png"
+    } , 
+     {
+      name: "Partner 3",
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1764036131/Gemini_Generated_Image_vbdlekvbdlekvbdl-removebg-preview_t8ls8z.png"
+    }, 
+      {
+      name: "Partner 4",
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1764036131/Gemini_Generated_Image_oxclvtoxclvtoxcl-removebg-preview_ddjjeq.png"
     }
   ];
 
