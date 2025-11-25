@@ -47,9 +47,15 @@ const Home3WorkProcess = () => {
             </div>
           </div>
           <div className="content">
-            <h4>Progress Tracking</h4>
-            <p>Welcome to GrowEdge, where’r digital agi innovation meets strategic expensivt as a dynamic force in the.</p>
-          </div>
+  <h4>Progress Tracking</h4>
+  <p>
+    Welcome to GrowEdge Progress Tracking — your single source of truth for
+    measurable growth. Track goals, monitor milestones, and visualize team
+    performance with clear, actionable analytics. Our intuitive dashboards and
+    automated insights help you spot progress, remove roadblocks, and make
+    data-driven decisions that move your strategy forward.
+  </p>
+</div>
         </div>
       </div>
       <div className="col-xl-3 col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
@@ -78,10 +84,16 @@ const Home3WorkProcess = () => {
               <span>02</span>
             </div>
           </div>
-          <div className="content">
-            <h4>Recurring Tasks</h4>
-            <p>Welcome to GrowEdge, where’r digital agi innovation meets strategic expensivt as a dynamic force in the.</p>
-          </div>
+        <div className="content">
+  <h4>Recurring Tasks</h4>
+  <p>
+    Automate your workflow with GrowEdge Recurring Tasks. Set tasks to repeat
+    on your schedule, streamline routine work, and ensure nothing slips through
+    the cracks. Stay consistent, stay organized, and keep your team moving
+    effortlessly.
+  </p>
+</div>
+
         </div>
       </div>
       <div className="col-xl-3 col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
@@ -98,10 +110,16 @@ const Home3WorkProcess = () => {
               <span>03</span>
             </div>
           </div>
-          <div className="content">
-            <h4>User Permissions</h4>
-            <p>Welcome to GrowEdge, where’r digital agi innovation meets strategic expensivt as a dynamic force in the.</p>
-          </div>
+        <div className="content">
+  <h4>User Permissions</h4>
+  <p>
+    Control access with confidence using GrowEdge User Permissions. Assign the
+    right roles, manage visibility, and ensure every team member has the exact
+    level of access they need—no more, no less. Keep your workspace organized,
+    secure, and easy to manage.
+  </p>
+</div>
+
         </div>
       </div>
       <div className="col-xl-3 col-lg-4 col-md-6 wow animate fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
@@ -116,10 +134,15 @@ const Home3WorkProcess = () => {
               <span>04</span>
             </div>
           </div>
-          <div className="content">
-            <h4>Customization</h4>
-            <p>Welcome to GrowEdge, where’r digital agi innovation meets strategic expensivt as a dynamic force in the.</p>
-          </div>
+       <div className="content">
+  <h4>Customization</h4>
+  <p>
+    Make GrowEdge truly yours. Customize dashboards, workflows, and reports
+    to fit your team’s unique needs. Adapt features, design layouts, and
+    configure settings so your tools work the way you do—flexible, intuitive,
+    and efficient.
+  </p>
+</div>
         </div>
       </div>
     </div>

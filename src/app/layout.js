@@ -31,7 +31,7 @@ const hankenGrotesk = Hanken_Grotesk({
 // ✅ Global metadata
 export const metadata = {
   metadataBase: new URL("https://www.growedgex.com"),
-  title: "GrowEdgeX — Business Process Solutions & BPO Firm",
+  title: "GrowEdgeX — Business Process OutSourcing (BPO) & Management Firm",
   description:
     "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
   keywords:
@@ -45,7 +45,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "GrowEdgeX — Business Process Solutions & BPO Firm",
+    title: "GrowEdgeX — Business Process OutSourcing (BPO) & Management Firm",
     description:
       "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
     url: "https://www.growedgex.com",
@@ -64,7 +64,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "GrowEdgeX — Business Process Solutions & BPO Firm",
+    title: "GrowEdgeX — Business Process OutSourcing (BPO) & Management Firm",
     description:
       "GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.",
     images: [
