@@ -53,13 +53,13 @@ const styles = {
   },
   placeholder: {
     fontWeight: '700',
-    color: '#cc0000', // Highlight placeholders in red
+    color: '#cc0000',
     backgroundColor: '#ffe5e5',
     padding: '2px 4px',
     borderRadius: '4px',
   },
   smsCompliance: {
-    backgroundColor: '#e6f0ff', // Light blue background for key SMS section
+    backgroundColor: '#e6f0ff',
     border: '1px solid #004c99',
     borderRadius: '6px',
     padding: '20px',
@@ -67,7 +67,7 @@ const styles = {
     marginBottom: '20px',
   },
   checkboxGuide: {
-    backgroundColor: '#fffbe6', // Light yellow for action guide
+    backgroundColor: '#fffbe6',
     border: '1px solid #ffcc00',
     borderRadius: '6px',
     padding: '20px',
@@ -78,9 +78,9 @@ const styles = {
     fontWeight: '500',
     color: '#8b4513',
     lineHeight: '1.8',
-    display: 'flex', // Keep flex for icon alignment
-    alignItems: 'flex-start', // Align icon at the start of the first line
-    gap: '10px', // Space between icon and text
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '10px',
   }
 };
 
@@ -94,11 +94,10 @@ const Bold = ({ children }) => (
 
 // Inline SVG for the unchecked checkbox placeholder
 const UncheckedIcon = () => (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{width: '20px', height: '20px', borderRadius: '3px', border: '2px solid #333', flexShrink: 0, marginTop: '4px'}}> {/* Added marginTop for better vertical alignment */}
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{width: '20px', height: '20px', borderRadius: '3px', border: '2px solid #333', flexShrink: 0, marginTop: '4px'}}>
         <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="#ffffff" />
     </svg>
 );
-
 
 const App = () => {
   // Calculate the current date for the Effective Date
@@ -200,7 +199,7 @@ const App = () => {
         <p style={styles.bodyText}>
           <Bold>ACTION REQUIRED:</Bold> Place the following text directly next to the <Bold>UN-CHECKED</Bold> checkbox on all your website forms where a phone number is collected. This satisfies the TCPA/CTIA consent mechanism requirement.
         </p>
-        <div style={{ ...styles.checkboxCompliance, padding: '15px', border: '1px dashed #ffcc00', backgroundColor: '#fcf8e3' }}>
+        <div style={{ padding: '15px', border: '1px dashed #ffcc00', backgroundColor: '#fcf8e3' }}>
           <p style={styles.checkboxText}>
             <UncheckedIcon />
             <span>I consent to GrowEdgeX BPO contacting me via phone or text at the number provided regarding my inquiry and potential BPO services. Reply <Bold>STOP</Bold> to cancel. Standard message and data rates may apply.</span>
@@ -208,7 +207,66 @@ const App = () => {
         </div>
       </div>
 
-      <p style={{ ...styles.bodyText, marginTop: '40px', textAlign: 'center' }}>
+      {/* --- SMS Communications Policy (Above Contact Us) --- */}
+      <h2 style={styles.sectionTitle}>📱 SMS Communications Policy</h2>
+      <p style={styles.bodyText}>
+        GrowEdgeX may send SMS messages to users, job applicants, and clients who voluntarily provide their phone number and explicitly opt in to receive text messages. These messages may include service updates, scheduling information, hiring notifications, reminders, and operational communications.
+      </p>
+
+      <h3 style={styles.subTitle}>Message Frequency</h3>
+      <p style={styles.bodyText}>
+        Message frequency varies. You may receive up to 5 messages per week depending on your interactions with GrowEdgeX.
+      </p>
+
+      <h3 style={styles.subTitle}>Opt-Out Instructions</h3>
+      <p style={styles.bodyText}>
+        You may opt out of SMS messages at any time by replying <Bold>STOP</Bold> to any message. Once you opt out, you will no longer receive SMS messages unless you opt in again.
+      </p>
+
+      <h3 style={styles.subTitle}>Help</h3>
+      <p style={styles.bodyText}>
+        For help, reply <Bold>HELP</Bold> or contact us at <Bold>support@growedgex.com</Bold>.
+      </p>
+
+      <h3 style={styles.subTitle}>Message & Data Rates</h3>
+      <p style={styles.bodyText}>
+        Message and data rates may apply depending on your mobile carrier plan.
+      </p>
+
+      <h3 style={styles.subTitle}>Consent</h3>
+      <p style={styles.bodyText}>
+        Providing your phone number is optional. By checking an SMS opt-in box or submitting a form that includes SMS consent language, you authorize GrowEdgeX to send text messages to the number provided.
+      </p>
+
+      {/* --- SMS Messaging Terms (Terms & Conditions Section) --- */}
+      <h2 style={styles.sectionTitle}>📜 SMS Messaging Terms</h2>
+      <p style={styles.bodyText}>
+        By providing your phone number and opting in, you agree to receive SMS messages from GrowEdgeX related to service updates, hiring communication, scheduling, and general operational notifications.
+      </p>
+
+      <h3 style={styles.subTitle}>Message Frequency</h3>
+      <p style={styles.bodyText}>
+        Message frequency varies; you may receive up to 5 messages per week.
+      </p>
+
+      <h3 style={styles.subTitle}>Opt-Out Instructions</h3>
+      <p style={styles.bodyText}>
+        You may opt out at any time by replying <Bold>STOP</Bold> to any SMS. After opting out, you will no longer receive messages unless you opt in again.
+      </p>
+
+      <h3 style={styles.subTitle}>Help</h3>
+      <p style={styles.bodyText}>
+        Reply <Bold>HELP</Bold> for assistance or contact <Bold>support@growedgex.com</Bold>.
+      </p>
+
+      <h3 style={styles.subTitle}>Message & Data Rates</h3>
+      <p style={styles.bodyText}>
+        Message and data rates may apply depending on your mobile carrier.
+      </p>
+
+      {/* --- Contact Us Section --- */}
+      <h2 style={styles.sectionTitle}>Contact Us</h2>
+      <p style={{ ...styles.bodyText, marginTop: '20px', textAlign: 'center' }}>
         For further questions or clarification, please contact us at <Placeholder>+1 469 472 2311</Placeholder> or via our website contact form.
       </p>
     </div>
