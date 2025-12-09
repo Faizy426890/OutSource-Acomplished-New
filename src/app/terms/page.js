@@ -269,6 +269,34 @@ const App = () => {
         You agree to indemnify and hold GrowEdgeX, its employees, and partners harmless from claims or damages arising from your use of our website or services, violation of these Terms, or infringement of third-party rights.
       </p>
 
+      {/* --- NEW: SMS Messaging Terms Section --- */}
+      <h2 style={{ ...styles.sectionTitle, color: '#0066cc' }}>📱 SMS Messaging Terms</h2>
+      <p style={styles.bodyText}>
+        By providing your phone number and opting in, you agree to receive SMS messages from GrowEdgeX related to service updates, hiring communication, scheduling, and general operational notifications.
+      </p>
+
+      <div style={styles.smsCompliance}>
+        <h3 style={styles.subTitle}>Message Frequency</h3>
+        <p style={styles.bodyText}>
+          Message frequency varies; you may receive up to 5 messages per week.
+        </p>
+
+        <h3 style={styles.subTitle}>Opt-Out Instructions</h3>
+        <p style={styles.bodyText}>
+          You may opt out at any time by replying <Bold>STOP</Bold> to any SMS. After opting out, you will no longer receive messages unless you opt in again.
+        </p>
+
+        <h3 style={styles.subTitle}>Help</h3>
+        <p style={styles.bodyText}>
+          Reply <Bold>HELP</Bold> for assistance or contact <Bold>support@growedgex.com</Bold>.
+        </p>
+
+        <h3 style={styles.subTitle}>Message & Data Rates</h3>
+        <p style={styles.bodyText}>
+          Message and data rates may apply depending on your mobile carrier.
+        </p>
+      </div>
+
       {/* --- 10. Modifications to These Terms --- */}
       <h2 style={styles.sectionTitle}>10. Modifications to These Terms</h2>
       <p style={styles.bodyText}>
