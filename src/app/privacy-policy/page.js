@@ -225,7 +225,7 @@ const App = () => {
 
       <h3 style={styles.subTitle}>Help</h3>
       <p style={styles.bodyText}>
-        For help, reply <Bold>HELP</Bold> or contact us at <Bold>support@growedgex.com</Bold>.
+        For help, reply <Bold>HELP</Bold> or contact us at <Bold>info@growedgex.com</Bold>.
       </p>
 
       <h3 style={styles.subTitle}>Message & Data Rates</h3>
@@ -256,7 +256,7 @@ const App = () => {
 
       <h3 style={styles.subTitle}>Help</h3>
       <p style={styles.bodyText}>
-        Reply <Bold>HELP</Bold> for assistance or contact <Bold>support@growedgex.com</Bold>.
+        Reply <Bold>HELP</Bold> for assistance or contact <Bold>info@growedgex.com</Bold>.
       </p>
 
       <h3 style={styles.subTitle}>Message & Data Rates</h3>

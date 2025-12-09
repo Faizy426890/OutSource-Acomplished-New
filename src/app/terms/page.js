@@ -183,7 +183,7 @@ const App = () => {
         <h3 style={styles.subTitle}>Support Contact</h3>
         <p style={styles.bodyText}>
           For additional assistance, visit our website:<br />
-          <a href="https://www.growedgex.com" style={{ color: '#004c99', textDecoration: 'underline' }}>https://www.growedgex.com</a>
+          <a href="https://www.growedgex.com/contact" style={{ color: '#004c99', textDecoration: 'underline' }}>https://www.growedgex.com</a>
         </p>
 
         <h3 style={styles.subTitle}>Consent Assurance</h3>
@@ -288,7 +288,7 @@ const App = () => {
 
         <h3 style={styles.subTitle}>Help</h3>
         <p style={styles.bodyText}>
-          Reply <Bold>HELP</Bold> for assistance or contact <Bold>support@growedgex.com</Bold>.
+          Reply <Bold>HELP</Bold> for assistance or contact <Bold>info@growedgex.com</Bold>.
         </p>
 
         <h3 style={styles.subTitle}>Message & Data Rates</h3>
