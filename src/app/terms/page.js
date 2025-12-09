@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Define the inline styles as JavaScript objects
 const styles = {
   container: {
     maxWidth: '1000px',
@@ -51,13 +50,6 @@ const styles = {
   boldKey: {
     fontWeight: '700',
   },
-  placeholder: {
-    fontWeight: '700',
-    color: '#cc0000',
-    backgroundColor: '#ffe5e5',
-    padding: '2px 4px',
-    borderRadius: '4px',
-  },
   smsCompliance: {
     backgroundColor: '#e6f0ff',
     border: '1px solid #004c99',
@@ -91,18 +83,14 @@ const styles = {
   }
 };
 
-const Placeholder = ({ children }) => (
-  <span style={styles.placeholder}>{children}</span>
-);
-
 const Bold = ({ children }) => (
   <span style={styles.boldKey}>{children}</span>
 );
 
 const UncheckedIcon = () => (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{width: '20px', height: '20px', borderRadius: '3px', border: '2px solid #333', flexShrink: 0, marginTop: '4px'}}>
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="#ffffff" />
-    </svg>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{width: '20px', height: '20px', borderRadius: '3px', border: '2px solid #333', flexShrink: 0, marginTop: '4px'}}>
+    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="#ffffff" />
+  </svg>
 );
 
 const App = () => {
@@ -141,58 +129,39 @@ const App = () => {
         We reserve the right to modify, suspend, or discontinue any part of our services at any time.
       </p>
 
-      {/* --- 2. SMS Communication Terms --- */}
-      <h2 style={{ ...styles.sectionTitle, color: '#0066cc' }}>📱 2. SMS Communication Terms</h2>
+      {/* --- 2. SMS Communication & Messaging Terms --- */}
+      <h2 style={{ ...styles.sectionTitle, color: '#0066cc' }}>📱 2. SMS Communication & Messaging Terms</h2>
       <p style={styles.bodyText}>
-        By opting in through a website form, job application, or other consent mechanism, you agree to receive SMS messages from GrowEdgeX related to:
+        By providing your phone number and opting in through a website form, job application, or any other consent mechanism, you agree to receive SMS messages from GrowEdgeX related to service updates, hiring communication, scheduling, coordination, application status, onboarding, and general operational notifications.
       </p>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>Service updates</li>
-        <li style={styles.listItem}>Application status updates</li>
-        <li style={styles.listItem}>Scheduling or coordination</li>
-        <li style={styles.listItem}>Client communication</li>
-        <li style={styles.listItem}>Hiring and onboarding</li>
-        <li style={styles.listItem}>General support conversations</li>
-      </ul>
 
       <div style={styles.smsCompliance}>
         <h3 style={styles.subTitle}>Message Frequency</h3>
         <p style={styles.bodyText}>
-          Message frequency may vary depending on your interactions with us.
-        </p>
-
-        <h3 style={styles.subTitle}>Message & Data Rates</h3>
-        <p style={styles.bodyText}>
-          <Bold>Message and data rates may apply</Bold>, depending on your mobile carrier.
+          Message frequency varies depending on your interactions with us. You may receive up to 5 messages per week.
         </p>
 
         <h3 style={styles.subTitle}>Opt-Out Instructions</h3>
         <p style={styles.bodyText}>
-          You may opt out of SMS at any time by replying:
-        </p>
-        <p style={{ ...styles.bodyText, fontSize: '1.2rem', fontWeight: '700', color: '#cc0000' }}>
-          STOP
-        </p>
-        <p style={styles.bodyText}>
-          You may request help at any time by replying:
-        </p>
-        <p style={{ ...styles.bodyText, fontSize: '1.2rem', fontWeight: '700', color: '#004c99' }}>
-          HELP
+          You may opt out of SMS messages at any time by replying <Bold>STOP</Bold> to any message. After opting out, you will no longer receive SMS messages unless you opt in again.
         </p>
 
-        <h3 style={styles.subTitle}>Support Contact</h3>
+        <h3 style={styles.subTitle}>Help</h3>
         <p style={styles.bodyText}>
-          For additional assistance, visit our website:<br />
-          <a href="https://www.growedgex.com/contact" style={{ color: '#004c99', textDecoration: 'underline' }}>https://www.growedgex.com</a>
+          Reply <Bold>HELP</Bold> for assistance or contact <Bold>info@growedgex.com</Bold>.
         </p>
 
-        <h3 style={styles.subTitle}>Consent Assurance</h3>
-        <ul style={{ listStyleType: 'square', paddingLeft: '20px' }}>
-          <li style={styles.listItem}>GrowEdgeX will not send SMS messages without prior consent.</li>
-          <li style={styles.listItem}><Bold>SMS consent is not shared with third parties or affiliates.</Bold></li>
-        </ul>
+        <h3 style={styles.subTitle}>Message & Data Rates</h3>
         <p style={styles.bodyText}>
-          For information on how your personal data is used and protected, refer to our Privacy Policy:<br />
+          Message and data rates may apply depending on your mobile carrier plan.
+        </p>
+
+        <h3 style={styles.subTitle}>Consent Requirements</h3>
+        <p style={styles.bodyText}>
+          Providing your phone number is optional and not required to use our services. SMS messages are only sent when you provide explicit consent. Consent is never sold or shared with third parties or affiliates.
+        </p>
+        <p style={styles.bodyText}>
+          For additional information on how your data is used, please review our Privacy Policy:<br />
           <a href="https://www.growedgex.com/privacy-policy" style={{ color: '#004c99', textDecoration: 'underline' }}>https://www.growedgex.com/privacy-policy</a>
         </p>
       </div>
@@ -221,7 +190,7 @@ const App = () => {
         <li style={styles.listItem}>How users can exercise their rights</li>
       </ul>
       <p style={styles.bodyText}>
-        Please review our Privacy Policy here:<br />
+        Review our Privacy Policy here:<br />
         <a href="https://www.growedgex.com/privacy-policy" style={{ color: '#004c99', textDecoration: 'underline' }}>https://www.growedgex.com/privacy-policy</a>
       </p>
 
@@ -269,34 +238,6 @@ const App = () => {
         You agree to indemnify and hold GrowEdgeX, its employees, and partners harmless from claims or damages arising from your use of our website or services, violation of these Terms, or infringement of third-party rights.
       </p>
 
-      {/* --- NEW: SMS Messaging Terms Section --- */}
-      <h2 style={{ ...styles.sectionTitle, color: '#0066cc' }}>📱 SMS Messaging Terms</h2>
-      <p style={styles.bodyText}>
-        By providing your phone number and opting in, you agree to receive SMS messages from GrowEdgeX related to service updates, hiring communication, scheduling, and general operational notifications.
-      </p>
-
-      <div style={styles.smsCompliance}>
-        <h3 style={styles.subTitle}>Message Frequency</h3>
-        <p style={styles.bodyText}>
-          Message frequency varies; you may receive up to 5 messages per week.
-        </p>
-
-        <h3 style={styles.subTitle}>Opt-Out Instructions</h3>
-        <p style={styles.bodyText}>
-          You may opt out at any time by replying <Bold>STOP</Bold> to any SMS. After opting out, you will no longer receive messages unless you opt in again.
-        </p>
-
-        <h3 style={styles.subTitle}>Help</h3>
-        <p style={styles.bodyText}>
-          Reply <Bold>HELP</Bold> for assistance or contact <Bold>info@growedgex.com</Bold>.
-        </p>
-
-        <h3 style={styles.subTitle}>Message & Data Rates</h3>
-        <p style={styles.bodyText}>
-          Message and data rates may apply depending on your mobile carrier.
-        </p>
-      </div>
-
       {/* --- 10. Modifications to These Terms --- */}
       <h2 style={styles.sectionTitle}>10. Modifications to These Terms</h2>
       <p style={styles.bodyText}>
@@ -323,9 +264,9 @@ const App = () => {
       <div style={styles.checkboxGuide}>
         <h2 style={{ ...styles.sectionTitle, marginTop: '0', borderBottom: '2px solid #ffcc00', color: '#b8860b' }}>Implementation Guide: Required SMS Opt-In Checkbox</h2>
         <p style={styles.bodyText}>
-          <Bold>ACTION REQUIRED:</Bold> Place the following text directly next to the <Bold>UN-CHECKED</Bold> checkbox on all your website forms where a phone number is collected. This satisfies the TCPA/CTIA consent mechanism requirement.
+          <Bold>Place the following next to an unchecked checkbox on all forms collecting phone numbers:</Bold>
         </p>
-        <div style={{ padding: '15px', border: '1px dashed #ffcc00', backgroundColor: '#fcf8e3' }}>
+        <div style={{ padding: '15px', border: '1px dashed #ffcc00', backgroundColor: '#fcf8e3', marginTop: '15px' }}>
           <p style={styles.checkboxText}>
             <UncheckedIcon />
             <span>I consent to GrowEdgeX Corp. contacting me via phone or text at the number provided regarding my inquiry, application status, and services. Reply <Bold>STOP</Bold> to cancel. Standard message and data rates may apply.</span>
@@ -336,7 +277,7 @@ const App = () => {
       {/* --- Footer --- */}
       <div style={{ marginTop: '50px', padding: '20px', backgroundColor: '#f8f9fa', borderRadius: '6px', borderTop: '3px solid #004c99' }}>
         <p style={{ ...styles.bodyText, textAlign: 'center', marginBottom: '10px', fontSize: '1.1rem', fontWeight: '600', color: '#1a5a99' }}>
-          About GrowEdgeX Corp.
+          GrowEdgeX — Business Process OutSourcing (BPO) & Management Firm
         </p>
         <p style={{ ...styles.bodyText, textAlign: 'center', marginBottom: '0' }}>
           GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.
