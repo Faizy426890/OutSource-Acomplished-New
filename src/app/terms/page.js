@@ -1,4 +1,6 @@
-import React from 'react';
+import React from 'react'; 
+import MainLayout from "../../components/layout/MainLayout";
+
 
 const styles = {
   container: {
@@ -94,7 +96,9 @@ const UncheckedIcon = () => (
 );
 
 const App = () => {
-  return (
+  return ( 
+        <MainLayout>
+
     <div style={styles.container}>
       <h1 style={styles.header}>GrowEdgeX Corp. – Terms & Conditions</h1>
 
@@ -283,7 +287,8 @@ const App = () => {
           GrowEdgeX is a trusted BPO firm offering professional business process solutions, customer support, and call center services that drive business growth.
         </p>
       </div>
-    </div>
+    </div> 
+    </MainLayout>
   );
 };
 

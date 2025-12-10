@@ -75,7 +75,7 @@
     "slug": "/service/backend",
 "pageTitle": "Streamline Your Workflow with Our Comprehensive Back Office Management Services",
     "section_down_scroll": "#service-section"
-  },  
+  },   
   {
   "id": "49",
   "name": "TeleMarketing",
@@ -180,6 +180,20 @@
     "slug": "/portfolio",
     "pageTitle": "Showcase Our Portfolio.",
     "section_down_scroll": "#portfolio-grid"
+  }, 
+   {
+    "id": "29",
+    "name": "Terms",
+    "slug": "/terms",
+    "pageTitle": "Terms and conditions.",
+    "section_down_scroll": "#conditions"
+  }, 
+  {
+    "id": "89",
+    "name": "Privacy Policy",
+    "slug": "/privacy-policy",
+    "pageTitle": "Privacy Policy.",
+    "section_down_scroll": "#privacy-policy"
   },
   {
     "id": "18",

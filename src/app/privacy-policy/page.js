@@ -1,4 +1,6 @@
-import React from 'react';
+import React from 'react'; 
+import MainLayout from "../../components/layout/MainLayout";
+
 
 const styles = {
   container: {
@@ -95,7 +97,8 @@ const App = () => {
   const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
   const effectiveDate = currentDate.toLocaleDateString('en-US', dateOptions);
 
-  return (
+  return ( 
+    <MainLayout>
     <div style={styles.container}>
       <h1 style={styles.header}>GrowEdgeX BPO – Privacy Policy</h1>
 
@@ -310,7 +313,8 @@ const App = () => {
         <p style={styles.bodyText}>📞 <Bold>+1 469-472-2311</Bold></p>
         <p style={styles.bodyText}>🌐 <Bold>www.growedgex.com</Bold></p>
       </div>
-    </div>
+    </div> 
+    </MainLayout> 
   );
 };
 

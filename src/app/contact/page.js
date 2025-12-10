@@ -96,8 +96,6 @@ Plano TX 75075</p>
           </div>
         </div>
       </div>
-
-   
     </MainLayout>
   );
 };

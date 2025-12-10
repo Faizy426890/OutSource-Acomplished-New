@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,6 +10,7 @@ const Home2Contact = () => {
     email: '',
     message: ''
   });
+  const [smsConsent, setSmsConsent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
@@ -35,6 +36,15 @@ const Home2Contact = () => {
       return;
     }
 
+    // SMS consent validation
+    if (!smsConsent) {
+      toast.error('Please agree to receive SMS messages to continue.', {
+        position: "top-right",
+        autoClose: 3000,
+      });
+      return;
+    }
+
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
@@ -53,7 +63,10 @@ const Home2Contact = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          smsConsent
+        }),
       });
 
       const data = await response.json();
@@ -76,6 +89,7 @@ const Home2Contact = () => {
           email: '',
           message: ''
         });
+        setSmsConsent(false);
       } else {
         toast.error(data.message || 'Failed to send message. Please try again.', {
           position: "top-right",
@@ -305,6 +319,35 @@ const Home2Contact = () => {
                             transition: 'border-color 0.3s ease'
                           }}
                         />
+                      </div>
+                    </div>
+                    <div className="col-lg-12 mb-20">
+                      <div className="form-inner">
+                        <label style={{ 
+                          display: 'flex', 
+                          alignItems: 'flex-start', 
+                          cursor: 'pointer',
+                          fontSize: '14px',
+                          lineHeight: '1.6'
+                        }}>
+                          <input 
+                            type="checkbox"
+                            checked={smsConsent}
+                            onChange={(e) => setSmsConsent(e.target.checked)}
+                            disabled={isSubmitting}
+                            style={{
+                              marginRight: '10px',
+                              marginTop: '4px',
+                              cursor: 'pointer',
+                              width: '18px',
+                              height: '18px',
+                              flexShrink: 0
+                            }}
+                          />
+                          <span style={{ color: '#666' }}>
+                            I agree to receive SMS messages from GrowEdgeX regarding my inquiry or application. Message & data rates may apply. Message frequency varies. Reply STOP to opt out.
+                          </span>
+                        </label>
                       </div>
                     </div>
                     <div className="col-lg-12">
