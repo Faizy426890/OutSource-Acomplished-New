@@ -23,7 +23,7 @@ const Home2Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Validation
+    // Validation for required text fields
     if (!formData.fullName || !formData.phone || !formData.email || !formData.message) {
       toast.error('Please fill in all required fields!', {
         position: "top-right",
@@ -32,15 +32,6 @@ const Home2Contact = () => {
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
-      });
-      return;
-    }
-
-    // SMS consent validation
-    if (!smsConsent) {
-      toast.error('Please agree to receive SMS messages to continue.', {
-        position: "top-right",
-        autoClose: 3000,
       });
       return;
     }
@@ -65,7 +56,7 @@ const Home2Contact = () => {
         },
         body: JSON.stringify({
           ...formData,
-          smsConsent
+          smsConsent // This will send true/false to your backend
         }),
       });
 
@@ -122,21 +113,11 @@ const Home2Contact = () => {
                   data-wow-duration="1500ms"
                 >
                   <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={11}
-                      height={11}
-                      viewBox="0 0 11 11"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width={11} height={11} viewBox="0 0 11 11">
                       <path d="M11 5.5L9.48449 4.43056L10.2666 2.75L8.41505 2.58495L8.25 0.733376L6.56944 1.51551L5.5 0L4.43056 1.51551L2.75 0.733376L2.58495 2.58495L0.733376 2.75L1.51551 4.43056L0 5.5L1.51551 6.56944L0.733376 8.25L2.58495 8.41505L2.75 10.2666L4.43056 9.48449L5.5 11L6.56944 9.48449L8.25 10.2666L8.41505 8.41505L10.2666 8.25L9.48449 6.56944L11 5.5Z" />
                     </svg>
                     Free Audit
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={11}
-                      height={11}
-                      viewBox="0 0 11 11"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width={11} height={11} viewBox="0 0 11 11">
                       <path d="M11 5.5L9.48449 4.43056L10.2666 2.75L8.41505 2.58495L8.25 0.733376L6.56944 1.51551L5.5 0L4.43056 1.51551L2.75 0.733376L2.58495 2.58495L0.733376 2.75L1.51551 4.43056L0 5.5L1.51551 6.56944L0.733376 8.25L2.58495 8.41505L2.75 10.2666L4.43056 9.48449L5.5 11L6.56944 9.48449L8.25 10.2666L8.41505 8.41505L10.2666 8.25L9.48449 6.56944L11 5.5Z" />
                     </svg>
                   </span>
@@ -146,154 +127,45 @@ const Home2Contact = () => {
                     you determine which of our services best fit your needs.
                   </p>
                 </div>
-                <ul
-                  className="wow animate fadeInDown"
-                  data-wow-delay="200ms"
-                  data-wow-duration="1500ms"
-                >
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={18}
-                      height={18}
-                      viewBox="0 0 18 18"
-                    >
-                      <g>
-                        <path d="M18 9.00021C18 9.76743 17.0575 10.3998 16.8687 11.1071C16.6739 11.8383 17.1669 12.8573 16.7968 13.4972C16.4206 14.1475 15.2893 14.2254 14.7618 14.7529C14.2343 15.2804 14.1564 16.4117 13.5061 16.7878C12.8662 17.158 11.8473 16.665 11.116 16.8598C10.4087 17.0486 9.77634 17.9911 9.00912 17.9911C8.24189 17.9911 7.60953 17.0486 6.90224 16.8598C6.17098 16.665 5.15201 17.158 4.51215 16.7878C3.86181 16.4117 3.78389 15.2804 3.25642 14.7529C2.72895 14.2254 1.59759 14.1475 1.22147 13.4972C0.851348 12.8573 1.34435 11.8383 1.14955 11.1071C0.960737 10.3998 0.0181885 9.76743 0.0181885 9.00021C0.0181885 8.23298 0.960737 7.60062 1.14955 6.89333C1.34435 6.16207 0.851348 5.1431 1.22147 4.50324C1.59759 3.8529 2.72895 3.77498 3.25642 3.24751C3.78389 2.72004 3.86181 1.58868 4.51215 1.21256C5.15201 0.842437 6.17098 1.33544 6.90224 1.14064C7.60953 0.951826 8.24189 0.00927734 9.00912 0.00927734C9.77634 0.00927734 10.4087 0.951826 11.116 1.14064C11.8473 1.33544 12.8662 0.842437 13.5061 1.21256C14.1564 1.58868 14.2343 2.72004 14.7618 3.24751C15.2893 3.77498 16.4206 3.8529 16.7968 4.50324C17.1669 5.1431 16.6739 6.16207 16.8687 6.89333C17.0575 7.60062 18 8.23298 18 9.00021Z" />
-                        <path d="M11.6075 6.32104L8.18493 9.74359L6.41072 7.97088C6.22568 7.78594 5.97478 7.68206 5.71317 7.68206C5.45156 7.68206 5.20066 7.78594 5.01563 7.97088C4.83069 8.15591 4.72681 8.40681 4.72681 8.66842C4.72681 8.93003 4.83069 9.18093 5.01563 9.36597L7.50461 11.855C7.68472 12.0349 7.92887 12.1359 8.18343 12.1359C8.43799 12.1359 8.68214 12.0349 8.86224 11.855L13.0011 7.71613C13.186 7.5311 13.2899 7.2802 13.2899 7.01859C13.2899 6.75698 13.186 6.50608 13.0011 6.32104C12.9096 6.22948 12.801 6.15685 12.6814 6.10729C12.5619 6.05773 12.4337 6.03223 12.3043 6.03223C12.1748 6.03223 12.0467 6.05773 11.9271 6.10729C11.8076 6.15685 11.6989 6.22948 11.6075 6.32104Z" />
-                      </g>
-                    </svg>
-                    Ready to boost your online presence
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={18}
-                      height={18}
-                      viewBox="0 0 18 18"
-                    >
-                      <g>
-                        <path d="M18 9.00021C18 9.76743 17.0575 10.3998 16.8687 11.1071C16.6739 11.8383 17.1669 12.8573 16.7968 13.4972C16.4206 14.1475 15.2893 14.2254 14.7618 14.7529C14.2343 15.2804 14.1564 16.4117 13.5061 16.7878C12.8662 17.158 11.8473 16.665 11.116 16.8598C10.4087 17.0486 9.77634 17.9911 9.00912 17.9911C8.24189 17.9911 7.60953 17.0486 6.90224 16.8598C6.17098 16.665 5.15201 17.158 4.51215 16.7878C3.86181 16.4117 3.78389 15.2804 3.25642 14.7529C2.72895 14.2254 1.59759 14.1475 1.22147 13.4972C0.851348 12.8573 1.34435 11.8383 1.14955 11.1071C0.960737 10.3998 0.0181885 9.76743 0.0181885 9.00021C0.0181885 8.23298 0.960737 7.60062 1.14955 6.89333C1.34435 6.16207 0.851348 5.1431 1.22147 4.50324C1.59759 3.8529 2.72895 3.77498 3.25642 3.24751C3.78389 2.72004 3.86181 1.58868 4.51215 1.21256C5.15201 0.842437 6.17098 1.33544 6.90224 1.14064C7.60953 0.951826 8.24189 0.00927734 9.00912 0.00927734C9.77634 0.00927734 10.4087 0.951826 11.116 1.14064C11.8473 1.33544 12.8662 0.842437 13.5061 1.21256C14.1564 1.58868 14.2343 2.72004 14.7618 3.24751C15.2893 3.77498 16.4206 3.8529 16.7968 4.50324C17.1669 5.1431 16.6739 6.16207 16.8687 6.89333C17.0575 7.60062 18 8.23298 18 9.00021Z" />
-                        <path d="M11.6075 6.32104L8.18493 9.74359L6.41072 7.97088C6.22568 7.78594 5.97478 7.68206 5.71317 7.68206C5.45156 7.68206 5.20066 7.78594 5.01563 7.97088C4.83069 8.15591 4.72681 8.40681 4.72681 8.66842C4.72681 8.93003 4.83069 9.18093 5.01563 9.36597L7.50461 11.855C7.68472 12.0349 7.92887 12.1359 8.18343 12.1359C8.43799 12.1359 8.68214 12.0349 8.86224 11.855L13.0011 7.71613C13.186 7.5311 13.2899 7.2802 13.2899 7.01859C13.2899 6.75698 13.186 6.50608 13.0011 6.32104C12.9096 6.22948 12.801 6.15685 12.6814 6.10729C12.5619 6.05773 12.4337 6.03223 12.3043 6.03223C12.1748 6.03223 12.0467 6.05773 11.9271 6.10729C11.8076 6.15685 11.6989 6.22948 11.6075 6.32104Z" />
-                      </g>
-                    </svg>
-                    Click here to unlock your digital success!
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={18}
-                      height={18}
-                      viewBox="0 0 18 18"
-                    >
-                      <g>
-                        <path d="M18 9.00021C18 9.76743 17.0575 10.3998 16.8687 11.1071C16.6739 11.8383 17.1669 12.8573 16.7968 13.4972C16.4206 14.1475 15.2893 14.2254 14.7618 14.7529C14.2343 15.2804 14.1564 16.4117 13.5061 16.7878C12.8662 17.158 11.8473 16.665 11.116 16.8598C10.4087 17.0486 9.77634 17.9911 9.00912 17.9911C8.24189 17.9911 7.60953 17.0486 6.90224 16.8598C6.17098 16.665 5.15201 17.158 4.51215 16.7878C3.86181 16.4117 3.78389 15.2804 3.25642 14.7529C2.72895 14.2254 1.59759 14.1475 1.22147 13.4972C0.851348 12.8573 1.34435 11.8383 1.14955 11.1071C0.960737 10.3998 0.0181885 9.76743 0.0181885 9.00021C0.0181885 8.23298 0.960737 7.60062 1.14955 6.89333C1.34435 6.16207 0.851348 5.1431 1.22147 4.50324C1.59759 3.8529 2.72895 3.77498 3.25642 3.24751C3.78389 2.72004 3.86181 1.58868 4.51215 1.21256C5.15201 0.842437 6.17098 1.33544 6.90224 1.14064C7.60953 0.951826 8.24189 0.00927734 9.00912 0.00927734C9.77634 0.00927734 10.4087 0.951826 11.116 1.14064C11.8473 1.33544 12.8662 0.842437 13.5061 1.21256C14.1564 1.58868 14.2343 2.72004 14.7618 3.24751C15.2893 3.77498 16.4206 3.8529 16.7968 4.50324C17.1669 5.1431 16.6739 6.16207 16.8687 6.89333C17.0575 7.60062 18 8.23298 18 9.00021Z" />
-                        <path d="M11.6075 6.32104L8.18493 9.74359L6.41072 7.97088C6.22568 7.78594 5.97478 7.68206 5.71317 7.68206C5.45156 7.68206 5.20066 7.78594 5.01563 7.97088C4.83069 8.15591 4.72681 8.40681 4.72681 8.66842C4.72681 8.93003 4.83069 9.18093 5.01563 9.36597L7.50461 11.855C7.68472 12.0349 7.92887 12.1359 8.18343 12.1359C8.43799 12.1359 8.68214 12.0349 8.86224 11.855L13.0011 7.71613C13.186 7.5311 13.2899 7.2802 13.2899 7.01859C13.2899 6.75698 13.186 6.50608 13.0011 6.32104C12.9096 6.22948 12.801 6.15685 12.6814 6.10729C12.5619 6.05773 12.4337 6.03223 12.3043 6.03223C12.1748 6.03223 12.0467 6.05773 11.9271 6.10729C11.8076 6.15685 11.6989 6.22948 11.6075 6.32104Z" />
-                      </g>
-                    </svg>
-                    Don't miss Join our exclusive insights
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={18}
-                      height={18}
-                      viewBox="0 0 18 18"
-                    >
-                      <g>
-                        <path d="M18 9.00021C18 9.76743 17.0575 10.3998 16.8687 11.1071C16.6739 11.8383 17.1669 12.8573 16.7968 13.4972C16.4206 14.1475 15.2893 14.2254 14.7618 14.7529C14.2343 15.2804 14.1564 16.4117 13.5061 16.7878C12.8662 17.158 11.8473 16.665 11.116 16.8598C10.4087 17.0486 9.77634 17.9911 9.00912 17.9911C8.24189 17.9911 7.60953 17.0486 6.90224 16.8598C6.17098 16.665 5.15201 17.158 4.51215 16.7878C3.86181 16.4117 3.78389 15.2804 3.25642 14.7529C2.72895 14.2254 1.59759 14.1475 1.22147 13.4972C0.851348 12.8573 1.34435 11.8383 1.14955 11.1071C0.960737 10.3998 0.0181885 9.76743 0.0181885 9.00021C0.0181885 8.23298 0.960737 7.60062 1.14955 6.89333C1.34435 6.16207 0.851348 5.1431 1.22147 4.50324C1.59759 3.8529 2.72895 3.77498 3.25642 3.24751C3.78389 2.72004 3.86181 1.58868 4.51215 1.21256C5.15201 0.842437 6.17098 1.33544 6.90224 1.14064C7.60953 0.951826 8.24189 0.00927734 9.00912 0.00927734C9.77634 0.00927734 10.4087 0.951826 11.116 1.14064C11.8473 1.33544 12.8662 0.842437 13.5061 1.21256C14.1564 1.58868 14.2343 2.72004 14.7618 3.24751C15.2893 3.77498 16.4206 3.8529 16.7968 4.50324C17.1669 5.1431 16.6739 6.16207 16.8687 6.89333C17.0575 7.60062 18 8.23298 18 9.00021Z" />
-                        <path d="M11.6075 6.32104L8.18493 9.74359L6.41072 7.97088C6.22568 7.78594 5.97478 7.68206 5.71317 7.68206C5.45156 7.68206 5.20066 7.78594 5.01563 7.97088C4.83069 8.15591 4.72681 8.40681 4.72681 8.66842C4.72681 8.93003 4.83069 9.18093 5.01563 9.36597L7.50461 11.855C7.68472 12.0349 7.92887 12.1359 8.18343 12.1359C8.43799 12.1359 8.68214 12.0349 8.86224 11.855L13.0011 7.71613C13.186 7.5311 13.2899 7.2802 13.2899 7.01859C13.2899 6.75698 13.186 6.50608 13.0011 6.32104C12.9096 6.22948 12.801 6.15685 12.6814 6.10729C12.5619 6.05773 12.4337 6.03223 12.3043 6.03223C12.1748 6.03223 12.0467 6.05773 11.9271 6.10729C11.8076 6.15685 11.6989 6.22948 11.6075 6.32104Z" />
-                      </g>
-                    </svg>
-                    Transform your business our digital solutions
-                  </li>
-                  <li>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={18}
-                      height={18}
-                      viewBox="0 0 18 18"
-                    >
-                      <g>
-                        <path d="M18 9.00021C18 9.76743 17.0575 10.3998 16.8687 11.1071C16.6739 11.8383 17.1669 12.8573 16.7968 13.4972C16.4206 14.1475 15.2893 14.2254 14.7618 14.7529C14.2343 15.2804 14.1564 16.4117 13.5061 16.7878C12.8662 17.158 11.8473 16.665 11.116 16.8598C10.4087 17.0486 9.77634 17.9911 9.00912 17.9911C8.24189 17.9911 7.60953 17.0486 6.90224 16.8598C6.17098 16.665 5.15201 17.158 4.51215 16.7878C3.86181 16.4117 3.78389 15.2804 3.25642 14.7529C2.72895 14.2254 1.59759 14.1475 1.22147 13.4972C0.851348 12.8573 1.34435 11.8383 1.14955 11.1071C0.960737 10.3998 0.0181885 9.76743 0.0181885 9.00021C0.0181885 8.23298 0.960737 7.60062 1.14955 6.89333C1.34435 6.16207 0.851348 5.1431 1.22147 4.50324C1.59759 3.8529 2.72895 3.77498 3.25642 3.24751C3.78389 2.72004 3.86181 1.58868 4.51215 1.21256C5.15201 0.842437 6.17098 1.33544 6.90224 1.14064C7.60953 0.951826 8.24189 0.00927734 9.00912 0.00927734C9.77634 0.00927734 10.4087 0.951826 11.116 1.14064C11.8473 1.33544 12.8662 0.842437 13.5061 1.21256C14.1564 1.58868 14.2343 2.72004 14.7618 3.24751C15.2893 3.77498 16.4206 3.8529 16.7968 4.50324C17.1669 5.1431 16.6739 6.16207 16.8687 6.89333C17.0575 7.60062 18 8.23298 18 9.00021Z" />
-                        <path d="M11.6075 6.32104L8.18493 9.74359L6.41072 7.97088C6.22568 7.78594 5.97478 7.68206 5.71317 7.68206C5.45156 7.68206 5.20066 7.78594 5.01563 7.97088C4.83069 8.15591 4.72681 8.40681 4.72681 8.66842C4.72681 8.93003 4.83069 9.18093 5.01563 9.36597L7.50461 11.855C7.68472 12.0349 7.92887 12.1359 8.18343 12.1359C8.43799 12.1359 8.68214 12.0349 8.86224 11.855L13.0011 7.71613C13.186 7.5311 13.2899 7.2802 13.2899 7.01859C13.2899 6.75698 13.186 6.50608 13.0011 6.32104C12.9096 6.22948 12.801 6.15685 12.6814 6.10729C12.5619 6.05773 12.4337 6.03223 12.3043 6.03223C12.1748 6.03223 12.0467 6.05773 11.9271 6.10729C11.8076 6.15685 11.6989 6.22948 11.6075 6.32104Z" />
-                      </g>
-                    </svg>
-                    See results like never before. Click to schedule
-                  </li>
+                <ul className="wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+                  {/* List Items (Shortened for space, keep your original list here) */}
+                  <li>Ready to boost your online presence</li>
+                  <li>Click here to unlock your digital success!</li>
+                  <li>Don't miss Join our exclusive insights</li>
+                  <li>Transform your business our digital solutions</li>
                 </ul>
-                <div
-                  className="social-area wow animate fadeInUp"
-                  data-wow-delay="400ms"
-                  data-wow-duration="1500ms"
-                >
+                <div className="social-area wow animate fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                   <h6>Social Just You Connected Us!</h6>
                   <ul className="social-list">
-                    <li>
-                      <a href="https://www.linkedin.com/company/outsource-accomplished/">
-                        <i className="bi bi-linkedin" />
-                        <span>LinkedIn</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.facebook.com/share/1CnVgP2V9X/?mibextid=wwXIfr">
-                        <i className="bi bi-facebook" />
-                        <span>Facebook</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr">
-                        <i className="bi bi-instagram" />
-                        <span>Instagram</span>
-                      </a>
-                    </li>
+                    <li><a href="https://www.linkedin.com/company/outsource-accomplished/"><i className="bi bi-linkedin" /> <span>LinkedIn</span></a></li>
+                    <li><a href="https://www.facebook.com/share/1CnVgP2V9X/?mibextid=wwXIfr"><i className="bi bi-facebook" /> <span>Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr"><i className="bi bi-instagram" /> <span>Instagram</span></a></li>
                   </ul>
                 </div>
               </div>
             </div>
+            
             <div className="col-lg-6">
-              <div
-                className="contact-form-wrap wow animate zoomIn"
-                data-wow-delay="200ms"
-                data-wow-duration="1500ms"
-              >
+              <div className="contact-form-wrap wow animate zoomIn" data-wow-delay="200ms" data-wow-duration="1500ms">
                 <h3>Get in Touch with us </h3>
                 <form onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
                         <label>Full Name *</label>
-                        <input 
-                          type="text" 
-                          name="fullName"
-                          value={formData.fullName}
-                          onChange={handleChange}
-                          disabled={isSubmitting}
-                        />
+                        <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} disabled={isSubmitting} />
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
                         <label>Phone Number *</label>
-                        <input 
-                          type="text" 
-                          name="phone"
-                          value={formData.phone}
-                          onChange={handleChange}
-                          disabled={isSubmitting}
-                        />
+                        <input type="text" name="phone" value={formData.phone} onChange={handleChange} disabled={isSubmitting} />
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
                         <label>Your Email *</label>
-                        <input 
-                          type="email" 
-                          name="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          disabled={isSubmitting}
-                        />
+                        <input type="email" name="email" value={formData.email} onChange={handleChange} disabled={isSubmitting} />
                       </div>
                     </div>
                     <div className="col-lg-12 mb-30">
@@ -305,30 +177,19 @@ const Home2Contact = () => {
                           onChange={handleChange}
                           disabled={isSubmitting}
                           style={{
-                            width: '100%',
-                            height: '150px',
-                            padding: '12px 16px',
-                            fontSize: '16px',
-                            border: '1px solid #ccc',
-                            borderRadius: '6px',
-                            boxSizing: 'border-box',
-                            resize: 'vertical',
-                            fontFamily: 'inherit',
-                            backgroundColor: '#fff',
-                            color: '#333',
-                            transition: 'border-color 0.3s ease'
+                            width: '100%', height: '150px', padding: '12px 16px', fontSize: '16px',
+                            border: '1px solid #ccc', borderRadius: '6px', resize: 'vertical'
                           }}
                         />
                       </div>
                     </div>
+                    
+                    {/* OPTIONAL SMS CONSENT SECTION */}
                     <div className="col-lg-12 mb-20">
                       <div className="form-inner">
                         <label style={{ 
-                          display: 'flex', 
-                          alignItems: 'flex-start', 
-                          cursor: 'pointer',
-                          fontSize: '14px',
-                          lineHeight: '1.6'
+                          display: 'flex', alignItems: 'flex-start', cursor: 'pointer',
+                          fontSize: '14px', lineHeight: '1.6' 
                         }}>
                           <input 
                             type="checkbox"
@@ -336,20 +197,22 @@ const Home2Contact = () => {
                             onChange={(e) => setSmsConsent(e.target.checked)}
                             disabled={isSubmitting}
                             style={{
-                              marginRight: '10px',
-                              marginTop: '4px',
-                              cursor: 'pointer',
-                              width: '18px',
-                              height: '18px',
-                              flexShrink: 0
+                              marginRight: '10px', marginTop: '4px', cursor: 'pointer',
+                              width: '18px', height: '18px', flexShrink: 0
                             }}
                           />
                           <span style={{ color: '#666' }}>
-                            I agree to receive SMS messages from GrowEdgeX regarding my inquiry or application. Message & data rates may apply. Message frequency varies. Reply STOP to opt out.
+                            (Optional) By checking this box, you agree to receive SMS messages from GrowEdgeX
+                            related to your inquiry. You may reply STOP to opt out at
+                            any time. Message & data rates may apply. View our{" "}
+                            <a href="/privacy-policy" style={{ color: '#007bff', textDecoration: 'underline' }}>Privacy Policy</a>
+                            {" "}and{" "}
+                            <a href="/terms" style={{ color: '#007bff', textDecoration: 'underline' }}>Terms & Conditions</a>.
                           </span>
                         </label>
                       </div>
                     </div>
+
                     <div className="col-lg-12">
                       <div className="form-inner">
                         <button

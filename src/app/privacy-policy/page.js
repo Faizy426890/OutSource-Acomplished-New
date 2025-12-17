@@ -1,12 +1,12 @@
 import React from 'react'; 
 import MainLayout from "../../components/layout/MainLayout";
-
+import Link from 'next/link';
 
 const styles = {
   container: {
     maxWidth: '1000px',
     margin: '40px auto',
-    padding: '20px',
+    padding: '40px 20px',
     backgroundColor: '#ffffff',
     color: '#333333',
     fontFamily: 'Inter, Arial, sans-serif',
@@ -26,58 +26,56 @@ const styles = {
     fontSize: '1.75rem',
     fontWeight: '600',
     color: '#1a5a99',
-    marginTop: '30px',
+    marginTop: '40px',
     marginBottom: '15px',
     padding: '8px 0',
+    borderBottom: '1px solid #eee',
   },
   subTitle: {
     fontSize: '1.25rem',
     fontWeight: '500',
     color: '#444444',
-    marginTop: '20px',
-    marginBottom: '10px',
+    marginTop: '25px',
+    marginBottom: '12px',
     borderLeft: '4px solid #1a5a99',
     paddingLeft: '10px',
   },
   bodyText: {
     fontSize: '1rem',
-    lineHeight: '1.6',
+    lineHeight: '1.7',
     marginBottom: '15px',
+    color: '#4a4a4a',
   },
   listItem: {
-    marginBottom: '8px',
+    marginBottom: '10px',
     marginLeft: '20px',
-    lineHeight: '1.5',
+    lineHeight: '1.6',
+    color: '#4a4a4a',
   },
   boldKey: {
     fontWeight: '700',
+    color: '#222',
   },
-  smsCompliance: {
-    backgroundColor: '#e6f0ff',
-    border: '1px solid #004c99',
-    borderRadius: '6px',
-    padding: '20px',
-    marginTop: '20px',
-    marginBottom: '20px',
-  },
-  checkboxGuide: {
+  importantNote: {
     backgroundColor: '#fffbe6',
-    border: '1px solid #ffcc00',
+    border: '1px solid #ffe58f',
+    padding: '15px',
     borderRadius: '6px',
-    padding: '20px',
+    margin: '20px 0',
+    fontWeight: '600',
+    color: '#856404',
+  },
+  smsComplianceBox: {
+    backgroundColor: '#f0f7ff',
+    border: '2px solid #004c99',
+    borderRadius: '8px',
+    padding: '25px',
+    marginTop: '30px',
+  },
+  footerInfo: {
     marginTop: '40px',
-  },
-  checkboxText: {
-    fontSize: '1.1rem',
-    fontWeight: '500',
-    color: '#8b4513',
-    lineHeight: '1.8',
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: '10px',
-  },
-  contactInfo: {
-    marginTop: '20px',
+    paddingTop: '20px',
+    borderTop: '1px solid #eee',
     textAlign: 'center',
   }
 };
@@ -86,236 +84,129 @@ const Bold = ({ children }) => (
   <span style={styles.boldKey}>{children}</span>
 );
 
-const UncheckedIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{width: '20px', height: '20px', borderRadius: '3px', border: '2px solid #333', flexShrink: 0, marginTop: '4px'}}>
-    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" fill="#ffffff" />
-  </svg>
-);
-
-const App = () => {
-  const currentDate = new Date();
-  const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-  const effectiveDate = currentDate.toLocaleDateString('en-US', dateOptions);
-
+const PrivacyPolicy = () => {
   return ( 
     <MainLayout>
-    <div style={styles.container}>
-      <h1 style={styles.header}>GrowEdgeX BPO – Privacy Policy</h1>
+      <div style={styles.container}>
+        <h1 style={styles.header}>GrowEdgeX BPO – Privacy Policy & SMS Terms</h1>
 
-      <p style={styles.bodyText}>
-        <Bold>Effective Date:</Bold> December 9, 2025
-      </p>
-
-      {/* --- I. Introduction and Scope --- */}
-      <h2 style={styles.sectionTitle}>I. Introduction and Scope</h2>
-      <p style={styles.bodyText}>
-        This Privacy Policy explains how GrowEdgeX BPO ("we," "us," or "our"), headquartered in <Bold>Dallas, Texas</Bold>, collects, uses, and protects the personal information of website visitors, clients, applicants, and business contacts.
-      </p>
-      <p style={styles.bodyText}>
-        By accessing or using our website, you consent to the practices described in this Policy.
-      </p>
-
-      {/* --- II. Information We Collect --- */}
-      <h2 style={styles.sectionTitle}>II. Information We Collect</h2>
-      
-      <h3 style={styles.subTitle}>1. Client Contact Data</h3>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>Name</li>
-        <li style={styles.listItem}>Job title</li>
-        <li style={styles.listItem}>Company name</li>
-        <li style={styles.listItem}>Work email address</li>
-        <li style={styles.listItem}>Business phone number</li>
-      </ul>
-
-      <h3 style={styles.subTitle}>2. Operational / Commercial Data</h3>
-      <p style={styles.bodyText}>
-        Information regarding the BPO services your company requires, workflows, documentation, and operational needs.
-      </p>
-
-      <h3 style={styles.subTitle}>3. Billing Data</h3>
-      <p style={styles.bodyText}>
-        Information necessary for invoicing, payment processing, and financial reporting.
-      </p>
-
-      <h3 style={styles.subTitle}>4. Usage Data</h3>
-      <p style={styles.bodyText}>
-        We automatically collect:
-      </p>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>IP address</li>
-        <li style={styles.listItem}>Device and browser type</li>
-        <li style={styles.listItem}>Pages visited</li>
-        <li style={styles.listItem}>Interaction logs</li>
-      </ul>
-      <p style={styles.bodyText}>
-        Used for analytics, performance, and security.
-      </p>
-
-      {/* --- III. How We Use Your Information --- */}
-      <h2 style={styles.sectionTitle}>III. How We Use Your Information</h2>
-      
-      <h3 style={styles.subTitle}>1. Contract & Service Delivery</h3>
-      <p style={styles.bodyText}>
-        To:
-      </p>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>Onboard your organization</li>
-        <li style={styles.listItem}>Deliver and manage BPO services</li>
-        <li style={styles.listItem}>Provide operational or technical support</li>
-        <li style={styles.listItem}>Maintain communication regarding your account</li>
-      </ul>
-
-      <h3 style={styles.subTitle}>2. Client Communication</h3>
-      <p style={styles.bodyText}>
-        To send:
-      </p>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>Service updates</li>
-        <li style={styles.listItem}>Operational alerts</li>
-        <li style={styles.listItem}>Project-related correspondence</li>
-        <li style={styles.listItem}>Follow-up messages</li>
-      </ul>
-
-      <h3 style={styles.subTitle}>3. Third-Party Service Providers</h3>
-      <p style={styles.bodyText}>
-        We may share information with:
-      </p>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>Hosting platforms</li>
-        <li style={styles.listItem}>Communication platforms (e.g., RingCentral)</li>
-        <li style={styles.listItem}>Security and IT vendors</li>
-      </ul>
-      <p style={styles.bodyText}>
-        All vendors must protect your data under contractual obligations.
-      </p>
-
-      <h3 style={styles.subTitle}>4. Marketing (Optional)</h3>
-      <p style={styles.bodyText}>
-        Promotional communications are sent only with explicit consent.
-      </p>
-
-      {/* --- IV. Sharing & Disclosure --- */}
-      <h2 style={styles.sectionTitle}>IV. Sharing & Disclosure</h2>
-      <p style={styles.bodyText}>
-        We do not sell personal information. Data is shared only when required:
-      </p>
-
-      <h3 style={styles.subTitle}>1. Internal Teams</h3>
-      <p style={styles.bodyText}>
-        Access granted only to staff necessary to provide services.
-      </p>
-
-      <h3 style={styles.subTitle}>2. Service Providers</h3>
-      <p style={styles.bodyText}>
-        Trusted vendors assisting with hosting, communication, and security.
-      </p>
-
-      <h3 style={styles.subTitle}>3. Legal Obligations</h3>
-      <p style={styles.bodyText}>
-        When required by court order or government regulation.
-      </p>
-
-      {/* --- V. SMS Communications & Messaging Policy --- */}
-      <h2 style={{ ...styles.sectionTitle, color: '#0066cc' }}>📱 V. SMS Communications & Messaging Policy</h2>
-      <div style={styles.smsCompliance}>
         <p style={styles.bodyText}>
-          GrowEdgeX may send SMS messages to clients, website users, and job applicants who voluntarily provide their phone number and explicitly opt in to receive text messages. These messages may include service updates, operational alerts, scheduling information, hiring notifications, reminders, or other business-related communications.
+          <Bold>Effective Date:</Bold> December 17, 2025
         </p>
 
-        <h3 style={styles.subTitle}>Message Frequency</h3>
+        {/* --- INTRODUCTION --- */}
+        <h2 style={styles.sectionTitle}>1. INTRODUCTION</h2>
         <p style={styles.bodyText}>
-          Message frequency varies. You may receive up to 5 messages per week depending on your interactions with GrowEdgeX.
+          GrowEdgeX BPO ("we," "us," or "our"), headquartered in Dallas, Texas, is committed to protecting your privacy. This Privacy Policy describes how we collect, use, and share personal information when you visit <Bold>www.growedgex.com</Bold> or engage with our BPO services. By using our services, you agree to the terms outlined in this policy.
         </p>
 
-        <h3 style={styles.subTitle}>Opt-Out Instructions</h3>
+        {/* --- CHANGES TO OUR PRIVACY POLICY --- */}
+        <h2 style={styles.sectionTitle}>2. CHANGES TO OUR PRIVACY POLICY</h2>
         <p style={styles.bodyText}>
-          You may opt out of SMS messages at any time by replying <Bold>STOP</Bold> to any message. After opting out, you will not receive further SMS messages unless you opt in again.
+          We may update this Privacy Policy from time to time to reflect changes in our practices or legal obligations. We will notify you of any material changes by posting the new policy on this page and updating the "Effective Date."
         </p>
 
-        <h3 style={styles.subTitle}>Help</h3>
+        {/* --- WHAT TYPE OF INFORMATION DO WE COLLECT? --- */}
+        <h2 style={styles.sectionTitle}>3. WHAT TYPE OF INFORMATION DO WE COLLECT?</h2>
+        <p style={styles.bodyText}>We collect information that identifies, relates to, or could reasonably be linked to you ("Personal Information"), including:</p>
+        <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+          <li style={styles.listItem}><Bold>Identifiers:</Bold> Name, business email address, phone number, and job title.</li>
+          <li style={styles.listItem}><Bold>Commercial Data:</Bold> Billing information, service requirements, and project documentation.</li>
+          <li style={styles.listItem}><Bold>Internet Activity:</Bold> IP address, browser type, device identifiers, and website interaction logs.</li>
+        </ul>
+
+        {/* --- HOW DO WE USE THE INFORMATION --- */}
+        <h2 style={styles.sectionTitle}>4. HOW DO WE USE THE INFORMATION THAT WE COLLECT?</h2>
+        <p style={styles.bodyText}>Your information is used to:</p>
+        <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+          <li style={styles.listItem}>Provide and manage BPO services and client onboarding.</li>
+          <li style={styles.listItem}>Process billing and financial transactions.</li>
+          <li style={styles.listItem}>Communicate updates, alerts, and project-related notifications.</li>
+          <li style={styles.listItem}>Ensure the security and integrity of our website and services.</li>
+        </ul>
+
+        {/* --- WITH WHOM DO WE SHARE INFORMATION --- */}
+        <h2 style={styles.sectionTitle}>5. WITH WHOM DO WE SHARE INFORMATION THAT WE COLLECT?</h2>
         <p style={styles.bodyText}>
-          For assistance, reply <Bold>HELP</Bold> or email <Bold>info@growedgex.com</Bold>.
+          We do not sell your personal information. We share data only with trusted vendors (hosting, IT security, and communication tools) necessary to deliver our services.
+        </p>
+        <div style={styles.importantNote}>
+          <Bold>CRITICAL NOTICE ON SMS DATA:</Bold> SMS opt-in or phone numbers for the purpose of SMS are not being shared with any third party and affiliate company for marketing purposes.
+        </div>
+
+        {/* --- COOKIES --- */}
+        <h2 style={styles.sectionTitle}>6. COOKIES AND SIMILAR TECHNOLOGY</h2>
+        <p style={styles.bodyText}>
+          Our website uses cookies to enhance user experience, analyze site traffic, and for security purposes. These may include "session" cookies (which expire when you close your browser) and "persistent" cookies (which stay on your device until deleted).
         </p>
 
-        <h3 style={styles.subTitle}>Message & Data Rates</h3>
+        {/* --- MANAGING COOKIES --- */}
+        <h2 style={styles.sectionTitle}>7. HOW WE MANAGE YOUR COOKIES</h2>
         <p style={styles.bodyText}>
-          Message and data rates may apply depending on your mobile carrier plan.
+          Most web browsers allow you to control cookies through their settings. You can opt to block or delete cookies, though this may impact the functionality of certain parts of our website.
         </p>
 
-        <h3 style={styles.subTitle}>Consent Requirements</h3>
-        <p style={styles.bodyText}>
-          Providing a phone number is optional. SMS messages are only sent when explicit consent is given.
-        </p>
-        <p style={styles.bodyText}>
-          <Bold>GrowEdgeX will never sell, share, or trade phone numbers or SMS consent information with any third party for marketing or non-operational purposes.</Bold>
-        </p>
-      </div>
+        {/* --- SMS TERMS AND CONDITIONS --- */}
+        <h2 style={styles.sectionTitle}>8. SMS TERMS AND CONDITIONS</h2>
+        <div style={styles.smsComplianceBox}>
+          <h3 style={styles.subTitle}>1- SMS Consent Communication</h3>
+          <p style={styles.bodyText}>
+            The information as phone numbers obtained as part of the SMS consent process will not be shared with third parties for marketing purposes.
+          </p>
 
-      {/* --- VI. Data Security --- */}
-      <h2 style={styles.sectionTitle}>VI. Data Security</h2>
-      <p style={styles.bodyText}>
-        We use industry-standard administrative, technical, and physical safeguards to protect your data.
-      </p>
-      <p style={styles.bodyText}>
-        While we strive for full protection, no method of transmission over the internet is completely secure.
-      </p>
+          <h3 style={styles.subTitle}>2- Types of SMS Communications</h3>
+          <p style={styles.bodyText}>
+            If you have consented to receive text messages from GrowEdgeX, you may receive messages related to the following:
+          </p>
+          <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
+            <li style={styles.listItem}>Service inquiries and follow-ups</li>
+            <li style={styles.listItem}>Appointment/Meeting reminders</li>
+            <li style={styles.listItem}>Billing or account inquiries</li>
+            <li style={styles.listItem}>Project updates or operational alerts</li>
+          </ul>
 
-      {/* --- VII. Your Rights --- */}
-      <h2 style={styles.sectionTitle}>VII. Your Rights</h2>
-      <p style={styles.bodyText}>
-        Users may have rights to:
-      </p>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>Access their personal data</li>
-        <li style={styles.listItem}>Request corrections or deletion</li>
-        <li style={styles.listItem}>Withdraw consent (including SMS consent)</li>
-        <li style={styles.listItem}>Limit certain types of processing</li>
-      </ul>
-      <p style={styles.bodyText}>
-        To exercise these rights, contact <Bold>info@growedgex.com</Bold>.
-      </p>
+          <h3 style={styles.subTitle}>3- Message Frequency</h3>
+          <p style={styles.bodyText}>
+            Message frequency may vary depending on the type of communication. You may receive up to <Bold>5 SMS messages per week</Bold> related to your inquiries or account management.
+          </p>
 
-      {/* --- VIII. Terms of Service Summary --- */}
-      <h2 style={styles.sectionTitle}>📜 VIII. Terms of Service Summary</h2>
-      <p style={styles.bodyText}>
-        By using <Bold>www.growedgex.com</Bold>, you agree to:
-      </p>
-      <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
-        <li style={styles.listItem}>Use the website lawfully</li>
-        <li style={styles.listItem}>Provide accurate information</li>
-        <li style={styles.listItem}>Comply with applicable laws</li>
-      </ul>
-      <p style={styles.bodyText}>
-        Full Terms available at: <Bold>https://www.growedgex.com/terms</Bold>
-      </p>
+          <h3 style={styles.subTitle}>4- Potential Fees for SMS Messaging</h3>
+          <p style={styles.bodyText}>
+            Please note that <Bold>standard message and data rates may apply</Bold>, depending on your carrier’s pricing plan. These fees may vary if the message is sent domestically or internationally.
+          </p>
 
-      {/* --- IX. Implementation Guide --- */}
-      <h2 style={styles.sectionTitle}>IX. Implementation Guide: SMS Opt-In Checkbox (Required)</h2>
-      <div style={styles.checkboxGuide}>
-        <p style={styles.bodyText}>
-          <Bold>ACTION REQUIRED:</Bold> Place this next to an <Bold>unchecked</Bold> checkbox on all forms collecting phone numbers:
-        </p>
-        <div style={{ padding: '15px', border: '1px dashed #ffcc00', backgroundColor: '#fcf8e3', marginTop: '15px' }}>
-          <p style={styles.checkboxText}>
-            <UncheckedIcon />
-            <span>I consent to GrowEdgeX BPO contacting me via phone or text at the number provided regarding my inquiry and BPO services. Reply <Bold>STOP</Bold> to cancel. Standard message and data rates may apply.</span>
+          <h3 style={styles.subTitle}>5- Opt-In Method</h3>
+          <p style={styles.bodyText}>
+            You may opt-in to receive SMS messages from GrowEdgeX by submitting our online contact forms and checking the consent box.
+          </p>
+
+          <h3 style={styles.subTitle}>6- Opt-Out Method</h3>
+          <p style={styles.bodyText}>
+            You can opt out of receiving SMS messages at any time. To do so, simply reply <Bold>"STOP"</Bold> to any SMS message you receive. You may also contact us directly to request removal.
+          </p>
+
+          <h3 style={styles.subTitle}>7- Help</h3>
+          <p style={styles.bodyText}>
+            If you are experiencing any issues, you can reply with the keyword <Bold>HELP</Bold> or email us at <Bold>info@growedgex.com</Bold>.
           </p>
         </div>
-      </div>
 
-      {/* --- X. Contact Us --- */}
-      <h2 style={styles.sectionTitle}>X. Contact Us</h2>
-      <p style={styles.bodyText}>
-        For questions or privacy-related concerns, contact us at:
-      </p>
-      <div style={styles.contactInfo}>
-        <p style={styles.bodyText}>📧 <Bold>info@growedgex.com</Bold></p>
-        <p style={styles.bodyText}>📞 <Bold>+1 469-472-2311</Bold></p>
-        <p style={styles.bodyText}>🌐 <Bold>www.growedgex.com</Bold></p>
-      </div>
-    </div> 
+        {/* --- CONTACT INFORMATION --- */}
+        <h2 style={styles.sectionTitle}>9. WHO CAN YOU CONTACT FOR MORE INFORMATION?</h2>
+        <div style={styles.footerInfo}>
+          <p style={styles.bodyText}>
+            For questions regarding this policy or to exercise your data rights, please contact us:
+          </p>
+          <p style={styles.bodyText}>📧 <Bold>info@growedgex.com</Bold></p>
+          <p style={styles.bodyText}>📞 <Bold>+1 469-472-2311</Bold></p>
+          <p style={styles.bodyText}>🌐 <Link href="/">www.growedgex.com</Link></p>
+          <p style={styles.bodyText} style={{marginTop: '20px'}}>
+            <Bold>Terms of Service:</Bold> View our full <Link href="/terms" style={{color: '#004c99', textDecoration: 'underline'}}>Terms and Conditions here</Link>.
+          </p>
+        </div>
+      </div> 
     </MainLayout> 
   );
 };
 
-export default App;
+export default PrivacyPolicy;
