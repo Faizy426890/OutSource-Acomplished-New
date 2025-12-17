@@ -200,7 +200,9 @@ const PrivacyPolicy = () => {
           <p style={styles.bodyText}>📧 <Bold>info@growedgex.com</Bold></p>
           <p style={styles.bodyText}>📞 <Bold>+1 469-472-2311</Bold></p>
           <p style={styles.bodyText}>🌐 <Link href="/">www.growedgex.com</Link></p>
-          <p style={styles.bodyText} style={{marginTop: '20px'}}>
+          
+          {/* FIXED: Merged duplicate style attributes into one object */}
+          <p style={{ ...styles.bodyText, marginTop: '20px' }}>
             <Bold>Terms of Service:</Bold> View our full <Link href="/terms" style={{color: '#004c99', textDecoration: 'underline'}}>Terms and Conditions here</Link>.
           </p>
         </div>
