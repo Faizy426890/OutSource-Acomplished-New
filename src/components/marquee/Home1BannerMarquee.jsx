@@ -7,7 +7,7 @@ const Home1BannerMarquee = () => {
     "BPO Solutions",
     "Appointment Scheduling",
     "Website Development & IT",
-    "Accounting & Payroll",
+    "Bookkeeping & Payroll",
     "Backend Office Management",
   ];
 
