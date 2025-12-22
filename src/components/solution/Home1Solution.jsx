@@ -62,8 +62,8 @@ const ServicesSection = () => {
     },
     {
       id: 4,
-      title: "Accounting & Payroll",
-      description: "Finance and accounting outsourcing services for all your business office processes, finance & accounting needs.",
+      title: "Bookkeeping & Payroll",
+      description: "Finance and Bookkeeping outsourcing services for all your business office processes, finance & Bookkeeping needs.",
       icon: Calculator,
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
       url: "/service/accounting",

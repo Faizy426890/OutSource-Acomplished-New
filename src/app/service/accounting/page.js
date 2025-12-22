@@ -21,10 +21,10 @@ const App = () => {
               >
                 <div className="service-details-top-content">
                   <h2>
-                    Accounting <span>Services.</span>
+                    Bookkeeping <span>Services.</span>
                   </h2>
                   <p>
-                    We provide offshore and onshore accountants who seamlessly integrate with your team to handle bookkeeping, payroll, AR/AP management, financial statements compilation, tax prep, CFO services admin support and more. Our unique approach combines local time zone operations, rigorous training programs, practice manager oversight, and ISO 27001 certified security infrastructure to deliver exceptional results.
+                    We provide offshore and onshore bookkeepers who seamlessly integrate with your team to handle bookkeeping, payroll, AR/AP management, financial statements compilation, tax prep, CFO services admin support and more. Our unique approach combines local time zone operations, rigorous training programs, practice manager oversight, and ISO 27001 certified security infrastructure to deliver exceptional results.
                   </p>
                   <ul className="key-features">
                     <li>
@@ -93,7 +93,7 @@ const App = () => {
                           aria-expanded="true"
                           aria-controls="faqcollapseOne"
                         >
-                          01. What accounting services do you offer and how do they work?
+                          01. What Bookkeeping services do you offer and how do they work?
                         </button>
                       </h2>
                       <div
@@ -103,7 +103,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          We provide comprehensive accounting services including bookkeeping, payroll management, AR/AP management, financial statements compilation, tax preparation, and CFO services. Our offshore and onshore accountants seamlessly integrate with your team, working in your local time zone to ensure smooth operations and timely deliverables.
+                          We provide comprehensive Bookkeeping services including bookkeeping, payroll management, AR/AP management, financial statements compilation, tax preparation, and CFO services. Our offshore and onshore Bookkeepers seamlessly integrate with your team, working in your local time zone to ensure smooth operations and timely deliverables.
                         </div>
                       </div>
                     </div>
@@ -118,7 +118,7 @@ const App = () => {
                           aria-expanded="false"
                           aria-controls="faqcollapseTwo"
                         >
-                          02. How do you ensure quality in your accounting services?
+                          02. How do you ensure quality in your Bookkeeping services?
                         </button>
                       </h2>
                       <div
@@ -128,7 +128,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          Every accountant undergoes a rigorous 3-month training program followed by 3 months of testing before deployment. Our practice managers provide continuous oversight to ensure high-quality, productive output. We also match staff based on your specific needs and industry requirements for optimal results.
+                          Every Bookkeeper undergoes a rigorous 3-month training program followed by 3 months of testing before deployment. Our practice managers provide continuous oversight to ensure high-quality, productive output. We also match staff based on your specific needs and industry requirements for optimal results.
                         </div>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          We offer flexible service plans to meet your needs: full-time virtual employee service for dedicated support, part-time hours for specific projects or seasonal needs, and practice manager-led plans for comprehensive oversight. Each plan is tailored to your specific accounting requirements and business size.
+                          We offer flexible service plans to meet your needs: full-time virtual employee service for dedicated support, part-time hours for specific projects or seasonal needs, and practice manager-led plans for comprehensive oversight. Each plan is tailored to your specific Bookkeeping requirements and business size.
                         </div>
                       </div>
                     </div>
@@ -193,7 +193,7 @@ const App = () => {
                           aria-expanded="false"
                           aria-controls="faqcollapseFive"
                         >
-                          05. How do you match accountants to my business needs?
+                          05. How do you match Bookkeepers to my business needs?
                         </button>
                       </h2>
                       <div
@@ -203,7 +203,7 @@ const App = () => {
                         data-bs-parent="#accordionTravel"
                       >
                         <div className="accordion-body">
-                          We deploy staff based on your specific expertise requirements, industry, and business complexity. Our custom matching process ensures you receive accountants with the right skills and experience for your unique needs, whether you need bookkeeping specialists, tax experts, or CFO-level strategic support.
+                          We deploy staff based on your specific expertise requirements, industry, and business complexity. Our custom matching process ensures you receive Bookkeepers with the right skills and experience for your unique needs, whether you need bookkeeping specialists, tax experts, or CFO-level strategic support.
                         </div>
                       </div>
                     </div>
@@ -237,10 +237,10 @@ const App = () => {
                   </svg>
                 </span>
                 <h2>
-                  What Makes Our Accounting Services <span>Different.</span>
+                  What Makes Our Bookkeeping Services <span>Different.</span>
                 </h2>
                 <p>
-                  Experience the power of our unique approach combining local time zone operations, rigorous training, practice manager oversight, secure infrastructure, and custom expertise matching for superior accounting support.
+                  Experience the power of our unique approach combining local time zone operations, rigorous training, practice manager oversight, secure infrastructure, and custom expertise matching for superior Bookkeeping support.
                 </p>
               </div>
             </div>
@@ -264,7 +264,7 @@ const App = () => {
                   <div className="content">
                     <h5>Rigorous Training</h5>
                     <p>
-                      Every accountant undergoes a 3-month training program and 3 months of testing before deployment. This comprehensive 6-month preparation ensures they possess the expertise and skills needed to deliver exceptional results from day one.
+                      Every Bookkeeper undergoes a 3-month training program and 3 months of testing before deployment. This comprehensive 6-month preparation ensures they possess the expertise and skills needed to deliver exceptional results from day one.
                     </p>
                   </div>
                 </li>
@@ -297,7 +297,7 @@ const App = () => {
                   <div className="content">
                     <h5>Custom Expertise Matching</h5>
                     <p>
-                      Staff deployed based on your specific needs. We carefully match accountants to your industry, software requirements, and business complexity, ensuring you get professionals with the exact expertise your business demands.
+                      Staff deployed based on your specific needs. We carefully match Bookkeepers to your industry, software requirements, and business complexity, ensuring you get professionals with the exact expertise your business demands.
                     </p>
                   </div>
                 </li>

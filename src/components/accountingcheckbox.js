@@ -7,8 +7,8 @@ const DATA = [
   { skill: "Payroll Management", junior: true, intermediate: true, senior: true, pmManaged: true },
   { skill: "Catch-up Bookkeeping Jobs", intermediate: true, senior: true, pmManaged: true },
   { skill: "Year-End Bookkeeping Clean-UP and Review", intermediate: true, senior: true, pmManaged: true },
-  { skill: "Periodic Management Accounts Prepration", intermediate: true, senior: true, pmManaged: true },
-  { skill: "Year-End Company Accounts and Working Papers", senior: true, pmManaged: true },
+  { skill: "Periodic Management Bookkeeping Prepration", intermediate: true, senior: true, pmManaged: true },
+  { skill: "Year-End Company Bookkeeping and Working Papers", senior: true, pmManaged: true },
   { skill: "Controller : Analysis / Reporting of Financial Health", senior: true, pmManaged: true },
   // Add more rows as needed
 ]
@@ -39,16 +39,16 @@ export default function AccountantsMatrix() {
   return (
     <section className="wrap" aria-labelledby="accountants-heading">
       <header className="header">
-        <h2 id="accountants-heading">Our Accountants</h2>
+        <h2 id="accountants-heading">Our Bookkeepers</h2>
         <p className="sub">
-          As per your budget plan and the skill-set you require from your virtual accountant, you can choose a junior,
-          mid, or senior level accountant.
+          As per your budget plan and the skill-set you require from your virtual Bookkeeper, you can choose a junior,
+          mid, or senior level Bookkeeper.
         </p>
       </header>
 
       <div className="table-scroller">
         <table className="matrix">
-          <caption className="sr-only">Skill matrix for accountants at different levels</caption>
+          <caption className="sr-only">Skill matrix for Bookkeepers at different levels</caption>
           <thead>
             <tr>
               <th scope="col" className="left sticky">
