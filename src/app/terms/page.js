@@ -265,7 +265,7 @@ const App = () => {
       </p>
 
       {/* --- Implementation Guide Section --- */}
-      <div style={styles.checkboxGuide}>
+      {/* <div style={styles.checkboxGuide}>
         <h2 style={{ ...styles.sectionTitle, marginTop: '0', borderBottom: '2px solid #ffcc00', color: '#b8860b' }}>Implementation Guide: Required SMS Opt-In Checkbox</h2>
         <p style={styles.bodyText}>
           <Bold>Place the following next to an unchecked checkbox on all forms collecting phone numbers:</Bold>
@@ -276,7 +276,7 @@ const App = () => {
             <span>I consent to GrowEdgeX Corp. contacting me via phone or text at the number provided regarding my inquiry, application status, and services. Reply <Bold>STOP</Bold> to cancel. Standard message and data rates may apply.</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* --- Footer --- */}
       <div style={{ marginTop: '50px', padding: '20px', backgroundColor: '#f8f9fa', borderRadius: '6px', borderTop: '3px solid #004c99' }}>
