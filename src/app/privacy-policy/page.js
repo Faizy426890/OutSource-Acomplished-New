@@ -155,19 +155,18 @@ const PrivacyPolicy = () => {
           </p>
 
           <h3 style={styles.subTitle}>2- Types of SMS Communications</h3>
-          <p style={styles.bodyText}>
-            If you have consented to receive text messages from GrowEdgeX, you may receive messages related to the following:
-          </p>
-          <ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
-            <li style={styles.listItem}>Service inquiries and follow-ups</li>
-            <li style={styles.listItem}>Appointment/Meeting reminders</li>
-            <li style={styles.listItem}>Billing or account inquiries</li>
-            <li style={styles.listItem}>Project updates or operational alerts</li>
-          </ul>
-
+         <p style={styles.bodyText}>
+  If you have provided consent to receive text messages from GrowEdgeX, you may receive SMS communications related to the following:
+</p>
+<ul style={{ listStyleType: 'circle', paddingLeft: '20px' }}>
+  <li style={styles.listItem}>General conversations and responses</li>
+  <li style={styles.listItem}>Customer support and assistance</li>
+  <li style={styles.listItem}>Service-related questions or clarifications</li>
+  <li style={styles.listItem}>Important updates related to ongoing communication</li>
+</ul>
           <h3 style={styles.subTitle}>3- Message Frequency</h3>
           <p style={styles.bodyText}>
-            Message frequency may vary depending on the type of communication. You may receive up to <Bold>5 SMS messages per week</Bold> related to your inquiries or account management.
+            Message frequency may vary depending on the type of communication. You may receive up to <Bold>5 SMS messages per week</Bold>
           </p>
 
           <h3 style={styles.subTitle}>4- Potential Fees for SMS Messaging</h3>
