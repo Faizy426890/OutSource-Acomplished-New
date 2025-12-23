@@ -202,7 +202,7 @@ const Home2Contact = () => {
                             }}
                           />
                           <span style={{ color: '#666' }}>
-                            (Optional) By checking this box, you agree to receive SMS messages from GrowEdgeX.  You may reply STOP to opt out at
+                            (Optional) By checking this box, you agree to receive SMS messages from GrowEdgeX regarding general conversations.You may reply STOP to opt out at
                             any time. Message & data rates may apply. View our{" "}
                             <a href="/privacy-policy" style={{ color: '#007bff', textDecoration: 'underline' }}>Privacy Policy</a>
                             {" "}and{" "}
