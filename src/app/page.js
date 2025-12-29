@@ -9,7 +9,8 @@ const Home1Solution = dynamic(() => import("../components/solution/Home1Solution
 const GlobalMapPartners = dynamic(() => import("./map"), { ssr: false });
 const GlobalLocationsMap = dynamic(() => import("./officelocations"), { ssr: false });
 const Home2Contact = dynamic(() => import("../components/contact/Home2Contact"));
-const Footer = dynamic(() => import("../components/footer/Footer"));
+const Footer = dynamic(() => import("../components/footer/Footer")); 
+import FoundersPromise from "../components/ownermessage/message"
 
 // ✅ SEO Metadata for GrowEdgeX Homepag
 
@@ -19,9 +20,10 @@ export default function Home() {
     <>
       <Header1 />
       <Home1Banner />
-      <Home1BannerMarquee />
-      <ServicesGrid />
-      <Home1Solution />
+      <Home1BannerMarquee /> 
+      <ServicesGrid /> 
+      <FoundersPromise/>
+      {/* <Home1Solution /> */}
       <GlobalMapPartners />
       <GlobalLocationsMap />
       <Home2Contact />
