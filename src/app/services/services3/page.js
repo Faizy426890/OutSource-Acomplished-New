@@ -329,54 +329,6 @@ const ServicesPage3 = () => {
   </div>
 </div>   
 {/* 10 - TeleMarketing */}
-<div
-  style={{
-    backgroundColor: "#E5E7EB",
-  }}
-  className="single-services mb-20"
->
-  <div className="icon">
-    <Phone size={40} />
-    <div className="number">
-      <span>10</span>
-    </div>
-  </div>
-
-  <h5>TeleMarketing</h5>
-
-  <div className="services-img"></div>
-
-  <div className="content">
-    <p>
-      Increase your sales and customer engagement with our expert telemarketing
-      services designed to build meaningful client relationships and drive
-      measurable results.
-    </p>
-    <ul className="tag-list">
-      <li>Outbound Sales Campaigns</li>
-      <li>Lead Qualification & Conversion</li>
-      <li>Customer Retention Programs</li>
-      <li>Performance Tracking & Reporting</li>
-    </ul>
-  </div>
-
-  <div className="button-area">
-    <Link className="explore-btn" href="/service/telemarketing">
-      Learn More
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={12}
-        height={12}
-        viewBox="0 0 12 12"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M10.1865 1.06237L0 11.2484L0.751627 12L10.9376 1.81347V8.85645H12V0H3.14355V1.06237H10.1865Z"
-        />
-      </svg>
-    </Link>
-  </div>
 </div>
 
               </div>
