@@ -49,13 +49,13 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <h1 className="hero-main-heading">
+            <h1 className="hero-main-heading hero-animate-slide-left" style={{ animationDelay: '0.2s' }}>
               Stop Managing.
               <br />
               <span className="hero-heading-gradient">Start Leading.</span>
             </h1>
 
-            <h2 className="hero-sub-heading">
+            <h2 className="hero-sub-heading hero-animate-slide-left" style={{ animationDelay: '0.4s' }}>
               Stop Managing Your Backend Operations.
               <br />
               Start Leading Your Growth.
@@ -97,10 +97,13 @@ export default function HeroSection() {
 
           <div className="hero-right-section">
             <div className="hero-image-wrapper">
-              <img
-                src="https://res.cloudinary.com/diml90c1y/image/upload/v1766897767/photo-1709715357520-5e1047a2b691_mcd2m1.jpg"
-                alt="Professional Business Operations"
+              <video
+                src="https://res.cloudinary.com/diml90c1y/video/upload/v1767119140/WEB_HERO_zvel4f.mp4"
                 className="hero-image"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
 
               <div className="hero-image-badge">

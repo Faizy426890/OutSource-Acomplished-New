@@ -29,7 +29,6 @@ export default function Home() {
       <Home2Contact />
       <Footer />
 
-      {/* ✅ Structured Data (Schema Markup for SEO) */}
      
     
     </>

@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'; 
-import Image from 'next/image';
 
 export default function GlobalMapPartners() {
   const [hoveredPartner, setHoveredPartner] = useState(null);
@@ -13,14 +12,22 @@ export default function GlobalMapPartners() {
     {
       name: "Partner 2",
       logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760649584/WhatsApp_Image_2025-10-16_at_4.18.44_PM-removebg-preview_nynzwo.png"
-    } , 
-     {
+    },
+    {
       name: "Partner 3",
       logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1764036131/Gemini_Generated_Image_vbdlekvbdlekvbdl-removebg-preview_t8ls8z.png"
-    }, 
-      {
+    },
+    {
       name: "Partner 4",
       logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1764036131/Gemini_Generated_Image_oxclvtoxclvtoxcl-removebg-preview_ddjjeq.png"
+    },
+    {
+      name: "Partner 5",
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767129989/shared_image__10_-removebg-preview_qwmnaw.png"
+    },
+    {
+      name: "Partner 6",
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767129989/shared_image__11_-removebg-preview_zf13tq.png"
     }
   ];
 
@@ -84,8 +91,8 @@ export default function GlobalMapPartners() {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '280px',
-    height: '200px',
+    width: '360px',
+    height: '280px',
     transform: hoveredPartner === index ? 'scale(1.05)' : 'scale(1)',
     transition: 'all 0.3s ease',
     cursor: 'pointer',
@@ -212,8 +219,8 @@ export default function GlobalMapPartners() {
         border-radius: 10px !important;
       }
       .partner-card { 
-        width: 160px !important; 
-        height: 120px !important;
+        width: 200px !important; 
+        height: 160px !important;
         padding: 20px !important; 
       }
       .partners-grid {
@@ -254,8 +261,8 @@ export default function GlobalMapPartners() {
         border-radius: 20px !important;
       }
       .partner-card { 
-        width: 200px !important; 
-        height: 150px !important;
+        width: 250px !important; 
+        height: 190px !important;
         padding: 28px !important; 
       }
       .partners-grid {
@@ -276,8 +283,8 @@ export default function GlobalMapPartners() {
         font-size: 1.063rem !important;
       }
       .partner-card { 
-        width: 220px !important; 
-        height: 170px !important;
+        width: 260px !important; 
+        height: 200px !important;
         padding: 32px !important;
       }
       .map-wrapper {
@@ -294,8 +301,8 @@ export default function GlobalMapPartners() {
         font-size: 2.5rem !important; 
       }
       .partner-card { 
-        width: 250px !important; 
-        height: 180px !important;
+        width: 280px !important; 
+        height: 210px !important;
         padding: 36px !important;
       }
       .map-wrapper {
@@ -379,9 +386,7 @@ export default function GlobalMapPartners() {
              
               
               <div style={mapImageContainerStyle}>
-                <Image 
-                width={1000}
-                height={1000} 
+                <img 
                   src="https://res.cloudinary.com/diml90c1y/image/upload/v1760656467/ChatGPT_Image_Oct_16_2025_06_14_11_PM_yxjkgy.png"
                   alt="Global Footprint Map"
                   style={mapImageStyle}
