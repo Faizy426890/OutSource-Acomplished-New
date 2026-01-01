@@ -186,7 +186,7 @@ const Header1 = () => {
                 <ul className="main-menu">
                  
                   <li>
-                    <Link href="/services">Services</Link>
+                    <a href="/services">Services</a>
                    
                    
                   </li>

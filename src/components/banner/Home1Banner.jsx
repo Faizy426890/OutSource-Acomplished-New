@@ -27,9 +27,9 @@ export default function HeroSection() {
     }
 
     const timeout = setTimeout(() => {
-      animateCounter(setClients, 150)
-      animateCounter(setProjects, 500)
-      animateCounter(setEmployees, 1200)
+      animateCounter(setClients, 100)
+      animateCounter(setProjects, 300)
+      animateCounter(setEmployees, 500)
     }, 300)
 
     return () => clearTimeout(timeout)
@@ -43,30 +43,30 @@ export default function HeroSection() {
         <div className="hero-grid">
           <div className="hero-left-section">
             <div className="hero-badge-wrapper">
-              <div className="hero-badge">
+              <div className="hero-badge hero-animate-slide-left" style={{ animationDelay: '0.1s' }}>
                 <span className="hero-sparkle">✨</span>
                 <span className="hero-badge-text">Trusted by Industry Leaders</span>
               </div>
             </div>
 
-            <h1 className="hero-main-heading hero-animate-slide-left" style={{ animationDelay: '0.2s' }}>
+            <h1 className="hero-main-heading hero-animate-slide-left" style={{ animationDelay: '0.3s' }}>
               Stop Managing.
               <br />
               <span className="hero-heading-gradient">Start Leading.</span>
             </h1>
 
-            <h2 className="hero-sub-heading hero-animate-slide-left" style={{ animationDelay: '0.4s' }}>
+            <h2 className="hero-sub-heading hero-animate-slide-left" style={{ animationDelay: '0.5s' }}>
               Stop Managing Your Backend Operations.
               <br />
               Start Leading Your Growth.
             </h2>
 
-            <p className="hero-tagline">
+            <p className="hero-tagline hero-animate-slide-left" style={{ animationDelay: '0.7s' }}>
               We deliver operational mastery for healthcare, home health agencies, staffing companies, law firms,
               IT/software development, accounting/payroll, and property management businesses.
             </p>
 
-            <div className="hero-button-container">
+            <div className="hero-button-container hero-animate-slide-left" style={{ animationDelay: '0.9s' }}>
               <a href="/service" className="hero-primary-button">
                 <span>Get Started Today</span>
                 <span className="hero-button-arrow">→</span>
@@ -77,7 +77,7 @@ export default function HeroSection() {
               </a>
             </div>
 
-            <div className="hero-stats-row">
+            <div className="hero-stats-row hero-animate-slide-left" style={{ animationDelay: '1.1s' }}>
               <div className="hero-stat-item">
                 <div className="hero-stat-number">{clients}+</div>
                 <div className="hero-stat-label">Happy Clients</div>
@@ -85,7 +85,7 @@ export default function HeroSection() {
               <div className="hero-stat-divider"></div>
               <div className="hero-stat-item">
                 <div className="hero-stat-number">{projects}+</div>
-                <div className="hero-stat-label">Projects Completed</div>
+                <div className="hero-stat-label">Projects </div>
               </div>
               <div className="hero-stat-divider"></div>
               <div className="hero-stat-item">
