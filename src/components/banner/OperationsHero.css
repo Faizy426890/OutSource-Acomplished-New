@@ -1,0 +1,73 @@
+.ops-hero {
+  padding: 120px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.ops-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ops-heading {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-bottom: 24px;
+}
+
+.ops-heading span {
+  color: #2563eb;
+}
+
+.ops-subtext {
+  font-size: 20px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.ops-tagline {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 64px;
+}
+
+.ops-stats {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.ops-stat {
+  text-align: center;
+}
+
+.ops-stat-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: #7c3aed;
+  margin-bottom: 8px;
+}
+
+.ops-stat-label {
+  font-size: 16px;
+  color: #475569;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ops-heading {
+    font-size: 44px;
+  }
+
+  .ops-stats {
+    gap: 40px;
+  }
+
+  .ops-stat-number {
+    font-size: 40px;
+  }
+}
