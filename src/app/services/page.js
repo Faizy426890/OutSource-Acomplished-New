@@ -3,7 +3,8 @@ import React, { useState,useEffect } from 'react';
 import { Heart, Scale, Calculator, Cog, ArrowRight, Check, Sparkles, Zap } from 'lucide-react';
 import useWow from "../../hooks/useWow"; 
 import Header1 from '../../components/header/Header1';
-const ServicesShowcase = () => {
+import OperationsHero from '../../components/banner/ServiceBanner'
+const test = () => {
   
 
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -740,37 +741,8 @@ const ServicesShowcase = () => {
 
       <div className="">
         <Header1/>
-        {/* Hero Section */}
-        <div className="hero-section ">
-          <div className="hero-container">
-            <div className="hero-content">
-              <div className="floating-badge">
-                <Sparkles style={{ width: '1rem', height: '1rem', color: '#a855f7' }} />
-                <span className="badge-text">Innovative Service Offering</span>
-                <div className="pulse-dot" />
-              </div>
-              
-              <h1 className="hero-title">
-                Transform Your
-                <span className="hero-title-gradient">Business Operations</span>
-              </h1>
-              
-              <p className="hero-subtitle">
-                Enterprise-grade solutions tailored to your industry. 
-                <span className="hero-subtitle-bold">Built by operators, for operators.</span>
-              </p>
-
-              <div className="stats-bar">
-                {stats.map((stat, idx) => (
-                  <div key={idx} className="stat-item">
-                    <div className="stat-value">{stat.value}</div>
-                    <div className="stat-label">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        <OperationsHero/>
+        
 
         {/* Services Grid */}
         <div className="section-container">
@@ -925,4 +897,5 @@ const ServicesShowcase = () => {
   );
 };
 
-export default ServicesShowcase;
+export default test;
+
