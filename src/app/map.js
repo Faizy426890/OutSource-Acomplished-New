@@ -8,26 +8,26 @@ export default function GlobalMapPartners() {
     {
       name: "Partner 1",
       logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760649446/MicrosoftTeams-image__1_-removebg-preview_gx2m5i.png"
-    },
-    {
+    }, 
+      {
       name: "Partner 2",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760649584/WhatsApp_Image_2025-10-16_at_4.18.44_PM-removebg-preview_nynzwo.png"
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767129989/shared_image__10_-removebg-preview_qwmnaw.png"
     },
     {
-      name: "Partner 3",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1764036131/Gemini_Generated_Image_vbdlekvbdlekvbdl-removebg-preview_t8ls8z.png"
+      name: "Partner 5",
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760649584/WhatsApp_Image_2025-10-16_at_4.18.44_PM-removebg-preview_nynzwo.png"
     },
     {
       name: "Partner 4",
       logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1764036131/Gemini_Generated_Image_oxclvtoxclvtoxcl-removebg-preview_ddjjeq.png"
     },
     {
-      name: "Partner 5",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767129989/shared_image__10_-removebg-preview_qwmnaw.png"
-    },
-    {
       name: "Partner 6",
       logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767129989/shared_image__11_-removebg-preview_zf13tq.png"
+    }, 
+     {
+      name: "Partner 7",
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767573587/Logi-removebg-preview_emgbtm.png"
     }
   ];
 
