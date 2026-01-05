@@ -52,7 +52,6 @@ export default function HeroSection() {
             <h1 className="hero-main-heading">
               <span>Stop</span>
               <span> Managing.</span>
-              <br />
               <span className="hero-heading-gradient">Start Leading.</span>
             </h1>
 
