@@ -62,8 +62,8 @@ export default function HeroSection() {
             </h2>
 
             <p className="hero-tagline hero-animate-slide-left" style={{ animationDelay: '0.7s' }}>
-              We deliver operational mastery for healthcare, home health agencies, staffing companies, law firms,
-              IT/software development, accounting/payroll, and property management businesses.
+              We deliver operational mastery for Healthcare, Home Health agencies, Staffing companies, Law firms,
+              IT/Software development, Accounting/Payroll, and Property Management Businesses.
             </p>
 
             <div className="hero-button-container hero-animate-slide-left" style={{ animationDelay: '0.9s' }}>
