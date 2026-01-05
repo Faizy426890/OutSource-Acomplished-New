@@ -49,8 +49,9 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <h1 className="hero-main-heading hero-animate-slide-left" style={{ animationDelay: '0.3s' }}>
-              Stop Managing.
+            <h1 className="hero-main-heading">
+              <span>Stop</span>
+              <span> Managing.</span>
               <br />
               <span className="hero-heading-gradient">Start Leading.</span>
             </h1>
