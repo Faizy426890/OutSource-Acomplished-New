@@ -23,7 +23,7 @@ export default function GlobalMapPartners() {
     },
     {
       name: "Partner 6",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767129989/shared_image__11_-removebg-preview_zf13tq.png"
+      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767574001/ChatGPT_Image_Jan_4__2026__06_45_41_PM-removebg-preview_dl72wm.png"
     }, 
      {
       name: "Partner 7",
