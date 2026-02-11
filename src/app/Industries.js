@@ -1,6 +1,6 @@
 "use client"
 import { Heart, Scale, Calculator, Cog, ArrowRight, CheckCircle2, Sparkles } from "lucide-react"
-
+import Link from "next/link";
 export default function App() {
   const services = [
     {
@@ -142,10 +142,10 @@ export default function App() {
                   </ul>
                 </div>
 
-                <button className="learn-more-btn">
-                  <span>Learn More</span>
-                  <ArrowRight className="arrow-icon" strokeWidth={2.5} />
-                </button>
+                <Link href={`/services/${service.slug}`} className="learn-more-btn">
+  <span>Learn More</span>
+  <ArrowRight className="arrow-icon" strokeWidth={2.5} />
+</Link>
               </div>
             </div>
           ))}
