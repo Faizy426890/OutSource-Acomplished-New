@@ -25,7 +25,7 @@ import {
   Menu,
   Check,
 } from "lucide-react";
-import { ServiceDetail } from "../data";
+import { ServiceDetail } from "./data";
 
 interface Props {
   service: ServiceDetail;
