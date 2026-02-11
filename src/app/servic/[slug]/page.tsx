@@ -1,7 +1,7 @@
 // app/services/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { getServiceBySlug, getAllServiceSlugs } from "../data";
+import { getServiceBySlug, getAllServiceSlugs } from "./data";
 import ServiceDetailClient from "./ServiceDetailClient";
 
 interface PageProps {
