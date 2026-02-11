@@ -1,10 +1,9 @@
 // app/services/data.ts
-import { Heart, Scale, Calculator, Cog, Users, Briefcase, FileText, TrendingUp, Shield, Clock, Zap, Target, CheckCircle, Award, Star, Phone, Mail, Calendar, UserCheck, Building, CreditCard, BarChart, Settings, Code, Database, Globe, Layout, Smartphone, Cloud, Lock, Repeat, Activity, PieChart, DollarSign, Wallet, FileCheck, Clipboard, Headphones, Truck, Stethoscope, Home, ClipboardList, ActivitySquare, Scale as ScaleIcon, Gavel, FileSearch, UserPlus, Clock as ClockIcon, CheckSquare, Calendar as CalendarIcon, AlertCircle, TrendingUp as TrendingUpIcon, Users as UsersIcon, Briefcase as BriefcaseIcon, FileText as FileTextIcon, PieChart as PieChartIcon } from "lucide-react";
 
 export interface ServiceFeature {
   title: string;
   description: string;
-  icon: any;
+  icon: string;
   benefits: string[];
 }
 
@@ -12,13 +11,13 @@ export interface ServiceProcess {
   step: number;
   title: string;
   description: string;
-  icon: any;
+  icon: string;
 }
 
 export interface ServiceMetric {
   value: string;
   label: string;
-  icon: any;
+  icon: string;
 }
 
 export interface ServiceCase {
@@ -35,7 +34,7 @@ export interface ServiceDetail {
   title: string;
   subtitle: string;
   tagline: string;
-  Icon: any;
+  Icon: string;
   color: string;
   colorLight: string;
   video: string;
@@ -57,7 +56,7 @@ export interface ServiceDetail {
   whyChoose: {
     title: string;
     description: string;
-    icon: any;
+    icon: string;
   }[];
 }
 
@@ -68,7 +67,7 @@ export const serviceDetails: ServiceDetail[] = [
     title: "Home Health & Staffing",
     subtitle: "The 'Fingerprint' Advantage",
     tagline: "For Agency Owners tired of the daily grind",
-    Icon: Heart,
+    Icon: "Heart",
     color: "#e0730d",
     colorLight: "#fef3e9",
     video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767143842/Law_firms_ready_5_sllshx.mp4",
@@ -82,7 +81,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Full-Cycle Coordination",
         description: "Balance patient needs and caregiver schedules with insider precision",
-        icon: Calendar,
+        icon: "Calendar",
         benefits: [
           "AI-powered scheduling optimization",
           "Real-time caregiver availability tracking",
@@ -93,7 +92,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Intake & Patient Satisfaction",
         description: "High-touch first impressions that drive retention",
-        icon: UserCheck,
+        icon: "UserCheck",
         benefits: [
           "24/7 patient intake coordination",
           "Personalized care plan development",
@@ -104,7 +103,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Logistics & Payroll",
         description: "Stay compliant while keeping your staff happy",
-        icon: Truck,
+        icon: "Truck",
         benefits: [
           "Bi-weekly payroll processing for 100+ caregivers",
           "EVV (Electronic Visit Verification) compliance",
@@ -115,7 +114,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Recruitment Engines",
         description: "Find and vet talent other agencies miss",
-        icon: Users,
+        icon: "Users",
         benefits: [
           "Multi-channel sourcing strategy",
           "Skills assessment and background checks",
@@ -126,7 +125,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Compliance Management",
         description: "Stay audit-ready with automated documentation",
-        icon: Shield,
+        icon: "Shield",
         benefits: [
           "License and certification tracking",
           "State regulation compliance monitoring",
@@ -137,7 +136,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Growth Operations",
         description: "Scale without adding administrative overhead",
-        icon: TrendingUp,
+        icon: "TrendingUp",
         benefits: [
           "New location setup support",
           "Contract negotiation assistance",
@@ -151,53 +150,53 @@ export const serviceDetails: ServiceDetail[] = [
         step: 1,
         title: "Discovery & Audit",
         description: "We analyze your current operations, identify bottlenecks, and create a 30-60-90 day transformation plan.",
-        icon: ClipboardList
+        icon: "ClipboardList"
       },
       {
         step: 2,
         title: "Systems Integration",
         description: "Our team integrates with your existing tools or implements our proven stack of scheduling, payroll, and compliance software.",
-        icon: Settings
+        icon: "Settings"
       },
       {
         step: 3,
         title: "Shadow Operations",
         description: "We learn your unique processes by working alongside your team for 2 weeks, documenting every workflow.",
-        icon: Users
+        icon: "Users"
       },
       {
         step: 4,
         title: "Full Transition",
         description: "Your team steps back as we take over daily operations with zero disruption to patient care or staff.",
-        icon: CheckCircle
+        icon: "CheckCircle"
       },
       {
         step: 5,
         title: "Continuous Optimization",
         description: "Monthly strategy sessions and weekly KPI reviews ensure your operations improve month over month.",
-        icon: TrendingUp
+        icon: "TrendingUp"
       }
     ],
     metrics: [
       {
         value: "40%",
         label: "Reduction in admin time",
-        icon: Clock
+        icon: "Clock"
       },
       {
         value: "99%",
         label: "Schedule fill rate",
-        icon: CheckCircle
+        icon: "CheckCircle"
       },
       {
         value: "3x",
         label: "Revenue growth potential",
-        icon: TrendingUp
+        icon: "TrendingUp"
       },
       {
         value: "24h",
         label: "New caregiver onboarding",
-        icon: Zap
+        icon: "Zap"
       }
     ],
     caseStudies: [
@@ -244,22 +243,22 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Founder-Led Experience",
         description: "Our leadership team built and sold a successful home health agency. We've done this before.",
-        icon: Award
+        icon: "Award"
       },
       {
         title: "Healthcare-Specific",
         description: "Not generic BPO. Our processes are built for home health compliance and caregiver dynamics.",
-        icon: Heart
+        icon: "Heart"
       },
       {
         title: "Outcome-Based Pricing",
         description: "We succeed when you succeed. Our pricing scales with your growth.",
-        icon: TrendingUp
+        icon: "TrendingUp"
       },
       {
         title: "Full Transparency",
         description: "You get access to all systems, reports, and data. No black boxes.",
-        icon: Eye
+        icon: "Eye"
       }
     ]
   },
@@ -269,7 +268,7 @@ export const serviceDetails: ServiceDetail[] = [
     title: "Legal Intake & Professional Services",
     subtitle: "Lead-to-Client Machine",
     tagline: "For Law Firms ready to convert",
-    Icon: Scale,
+    Icon: "Scale",
     color: "#1c234f",
     colorLight: "#eef2ff",
     video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767133077/Law_firms_ready_a4ptl3.mp4",
@@ -283,7 +282,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Intake Mastery",
         description: "High-touch operational rigor ensures every lead is captured, qualified, and converted",
-        icon: Phone,
+        icon: "Phone",
         benefits: [
           "Answer within 2 rings, 24/7/365",
           "Multi-channel intake (calls, chat, text, email)",
@@ -294,7 +293,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Back-Office Logistics",
         description: "Manage the administrative burden so attorneys focus on the law",
-        icon: FileText,
+        icon: "FileText",
         benefits: [
           "Client onboarding and document collection",
           "Medical record requests and organization",
@@ -305,7 +304,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Client Pipeline",
         description: "Systematic approach to moving prospects through your funnel",
-        icon: TrendingUp,
+        icon: "TrendingUp",
         benefits: [
           "Automated nurture sequences",
           "Follow-up scheduling and reminders",
@@ -316,7 +315,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Document Management",
         description: "Streamlined case file organization and retrieval",
-        icon: FileCheck,
+        icon: "FileCheck",
         benefits: [
           "Digital file organization and indexing",
           "OCR and document digitization",
@@ -327,7 +326,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Marketing ROI Optimization",
         description: "Close the loop on your marketing spend",
-        icon: PieChart,
+        icon: "PieChart",
         benefits: [
           "Lead source tracking and attribution",
           "Cost-per-acquisition analysis",
@@ -338,7 +337,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Client Experience",
         description: "Differentiate through exceptional service",
-        icon: Star,
+        icon: "Star",
         benefits: [
           "Welcome calls and intake packages",
           "Regular case status updates",
@@ -352,53 +351,53 @@ export const serviceDetails: ServiceDetail[] = [
         step: 1,
         title: "Intake System Design",
         description: "We map your ideal client profile and design qualification workflows that filter for high-value cases.",
-        icon: Clipboard
+        icon: "Clipboard"
       },
       {
         step: 2,
         title: "Team Training",
         description: "Our intake specialists complete 40 hours of training on your practice areas, firm culture, and case criteria.",
-        icon: Users
+        icon: "Users"
       },
       {
         step: 3,
         title: "Technology Integration",
         description: "We connect with your CRM, phone system, and case management software for seamless data flow.",
-        icon: Settings
+        icon: "Settings"
       },
       {
         step: 4,
         title: "Live Intake Launch",
         description: "We begin answering calls, with daily reports and weekly calibration sessions to optimize conversion.",
-        icon: Phone
+        icon: "Phone"
       },
       {
         step: 5,
         title: "Continuous Refinement",
         description: "A/B test scripts, follow-up timing, and qualification criteria to continuously improve conversion rates.",
-        icon: TrendingUp
+        icon: "TrendingUp"
       }
     ],
     metrics: [
       {
         value: "89%",
         label: "First-call answer rate",
-        icon: Phone
+        icon: "Phone"
       },
       {
         value: "2min",
         label: "Average response time",
-        icon: Clock
+        icon: "Clock"
       },
       {
         value: "40%",
         label: "Increase in conversion",
-        icon: TrendingUp
+        icon: "TrendingUp"
       },
       {
         value: "30h",
         label: "Weekly partner hours saved",
-        icon: Clock
+        icon: "Clock"
       }
     ],
     caseStudies: [
@@ -445,22 +444,22 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Legal Industry Focus",
         description: "We don't do general BPO. Every process is designed specifically for law firm intake and case management.",
-        icon: Gavel
+        icon: "Gavel"
       },
       {
         title: "Ethics-First Training",
         description: "Our team is certified in legal ethics and client confidentiality requirements.",
-        icon: Shield
+        icon: "Shield"
       },
       {
         title: "ROI Guarantee",
         description: "We guarantee to increase your conversion rate or you don't pay.",
-        icon: TrendingUp
+        icon: "TrendingUp"
       },
       {
         title: "Full Integration",
         description: "We work with Clio, MyCase, PracticePanther, Filevine, and all major legal CRMs.",
-        icon: Settings
+        icon: "Settings"
       }
     ]
   },
@@ -470,7 +469,7 @@ export const serviceDetails: ServiceDetail[] = [
     title: "Bookkeeping & Accounting",
     subtitle: "White-Label Back-Office",
     tagline: "For Small Businesses & CPA Firms",
-    Icon: Calculator,
+    Icon: "Calculator",
     color: "#059669",
     colorLight: "#ecfdf5",
     video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767143843/Law_firms_ready_4_x5olmf.mp4",
@@ -484,7 +483,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "White-Label Accounting",
         description: "Act as your invisible back-office",
-        icon: Building,
+        icon: "Building",
         benefits: [
           "Branded client communications",
           "Direct client relationship management",
@@ -495,7 +494,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Payroll & Financial Reporting",
         description: "Clean, accurate, timely data",
-        icon: DollarSign,
+        icon: "DollarSign",
         benefits: [
           "Multi-state payroll processing",
           "Financial statement preparation",
@@ -506,7 +505,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Tax Prep Support",
         description: "Organize records so CPAs focus on strategy",
-        icon: FileCheck,
+        icon: "FileCheck",
         benefits: [
           "Year-round tax data organization",
           "Estimated tax payment calculations",
@@ -517,7 +516,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Monthly Reconciliation",
         description: "Every transaction accounted for",
-        icon: CheckCircle,
+        icon: "CheckCircle",
         benefits: [
           "Bank and credit card reconciliation",
           "Accounts receivable/payable aging",
@@ -528,7 +527,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Controller Services",
         description: "Strategic financial oversight",
-        icon: PieChart,
+        icon: "PieChart",
         benefits: [
           "Monthly financial reviews",
           "KPI dashboard creation",
@@ -539,7 +538,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Software Implementation",
         description: "Tech stack optimization",
-        icon: Settings,
+        icon: "Settings",
         benefits: [
           "QuickBooks/Xero setup and optimization",
           "Bill.com, Expensify integration",
@@ -553,53 +552,53 @@ export const serviceDetails: ServiceDetail[] = [
         step: 1,
         title: "Clean-Up & Catch-Up",
         description: "We reconcile historical data, correct errors, and establish accurate opening balances.",
-        icon: Clipboard
+        icon: "Clipboard"
       },
       {
         step: 2,
         title: "Process Documentation",
         description: "Every recurring task is documented, reviewed, and assigned to dedicated team members.",
-        icon: FileText
+        icon: "FileText"
       },
       {
         step: 3,
         title: "Monthly Close Protocol",
         description: "We execute day 1-5 close process with complete reconciliations and variance analysis.",
-        icon: Calendar
+        icon: "Calendar"
       },
       {
         step: 4,
         title: "Review & Deliver",
         description: "US-based CPAs review all work before delivery to clients or firm partners.",
-        icon: CheckCircle
+        icon: "CheckCircle"
       },
       {
         step: 5,
         title: "Quarterly Strategy",
         description: "We present financial insights and recommendations, not just historical numbers.",
-        icon: TrendingUp
+        icon: "TrendingUp"
       }
     ],
     metrics: [
       {
         value: "60%",
         label: "Reduction in close time",
-        icon: Clock
+        icon: "Clock"
       },
       {
         value: "99.9%",
         label: "Reconciliation accuracy",
-        icon: CheckCircle
+        icon: "CheckCircle"
       },
       {
         value: "50%",
         label: "Lower cost than in-house",
-        icon: DollarSign
+        icon: "DollarSign"
       },
       {
         value: "5d",
         label: "Average monthly close",
-        icon: Calendar
+        icon: "Calendar"
       }
     ],
     caseStudies: [
@@ -646,22 +645,22 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "US CPA Oversight",
         description: "Every work product is reviewed by licensed US CPAs before delivery.",
-        icon: Award
+        icon: "Award"
       },
       {
         title: "Technology-First",
         description: "We automate 70%+ of manual entry so your team focuses on analysis.",
-        icon: Zap
+        icon: "Zap"
       },
       {
         title: "White-Label Capable",
         description: "We disappear behind your brand - clients never know we're here.",
-        icon: Shield
+        icon: "Shield"
       },
       {
         title: "Fixed-Fee Certainty",
         description: "Predictable monthly pricing based on volume, not hours.",
-        icon: DollarSign
+        icon: "DollarSign"
       }
     ]
   },
@@ -671,7 +670,7 @@ export const serviceDetails: ServiceDetail[] = [
     title: "IT & Workflow Automation",
     subtitle: "The Secret Sauce",
     tagline: "For every industry ready to scale",
-    Icon: Cog,
+    Icon: "Cog",
     color: "#7c3aed",
     colorLight: "#f5f3ff",
     video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767134458/Law_firms_ready_1_ijsxgx.mp4",
@@ -685,7 +684,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Custom Software",
         description: "Niche applications built from real operational experience",
-        icon: Code,
+        icon: "Code",
         benefits: [
           "Web and mobile applications",
           "Client portals and dashboards",
@@ -696,7 +695,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Workflow Automation",
         description: "Turn manual tasks into automated workflows",
-        icon: Zap,
+        icon: "Zap",
         benefits: [
           "Multi-step process automation",
           "Document generation and routing",
@@ -707,7 +706,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "System Integration",
         description: "Connect your existing tools into seamless systems",
-        icon: Database,
+        icon: "Database",
         benefits: [
           "CRM to ERP synchronization",
           "Legacy system modernization",
@@ -718,7 +717,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Process Optimization",
         description: "Identify and eliminate workflow bottlenecks",
-        icon: Activity,
+        icon: "Activity",
         benefits: [
           "Current state process mapping",
           "Bottleneck identification",
@@ -729,7 +728,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Business Intelligence",
         description: "Turn data into decisions",
-        icon: BarChart,
+        icon: "BarChart",
         benefits: [
           "Custom dashboard creation",
           "Real-time KPI tracking",
@@ -740,7 +739,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Cloud Infrastructure",
         description: "Scalable, secure, and reliable hosting",
-        icon: Cloud,
+        icon: "Cloud",
         benefits: [
           "AWS/Azure/GCP architecture",
           "Serverless application deployment",
@@ -754,53 +753,53 @@ export const serviceDetails: ServiceDetail[] = [
         step: 1,
         title: "Discovery & Process Audit",
         description: "We map your current workflows, time each task, and identify the highest-ROI automation opportunities.",
-        icon: Clipboard
+        icon: "Clipboard"
       },
       {
         step: 2,
         title: "Solution Architecture",
         description: "Our team designs the ideal workflow and specifies the technology stack required to execute it.",
-        icon: Layout
+        icon: "Layout"
       },
       {
         step: 3,
         title: "Agile Development",
         description: "We build in 2-week sprints, delivering working software at the end of each iteration for immediate feedback.",
-        icon: Code
+        icon: "Code"
       },
       {
         step: 4,
         title: "Testing & Deployment",
         description: "Rigorous QA testing, user acceptance testing, and staged rollout to ensure zero disruption.",
-        icon: CheckCircle
+        icon: "CheckCircle"
       },
       {
         step: 5,
         title: "Training & Handoff",
         description: "We document everything, train your team, and provide ongoing support and optimization.",
-        icon: Users
+        icon: "Users"
       }
     ],
     metrics: [
       {
         value: "70%",
         label: "Manual task reduction",
-        icon: Clock
+        icon: "Clock"
       },
       {
         value: "100x",
         label: "ROI on automation",
-        icon: TrendingUp
+        icon: "TrendingUp"
       },
       {
         value: "3min",
         label: "Hours saved per employee daily",
-        icon: Zap
+        icon: "Zap"
       },
       {
         value: "0",
         label: "Manual data entry errors",
-        icon: CheckCircle
+        icon: "CheckCircle"
       }
     ],
     caseStudies: [
@@ -847,22 +846,22 @@ export const serviceDetails: ServiceDetail[] = [
       {
         title: "Operators Who Code",
         description: "We've run businesses and felt the pain of manual processes. We build for users, not engineers.",
-        icon: Users
+        icon: "Users"
       },
       {
         title: "ROI-First Approach",
         description: "We prioritize projects by business impact. No building features nobody needs.",
-        icon: TrendingUp
+        icon: "TrendingUp"
       },
       {
         title: "Full-Stack Capability",
         description: "From front-end UI to database architecture to cloud deployment - we handle it all.",
-        icon: Settings
+        icon: "Settings"
       },
       {
         title: "Long-Term Partnership",
         description: "We're not just developers - we're strategic partners who care about your operational success.",
-        icon: Heart
+        icon: "Heart"
       }
     ]
   }

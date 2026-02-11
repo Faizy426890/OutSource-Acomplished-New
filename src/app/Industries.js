@@ -1,10 +1,12 @@
 "use client"
 import { Heart, Scale, Calculator, Cog, ArrowRight, CheckCircle2, Sparkles } from "lucide-react"
 import Link from "next/link";
+
 export default function App() {
   const services = [
     {
       id: 1,
+      slug: "home-health-staffing", // Added slug
       title: "Home Health & Staffing",
       subtitle: "The 'Fingerprint' Advantage",
       tagline: "For Agency Owners tired of the daily grind",
@@ -21,6 +23,7 @@ export default function App() {
     },
     {
       id: 2,
+      slug: "legal-intake-professional-services", // Added slug
       title: "Legal Intake & Professional Services",
       subtitle: "Lead-to-Client Machine",
       tagline: "For Law Firms ready to convert",
@@ -37,6 +40,7 @@ export default function App() {
     },
     {
       id: 3,
+      slug: "bookkeeping-accounting", // Added slug
       title: "Bookkeeping & Accounting",
       subtitle: "White-Label Back-Office",
       tagline: "For Small Businesses & CPA Firms",
@@ -53,6 +57,7 @@ export default function App() {
     },
     {
       id: 4,
+      slug: "it-workflow-automation", // Added slug
       title: "IT & Workflow Automation",
       subtitle: "The Secret Sauce",
       tagline: "For every industry ready to scale",
@@ -142,10 +147,10 @@ export default function App() {
                   </ul>
                 </div>
 
-                <Link href={`/services/${service.slug}`} className="learn-more-btn">
-  <span>Learn More</span>
-  <ArrowRight className="arrow-icon" strokeWidth={2.5} />
-</Link>
+                <Link href={`/servic/${service.slug}`} className="learn-more-btn">
+                  <span>Learn More</span>
+                  <ArrowRight className="arrow-icon" strokeWidth={2.5} />
+                </Link>
               </div>
             </div>
           ))}
@@ -249,11 +254,9 @@ export default function App() {
 
         .service-card {
           position: relative;
-          background: white; 
-          padding : 0px;
+          background: white;
           border-radius: 24px;
-          box-shadow:
-            0 5px 10px rgba(0, 0, 0, 0.08),
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
           overflow: hidden;
           border: 1px solid rgba(226, 232, 240, 0.8);
           transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -525,7 +528,7 @@ export default function App() {
           gap: 10px;
           background: linear-gradient(135deg, #0d9ae0ff 0%, #0b78f5ff 100%);
           color: white;
-          font-size: 19x;
+          font-size: 16px;
           font-weight: 700;
           padding: 16px 32px;
           border-radius: 12px;
@@ -537,6 +540,7 @@ export default function App() {
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           width: 100%;
           margin-top: auto;
+          text-decoration: none;
         }
 
         .learn-more-btn:hover {
