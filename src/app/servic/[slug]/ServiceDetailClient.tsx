@@ -87,7 +87,7 @@ export default function ServiceDetailClient({ service }: Props) {
           background: `linear-gradient(135deg, ${service.color}10, ${service.color}20)` 
         }}
       >
-        <div className="hero-content">
+        <div className="">
           <div 
             className="hero-badge" 
             style={{ background: service.color, color: "white" }}
@@ -97,7 +97,7 @@ export default function ServiceDetailClient({ service }: Props) {
           </div>
           
           <h1 className="hero-title">
-            {service.title}
+            {service.title} 
             <span className="hero-subtitle">{service.subtitle}</span>
           </h1>
 
