@@ -226,7 +226,7 @@ export default function App() {
         }
 
         .main-description {
-          font-size: clamp(27px, 2vw, 20px);
+          font-size: clamp(22px, 2vw, 20px);
           color: #475569;
           line-height: 1.7;
           max-width: 850px;
@@ -400,7 +400,7 @@ export default function App() {
         }
 
         .service-title {
-          font-size: clamp(32px, 3vw, 28px);
+          font-size: clamp(28px, 3vw, 28px);
           font-weight: 800;
           color: #0f172a;
           margin: 0;
@@ -408,7 +408,7 @@ export default function App() {
         }
 
         .service-subtitle {
-          font-size: clamp(25px, 2vw, 18px);
+          font-size: clamp(19px, 2vw, 18px);
           font-weight: 600;
           background: linear-gradient(135deg, #e0730d 0%, #f59e0b 100%);
           -webkit-background-clip: text;
@@ -435,7 +435,7 @@ export default function App() {
         }
 
         .insight-label {
-          font-size: 21px;
+          font-size: 18px;
           font-weight: 700;
           color: #e0730d;
           text-transform: uppercase;
@@ -444,7 +444,7 @@ export default function App() {
         }
 
         .insight-text {
-          font-size: 24px;
+          font-size: 19px;
           color: #334155;
           line-height: 1.6;
           font-weight: 500;
@@ -458,7 +458,7 @@ export default function App() {
         }
 
         .features-label {
-          font-size: 21px;
+          font-size: 19px;
           font-weight: 700;
           color: #64748b;
           text-transform: uppercase;
@@ -504,7 +504,7 @@ export default function App() {
         }
 
         .feature-text {
-          font-size: 23px;
+          font-size: 20px;
           line-height: 1.6;
         }
 
@@ -525,7 +525,7 @@ export default function App() {
           gap: 10px;
           background: linear-gradient(135deg, #0d9ae0ff 0%, #0b78f5ff 100%);
           color: white;
-          font-size: 25px;
+          font-size: 19x;
           font-weight: 700;
           padding: 16px 32px;
           border-radius: 12px;
