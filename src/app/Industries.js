@@ -193,7 +193,7 @@ export default function App() {
           color: white;
           padding: 12px 28px;
           border-radius: 9999px;
-          font-size: 13px;
+          font-size: 23px;
           font-weight: 700;
           box-shadow: 0 10px 35px rgba(224, 115, 13, 0.35), 0 4px 15px rgba(224, 115, 13, 0.2);
           margin-bottom: 24px;
@@ -226,7 +226,7 @@ export default function App() {
         }
 
         .main-description {
-          font-size: clamp(17px, 2vw, 20px);
+          font-size: clamp(27px, 2vw, 20px);
           color: #475569;
           line-height: 1.7;
           max-width: 850px;
@@ -392,7 +392,7 @@ export default function App() {
         }
 
         .tagline {
-          font-size: 11px;
+          font-size: 14px;
           font-weight: 700;
           color: #64748b;
           text-transform: uppercase;
@@ -400,7 +400,7 @@ export default function App() {
         }
 
         .service-title {
-          font-size: clamp(22px, 3vw, 28px);
+          font-size: clamp(32px, 3vw, 28px);
           font-weight: 800;
           color: #0f172a;
           margin: 0;
@@ -408,7 +408,7 @@ export default function App() {
         }
 
         .service-subtitle {
-          font-size: clamp(15px, 2vw, 18px);
+          font-size: clamp(25px, 2vw, 18px);
           font-weight: 600;
           background: linear-gradient(135deg, #e0730d 0%, #f59e0b 100%);
           -webkit-background-clip: text;
@@ -435,7 +435,7 @@ export default function App() {
         }
 
         .insight-label {
-          font-size: 11px;
+          font-size: 21px;
           font-weight: 700;
           color: #e0730d;
           text-transform: uppercase;
@@ -444,7 +444,7 @@ export default function App() {
         }
 
         .insight-text {
-          font-size: 14px;
+          font-size: 24px;
           color: #334155;
           line-height: 1.6;
           font-weight: 500;
@@ -458,7 +458,7 @@ export default function App() {
         }
 
         .features-label {
-          font-size: 11px;
+          font-size: 21px;
           font-weight: 700;
           color: #64748b;
           text-transform: uppercase;
@@ -504,7 +504,7 @@ export default function App() {
         }
 
         .feature-text {
-          font-size: 13px;
+          font-size: 23px;
           line-height: 1.6;
         }
 
@@ -525,7 +525,7 @@ export default function App() {
           gap: 10px;
           background: linear-gradient(135deg, #0d9ae0ff 0%, #0b78f5ff 100%);
           color: white;
-          font-size: 15px;
+          font-size: 25px;
           font-weight: 700;
           padding: 16px 32px;
           border-radius: 12px;
