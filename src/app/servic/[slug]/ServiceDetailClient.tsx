@@ -92,7 +92,7 @@ export default function ServiceDetailClient({ service }: Props) {
             className="hero-badge" 
             style={{ background: service.color, color: "white" }}
           >
-            <service.Icon size={18} />
+            <service.Icon  />
             <span>{service.tagline}</span>
           </div>
           
@@ -113,7 +113,7 @@ export default function ServiceDetailClient({ service }: Props) {
                       color: service.color 
                     }}
                   >
-                    <IconComponent size={24} />
+                    <IconComponent  />
                   </div>
                   <div className="stat-content">
                     <div className="stat-value">{metric.value}</div>
@@ -227,7 +227,7 @@ export default function ServiceDetailClient({ service }: Props) {
                         color: service.color 
                       }}
                     >
-                      <IconComponent size={24} />
+                      <IconComponent/>
                     </div>
                     <h3 className="feature-title">{feature.title}</h3>
                   </div>
@@ -291,7 +291,7 @@ export default function ServiceDetailClient({ service }: Props) {
                         color: service.color 
                       }}
                     >
-                      <IconComponent size={24} />
+                      <IconComponent  />
                     </div>
                     <h3 className="step-title">{step.title}</h3>
                     <p className="step-description">{step.description}</p>
@@ -389,7 +389,7 @@ export default function ServiceDetailClient({ service }: Props) {
                       color: service.color 
                     }}
                   >
-                    <IconComponent size={28} />
+                    <IconComponent  />
                   </div>
                   <h3 className="whychoose-title">{item.title}</h3>
                   <p className="whychoose-description">{item.description}</p>
