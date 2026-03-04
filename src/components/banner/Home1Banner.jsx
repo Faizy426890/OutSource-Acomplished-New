@@ -98,7 +98,7 @@ export default function HeroSection() {
           <div className="hero-right-section">
             <div className="hero-image-wrapper">
               <video
-                src="https://res.cloudinary.com/diml90c1y/video/upload/v1767119140/WEB_HERO_zvel4f.mp4"
+                src="https://res.cloudinary.com/daxjhteb5/video/upload/v1772645094/WEB_HERO_nunlaa.mp4"
                 className="hero-image"
                 autoPlay
                 loop
