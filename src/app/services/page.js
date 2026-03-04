@@ -19,7 +19,7 @@ const test = () => {
       color: "#e0730d",
       bgColor: "#fff7ed",
       accentColor: "#fb923c",
-      video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767143842/Law_firms_ready_5_sllshx.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645148/Law_firms_ready_5_vkijl7.mp4",
       features: [
         "Full-Cycle Coordination: Balance patient needs and caregiver schedules with insider precision",
         "Intake & Patient Satisfaction: High-touch first impressions that drive retention",
@@ -37,7 +37,7 @@ const test = () => {
       color: "#1c234f",
       bgColor: "#eff6ff",
       accentColor: "#2563eb",
-      video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767133077/Law_firms_ready_a4ptl3.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645170/Law_firms_ready_1_ldfhw0.mp4",
       features: [
         "Intake Mastery: High-touch operational rigor ensures every lead is captured, qualified, and converted",
         "Back-Office Logistics: Manage the administrative burden so attorneys focus on the law",
@@ -55,7 +55,7 @@ const test = () => {
       color: "#059669",
       bgColor: "#ecfdf5",
       accentColor: "#10b981",
-      video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767143843/Law_firms_ready_4_x5olmf.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645167/Law_firms_ready_4_ubnann.mp4",
       features: [
         "White-Label Accounting: Act as your invisible back-office, handling manual bookkeeping",
         "Payroll & Financial Reporting: Clean, accurate, timely data to keep business healthy",
@@ -73,7 +73,7 @@ const test = () => {
       color: "#7c3aed",
       bgColor: "#faf5ff",
       accentColor: "#a855f7",
-      video: "https://res.cloudinary.com/diml90c1y/video/upload/v1767134458/Law_firms_ready_1_ijsxgx.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645148/Law_firms_ready_5_vkijl7.mp4",
       features: [
         "Custom Software: Niche applications built from real operational experience",
         "Automation: Turn manual tasks into automated workflows, reclaim hours daily",
