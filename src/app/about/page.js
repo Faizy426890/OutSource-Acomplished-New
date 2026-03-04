@@ -350,7 +350,7 @@ const page = () => {
 
       {/* <Home4award /> */}
 
-      <Home5Team />
+      {/* <Home5Team /> */}
 
 
     
