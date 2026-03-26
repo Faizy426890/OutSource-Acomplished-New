@@ -29,7 +29,7 @@ export default function App() {
       tagline: "For Law Firms ready to convert",
       Icon: Scale,
       color: "#1c234f",
-      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645170/Law_firms_ready_1_ldfhw0.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645151/Law_firms_ready_w3wc2p.mp4",
       features: [
         "Intake Mastery: High-touch operational rigor ensures every lead is captured, qualified, and converted",
         "Back-Office Logistics: Manage the administrative burden so attorneys focus on the law",
@@ -63,7 +63,7 @@ export default function App() {
       tagline: "For every industry ready to scale",
       Icon: Cog,
       color: "#7c3aed",
-      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645148/Law_firms_ready_5_vkijl7.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645170/Law_firms_ready_1_ldfhw0.mp4",
       features: [
         "Custom Software: Niche applications built from real operational experience",
         "Automation: Turn manual tasks into automated workflows, reclaim hours daily",

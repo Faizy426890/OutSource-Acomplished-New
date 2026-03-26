@@ -11,7 +11,8 @@ const test = () => {
   // useWow()
   const services = [
     {
-      id: 1,
+      id: 1, 
+      url : "/servic/home-health-staffing",
       title: "Home Health & Staffing",
       subtitle: "The 'Fingerprint' Advantage",
       tagline: "For Agency Owners tired of the daily grind",
@@ -30,14 +31,15 @@ const test = () => {
     },
     {
       id: 2,
-      title: "Legal Intake & Professional Services",
-      subtitle: "Lead-to-Client Machine",
+      title: "Legal Intake & Professional Services", 
+      url:"/servic/legal-intake-professional-services",
+      subtitle: "Lead-to-Client Machine", 
       tagline: "For Law Firms ready to convert",
       Icon: Scale,
       color: "#1c234f",
       bgColor: "#eff6ff",
       accentColor: "#2563eb",
-      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645170/Law_firms_ready_1_ldfhw0.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645151/Law_firms_ready_w3wc2p.mp4",
       features: [
         "Intake Mastery: High-touch operational rigor ensures every lead is captured, qualified, and converted",
         "Back-Office Logistics: Manage the administrative burden so attorneys focus on the law",
@@ -48,7 +50,8 @@ const test = () => {
     },
     {
       id: 3,
-      title: "Bookkeeping & Accounting",
+      title: "Bookkeeping & Accounting", 
+      url : "/servic/bookkeeping-accounting",
       subtitle: "White-Label Back-Office",
       tagline: "For Small Businesses & CPA Firms",
       Icon: Calculator,
@@ -66,14 +69,15 @@ const test = () => {
     },
     {
       id: 4,
-      title: "IT & Workflow Automation",
+      title: "IT & Workflow Automation", 
+      url : "/servic/it-workflow-automation",
       subtitle: "The Secret Sauce",
       tagline: "For every industry ready to scale",
       Icon: Cog,
       color: "#7c3aed",
       bgColor: "#faf5ff",
       accentColor: "#a855f7",
-      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645148/Law_firms_ready_5_vkijl7.mp4",
+      video: "https://res.cloudinary.com/daxjhteb5/video/upload/v1772645170/Law_firms_ready_1_ldfhw0.mp4",
       features: [
         "Custom Software: Niche applications built from real operational experience",
         "Automation: Turn manual tasks into automated workflows, reclaim hours daily",
@@ -811,10 +815,14 @@ const test = () => {
                       </div>
                     </div>
 
-                    <button className="service-cta" style={{ background: service.accentColor }}>
-                      <span className="cta-text">Explore Service</span>
-                      <ArrowRight className="cta-arrow" strokeWidth={2.5} />
-                    </button>
+                    <button 
+  className="service-cta" 
+  style={{ background: service.accentColor }}
+  onClick={() => window.open(service.url, '_blank')}
+>
+  <span className="cta-text">Explore Service</span>
+  <ArrowRight className="cta-arrow" strokeWidth={2.5} />
+</button>
                   </div>
                 </div>
               </div>
