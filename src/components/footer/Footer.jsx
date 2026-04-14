@@ -84,7 +84,7 @@ const Footer = () => {
   <Image width={800}   
   height={600}  loading="lazy"
     alt="BTS Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
+    src="https://res.cloudinary.com/daxjhteb5/image/upload/v1776130636/Growedge_white_background-removebg-preview_st7inq_uxjysc.webp"
     style={{
       width: '165px',         // Adjust size as needed
       height: 'auto',
@@ -250,7 +250,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <div className="copyright-area">
               <p>
-                Copyright 2025 <a href="#">GrowEdge</a> 
+                Copyright 2026 <a href="#">GrowEdge</a> 
                 {/* <a href="https://www.egenslab.com/">BlazeTech Solutions</a> */}
               </p>
             </div>

@@ -1,418 +1,423 @@
 "use client"
-import React, { useState } from 'react'; 
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function GlobalMapPartners() {
   const [hoveredPartner, setHoveredPartner] = useState(null);
+  const [visible, setVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      { threshold: 0.1 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   const partners = [
     {
-      name: "Partner 1",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760649446/MicrosoftTeams-image__1_-removebg-preview_gx2m5i.png"
-    }, 
-      {
-      name: "Partner 2",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767129989/shared_image__10_-removebg-preview_qwmnaw.png"
+      name: "",
+      logo: "https://res.cloudinary.com/daxjhteb5/image/upload/v1776129040/Coffee_Logo-removebg-preview_jpzioa.png",
     },
     {
-      name: "Partner 5",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1760649584/WhatsApp_Image_2025-10-16_at_4.18.44_PM-removebg-preview_nynzwo.png"
+      name: "",
+      logo: "https://res.cloudinary.com/daxjhteb5/image/upload/v1776128986/Khan_Law_Logo_kvjgbt.avif",
     },
     {
-      name: "Partner 4",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1764036131/Gemini_Generated_Image_oxclvtoxclvtoxcl-removebg-preview_ddjjeq.png"
+      name: "",
+      logo: "https://res.cloudinary.com/daxjhteb5/image/upload/v1776128986/Rehab_Logo_ofbqq2.webp",
     },
     {
-      name: "Partner 6",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767574001/ChatGPT_Image_Jan_4__2026__06_45_41_PM-removebg-preview_dl72wm.png"
-    }, 
-     {
-      name: "Partner 7",
-      logo: "https://res.cloudinary.com/diml90c1y/image/upload/v1767573587/Logi-removebg-preview_emgbtm.png"
-    }
+      name: "",
+      logo: "https://res.cloudinary.com/daxjhteb5/image/upload/v1776128985/Nexus_Logo_vwr1yt.png",
+    },
   ];
 
-  const containerStyle = {
-    width: '100%',
-    background: 'linear-gradient(to bottom, #f9fafb, #ffffff)',
-    padding: '64px 16px',
-  };
+  const stats = [
+    { value: "10+", label: "Locations" },
+    { value: "5", label: "Continents" },
+    { value: "24/7", label: "Support" },
+    { value: "100%", label: "Commitment" },
+  ];
 
-  const maxWidthContainerStyle = {
-    maxWidth: '1280px',
-    margin: '0 auto',
-    padding: '0 16px',
-  };
+  const css = `
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Syne:wght@400;600;700;800&display=swap');
 
-  const partnersSectionStyle = {
-    marginBottom: '80px',
-  };
-
-  const titleContainerStyle = {
-    textAlign: 'center',
-    marginBottom: '48px',
-  };
-
-  const titleStyle = {
-    fontSize: '3rem',
-    fontWeight: 'bold',
-    color: '#111827',
-    marginBottom: '16px',
-  };
-
-  const titleUnderlineStyle = {
-    width: '96px',
-    height: '4px',
-    background: '#f97316',
-    margin: '0 auto',
-    borderRadius: '9999px',
-  };
-
-  const subtitleStyle = {
-    marginTop: '24px',
-    fontSize: '1.125rem',
-    color: '#4b5563',
-    maxWidth: '672px',
-    margin: '24px auto 0',
-  };
-
-  const partnersGridStyle = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '32px',
-  };
-
-  const getPartnerCardStyle = (index) => ({
-    position: 'relative',
-    background: 'transparent',
-    borderRadius: '16px',
-    padding: '40px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '360px',
-    height: '280px',
-    transform: hoveredPartner === index ? 'scale(1.05)' : 'scale(1)',
-    transition: 'all 0.3s ease',
-    cursor: 'pointer',
-  });
-
-  const partnerLogoStyle = {
-    position: 'relative',
-    zIndex: 10,
-    maxWidth: '100%',
-    maxHeight: '100%',
-    objectFit: 'contain',
-    width: 'auto',
-    height: 'auto',
-    filter: hoveredPartner !== null && hoveredPartner !== undefined ? 
-      `brightness(${hoveredPartner === partners.indexOf(partners.find((_, i) => i === hoveredPartner)) ? 1.1 : 1})` : 
-      'brightness(1)',
-    transition: 'all 0.3s ease',
-  };
-
-  const mapContainerStyle = {
-    marginBottom: '48px',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  };
-
-  const mapWrapperStyle = {
-    position: 'relative',
-    width: '100%',
-    maxWidth: '900px',
-    background: 'transparent',
-    borderRadius: '24px',
-    padding: '40px', 
-    paddingLeft:'20px',
-    overflow: 'hidden',
-  };
-
-  const decorElement1Style = {
-    position: 'absolute',
-    top: '0',
-    right: '0',
-    width: '256px',
-    height: '256px',
-    background: 'rgba(249, 115, 22, 0.1)',
-    opacity: 0.3,
-    marginRight: '-128px',
-    marginTop: '-128px',
-  };
-
-  const decorElement2Style = {
-    position: 'absolute',
-    bottom: '0',
-    left: '0',
-    width: '256px',
-    height: '256px',
-    background: 'rgba(59, 130, 246, 0.1)',
-    borderRadius: '50%',
-    filter: 'blur(64px)',
-    opacity: 0.3,
-    marginLeft: '-128px',
-    marginBottom: '-128px',
-  };
-
-  const mapImageContainerStyle = {
-    position: 'relative',
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
-
-  const mapImageStyle = {
-    width: '100%',
-    height: 'auto',
-    maxWidth: '100%',
-  };
-
-  const statsGridStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
-    gap: '24px',
-    marginTop: '40px',
-    paddingTop: '32px',
-    borderTop: '1px solid #e5e7eb',
-  };
-
-  const statItemStyle = {
-    textAlign: 'center',
-  };
-
-  const statNumberStyle = {
-    fontSize: '2.25rem',
-    fontWeight: 'bold',
-    color: '#f97316',
-    marginBottom: '8px',
-  };
-
-  const statLabelStyle = {
-    fontSize: '1rem',
-    color: '#4b5563',
-  };
-
-  const responsiveStyles = `
-    /* Mobile First - Extra Small Devices */
-    @media (max-width: 480px) {
-      .title { 
-        font-size: 1.75rem !important; 
-        line-height: 1.2 !important;
-        padding: 0 8px !important;
-      }
-      .subtitle { 
-        font-size: 0.938rem !important; 
-        padding: 0 12px !important;
-        line-height: 1.5 !important;
-      }
-      .stat-number { 
-        font-size: 1.5rem !important; 
-      }
-      .stat-label { 
-        font-size: 0.813rem !important; 
-      }
-      .map-wrapper { 
-        padding: 0px !important;
-        border-radius: 10px !important;
-      }
-      .partner-card { 
-        width: 200px !important; 
-        height: 160px !important;
-        padding: 20px !important; 
-      }
-      .partners-grid {
-        gap: 16px !important;
-      }
-      .partners-section {
-        margin-bottom: 48px !important;
-      }
-      .map-container {
-        margin-bottom: 32px !important;
-      }
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 16px !important;
-        margin-top: 24px !important;
-        padding-top: 24px !important;
-      }
+    :root {
+      --bg-primary: #161618;
+      --bg-card: #1e1e21;
+      --bg-card-hover: #252528;
+      --border: rgba(255,255,255,0.07);
+      --border-hover: rgba(249,115,22,0.45);
+      --accent: #f97316;
+      --accent-dim: rgba(249,115,22,0.15);
+      --accent-glow: rgba(249,115,22,0.3);
+      --text-primary: #f5f4f0;
+      --text-muted: #888;
+      --radius: 20px;
     }
 
-    /* Small Devices */
-    @media (min-width: 481px) and (max-width: 640px) {
-      .title { 
-        font-size: 2rem !important; 
-        line-height: 1.2 !important;
-      }
-      .subtitle { 
-        font-size: 1rem !important; 
-        padding: 0 16px !important;
-      }
-      .stat-number { 
-        font-size: 1.875rem !important; 
-      }
-      .stat-label { 
-        font-size: 0.875rem !important; 
-      }
-      .map-wrapper { 
-        padding: 28px !important;
-        border-radius: 20px !important;
-      }
-      .partner-card { 
-        width: 250px !important; 
-        height: 190px !important;
-        padding: 28px !important; 
-      }
-      .partners-grid {
-        gap: 20px !important;
-      }
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 20px !important;
-      }
+    .gmp-wrap * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .gmp-wrap {
+      background: var(--bg-primary);
+      font-family: 'Syne', sans-serif;
+      padding: 96px 24px;
+      position: relative;
+      overflow: hidden;
     }
 
-    /* Medium Devices - Tablets */
-    @media (min-width: 641px) and (max-width: 768px) {
-      .title { 
-        font-size: 2.25rem !important; 
-      }
-      .subtitle {
-        font-size: 1.063rem !important;
-      }
-      .partner-card { 
-        width: 260px !important; 
-        height: 200px !important;
-        padding: 32px !important;
-      }
-      .map-wrapper {
-        padding: 36px !important;
-      }
-      .stats-grid {
-        grid-template-columns: repeat(4, 1fr) !important;
-      }
+    /* Ambient background blobs */
+    .gmp-wrap::before {
+      content: '';
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(249,115,22,0.06) 0%, transparent 70%);
+      top: -200px;
+      right: -200px;
+      pointer-events: none;
+    }
+    .gmp-wrap::after {
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(59,130,246,0.05) 0%, transparent 70%);
+      bottom: -150px;
+      left: -150px;
+      pointer-events: none;
     }
 
-    /* Large Tablets and Small Laptops */
-    @media (min-width: 769px) and (max-width: 1024px) {
-      .title { 
-        font-size: 2.5rem !important; 
-      }
-      .partner-card { 
-        width: 280px !important; 
-        height: 210px !important;
-        padding: 36px !important;
-      }
-      .map-wrapper {
-        padding: 40px !important;
-      }
+    .gmp-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
 
-    /* Desktop */
-    @media (min-width: 1025px) {
-      .map-wrapper {
-        padding: 48px !important;
-      }
+    /* === SECTION HEADER === */
+    .gmp-header {
+      text-align: center;
+      margin-bottom: 64px;
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .gmp-header.visible { opacity: 1; transform: translateY(0); }
+
+    .gmp-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+    .gmp-eyebrow::before,
+    .gmp-eyebrow::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--accent);
+      opacity: 0.6;
     }
 
-    /* Extra Large Screens */
-    @media (min-width: 1440px) {
-      .title {
-        font-size: 3.5rem !important;
-      }
-      .subtitle {
-        font-size: 1.25rem !important;
-      }
-      .map-wrapper {
-        max-width: 1000px !important;
-      }
+    .gmp-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 900;
+      color: var(--text-primary);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .gmp-title span {
+      color: var(--accent);
+      font-style: italic;
     }
 
-    /* Ensure proper spacing on all devices */
-    .container {
-      padding-left: clamp(16px, 5vw, 32px);
-      padding-right: clamp(16px, 5vw, 32px);
+    .gmp-divider {
+      width: 64px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      border-radius: 99px;
+      margin: 20px auto 0;
+    }
+
+    /* === PARTNERS GRID === */
+    .gmp-partners-section { margin-bottom: 96px; }
+
+    .gmp-partners-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .gmp-partner-card {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 48px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      overflow: hidden;
+      transition: border-color 0.35s ease, background 0.35s ease, transform 0.35s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.35s ease;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    .gmp-partner-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gmp-partner-card:nth-child(1) { transition-delay: 0.1s; }
+    .gmp-partner-card:nth-child(2) { transition-delay: 0.2s; }
+    .gmp-partner-card:nth-child(3) { transition-delay: 0.3s; }
+    .gmp-partner-card:nth-child(4) { transition-delay: 0.4s; }
+
+    .gmp-partner-card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px var(--border-hover), inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    /* Shine sweep on hover */
+    .gmp-partner-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 40%, rgba(249,115,22,0.07) 50%, transparent 60%);
+      background-size: 200% 200%;
+      background-position: 200% 200%;
+      transition: background-position 0.6s ease;
+      border-radius: inherit;
+    }
+    .gmp-partner-card:hover::before {
+      background-position: -50% -50%;
+    }
+
+    /* Bottom accent bar */
+    .gmp-partner-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      border-radius: 99px;
+      transition: transform 0.35s ease;
+    }
+    .gmp-partner-card:hover::after { transform: translateX(-50%) scaleX(1); }
+
+    .gmp-partner-logo {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      filter: brightness(0.85) saturate(0.7);
+      transition: filter 0.35s ease, transform 0.35s ease;
+    }
+    .gmp-partner-card:hover .gmp-partner-logo {
+      filter: brightness(1.1) saturate(1);
+      transform: scale(1.07);
+    }
+
+    .gmp-partner-name {
+      margin-top: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.35s ease;
+    }
+    .gmp-partner-card:hover .gmp-partner-name { color: var(--accent); }
+
+    /* === MAP SECTION === */
+    .gmp-map-section {}
+
+    .gmp-map-frame {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 48px;
+      overflow: hidden;
+    }
+
+    /* Subtle grid pattern */
+    .gmp-map-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+      border-radius: inherit;
+    }
+
+    /* Corner accent */
+    .gmp-map-frame::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle at top right, rgba(249,115,22,0.12), transparent 70%);
+      border-radius: inherit;
+    }
+
+    .gmp-map-img-wrap {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .gmp-map-img-wrap img {
+      width: 100%;
+      max-width: 820px;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    /* === STATS === */
+    .gmp-stats {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 48px;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+    }
+
+    .gmp-stat {
+      text-align: center;
+      padding: 8px 16px;
+      position: relative;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .gmp-stat.visible { opacity: 1; transform: translateY(0); }
+    .gmp-stat:nth-child(1) { transition-delay: 0.1s; }
+    .gmp-stat:nth-child(2) { transition-delay: 0.2s; }
+    .gmp-stat:nth-child(3) { transition-delay: 0.3s; }
+    .gmp-stat:nth-child(4) { transition-delay: 0.4s; }
+
+    .gmp-stat:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 20%;
+      height: 60%;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .gmp-stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 900;
+      font-style: italic;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .gmp-stat-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 1024px) {
+      .gmp-partners-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .gmp-wrap { padding: 64px 16px; }
+      .gmp-partners-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .gmp-partner-card { padding: 32px 20px; }
+      .gmp-partner-logo { height: 80px; }
+      .gmp-stats { grid-template-columns: repeat(2, 1fr); }
+      .gmp-stat:nth-child(2)::after { display: none; }
+      .gmp-stat:nth-child(2) { border-right: none; }
+      .gmp-stat:nth-child(3)::after { display: none; }
+      .gmp-map-frame { padding: 24px 16px; }
     }
   `;
 
   return (
     <>
-      <style>{responsiveStyles}</style>
-      <div style={containerStyle} className="container">
-        <div style={maxWidthContainerStyle}>
-          {/* Partners Section */}
-          <div style={partnersSectionStyle} className="partners-section">
-            <div style={titleContainerStyle}>
-              <h2 className="title" style={titleStyle}>
-                Our Partners
-              </h2>
-              <div style={titleUnderlineStyle}></div>
+      <style>{css}</style>
+      <div className="gmp-wrap" ref={sectionRef}>
+        <div className="gmp-inner">
+
+          {/* PARTNERS */}
+          <div className="gmp-partners-section">
+            <div className={`gmp-header ${visible ? 'visible' : ''}`}>
+              <div className="gmp-eyebrow">Trusted By</div>
+              <h2 className="gmp-title">Our <span>Partners</span></h2>
+              <div className="gmp-divider" />
             </div>
-            
-            <div className="partners-grid" style={partnersGridStyle}>
-              {partners.map((partner, index) => (
+
+            <div className="gmp-partners-grid">
+              {partners.map((p, i) => (
                 <div
-                  key={index}
-                  className="partner-card"
-                  style={getPartnerCardStyle(index)}
-                  onMouseEnter={() => setHoveredPartner(index)}
+                  key={i}
+                  className={`gmp-partner-card ${visible ? 'visible' : ''}`}
+                  onMouseEnter={() => setHoveredPartner(i)}
                   onMouseLeave={() => setHoveredPartner(null)}
                 >
-                  <img
-                    src={partner.logo}
-                    alt={partner.name}
-                    style={partnerLogoStyle}
-                  />
+                  <img src={p.logo} alt={p.name} className="gmp-partner-logo" />
+                  <span className="gmp-partner-name">{p.name}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Map Section */}
-          <div style={mapContainerStyle} className="map-container">
-            <div style={titleContainerStyle}>
-              <h2 className="title" style={titleStyle}>
-                Clients All Around the Globe 
-              </h2>
-              <div style={titleUnderlineStyle}></div>
-              <p className="subtitle" style={subtitleStyle}>
-                Serving clients across continents with our worldwide network
-              </p>
+          {/* MAP */}
+          <div className="gmp-map-section">
+            <div className={`gmp-header ${visible ? 'visible' : ''}`} style={{ transitionDelay: '0.2s' }}>
+              <div className="gmp-eyebrow">Global Reach</div>
+              <h2 className="gmp-title">Clients All Around <span>the Globe</span></h2>
+              <div className="gmp-divider" />
             </div>
 
-            <div className="map-wrapper" style={mapWrapperStyle}>
-             
-              
-              <div style={mapImageContainerStyle}>
-                <img 
-                  src="https://res.cloudinary.com/diml90c1y/image/upload/v1760656467/ChatGPT_Image_Oct_16_2025_06_14_11_PM_yxjkgy.png"
+            <div className="gmp-map-frame">
+              <div className="gmp-map-img-wrap">
+                <img
+                  src="https://res.cloudinary.com/daxjhteb5/image/upload/v1776130254/updated_map_pqexf7.png"
                   alt="Global Footprint Map"
-                  style={mapImageStyle}
                 />
               </div>
 
-              <div style={statsGridStyle} className="stats-grid">
-                <div style={statItemStyle}>
-                  <div className="stat-number" style={statNumberStyle}>10+</div>
-                  <div className="stat-label" style={statLabelStyle}>Locations</div>
-                </div>
-                <div style={statItemStyle}>
-                  <div className="stat-number" style={statNumberStyle}>5</div>
-                  <div className="stat-label" style={statLabelStyle}>Continents</div>
-                </div>
-                <div style={statItemStyle}>
-                  <div className="stat-number" style={statNumberStyle}>24/7</div>
-                  <div className="stat-label" style={statLabelStyle}>Support</div>
-                </div>
-                <div style={statItemStyle}>
-                  <div className="stat-number" style={statNumberStyle}>100%</div>
-                  <div className="stat-label" style={statLabelStyle}>Commitment</div>
-                </div>
+              <div className="gmp-stats">
+                {stats.map((s, i) => (
+                  <div key={i} className={`gmp-stat ${visible ? 'visible' : ''}`}>
+                    <div className="gmp-stat-value">{s.value}</div>
+                    <div className="gmp-stat-label">{s.label}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </>
