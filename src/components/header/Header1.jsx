@@ -99,7 +99,7 @@ const Header1 = () => {
   <Image width={800}   
   height={600}  loading="lazy"
     alt="GrowEdge Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
+    src="https://res.cloudinary.com/daxjhteb5/image/upload/v1776130636/Growedge_white_background-removebg-preview_st7inq_uxjysc.webp"
     style={{
       position: 'absolute',
       top: '50%',
@@ -134,7 +134,7 @@ const Header1 = () => {
   <Image width={800}   
   height={600}  loading="lazy"
     alt="GrowEdge Logo"
-    src="https://res.cloudinary.com/diml90c1y/image/upload/v1760227309/Growedge_white_background-removebg-preview_st7inq.png"
+    src="https://res.cloudinary.com/daxjhteb5/image/upload/v1776130636/Growedge_white_background-removebg-preview_st7inq_uxjysc.webp"
     style={{
       position: 'absolute',
       top: '50%',

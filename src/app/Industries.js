@@ -196,9 +196,9 @@ export default function App() {
           gap: 10px;
           background: linear-gradient(135deg, #0d73e0ff 0%, #2a5be3ff 100%);
           color: white;
-          padding: 12px 28px;
+          padding: 12px 13px;
           border-radius: 9999px;
-          font-size: 23px;
+          font-size: 20px;
           font-weight: 700;
           box-shadow: 0 10px 35px rgba(224, 115, 13, 0.35), 0 4px 15px rgba(224, 115, 13, 0.2);
           margin-bottom: 24px;
@@ -568,7 +568,15 @@ export default function App() {
         @media (max-width: 767px) {
           .specialized-section {
             padding: 48px 2px;
-          }
+          } 
+          .badge {
+         
+          color: white;
+          padding: 12px 12px;
+          border-radius: 9999px;
+          font-size: 15px;
+         
+        }
 
           .section-header {
             margin-bottom: 48px;
