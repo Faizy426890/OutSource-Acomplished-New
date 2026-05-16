@@ -94,7 +94,7 @@ const Home4Banner = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/growedge_x/">
               <i className="bx bxl-instagram" />
             </a>
           </li>

@@ -139,7 +139,7 @@ const Home2Contact = () => {
                   <ul className="social-list">
                     <li><a href="https://www.linkedin.com/company/outsource-accomplished/"><i className="bi bi-linkedin" /> <span>LinkedIn</span></a></li>
                     <li><a href="https://www.facebook.com/share/1CnVgP2V9X/?mibextid=wwXIfr"><i className="bi bi-facebook" /> <span>Facebook</span></a></li>
-                    <li><a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr"><i className="bi bi-instagram" /> <span>Instagram</span></a></li>
+                    <li><a href="https://www.instagram.com/growedge_x/"><i className="bi bi-instagram" /> <span>Instagram</span></a></li>
                   </ul>
                 </div>
               </div>

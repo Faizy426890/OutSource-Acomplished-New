@@ -85,7 +85,7 @@ export default function HeroSection() {
               <div className="hero-stat-divider"></div>
               <div className="hero-stat-item">
                 <div className="hero-stat-number">{projects}+</div>
-                <div className="hero-stat-label">Projects </div>
+                <div className="hero-stat-label">Projects</div>
               </div>
               <div className="hero-stat-divider"></div>
               <div className="hero-stat-item">
@@ -105,7 +105,6 @@ export default function HeroSection() {
                 muted
                 playsInline
               />
-
               <div className="hero-image-badge">
                 <div className="hero-badge-icon">✓</div>
                 <div>
@@ -135,6 +134,157 @@ export default function HeroSection() {
             <span className="hero-trust-text">Secure & Compliant</span>
           </div>
         </div>
+
+        {/* ── Certifications Bar ── */}
+        <div style={{
+          width: '100%',
+          padding: '2.5rem 2rem',
+          borderTop: '1px solid rgba(255,255,255,0.12)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '1.5rem',
+          marginTop: '0.5rem',
+        }}>
+          <p style={{
+            margin: 0,
+            fontSize: '12px',
+            fontWeight: 600,
+            color: 'rgba(255,255,255,0.45)',
+            textTransform: 'uppercase',
+            letterSpacing: '0.12em',
+          }}>
+            Certifications &amp; Compliance
+          </p>
+
+          {/* Cert grid — row on desktop, column on mobile */}
+          <style>{`
+            .cert-grid {
+              display: flex;
+              align-items: stretch;
+              justify-content: center;
+              width: 100%;
+              max-width: 780px;
+              flex-direction: row;
+            }
+
+            .cert-card {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 14px;
+              padding: 28px 20px;
+              background: rgba(255,255,255,0.06);
+            }
+
+            .cert-card--first {
+              border: 1.5px solid rgba(255,255,255,0.12);
+              border-radius: 12px 0 0 12px;
+            }
+
+            .cert-card--middle {
+              border-top: 1.5px solid rgba(255,255,255,0.12);
+              border-bottom: 1.5px solid rgba(255,255,255,0.12);
+            }
+
+            .cert-card--last {
+              border: 1.5px solid rgba(255,255,255,0.12);
+              border-radius: 0 12px 12px 0;
+            }
+
+            .cert-card__title {
+              font-size: 16px;
+              font-weight: 700;
+              color: #000000ff;
+              margin-bottom: 4px;
+            }
+
+            .cert-card__subtitle {
+              font-size: 12px;
+              font-weight: 500;
+            }
+
+            @media (max-width: 640px) {
+              .cert-grid {
+                flex-direction: column;
+                gap: 16px;
+                max-width: 100%;
+              }
+
+              .cert-card--first {
+                border: 1.5px solid rgba(255,255,255,0.12);
+                border-radius: 12px;
+              }
+
+              .cert-card--middle {
+                border: 1.5px solid rgba(255,255,255,0.12);
+                border-radius: 12px;
+              }
+
+              .cert-card--last {
+                border: 1.5px solid rgba(255,255,255,0.12);
+                border-radius: 12px;
+              }
+
+              .cert-card {
+                padding: 36px 24px;
+                gap: 20px;
+              }
+
+              .cert-card__title {
+                font-size: 18px;
+              }
+
+              .cert-card__subtitle {
+                font-size: 13px;
+              }
+            }
+          `}</style>
+
+          <div className="cert-grid">
+            {/* ISO 27001 */}
+            <div className="cert-card cert-card--first">
+              <img
+                src="https://res.cloudinary.com/daxjhteb5/image/upload/v1778944394/ChatGPT_Image_May_16__2026__07_01_33_PM-removebg-preview_dzhtsd.png"
+                alt="ISO 27001 Certified"
+                style={{ width: '150px', height: '150px', objectFit: 'contain' }}
+              />
+              <div style={{ textAlign: 'center' }}>
+                <div className="cert-card__title">ISO 27001 Certification</div>
+                <div className="cert-card__subtitle" style={{ color: 'rgba(39,39,39,0.5)' }}>Information Security</div>
+              </div>
+            </div>
+
+            {/* ISO 9001 */}
+            <div className="cert-card cert-card--middle">
+              <img
+                src="https://res.cloudinary.com/daxjhteb5/image/upload/v1778944394/ChatGPT_Image_May_16__2026__07_04_49_PM-removebg-preview_ijzpvv.png"
+                alt="ISO 9001 Certified"
+                style={{ width: '150px', height: '150px', objectFit: 'contain' }}
+              />
+              <div style={{ textAlign: 'center' }}>
+                <div className="cert-card__title">ISO 9001 Certification</div>
+                <div className="cert-card__subtitle" style={{ color: 'rgba(29,29,29,0.5)' }}>Quality Management</div>
+              </div>
+            </div>
+
+            {/* HIPAA */}
+            <div className="cert-card cert-card--last">
+              <img
+                src="https://res.cloudinary.com/daxjhteb5/image/upload/v1778944394/Hipaa-removebg-preview_qzdjcs.png"
+                alt="HIPAA Compliant"
+                style={{ width: '180px', height: '180px', objectFit: 'contain' }}
+              />
+              <div style={{ textAlign: 'center' }}>
+                <div className="cert-card__title">HIPAA Compliant</div>
+                <div className="cert-card__subtitle" style={{ color: 'rgba(40,40,40,0.5)' }}>Health Data Privacy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   )

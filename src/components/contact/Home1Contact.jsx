@@ -112,7 +112,7 @@ const Home1Contact = () => {
                     </li>
                   
                     <li>
-                      <a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr">
+                      <a href="https://www.instagram.com/growedge_x/">
                         <i className="bi bi-instagram" />
                         <span>Instagram</span>
                       </a>

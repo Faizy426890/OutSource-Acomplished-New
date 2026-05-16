@@ -427,7 +427,7 @@ const Header1 = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/outsource_accomplished?igsh=Y2Y3YjhkdXJ4OGtr">
+                      <a href="https://www.instagram.com/growedge_x/">
                         <i className="bi bi-behance"/> Instagram
                       </a>
                     </li>
