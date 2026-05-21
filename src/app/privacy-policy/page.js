@@ -185,7 +185,7 @@ const PrivacyPolicy = () => {
         <h2 style={styles.sectionTitle}>9. CONTACT INFORMATION</h2>
         <div style={styles.footerInfo}>
           <p style={styles.bodyText}>📧 info@growedgex.com</p>
-          <p style={styles.bodyText}>📞 +1 469-472-2311</p>
+          <p style={styles.bodyText}>📞 +1 (469) 929-2524</p>
           <p style={styles.bodyText}>🌐 <Link href="/">www.growedgex.com</Link></p>
         </div>
       </div> 
