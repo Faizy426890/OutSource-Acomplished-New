@@ -184,7 +184,9 @@ const Header1 = () => {
             <div className="col-lg-8">
               <div className="sidebar-menu-wrap">
                 <ul className="main-menu">
-                 
+                 <li>
+    <Link href="/">Home</Link>
+  </li>
                   <li>
                     <a href="/services">Services</a>
                    
