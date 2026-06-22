@@ -434,12 +434,12 @@ const Header1 = () => {
                         <span>Email Now</span>
                        <h6>
   <a 
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@growedgex.com" 
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@growedgex.com" 
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="Email admin at GrowEdge"
   >
-    admin@growedgex.com
+    info@growedgex.com
   </a>
 </h6>
 
