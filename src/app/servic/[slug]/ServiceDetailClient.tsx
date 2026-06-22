@@ -5,26 +5,17 @@ import { useState } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
-  ChevronRight,
   CheckCircle,
-  Star,
-  Clock,
-  Users,
-  Award,
-  TrendingUp,
-  Shield, 
   AlertCircle,
-  Zap,
+  Award,
   Mail,
-  Phone,
   Calendar,
-  FileText,
-  BarChart,
   X,
   Menu,
   Check,
 } from "lucide-react";
 import { ServiceDetail } from "./data";
+import { getIcon } from "./icon-map";
 import "./ServiceDetailClient.css";
 
 interface Props {
@@ -32,15 +23,10 @@ interface Props {
 }
 
 export default function ServiceDetailClient({ service }: Props) {
-  const [activeTab, setActiveTab] = useState<"overview" | "process" | "case-studies" | "faq">("overview");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const stats = [
-    { label: "Client Satisfaction", value: "98%", icon: Star },
-    { label: "Avg. Time to Value", value: "30 days", icon: Clock },
-    { label: "Team Members", value: "50+", icon: Users },
-    { label: "Years Experience", value: "15+", icon: Award },
-  ];
+  // Resolve the hero badge icon once up front
+  const HeroIcon = getIcon(service.Icon);
 
   return (
     <div className="service-detail-page">
@@ -51,7 +37,7 @@ export default function ServiceDetailClient({ service }: Props) {
             <ArrowLeft size={20} />
             <span>Back to Services</span>
           </Link>
-          
+
           <div className="nav-links desktop-only">
             <a href="#overview">Overview</a>
             <a href="#features">Features</a>
@@ -60,8 +46,8 @@ export default function ServiceDetailClient({ service }: Props) {
             <a href="#faq">FAQ</a>
           </div>
 
-          <button 
-            className="mobile-menu-btn" 
+          <button
+            className="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -80,40 +66,40 @@ export default function ServiceDetailClient({ service }: Props) {
         )}
       </nav>
 
-      {/* Hero Section */}
-      <section 
-        className="detail-hero" 
-        style={{ 
-          background: `linear-gradient(135deg, ${service.color}10, ${service.color}20)` 
+      {/* Hero Section — image/video block removed, replaced with an icon-led layout */}
+      <section
+        className="detail-hero detail-hero--no-media"
+        style={{
+          background: `linear-gradient(135deg, ${service.color}10, ${service.color}20)`,
         }}
       >
-        <div className="">
-          <div 
-            className="hero-badge" 
+        <div className="hero-content">
+          <div
+            className="hero-badge"
             style={{ background: service.color, color: "white" }}
           >
-            <service.Icon  />
+            <HeroIcon size={18} />
             <span>{service.tagline}</span>
           </div>
-          
+
           <h1 className="hero-title">
-            {service.title} 
+            {service.title}
             <span className="hero-subtitle">{service.subtitle}</span>
           </h1>
 
           <div className="hero-stats">
             {service.metrics.map((metric, idx) => {
-              const IconComponent = metric.icon;
+              const IconComponent = getIcon(metric.icon);
               return (
                 <div key={idx} className="stat-card">
-                  <div 
-                    className="stat-icon" 
-                    style={{ 
-                      background: `${service.color}15`, 
-                      color: service.color 
+                  <div
+                    className="stat-icon"
+                    style={{
+                      background: `${service.color}15`,
+                      color: service.color,
                     }}
                   >
-                    <IconComponent  />
+                    <IconComponent size={22} />
                   </div>
                   <div className="stat-content">
                     <div className="stat-value">{metric.value}</div>
@@ -124,19 +110,6 @@ export default function ServiceDetailClient({ service }: Props) {
             })}
           </div>
         </div>
-
-        <div className="hero-media">
-          <div className="video-container">
-            <video
-              src={service.video}
-              className="hero-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-          </div>
-        </div>
       </section>
 
       {/* Overview Section */}
@@ -144,19 +117,19 @@ export default function ServiceDetailClient({ service }: Props) {
         <div className="section-container">
           <div className="section-header">
             <h2 className="section-title">The Challenge & Solution</h2>
-            <div 
-              className="section-divider" 
-              style={{ background: service.color }} 
+            <div
+              className="section-divider"
+              style={{ background: service.color }}
             />
           </div>
 
           <div className="overview-grid">
             <div className="problem-card">
-              <div 
-                className="card-icon" 
-                style={{ 
-                  background: `${service.color}15`, 
-                  color: service.color 
+              <div
+                className="card-icon"
+                style={{
+                  background: `${service.color}15`,
+                  color: service.color,
                 }}
               >
                 <AlertCircle size={32} />
@@ -166,11 +139,11 @@ export default function ServiceDetailClient({ service }: Props) {
             </div>
 
             <div className="solution-card">
-              <div 
-                className="card-icon" 
-                style={{ 
-                  background: `${service.color}15`, 
-                  color: service.color 
+              <div
+                className="card-icon"
+                style={{
+                  background: `${service.color}15`,
+                  color: service.color,
                 }}
               >
                 <CheckCircle size={32} />
@@ -180,11 +153,11 @@ export default function ServiceDetailClient({ service }: Props) {
             </div>
 
             <div className="unique-card">
-              <div 
-                className="card-icon" 
-                style={{ 
-                  background: `${service.color}15`, 
-                  color: service.color 
+              <div
+                className="card-icon"
+                style={{
+                  background: `${service.color}15`,
+                  color: service.color,
                 }}
               >
                 <Award size={32} />
@@ -197,17 +170,17 @@ export default function ServiceDetailClient({ service }: Props) {
       </section>
 
       {/* Features Section */}
-      <section 
-        id="features" 
-        className="detail-section features-section" 
+      <section
+        id="features"
+        className="detail-section features-section"
         style={{ background: `${service.colorLight}` }}
       >
         <div className="section-container">
           <div className="section-header">
             <h2 className="section-title">Everything We Deliver</h2>
-            <div 
-              className="section-divider" 
-              style={{ background: service.color }} 
+            <div
+              className="section-divider"
+              style={{ background: service.color }}
             />
             <p className="section-description">
               Comprehensive operational support designed specifically for your industry
@@ -216,18 +189,18 @@ export default function ServiceDetailClient({ service }: Props) {
 
           <div className="features-grid">
             {service.features.map((feature, idx) => {
-              const IconComponent = feature.icon;
+              const IconComponent = getIcon(feature.icon);
               return (
                 <div key={idx} className="feature-card">
                   <div className="feature-header">
-                    <div 
-                      className="feature-icon" 
-                      style={{ 
-                        background: `${service.color}15`, 
-                        color: service.color 
+                    <div
+                      className="feature-icon"
+                      style={{
+                        background: `${service.color}15`,
+                        color: service.color,
                       }}
                     >
-                      <IconComponent/>
+                      <IconComponent size={24} />
                     </div>
                     <h3 className="feature-title">{feature.title}</h3>
                   </div>
@@ -252,9 +225,9 @@ export default function ServiceDetailClient({ service }: Props) {
         <div className="section-container">
           <div className="section-header">
             <h2 className="section-title">Our Implementation Process</h2>
-            <div 
-              className="section-divider" 
-              style={{ background: service.color }} 
+            <div
+              className="section-divider"
+              style={{ background: service.color }}
             />
             <p className="section-description">
               A proven methodology for seamless integration and rapid results
@@ -263,35 +236,35 @@ export default function ServiceDetailClient({ service }: Props) {
 
           <div className="process-timeline">
             {service.process.map((step, idx) => {
-              const IconComponent = step.icon;
+              const IconComponent = getIcon(step.icon);
               return (
                 <div key={idx} className="process-step">
                   <div className="step-indicator">
-                    <div 
-                      className="step-number" 
-                      style={{ 
-                        background: service.color, 
-                        color: "white" 
+                    <div
+                      className="step-number"
+                      style={{
+                        background: service.color,
+                        color: "white",
                       }}
                     >
                       {step.step}
                     </div>
                     {idx < service.process.length - 1 && (
-                      <div 
-                        className="step-connector" 
-                        style={{ background: `${service.color}30` }} 
+                      <div
+                        className="step-connector"
+                        style={{ background: `${service.color}30` }}
                       />
                     )}
                   </div>
                   <div className="step-content">
-                    <div 
-                      className="step-icon" 
-                      style={{ 
-                        background: `${service.color}15`, 
-                        color: service.color 
+                    <div
+                      className="step-icon"
+                      style={{
+                        background: `${service.color}15`,
+                        color: service.color,
                       }}
                     >
-                      <IconComponent  />
+                      <IconComponent size={24} />
                     </div>
                     <h3 className="step-title">{step.title}</h3>
                     <p className="step-description">{step.description}</p>
@@ -305,17 +278,17 @@ export default function ServiceDetailClient({ service }: Props) {
 
       {/* Case Studies Section */}
       {service.caseStudies.length > 0 && (
-        <section 
-          id="case-studies" 
-          className="detail-section casestudies-section" 
+        <section
+          id="case-studies"
+          className="detail-section casestudies-section"
           style={{ background: `${service.colorLight}` }}
         >
           <div className="section-container">
             <div className="section-header">
               <h2 className="section-title">Real Results, Real Clients</h2>
-              <div 
-                className="section-divider" 
-                style={{ background: service.color }} 
+              <div
+                className="section-divider"
+                style={{ background: service.color }}
               />
               <p className="section-description">
                 See how we've helped businesses like yours transform their operations
@@ -326,28 +299,28 @@ export default function ServiceDetailClient({ service }: Props) {
               {service.caseStudies.map((caseStudy, idx) => (
                 <div key={idx} className="case-study-card">
                   <div className="case-header">
-                    <div 
-                      className="case-industry" 
-                      style={{ 
-                        background: `${service.color}15`, 
-                        color: service.color 
+                    <div
+                      className="case-industry"
+                      style={{
+                        background: `${service.color}15`,
+                        color: service.color,
                       }}
                     >
                       {caseStudy.industry}
                     </div>
                     <h3 className="case-title">{caseStudy.title}</h3>
                   </div>
-                  
+
                   <div className="case-challenge">
                     <h4>Challenge</h4>
                     <p>{caseStudy.challenge}</p>
                   </div>
-                  
+
                   <div className="case-solution">
                     <h4>Solution</h4>
                     <p>{caseStudy.solution}</p>
                   </div>
-                  
+
                   <div className="case-results">
                     <h4>Results</h4>
                     <ul>
@@ -371,25 +344,25 @@ export default function ServiceDetailClient({ service }: Props) {
         <div className="section-container">
           <div className="section-header">
             <h2 className="section-title">Why Industry Leaders Choose Us</h2>
-            <div 
-              className="section-divider" 
-              style={{ background: service.color }} 
+            <div
+              className="section-divider"
+              style={{ background: service.color }}
             />
           </div>
 
           <div className="whychoose-grid">
             {service.whyChoose.map((item, idx) => {
-              const IconComponent = item.icon;
+              const IconComponent = getIcon(item.icon);
               return (
                 <div key={idx} className="whychoose-card">
-                  <div 
-                    className="whychoose-icon" 
-                    style={{ 
-                      background: `${service.color}15`, 
-                      color: service.color 
+                  <div
+                    className="whychoose-icon"
+                    style={{
+                      background: `${service.color}15`,
+                      color: service.color,
                     }}
                   >
-                    <IconComponent  />
+                    <IconComponent size={24} />
                   </div>
                   <h3 className="whychoose-title">{item.title}</h3>
                   <p className="whychoose-description">{item.description}</p>
@@ -401,17 +374,17 @@ export default function ServiceDetailClient({ service }: Props) {
       </section>
 
       {/* FAQ Section */}
-      <section 
-        id="faq" 
-        className="detail-section faq-section" 
+      <section
+        id="faq"
+        className="detail-section faq-section"
         style={{ background: `${service.colorLight}` }}
       >
         <div className="section-container">
           <div className="section-header">
             <h2 className="section-title">Frequently Asked Questions</h2>
-            <div 
-              className="section-divider" 
-              style={{ background: service.color }} 
+            <div
+              className="section-divider"
+              style={{ background: service.color }}
             />
             <p className="section-description">
               Everything you need to know about working with us
@@ -422,11 +395,11 @@ export default function ServiceDetailClient({ service }: Props) {
             {service.faqs.map((faq, idx) => (
               <div key={idx} className="faq-card">
                 <div className="faq-question">
-                  <div 
-                    className="faq-icon" 
-                    style={{ 
-                      background: `${service.color}15`, 
-                      color: service.color 
+                  <div
+                    className="faq-icon"
+                    style={{
+                      background: `${service.color}15`,
+                      color: service.color,
                     }}
                   >
                     ?
@@ -443,8 +416,8 @@ export default function ServiceDetailClient({ service }: Props) {
       </section>
 
       {/* CTA Section */}
-      <section 
-        className="detail-section cta-section" 
+      <section
+        className="detail-section cta-section"
         style={{ background: service.color }}
       >
         <div className="section-container">
