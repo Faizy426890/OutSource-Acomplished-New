@@ -184,7 +184,9 @@ const Header1 = () => {
             <div className="col-lg-8">
               <div className="sidebar-menu-wrap">
                 <ul className="main-menu">
-                 
+                 <li>
+    <Link href="/">Home</Link>
+  </li>
                   <li>
                     <a href="/services">Services</a>
                    
@@ -434,12 +436,12 @@ const Header1 = () => {
                         <span>Email Now</span>
                        <h6>
   <a 
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=admin@growedgex.com" 
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@growedgex.com" 
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="Email admin at GrowEdge"
   >
-    admin@growedgex.com
+    info@growedgex.com
   </a>
 </h6>
 
