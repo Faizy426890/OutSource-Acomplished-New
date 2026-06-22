@@ -92,7 +92,7 @@ export default function FoundersPromise() {
                 <div className="avatar-inner">
                   <div className="avatar">
                     <img
-                      src="https://res.cloudinary.com/diml90c1y/image/upload/v1760651711/WhatsApp_Image_2025-10-16_at_4.32.09_PM_peojtw.jpg"
+                      src="https://res.cloudinary.com/daxjhteb5/image/upload/v1782161485/Founders_profile_2_m6wuyb.png"
                       alt="Ahmad Azhar"
                     />
                   </div>
