@@ -184,9 +184,11 @@ const Header1 = () => {
             <div className="col-lg-8">
               <div className="sidebar-menu-wrap">
                 <ul className="main-menu">
-                 <li>
-    <Link href="/">Home</Link>
-  </li>
+
+                  <li>
+                    <Link href="/">Home</Link>
+                  </li>
+
                   <li>
                     <a href="/services">Services</a>
                    
@@ -662,6 +664,25 @@ const Header1 = () => {
             </ul>
           </div>
           <div className="nav-right d-flex jsutify-content-end align-items-center">
+
+            {/* Mobile-only Contact Us button (hidden on lg+ screens) */}
+            <Link
+              href="/contact"
+              className="contact-us-mobile-btn d-flex d-lg-none align-items-center justify-content-center"
+              style={{
+                background: '#111',
+                color: '#fff',
+                fontSize: '13px',
+                fontWeight: 600,
+                padding: '8px 14px',
+                borderRadius: '6px',
+                marginRight: '10px',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Contact Us
+            </Link>
+
             <div className="right-sidebar-and-hotline-area">
               <div className="hotline-area d-xl-flex d-none">
                 <div className="icon">
